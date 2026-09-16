@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+.build_check/
+*.egg-info/
+
+# Node/browser
+node_modules/
+coverage/
+playwright-report/
+test-results/
+.browser-profile/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local validation products (machine-readable evidence is frozen elsewhere)
+benchmark.json
+validation.json
+web/performance-results/

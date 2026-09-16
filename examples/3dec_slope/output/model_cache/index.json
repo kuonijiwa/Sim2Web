@@ -1,0 +1,264 @@
+{
+  "DefaultModel": {
+    "stages": {
+      "slopemodel": {
+        "full": "model_cache/slopemodel/full_model.vtp",
+        "cavity": null,
+        "slices": {
+          "x": [
+            "model_cache/slopemodel/slice_x_570.00.vtp",
+            "model_cache/slopemodel/slice_x_580.00.vtp",
+            "model_cache/slopemodel/slice_x_590.00.vtp",
+            "model_cache/slopemodel/slice_x_600.00.vtp",
+            "model_cache/slopemodel/slice_x_610.00.vtp",
+            "model_cache/slopemodel/slice_x_620.00.vtp",
+            "model_cache/slopemodel/slice_x_630.00.vtp",
+            "model_cache/slopemodel/slice_x_640.00.vtp",
+            "model_cache/slopemodel/slice_x_650.00.vtp",
+            "model_cache/slopemodel/slice_x_660.00.vtp",
+            "model_cache/slopemodel/slice_x_670.00.vtp",
+            "model_cache/slopemodel/slice_x_680.00.vtp",
+            "model_cache/slopemodel/slice_x_690.00.vtp",
+            "model_cache/slopemodel/slice_x_700.00.vtp",
+            "model_cache/slopemodel/slice_x_710.00.vtp",
+            "model_cache/slopemodel/slice_x_720.00.vtp",
+            "model_cache/slopemodel/slice_x_730.00.vtp",
+            "model_cache/slopemodel/slice_x_740.00.vtp",
+            "model_cache/slopemodel/slice_x_750.00.vtp",
+            "model_cache/slopemodel/slice_x_760.00.vtp",
+            "model_cache/slopemodel/slice_x_770.00.vtp",
+            "model_cache/slopemodel/slice_x_780.00.vtp",
+            "model_cache/slopemodel/slice_x_790.00.vtp",
+            "model_cache/slopemodel/slice_x_800.00.vtp",
+            "model_cache/slopemodel/slice_x_810.00.vtp",
+            "model_cache/slopemodel/slice_x_820.00.vtp",
+            "model_cache/slopemodel/slice_x_830.00.vtp",
+            "model_cache/slopemodel/slice_x_840.00.vtp",
+            "model_cache/slopemodel/slice_x_850.00.vtp",
+            "model_cache/slopemodel/slice_x_860.00.vtp",
+            "model_cache/slopemodel/slice_x_870.00.vtp",
+            "model_cache/slopemodel/slice_x_880.00.vtp",
+            "model_cache/slopemodel/slice_x_890.00.vtp",
+            "model_cache/slopemodel/slice_x_900.00.vtp",
+            "model_cache/slopemodel/slice_x_910.00.vtp",
+            "model_cache/slopemodel/slice_x_920.00.vtp",
+            "model_cache/slopemodel/slice_x_930.00.vtp",
+            "model_cache/slopemodel/slice_x_940.00.vtp",
+            "model_cache/slopemodel/slice_x_950.00.vtp",
+            "model_cache/slopemodel/slice_x_960.00.vtp",
+            "model_cache/slopemodel/slice_x_970.00.vtp",
+            "model_cache/slopemodel/slice_x_980.00.vtp",
+            "model_cache/slopemodel/slice_x_990.00.vtp",
+            "model_cache/slopemodel/slice_x_1000.00.vtp",
+            "model_cache/slopemodel/slice_x_1010.00.vtp",
+            "model_cache/slopemodel/slice_x_1020.00.vtp",
+            "model_cache/slopemodel/slice_x_1030.00.vtp",
+            "model_cache/slopemodel/slice_x_1040.00.vtp",
+            "model_cache/slopemodel/slice_x_1050.00.vtp",
+            "model_cache/slopemodel/slice_x_1060.00.vtp",
+            "model_cache/slopemodel/slice_x_1070.00.vtp",
+            "model_cache/slopemodel/slice_x_1080.00.vtp",
+            "model_cache/slopemodel/slice_x_1090.00.vtp",
+            "model_cache/slopemodel/slice_x_1100.00.vtp",
+            "model_cache/slopemodel/slice_x_1110.00.vtp"
+          ],
+          "y": [
+            "model_cache/slopemodel/slice_y_250.00.vtp",
+            "model_cache/slopemodel/slice_y_260.00.vtp",
+            "model_cache/slopemodel/slice_y_270.00.vtp",
+            "model_cache/slopemodel/slice_y_280.00.vtp",
+            "model_cache/slopemodel/slice_y_290.00.vtp",
+            "model_cache/slopemodel/slice_y_300.00.vtp",
+            "model_cache/slopemodel/slice_y_310.00.vtp",
+            "model_cache/slopemodel/slice_y_320.00.vtp",
+            "model_cache/slopemodel/slice_y_330.00.vtp",
+            "model_cache/slopemodel/slice_y_340.00.vtp",
+            "model_cache/slopemodel/slice_y_350.00.vtp",
+            "model_cache/slopemodel/slice_y_360.00.vtp",
+            "model_cache/slopemodel/slice_y_370.00.vtp",
+            "model_cache/slopemodel/slice_y_380.00.vtp",
+            "model_cache/slopemodel/slice_y_390.00.vtp",
+            "model_cache/slopemodel/slice_y_400.00.vtp",
+            "model_cache/slopemodel/slice_y_410.00.vtp",
+            "model_cache/slopemodel/slice_y_420.00.vtp",
+            "model_cache/slopemodel/slice_y_430.00.vtp",
+            "model_cache/slopemodel/slice_y_440.00.vtp",
+            "model_cache/slopemodel/slice_y_450.00.vtp",
+            "model_cache/slopemodel/slice_y_460.00.vtp",
+            "model_cache/slopemodel/slice_y_470.00.vtp",
+            "model_cache/slopemodel/slice_y_480.00.vtp",
+            "model_cache/slopemodel/slice_y_490.00.vtp",
+            "model_cache/slopemodel/slice_y_500.00.vtp"
+          ],
+          "z": [
+            "model_cache/slopemodel/slice_z_1760.00.vtp",
+            "model_cache/slopemodel/slice_z_1770.00.vtp",
+            "model_cache/slopemodel/slice_z_1780.00.vtp",
+            "model_cache/slopemodel/slice_z_1790.00.vtp",
+            "model_cache/slopemodel/slice_z_1800.00.vtp",
+            "model_cache/slopemodel/slice_z_1810.00.vtp",
+            "model_cache/slopemodel/slice_z_1820.00.vtp",
+            "model_cache/slopemodel/slice_z_1830.00.vtp",
+            "model_cache/slopemodel/slice_z_1840.00.vtp",
+            "model_cache/slopemodel/slice_z_1850.00.vtp",
+            "model_cache/slopemodel/slice_z_1860.00.vtp",
+            "model_cache/slopemodel/slice_z_1870.00.vtp",
+            "model_cache/slopemodel/slice_z_1880.00.vtp",
+            "model_cache/slopemodel/slice_z_1890.00.vtp",
+            "model_cache/slopemodel/slice_z_1900.00.vtp",
+            "model_cache/slopemodel/slice_z_1910.00.vtp",
+            "model_cache/slopemodel/slice_z_1920.00.vtp",
+            "model_cache/slopemodel/slice_z_1930.00.vtp",
+            "model_cache/slopemodel/slice_z_1940.00.vtp",
+            "model_cache/slopemodel/slice_z_1950.00.vtp",
+            "model_cache/slopemodel/slice_z_1960.00.vtp",
+            "model_cache/slopemodel/slice_z_1970.00.vtp",
+            "model_cache/slopemodel/slice_z_1980.00.vtp",
+            "model_cache/slopemodel/slice_z_1990.00.vtp",
+            "model_cache/slopemodel/slice_z_2000.00.vtp",
+            "model_cache/slopemodel/slice_z_2010.00.vtp",
+            "model_cache/slopemodel/slice_z_2020.00.vtp",
+            "model_cache/slopemodel/slice_z_2030.00.vtp",
+            "model_cache/slopemodel/slice_z_2040.00.vtp",
+            "model_cache/slopemodel/slice_z_2050.00.vtp",
+            "model_cache/slopemodel/slice_z_2060.00.vtp",
+            "model_cache/slopemodel/slice_z_2070.00.vtp",
+            "model_cache/slopemodel/slice_z_2080.00.vtp",
+            "model_cache/slopemodel/slice_z_2090.00.vtp",
+            "model_cache/slopemodel/slice_z_2100.00.vtp",
+            "model_cache/slopemodel/slice_z_2110.00.vtp",
+            "model_cache/slopemodel/slice_z_2120.00.vtp",
+            "model_cache/slopemodel/slice_z_2130.00.vtp",
+            "model_cache/slopemodel/slice_z_2140.00.vtp",
+            "model_cache/slopemodel/slice_z_2150.00.vtp",
+            "model_cache/slopemodel/slice_z_2160.00.vtp",
+            "model_cache/slopemodel/slice_z_2170.00.vtp",
+            "model_cache/slopemodel/slice_z_2180.00.vtp",
+            "model_cache/slopemodel/slice_z_2190.00.vtp",
+            "model_cache/slopemodel/slice_z_2200.00.vtp",
+            "model_cache/slopemodel/slice_z_2210.00.vtp",
+            "model_cache/slopemodel/slice_z_2220.00.vtp",
+            "model_cache/slopemodel/slice_z_2230.00.vtp",
+            "model_cache/slopemodel/slice_z_2240.00.vtp",
+            "model_cache/slopemodel/slice_z_2250.00.vtp",
+            "model_cache/slopemodel/slice_z_2260.00.vtp",
+            "model_cache/slopemodel/slice_z_2270.00.vtp",
+            "model_cache/slopemodel/slice_z_2280.00.vtp",
+            "model_cache/slopemodel/slice_z_2290.00.vtp",
+            "model_cache/slopemodel/slice_z_2300.00.vtp",
+            "model_cache/slopemodel/slice_z_2310.00.vtp",
+            "model_cache/slopemodel/slice_z_2320.00.vtp",
+            "model_cache/slopemodel/slice_z_2330.00.vtp",
+            "model_cache/slopemodel/slice_z_2340.00.vtp",
+            "model_cache/slopemodel/slice_z_2350.00.vtp",
+            "model_cache/slopemodel/slice_z_2360.00.vtp",
+            "model_cache/slopemodel/slice_z_2370.00.vtp",
+            "model_cache/slopemodel/slice_z_2380.00.vtp",
+            "model_cache/slopemodel/slice_z_2390.00.vtp",
+            "model_cache/slopemodel/slice_z_2400.00.vtp",
+            "model_cache/slopemodel/slice_z_2410.00.vtp",
+            "model_cache/slopemodel/slice_z_2420.00.vtp",
+            "model_cache/slopemodel/slice_z_2430.00.vtp",
+            "model_cache/slopemodel/slice_z_2440.00.vtp",
+            "model_cache/slopemodel/slice_z_2450.00.vtp"
+          ]
+        },
+        "fields": {
+          "Material_ID": {
+            "min": 0.0,
+            "max": 0.0
+          },
+          "Stress_Max_Principal": {
+            "min": -68.1043472290039,
+            "max": 8.636083602905273
+          },
+          "Stress_Mid_Principal": {
+            "min": -117.84452819824219,
+            "max": 1.60605788230896
+          },
+          "Stress_Min_Principal": {
+            "min": -211.25340270996094,
+            "max": 0.5129144191741943
+          },
+          "Stress_XX": {
+            "min": -99.72256469726562,
+            "max": 8.134892463684082
+          },
+          "Stress_YY": {
+            "min": -126.36591339111328,
+            "max": 4.135299205780029
+          },
+          "Stress_ZZ": {
+            "min": -179.0667266845703,
+            "max": 2.612230062484741
+          },
+          "TotalDisplacement": {
+            "min": 0.0,
+            "max": 0.016519756987690926
+          },
+          "X_Disp": {
+            "min": -0.009245334193110466,
+            "max": 0.008882066234946251
+          },
+          "Y_Disp": {
+            "min": -0.01322552002966404,
+            "max": 0.005903308745473623
+          },
+          "Z_Disp": {
+            "min": -0.013594002462923527,
+            "max": 0.010892420075833797
+          }
+        },
+        "global_ranges": {
+          "Material_ID": [
+            0.0,
+            0.0
+          ],
+          "Stress_Max_Principal": [
+            -68.1043472290039,
+            8.636083602905273
+          ],
+          "Stress_Mid_Principal": [
+            -117.84452819824219,
+            1.60605788230896
+          ],
+          "Stress_Min_Principal": [
+            -211.25340270996094,
+            0.5129144191741943
+          ],
+          "Stress_XX": [
+            -99.72256469726562,
+            8.134892463684082
+          ],
+          "Stress_YY": [
+            -126.36591339111328,
+            4.135299205780029
+          ],
+          "Stress_ZZ": [
+            -179.0667266845703,
+            2.612230062484741
+          ],
+          "TotalDisplacement": [
+            0.0,
+            0.016519756987690926
+          ],
+          "X_Disp": [
+            -0.009245334193110466,
+            0.008882066234946251
+          ],
+          "Y_Disp": [
+            -0.01322552002966404,
+            0.005903308745473623
+          ],
+          "Z_Disp": [
+            -0.013594002462923527,
+            0.010892420075833797
+          ]
+        }
+      }
+    },
+    "stage_order": [
+      "slopemodel"
+    ]
+  }
+}
