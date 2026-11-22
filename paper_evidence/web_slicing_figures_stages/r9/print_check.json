@@ -1,132 +1,138 @@
 {
-  "2": {
-    "width_cm": 16.5,
-    "height_cm": 15.86658134920635,
-    "gap_cm": 0.2,
-    "label_font_pt": 9,
-    "composed_resolution_px": [
-      3898,
-      3749
+  "case": "D · FLAC3D deep excavation pit",
+  "version": "0.2.0",
+  "figure_layout": "single full workbench viewport",
+  "viewport_css_px": {
+    "width": 1280,
+    "height": 800
+  },
+  "device_scale_factor": 4,
+  "width_cm": 16.5,
+  "png": {
+    "pixels": [
+      5120,
+      3200
     ],
-    "panels": {
-      "a": {
-        "print_width_cm": 16.5,
-        "print_height_cm": 6.703125,
-        "capture_px": [
-          4480,
-          1820
+    "dpi": 788.1619999999999,
+    "bytes": 1143129,
+    "sha256": "a8ffd3430bcbba8712eb38786a406694b9ec4ae02f37e52ab6296b58b78afaa8"
+  },
+  "browser": "160.0.8157.0",
+  "css_injected": [],
+  "print_font_nominal_pt_by_css_px": {
+    "12.5": 4.567544291338583,
+    "13": 4.750246062992126,
+    "14": 5.115649606299213,
+    "15": 5.481053149606299
+  },
+  "minimum_measured_ink_height_pt": 3.6540354330708658,
+  "logs_collapsed": true,
+  "viewer_camera": {
+    "options": {
+      "field": "TotalDisplacement",
+      "range": "p5_p95",
+      "section": "0",
+      "cmap": "viridis",
+      "parallel": "1",
+      "cam": "-78.18930277890601,7.236337334202212,262.7777478867205,-0.65,11.3,-27,0,0,1,36",
+      "layers": "exterior:1:0.35,excavation:1:1"
+    },
+    "actors": {
+      "layer:exterior": {
+        "scalarVisibility": true,
+        "array": "TotalDisplacement",
+        "association": "point",
+        "arrayFound": true,
+        "dataRange": [
+          0,
+          0.010675342753529549
         ],
-        "css_viewport_width_px": 1120,
-        "device_scale_factor": 4,
-        "effective_dpi": 689.6484848484849,
-        "smallest_meaningful_glyph_height_pt": 6.2640607424071995,
-        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
-        "ink_height_css_px_by_role": {
-          "diagnostics": 16,
-          "layers": 16,
-          "settings": 15,
-          "step": 28,
-          "viewer_status": 22
-        },
-        "injected_css": ".top, .steps, .log, .nav-buttons { display: none !important; }\n.app { grid-template-rows: auto; height: auto; background: #fff; }\n.form, .diagnostics { overflow: visible; }\n.form { padding: 13px 16px 11px; }\n.form h2, .diagnostics h2 { font-size: 26px; line-height: 1.15; margin-bottom: 6px; }\n.form h3 { font-size: 22px; margin: 6px 0 3px; }\n.viewer-label { font-size: 21px; }\n.app { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); grid-template-areas: 'centre diag'; }\n.centre { grid-template-rows: auto minmax(275px, 1fr); }\n.form .row:not(:has(select option[value=\"drop\"])):not(:has(select option[value=\"removed_zones\"])),\n.form > div > .inline, .form .hint, .form h3 { display: none; }\n.form .row { grid-template-columns: 167px minmax(0, 1fr); gap: 6px; padding: 3px 0; }\n.form .row > label, .form .row select { font-size: 21px; }\n.form .row select { width: 100%; padding: 3px 5px; font: 400 21px/1.18 'Arial Narrow', Arial, sans-serif; }\n.diagnostics { padding: 13px 12px 10px; }\n.diagnostics ul { gap: 5px; }\n.diagnostics li { padding: 6px 8px; }\n.diagnostics li:first-child { display: none; }\n.diagnostics .title, .diagnostics .detail { font-size: 21px; line-height: 1.12; }\n",
-        "embedded_viewer_css": ".shell { background: #fff !important; }\n.viewport { left: 214px !important; }\n.panel { top: 12px !important; left: 8px !important; bottom: auto !important; width: 215px !important;\n  box-shadow: none !important; border-radius: 6px !important; }\n.panel header, .panel .status, .panel .body > section:not(:has(.layer)),\n.panel .body > section:has(.layer) > label, .layer input[type=\"range\"], .layer .muted, .right { display: none !important; }\n.panel .body { padding: 7px 10px !important; }\n.panel .body > section { padding: 0 !important; border: 0 !important; }\n.panel h2, .panel .layer .check { font-size: 20px !important; line-height: 1.16; }\n.panel input[type=\"checkbox\"] { accent-color: #1f6feb; }\n",
-        "visible_layers": [
-          "layer:excavation",
-          "layer:exterior"
+        "lutRange": [
+          4.737524068332277e-05,
+          0.004965157615691021
         ],
-        "viewer_state": {
-          "field": "TotalDisplacement",
-          "range": "p5_p95",
-          "section": "0",
-          "cmap": "viridis",
-          "parallel": "1",
-          "cam": "-80.899,-87.58,180.901,0.112,-6.569,-25.781,0.921597,-0.303148,0.242405,38",
-          "layers": "exterior:1:0.35,excavation:1:1"
-        },
-        "diagnostics": [
-          {
-            "level": "ok",
-            "title": "Stress component order",
-            "detail": "Read from the file: XX, YY, ZZ, XY, XZ, YZ"
-          },
-          {
-            "level": "ok",
-            "title": "Stress unit",
-            "detail": "MPa: implied unit weight 14.6 kN/m³"
-          },
-          {
-            "level": "info",
-            "title": "Excavation surface (EXC12_dis)",
-            "detail": "17,004 faces, 6,418 m²"
-          },
-          {
-            "level": "ok",
-            "title": "Mesh interfaces (EXC12_dis)",
-            "detail": "85,215 faces with rock on both sides left out of the excavation surface"
-          },
-          {
-            "level": "ok",
-            "title": "Internal faces (EXC12_dis)",
-            "detail": "89,901 block-contact faces removed from the exterior"
-          }
-        ]
+        "points": 22439,
+        "cells": 20293
       },
-      "b": {
-        "print_width_cm": 16.5,
-        "print_height_cm": 8.102678571428571,
-        "capture_px": [
-          4480,
-          2312
+      "layer:excavation": {
+        "scalarVisibility": true,
+        "array": "TotalDisplacement",
+        "association": "point",
+        "arrayFound": true,
+        "dataRange": [
+          3.094708517892286e-05,
+          0.006506145000457764
         ],
-        "css_viewport_width_px": 1120,
-        "device_scale_factor": 4,
-        "effective_dpi": 689.6484848484849,
-        "smallest_meaningful_glyph_height_pt": 6.2640607424071995,
-        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
-        "ink_height_css_px_by_role": {
-          "build_result": 15,
-          "step": 22,
-          "validation_pass": 21,
-          "viewer_status": 22
-        },
-        "injected_css": ".top, .steps, .log, .nav-buttons { display: none !important; }\n.app { grid-template-rows: auto; height: auto; background: #fff; }\n.form, .diagnostics { overflow: visible; }\n.form { padding: 13px 16px 11px; }\n.form h2, .diagnostics h2 { font-size: 26px; line-height: 1.15; margin-bottom: 6px; }\n.form h3 { font-size: 22px; margin: 6px 0 3px; }\n.viewer-label { font-size: 21px; }\n.app { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'centre'; }\n.centre { grid-template-rows: auto 240px; }\n.diagnostics, .form > div > p.muted, .form > div > .inline { display: none; }\n.form .hint, .form table.data, .form .notice { font-size: 20px; line-height: 1.12; }\n.form table.data td, .form table.data th { padding: 3px 8px; }\n.form table.data:nth-of-type(2) tbody tr:not(:nth-child(3)) { display: none; }\n",
-        "embedded_viewer_css": ".panel, .right { display: none !important; }",
-        "cropped_bottom_px": 112,
-        "build_string": "Built with Sim2Web 0.2.0 in 58.9 s on Windows-11-10.0.26300-SP0.",
-        "visible_layers": [
-          "layer:excavation",
-          "layer:exterior"
+        "lutRange": [
+          4.737524068332277e-05,
+          0.004965157615691021
         ],
-        "viewer_state": {
-          "field": "TotalDisplacement",
-          "range": "p5_p95",
-          "section": "0",
-          "cmap": "viridis",
-          "parallel": "1",
-          "cam": "-80.899,-87.58,162.181,0.112,-6.569,-44.501,0.921597,-0.303148,0.242405,124",
-          "layers": "exterior:1:0.35,excavation:1:1"
-        },
-        "diagnostics": []
+        "points": 16878,
+        "cells": 17004
       }
     },
-    "case": "D · FLAC3D excavation pit",
-    "software_version": "0.2.0",
-    "png": {
-      "bytes": 1948559,
-      "sha256": "a808d6ab4c5721ad054aab2637bcbd74cf881bd8793d13d66b81d78058834bc2",
-      "dpi": 600,
-      "width_cm": 16.5
+    "viewerBounds": {
+      "x": 230,
+      "y": 408.5,
+      "width": 750,
+      "height": 360.5
     },
-    "verification": {
-      "passed": true,
-      "checked_files": 114,
-      "exact_mismatches": 0,
-      "jobs_seconds": {
-        "first_preview": 15.610072374343872,
-        "build": 58.96879458427429,
-        "figure_preview": 14.556540727615356,
-        "validate": 21.567681074142456
-      }
+    "collapsed": false,
+    "camera": [
+      -78.18930277890601,
+      7.236337334202212,
+      262.7777478867205,
+      -0.65,
+      11.3,
+      -27,
+      0,
+      0,
+      1,
+      36
+    ],
+    "elevation_deg": 75,
+    "azimuth_deg": 183,
+    "preview_job": {
+      "id": "c101a232de64",
+      "seconds": 15.785084962844849
     }
-  }
+  },
+  "diagnostics": [
+    {
+      "level": "info",
+      "title": "Model",
+      "detail": "548,417 cells, 332,510 points"
+    },
+    {
+      "level": "ok",
+      "title": "Stress component order",
+      "detail": "Read from the file: XX, YY, ZZ, XY, XZ, YZ"
+    },
+    {
+      "level": "ok",
+      "title": "Stress unit",
+      "detail": "MPa: implied unit weight 14.6 kN/m³"
+    },
+    {
+      "level": "info",
+      "title": "Excavation surface (EXC12_dis)",
+      "detail": "17,004 faces, 6,418 m²"
+    },
+    {
+      "level": "ok",
+      "title": "Mesh interfaces (EXC12_dis)",
+      "detail": "85,215 faces with rock on both sides left out of the excavation surface"
+    },
+    {
+      "level": "ok",
+      "title": "Internal faces (EXC12_dis)",
+      "detail": "89,901 block-contact faces removed from the exterior"
+    },
+    {
+      "level": "ok",
+      "title": "Validation",
+      "detail": "Every published value matches the source model"
+    }
+  ],
+  "validation_passed": true
 }
