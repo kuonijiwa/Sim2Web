@@ -1,0 +1,4539 @@
+{
+  "site": "C:\\swv_r4_20261121\\model_runs\\C\\site",
+  "gzip": false,
+  "host": {
+    "platform": "win32 10.0.26300",
+    "cpus": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+    "cores": 12,
+    "memoryGiB": 15.8
+  },
+  "runs": [
+    {
+      "run": 1,
+      "browser": "160.0.8157.0",
+      "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "navigationToFirstImageMs": 2894.100000023842,
+      "indexToFirstImageMs": 1936.1000000238419,
+      "wallClockMs": 2962,
+      "startupBytes": 3619133,
+      "startupFiles": [
+        {
+          "file": "model_cache/slopemodel/sections/slice_x_840.vtp",
+          "bytes": 998716,
+          "fetchMs": 471.9,
+          "parseMs": 323.6
+        },
+        {
+          "file": "model_cache/slopemodel/exterior_surface.vtp",
+          "bytes": 2620417,
+          "fetchMs": 800.1,
+          "parseMs": 366.4
+        }
+      ],
+      "serverBytesAtStartup": 5174047,
+      "heapAfterStartupMiB": 9.5,
+      "sectionSwitches": [
+        {
+          "axis": "x",
+          "value": 570,
+          "ms": 121,
+          "cached": false,
+          "bytes": 472264
+        },
+        {
+          "axis": "x",
+          "value": 630,
+          "ms": 120.6,
+          "cached": false,
+          "bytes": 609924
+        },
+        {
+          "axis": "x",
+          "value": 690,
+          "ms": 119.5,
+          "cached": false,
+          "bytes": 741756
+        },
+        {
+          "axis": "x",
+          "value": 750,
+          "ms": 128.8,
+          "cached": false,
+          "bytes": 997512
+        },
+        {
+          "axis": "x",
+          "value": 810,
+          "ms": 146.2,
+          "cached": false,
+          "bytes": 1188816
+        },
+        {
+          "axis": "x",
+          "value": 870,
+          "ms": 123.9,
+          "cached": false,
+          "bytes": 866360
+        },
+        {
+          "axis": "x",
+          "value": 930,
+          "ms": 112.6,
+          "cached": false,
+          "bytes": 771148
+        },
+        {
+          "axis": "x",
+          "value": 990,
+          "ms": 132.6,
+          "cached": false,
+          "bytes": 697252
+        },
+        {
+          "axis": "x",
+          "value": 1050,
+          "ms": 128.1,
+          "cached": false,
+          "bytes": 608432
+        },
+        {
+          "axis": "x",
+          "value": 1110,
+          "ms": 77.6,
+          "cached": false,
+          "bytes": 506604
+        },
+        {
+          "axis": "y",
+          "value": 249.99759827198326,
+          "ms": 197.8,
+          "cached": false,
+          "bytes": 1260604
+        },
+        {
+          "axis": "y",
+          "value": 279.99759827198335,
+          "ms": 189.9,
+          "cached": false,
+          "bytes": 1360808
+        },
+        {
+          "axis": "y",
+          "value": 309.9975982719834,
+          "ms": 208.7,
+          "cached": false,
+          "bytes": 1571716
+        },
+        {
+          "axis": "y",
+          "value": 329.9975982719835,
+          "ms": 227,
+          "cached": false,
+          "bytes": 1796304
+        },
+        {
+          "axis": "y",
+          "value": 359.9975982719836,
+          "ms": 238.3,
+          "cached": false,
+          "bytes": 2088088
+        },
+        {
+          "axis": "y",
+          "value": 389.99759827198363,
+          "ms": 339.7,
+          "cached": false,
+          "bytes": 2160236
+        },
+        {
+          "axis": "y",
+          "value": 419.99759827198375,
+          "ms": 293.8,
+          "cached": false,
+          "bytes": 1988444
+        },
+        {
+          "axis": "y",
+          "value": 439.9975982719838,
+          "ms": 291,
+          "cached": false,
+          "bytes": 1701728
+        },
+        {
+          "axis": "y",
+          "value": 469.99759827198386,
+          "ms": 195,
+          "cached": false,
+          "bytes": 1426148
+        },
+        {
+          "axis": "y",
+          "value": 499.997598271984,
+          "ms": 177.5,
+          "cached": false,
+          "bytes": 1193384
+        },
+        {
+          "axis": "z",
+          "value": 1760,
+          "ms": 63.7,
+          "cached": false,
+          "bytes": 322712
+        },
+        {
+          "axis": "z",
+          "value": 1840,
+          "ms": 72.2,
+          "cached": false,
+          "bytes": 600648
+        },
+        {
+          "axis": "z",
+          "value": 1910,
+          "ms": 206.8,
+          "cached": false,
+          "bytes": 1270400
+        },
+        {
+          "axis": "z",
+          "value": 1990,
+          "ms": 179.2,
+          "cached": false,
+          "bytes": 1042568
+        },
+        {
+          "axis": "z",
+          "value": 2070,
+          "ms": 146.2,
+          "cached": false,
+          "bytes": 816888
+        },
+        {
+          "axis": "z",
+          "value": 2140,
+          "ms": 129.1,
+          "cached": false,
+          "bytes": 609852
+        },
+        {
+          "axis": "z",
+          "value": 2220,
+          "ms": 110.3,
+          "cached": false,
+          "bytes": 428628
+        },
+        {
+          "axis": "z",
+          "value": 2300,
+          "ms": 64.7,
+          "cached": false,
+          "bytes": 351820
+        },
+        {
+          "axis": "z",
+          "value": 2370,
+          "ms": 67.7,
+          "cached": false,
+          "bytes": 142904
+        },
+        {
+          "axis": "z",
+          "value": 2450,
+          "ms": 30.2,
+          "cached": false,
+          "bytes": 10812
+        }
+      ],
+      "verification": [
+        {
+          "axis": "x",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00011878273653564975
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5990,
+          "cells": 5478,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 6,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0031037284061312675
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8005,
+          "cells": 6709,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 6,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 12,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.007167622912675142
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 9844,
+          "cells": 7735,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 12,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 18,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.001147079630754888
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 13260,
+          "cells": 10418,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 18,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 24,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002226299373432994
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 15683,
+          "cells": 12588,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 24,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 30,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.009345855563879013
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 12105,
+          "cells": 8639,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 30,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 36,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0020802211947739124
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 10940,
+          "cells": 7738,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 36,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 42,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0014568835031241179
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 10140,
+          "cells": 6911,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 42,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 48,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002789464546367526
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8833,
+          "cells": 6002,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 48,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 54,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0007840899052098393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8093,
+          "cells": 5189,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 54,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.010029585100710392
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 17960,
+          "cells": 12846,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 3,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004723613150417805
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 18926,
+          "cells": 13683,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 3,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 6,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00666408333927393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 21334,
+          "cells": 15895,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 6,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 8,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.009967650286853313
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 24139,
+          "cells": 18397,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 8,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 11,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.012832621112465858
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 27638,
+          "cells": 21471,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 11,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 14,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.011110499501228333
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 28884,
+          "cells": 22279,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 14,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 17,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.005375667009502649
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 26486,
+          "cells": 20723,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 17,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 19,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.003502019215375185
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 23389,
+          "cells": 17139,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 19,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 22,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0010313031962141395
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 19997,
+          "cells": 14178,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 22,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 25,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0007425567018799484
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 18900,
+          "cells": 13138,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 25,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.000030037299438845366
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5529,
+          "cells": 3456,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 8,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00036101986188441515
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8811,
+          "cells": 6079,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 8,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 15,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0018997243605554104
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 16608,
+          "cells": 13648,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 15,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 23,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004536280874162912
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 14031,
+          "cells": 10817,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 23,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 31,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.001233571907505393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 11307,
+          "cells": 8233,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 31,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 38,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004167736973613501
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8786,
+          "cells": 6056,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 38,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 46,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004436428193002939
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5822,
+          "cells": 4377,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 46,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 54,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00114316341932863
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 4764,
+          "cells": 3652,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 54,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 61,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002753392094746232
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 1884,
+          "cells": 1484,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 61,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 69,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00002216459506598767
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 57,
+          "cells": 42,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 69,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        }
+      ],
+      "errors": [],
+      "heapAfterSweepMiB": 12.1,
+      "frameRate": {
+        "frames": 120,
+        "seconds": 1.9852000000476837,
+        "fps": 60.447310093248866
+      },
+      "sectionSwitchMedianMs": 132.6,
+      "sectionSwitchMaxMs": 339.7,
+      "verificationPassed": true
+    },
+    {
+      "run": 2,
+      "browser": "160.0.8157.0",
+      "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "navigationToFirstImageMs": 2661.600000023842,
+      "indexToFirstImageMs": 1823.7000000476837,
+      "wallClockMs": 2719,
+      "startupBytes": 3619133,
+      "startupFiles": [
+        {
+          "file": "model_cache/slopemodel/sections/slice_x_840.vtp",
+          "bytes": 998716,
+          "fetchMs": 144.9,
+          "parseMs": 290.9
+        },
+        {
+          "file": "model_cache/slopemodel/exterior_surface.vtp",
+          "bytes": 2620417,
+          "fetchMs": 441.1,
+          "parseMs": 333.2
+        }
+      ],
+      "serverBytesAtStartup": 5174047,
+      "heapAfterStartupMiB": 10.1,
+      "sectionSwitches": [
+        {
+          "axis": "x",
+          "value": 570,
+          "ms": 135.2,
+          "cached": false,
+          "bytes": 472264
+        },
+        {
+          "axis": "x",
+          "value": 630,
+          "ms": 146.3,
+          "cached": false,
+          "bytes": 609924
+        },
+        {
+          "axis": "x",
+          "value": 690,
+          "ms": 169.6,
+          "cached": false,
+          "bytes": 741756
+        },
+        {
+          "axis": "x",
+          "value": 750,
+          "ms": 187,
+          "cached": false,
+          "bytes": 997512
+        },
+        {
+          "axis": "x",
+          "value": 810,
+          "ms": 219.3,
+          "cached": false,
+          "bytes": 1188816
+        },
+        {
+          "axis": "x",
+          "value": 870,
+          "ms": 150.1,
+          "cached": false,
+          "bytes": 866360
+        },
+        {
+          "axis": "x",
+          "value": 930,
+          "ms": 164,
+          "cached": false,
+          "bytes": 771148
+        },
+        {
+          "axis": "x",
+          "value": 990,
+          "ms": 138.4,
+          "cached": false,
+          "bytes": 697252
+        },
+        {
+          "axis": "x",
+          "value": 1050,
+          "ms": 188.7,
+          "cached": false,
+          "bytes": 608432
+        },
+        {
+          "axis": "x",
+          "value": 1110,
+          "ms": 107.6,
+          "cached": false,
+          "bytes": 506604
+        },
+        {
+          "axis": "y",
+          "value": 249.99759827198326,
+          "ms": 165.4,
+          "cached": false,
+          "bytes": 1260604
+        },
+        {
+          "axis": "y",
+          "value": 279.99759827198335,
+          "ms": 269.2,
+          "cached": false,
+          "bytes": 1360808
+        },
+        {
+          "axis": "y",
+          "value": 309.9975982719834,
+          "ms": 299.4,
+          "cached": false,
+          "bytes": 1571716
+        },
+        {
+          "axis": "y",
+          "value": 329.9975982719835,
+          "ms": 318.1,
+          "cached": false,
+          "bytes": 1796304
+        },
+        {
+          "axis": "y",
+          "value": 359.9975982719836,
+          "ms": 363.4,
+          "cached": false,
+          "bytes": 2088088
+        },
+        {
+          "axis": "y",
+          "value": 389.99759827198363,
+          "ms": 436.9,
+          "cached": false,
+          "bytes": 2160236
+        },
+        {
+          "axis": "y",
+          "value": 419.99759827198375,
+          "ms": 498.9,
+          "cached": false,
+          "bytes": 1988444
+        },
+        {
+          "axis": "y",
+          "value": 439.9975982719838,
+          "ms": 262.6,
+          "cached": false,
+          "bytes": 1701728
+        },
+        {
+          "axis": "y",
+          "value": 469.99759827198386,
+          "ms": 222,
+          "cached": false,
+          "bytes": 1426148
+        },
+        {
+          "axis": "y",
+          "value": 499.997598271984,
+          "ms": 202.9,
+          "cached": false,
+          "bytes": 1193384
+        },
+        {
+          "axis": "z",
+          "value": 1760,
+          "ms": 82.7,
+          "cached": false,
+          "bytes": 322712
+        },
+        {
+          "axis": "z",
+          "value": 1840,
+          "ms": 89.9,
+          "cached": false,
+          "bytes": 600648
+        },
+        {
+          "axis": "z",
+          "value": 1910,
+          "ms": 233.8,
+          "cached": false,
+          "bytes": 1270400
+        },
+        {
+          "axis": "z",
+          "value": 1990,
+          "ms": 164.6,
+          "cached": false,
+          "bytes": 1042568
+        },
+        {
+          "axis": "z",
+          "value": 2070,
+          "ms": 128.6,
+          "cached": false,
+          "bytes": 816888
+        },
+        {
+          "axis": "z",
+          "value": 2140,
+          "ms": 87.9,
+          "cached": false,
+          "bytes": 609852
+        },
+        {
+          "axis": "z",
+          "value": 2220,
+          "ms": 129,
+          "cached": false,
+          "bytes": 428628
+        },
+        {
+          "axis": "z",
+          "value": 2300,
+          "ms": 67.7,
+          "cached": false,
+          "bytes": 351820
+        },
+        {
+          "axis": "z",
+          "value": 2370,
+          "ms": 49.5,
+          "cached": false,
+          "bytes": 142904
+        },
+        {
+          "axis": "z",
+          "value": 2450,
+          "ms": 36.8,
+          "cached": false,
+          "bytes": 10812
+        }
+      ],
+      "verification": [
+        {
+          "axis": "x",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00011878273653564975
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5990,
+          "cells": 5478,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 6,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0031037284061312675
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8005,
+          "cells": 6709,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 6,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 12,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.007167622912675142
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 9844,
+          "cells": 7735,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 12,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 18,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.001147079630754888
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 13260,
+          "cells": 10418,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 18,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 24,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002226299373432994
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 15683,
+          "cells": 12588,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 24,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 30,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.009345855563879013
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 12105,
+          "cells": 8639,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 30,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 36,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0020802211947739124
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 10940,
+          "cells": 7738,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 36,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 42,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0014568835031241179
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 10140,
+          "cells": 6911,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 42,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 48,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002789464546367526
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8833,
+          "cells": 6002,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 48,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 54,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0007840899052098393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8093,
+          "cells": 5189,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 54,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.010029585100710392
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 17960,
+          "cells": 12846,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 3,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004723613150417805
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 18926,
+          "cells": 13683,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 3,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 6,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00666408333927393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 21334,
+          "cells": 15895,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 6,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 8,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.009967650286853313
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 24139,
+          "cells": 18397,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 8,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 11,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.012832621112465858
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 27638,
+          "cells": 21471,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 11,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 14,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.011110499501228333
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 28884,
+          "cells": 22279,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 14,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 17,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.005375667009502649
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 26486,
+          "cells": 20723,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 17,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 19,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.003502019215375185
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 23389,
+          "cells": 17139,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 19,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 22,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0010313031962141395
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 19997,
+          "cells": 14178,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 22,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 25,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0007425567018799484
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 18900,
+          "cells": 13138,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 25,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.000030037299438845366
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5529,
+          "cells": 3456,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 8,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00036101986188441515
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8811,
+          "cells": 6079,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 8,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 15,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0018997243605554104
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 16608,
+          "cells": 13648,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 15,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 23,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004536280874162912
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 14031,
+          "cells": 10817,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 23,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 31,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.001233571907505393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 11307,
+          "cells": 8233,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 31,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 38,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004167736973613501
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8786,
+          "cells": 6056,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 38,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 46,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004436428193002939
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5822,
+          "cells": 4377,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 46,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 54,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00114316341932863
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 4764,
+          "cells": 3652,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 54,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 61,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002753392094746232
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 1884,
+          "cells": 1484,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 61,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 69,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00002216459506598767
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 57,
+          "cells": 42,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 69,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        }
+      ],
+      "errors": [],
+      "heapAfterSweepMiB": 12.1,
+      "frameRate": {
+        "frames": 120,
+        "seconds": 1.9921000000238418,
+        "fps": 60.23793986173577
+      },
+      "sectionSwitchMedianMs": 165.4,
+      "sectionSwitchMaxMs": 498.9,
+      "verificationPassed": true
+    },
+    {
+      "run": 3,
+      "browser": "160.0.8157.0",
+      "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "navigationToFirstImageMs": 2242.399999976158,
+      "indexToFirstImageMs": 1654.6000000238419,
+      "wallClockMs": 2302,
+      "startupBytes": 3619133,
+      "startupFiles": [
+        {
+          "file": "model_cache/slopemodel/sections/slice_x_840.vtp",
+          "bytes": 998716,
+          "fetchMs": 109.1,
+          "parseMs": 325.1
+        },
+        {
+          "file": "model_cache/slopemodel/exterior_surface.vtp",
+          "bytes": 2620417,
+          "fetchMs": 443.9,
+          "parseMs": 239.4
+        }
+      ],
+      "serverBytesAtStartup": 5174047,
+      "heapAfterStartupMiB": 10.3,
+      "sectionSwitches": [
+        {
+          "axis": "x",
+          "value": 570,
+          "ms": 112.1,
+          "cached": false,
+          "bytes": 472264
+        },
+        {
+          "axis": "x",
+          "value": 630,
+          "ms": 143.8,
+          "cached": false,
+          "bytes": 609924
+        },
+        {
+          "axis": "x",
+          "value": 690,
+          "ms": 135.9,
+          "cached": false,
+          "bytes": 741756
+        },
+        {
+          "axis": "x",
+          "value": 750,
+          "ms": 146.6,
+          "cached": false,
+          "bytes": 997512
+        },
+        {
+          "axis": "x",
+          "value": 810,
+          "ms": 141.2,
+          "cached": false,
+          "bytes": 1188816
+        },
+        {
+          "axis": "x",
+          "value": 870,
+          "ms": 107.1,
+          "cached": false,
+          "bytes": 866360
+        },
+        {
+          "axis": "x",
+          "value": 930,
+          "ms": 112.2,
+          "cached": false,
+          "bytes": 771148
+        },
+        {
+          "axis": "x",
+          "value": 990,
+          "ms": 105.6,
+          "cached": false,
+          "bytes": 697252
+        },
+        {
+          "axis": "x",
+          "value": 1050,
+          "ms": 118,
+          "cached": false,
+          "bytes": 608432
+        },
+        {
+          "axis": "x",
+          "value": 1110,
+          "ms": 87.7,
+          "cached": false,
+          "bytes": 506604
+        },
+        {
+          "axis": "y",
+          "value": 249.99759827198326,
+          "ms": 151,
+          "cached": false,
+          "bytes": 1260604
+        },
+        {
+          "axis": "y",
+          "value": 279.99759827198335,
+          "ms": 172.5,
+          "cached": false,
+          "bytes": 1360808
+        },
+        {
+          "axis": "y",
+          "value": 309.9975982719834,
+          "ms": 157.5,
+          "cached": false,
+          "bytes": 1571716
+        },
+        {
+          "axis": "y",
+          "value": 329.9975982719835,
+          "ms": 167.6,
+          "cached": false,
+          "bytes": 1796304
+        },
+        {
+          "axis": "y",
+          "value": 359.9975982719836,
+          "ms": 198.6,
+          "cached": false,
+          "bytes": 2088088
+        },
+        {
+          "axis": "y",
+          "value": 389.99759827198363,
+          "ms": 221.5,
+          "cached": false,
+          "bytes": 2160236
+        },
+        {
+          "axis": "y",
+          "value": 419.99759827198375,
+          "ms": 196.8,
+          "cached": false,
+          "bytes": 1988444
+        },
+        {
+          "axis": "y",
+          "value": 439.9975982719838,
+          "ms": 267.9,
+          "cached": false,
+          "bytes": 1701728
+        },
+        {
+          "axis": "y",
+          "value": 469.99759827198386,
+          "ms": 213.6,
+          "cached": false,
+          "bytes": 1426148
+        },
+        {
+          "axis": "y",
+          "value": 499.997598271984,
+          "ms": 157,
+          "cached": false,
+          "bytes": 1193384
+        },
+        {
+          "axis": "z",
+          "value": 1760,
+          "ms": 70.8,
+          "cached": false,
+          "bytes": 322712
+        },
+        {
+          "axis": "z",
+          "value": 1840,
+          "ms": 74.8,
+          "cached": false,
+          "bytes": 600648
+        },
+        {
+          "axis": "z",
+          "value": 1910,
+          "ms": 123,
+          "cached": false,
+          "bytes": 1270400
+        },
+        {
+          "axis": "z",
+          "value": 1990,
+          "ms": 106.9,
+          "cached": false,
+          "bytes": 1042568
+        },
+        {
+          "axis": "z",
+          "value": 2070,
+          "ms": 86.6,
+          "cached": false,
+          "bytes": 816888
+        },
+        {
+          "axis": "z",
+          "value": 2140,
+          "ms": 71.5,
+          "cached": false,
+          "bytes": 609852
+        },
+        {
+          "axis": "z",
+          "value": 2220,
+          "ms": 72.1,
+          "cached": false,
+          "bytes": 428628
+        },
+        {
+          "axis": "z",
+          "value": 2300,
+          "ms": 48.5,
+          "cached": false,
+          "bytes": 351820
+        },
+        {
+          "axis": "z",
+          "value": 2370,
+          "ms": 35.4,
+          "cached": false,
+          "bytes": 142904
+        },
+        {
+          "axis": "z",
+          "value": 2450,
+          "ms": 36.2,
+          "cached": false,
+          "bytes": 10812
+        }
+      ],
+      "verification": [
+        {
+          "axis": "x",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00011878273653564975
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5990,
+          "cells": 5478,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 6,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0031037284061312675
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8005,
+          "cells": 6709,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 6,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 12,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.007167622912675142
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 9844,
+          "cells": 7735,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 12,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 18,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.001147079630754888
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 13260,
+          "cells": 10418,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 18,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 24,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002226299373432994
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 15683,
+          "cells": 12588,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 24,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 30,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.009345855563879013
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 12105,
+          "cells": 8639,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 30,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 36,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0020802211947739124
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 10940,
+          "cells": 7738,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 36,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 42,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0014568835031241179
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 10140,
+          "cells": 6911,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 42,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 48,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002789464546367526
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8833,
+          "cells": 6002,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 48,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 54,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0007840899052098393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8093,
+          "cells": 5189,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "x",
+          "index": 54,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.010029585100710392
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 17960,
+          "cells": 12846,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 3,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004723613150417805
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 18926,
+          "cells": 13683,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 3,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 6,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00666408333927393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 21334,
+          "cells": 15895,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 6,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 8,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.009967650286853313
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 24139,
+          "cells": 18397,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 8,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 11,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.012832621112465858
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 27638,
+          "cells": 21471,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 11,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 14,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.011110499501228333
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 28884,
+          "cells": 22279,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 14,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 17,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.005375667009502649
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 26486,
+          "cells": 20723,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 17,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 19,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.003502019215375185
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 23389,
+          "cells": 17139,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 19,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 22,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0010313031962141395
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 19997,
+          "cells": 14178,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 22,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 25,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0007425567018799484
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 18900,
+          "cells": 13138,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "y",
+          "index": 25,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 0,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.000030037299438845366
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5529,
+          "cells": 3456,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 0,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 8,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00036101986188441515
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8811,
+          "cells": 6079,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 8,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 15,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.0018997243605554104
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 16608,
+          "cells": 13648,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 15,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 23,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004536280874162912
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 14031,
+          "cells": 10817,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 23,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 31,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.001233571907505393
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 11307,
+          "cells": 8233,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 31,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 38,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004167736973613501
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 8786,
+          "cells": 6056,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 38,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 46,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.004436428193002939
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 5822,
+          "cells": 4377,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 46,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 54,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00114316341932863
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 4764,
+          "cells": 3652,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 54,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 61,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.002753392094746232
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 1884,
+          "cells": 1484,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 61,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 69,
+          "actor": "section",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.00002216459506598767
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 57,
+          "cells": 42,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        },
+        {
+          "axis": "z",
+          "index": 69,
+          "actor": "layer:exterior",
+          "scalarVisibility": true,
+          "array": "TotalDisplacement",
+          "association": "point",
+          "arrayFound": true,
+          "dataRange": [
+            0,
+            0.014239802025258541
+          ],
+          "lutRange": [
+            0,
+            0.014239802011018739
+          ],
+          "points": 35507,
+          "cells": 21293,
+          "matchesIndex": true,
+          "dataWithinIndexedRange": true
+        }
+      ],
+      "errors": [],
+      "heapAfterSweepMiB": 13.2,
+      "frameRate": {
+        "frames": 120,
+        "seconds": 1.982600000023842,
+        "fps": 60.52658125620747
+      },
+      "sectionSwitchMedianMs": 123,
+      "sectionSwitchMaxMs": 267.9,
+      "verificationPassed": true
+    }
+  ]
+}
