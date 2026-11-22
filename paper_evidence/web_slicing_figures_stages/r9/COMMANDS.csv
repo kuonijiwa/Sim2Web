@@ -1,0 +1,57 @@
+﻿id,command,cwd,started_at,exit_code,duration_seconds
+r9_02a_authorship_before,git log -2 --format=fuller; git status --porcelain=v1 -uno; git rev-parse main^{tree},G:\成果\papers\02\SimWebView,2026-11-22T20:18:24.3388458+09:00,0,0.239
+r9_02b_amend,"git -c user.name=""Yongjin Cheng"" -c user.email=yjcheng18@outlook.com commit --amend --only --reset-author -m ""Release Sim2Web 0.2.0"" -m ""Co-authored-by: Claude <noreply@anthropic.com>""",G:\成果\papers\02\SimWebView,2026-11-22T20:18:24.6574025+09:00,0,1.412
+r9_02c_authorship_after,git diff --exit-code 3fa4761 main; git log -1 --format=fuller main,G:\成果\papers\02\SimWebView,2026-11-22T20:18:26.0876327+09:00,0,0.14
+r9_02d_remove_ai_authors,"git -c user.name=""Yongjin Cheng"" -c user.email=yjcheng18@outlook.com commit --amend --only --reset-author -m ""Release Sim2Web 0.2.0""; git diff --exit-code 3fa4761 main; git log -2 --format=fuller",G:\成果\papers\02\SimWebView,2026-11-22T20:23:56.1838707+09:00,0,1.247
+r9_02e_force_with_lease,git push --force-with-lease=refs/heads/main:3fa47611565f34a8f53f85de25b918b8107d65af origin main:main,G:\成果\papers\02\SimWebView,2026-11-22T20:23:57.4992107+09:00,0,17.318
+r9_02f_verify_remote_authorship,"gh api repos/kuonijiwa/Sim2Web/commits/main; verify author, committer, and local HEAD",G:\成果\papers\02\SimWebView,2026-11-22T20:24:14.8319577+09:00,0,1.617
+r9_03a_dependency_audit,git ls-files legacy paper_evidence/revision_v2 paper_evidence/revision_v3 paper_evidence/screenshots; git grep -n -I -E dependency paths outside old folders,G:\成果\papers\02\SimWebView,2026-11-22T20:24:46.4015552+09:00,0,3.071
+r9_03b_prune,"git mv retained SHA-256 fixtures into tests/data/v01_hashes; update regression path, README Compatibility, changelog and figure provenance; git rm -r legacy paper_evidence/revision_v2 paper_evidence/revision_v3 paper_evidence/screenshots",G:\成果\papers\02\SimWebView,2026-11-22T20:25:13.1977268+09:00,0,0.825
+r9_03c_verify_fixtures,git diff --check; compare each moved fixture with the previously published Git blob,G:\成果\papers\02\SimWebView,2026-11-22T20:25:14.0777787+09:00,0,0.4
+r9_04a_move_evidence,git mv paper_evidence/revision_v4 paper_evidence/comparison_paraview_glance; git mv paper_evidence/revision_v5 paper_evidence/web_slicing_figures_stages; update active paths and retain original measurement records,G:\成果\papers\02\SimWebView,2026-11-22T20:26:22.2547224+09:00,1,0.506
+r9_04b_retain_raw_measurements,Read pre-cleanup browser A/B/C JSON from commit 26966d0; verify 630 check counters and archive original timing records,G:\成果\papers\02\SimWebView,2026-11-22T20:26:36.3473549+09:00,0,0.464
+r9_04c_create_index,Write paper_evidence/README.md; verify each local index target exists; review active references to the renamed directories,G:\成果\papers\02\SimWebView,2026-11-22T20:27:14.9871717+09:00,0,0.292
+r9_05a_examples_and_citation,Update README example inventory and CITATION.cff; add exact Case G/H reproduction configurations and commands,G:\成果\papers\02\SimWebView,2026-11-22T20:28:33.5370128+09:00,0,0.245
+r9_05b_abaqus_export,F:/SIMULIA/EstProducts/2020/win_b64/code/bin/ABQLauncher.exe python abaqus_odb_to_vtu.py crankshaft_TCD_nodal_averaged_R2020.odb crankshaft.vtu,C:\swv_r9_20261122\caseG,2026-11-22T20:28:58.7321665+09:00,0,14.631
+r9_05e_moose_download,Invoke-WebRequest -Uri https://raw.githubusercontent.com/idaholab/moose/db004415602203a8d05b7a82a114b3fccfed69fe/modules/solid_mechanics/test/tests/elastic_patch/gold/elastic_patch_out.e -OutFile elastic_patch_out.e; git hash-object elastic_patch_out.e,C:\swv_r9_20261122\caseH,2026-11-22T20:28:58.7321757+09:00,0,0.932
+r9_05f_moose_convert,sim2web convert elastic_patch_out.e moose.vtu (default last time step),C:\swv_r9_20261122\caseH,2026-11-22T20:28:59.7076980+09:00,0,1.787
+r9_05g_moose_build,sim2web build sim2web.yaml (MOOSE Case H),C:\swv_r9_20261122\caseH,2026-11-22T20:29:01.5083583+09:00,0,2.826
+r9_05h_moose_validate,sim2web validate sim2web.yaml (MOOSE Case H),C:\swv_r9_20261122\caseH,2026-11-22T20:29:04.3488567+09:00,0,1.689
+r9_05c_abaqus_build,sim2web build sim2web.yaml (Abaqus Case G),C:\swv_r9_20261122\caseG,2026-11-22T20:29:13.4061732+09:00,0,12.035
+r9_05d_abaqus_validate,sim2web validate sim2web.yaml (Abaqus Case G),C:\swv_r9_20261122\caseG,2026-11-22T20:29:25.4575047+09:00,0,4.149
+r9_06a_build_assets,npm run build,G:\成果\papers\02\SimWebView,2026-11-22T20:30:22.9643247+09:00,0,10.48
+r9_06b_figure_project,Verify Sim2Web import reports 0.2.0; create a fresh workbench project and copy the Case E VTU,G:\成果\papers\02\SimWebView,2026-11-22T20:30:33.5020180+09:00,0,0.193
+r9_06c_start_workbench,python -m sim2web gui C:/swv_r9_20261122/figure_project --port 18805 --no-browser,G:\成果\papers\02\SimWebView,2026-11-22T20:30:33.7091549+09:00,0,2.632
+r9_06d_capture,node benchmark/figures_r7/capture_workbench.mjs http://127.0.0.1:18805/workbench/ C:/swv_r9_20261122/figure_project/input/ogs_slope.vtu C:/swv_r9_20261122/figure_raw 0.2.0,G:\成果\papers\02\SimWebView,2026-11-22T20:30:36.3527985+09:00,0,11.415
+r9_06e_compose,python benchmark/figures_r7/compose_print.py C:/swv_r9_20261122/figure_raw C:/swv_r9_20261122/figure_print --figure-2-only,G:\成果\papers\02\SimWebView,2026-11-22T20:30:47.7938166+09:00,0,4.476
+r9_06f_print_check_retry,"python benchmark/figures_r7/compose_print.py C:/swv_r9_20261122/figure_raw C:/swv_r9_20261122/figure_print --figure-2-only; verify build string, crop, dimensions, dpi and size",G:\成果\papers\02\SimWebView,2026-11-22T20:31:40.9432243+09:00,0,4.412
+r9_06g_archive_figure,Store the visually inspected Figure 2 PNG and print metrics under the r9 evidence directory and link from the manuscript evidence index,G:\成果\papers\02\SimWebView,2026-11-22T20:32:14.3776234+09:00,0,0.581
+r9_07a_commit,git add scoped r9 changes; git diff --cached --check; git diff --cached --exit-code -- src viewer/src; git commit as Yongjin Cheng,G:\成果\papers\02\SimWebView,2026-11-22T20:32:14.9980618+09:00,0,1.951
+r9_07b_push,git push origin main,G:\成果\papers\02\SimWebView,2026-11-22T20:32:16.9674671+09:00,0,16.056
+r9_07c_clone,GIT_LFS_SKIP_SMUDGE=1 git clone --single-branch --branch main https://github.com/kuonijiwa/Sim2Web.git G:/成果/papers/02/Sim2Web_verify_v0.2.0_r9_20261122,G:\成果\papers\02\SimWebView,2026-11-22T20:33:25.6341384+09:00,0,7.444
+r9_07d_lfs_pull,git lfs pull; git lfs fsck --objects; verify all LFS paths and sum new local LFS object bytes,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:33:33.1213517+09:00,0,428.605
+r9_07p_billing_api,gh api users/kuonijiwa/settings/billing/usage?year=2026&month=11 (filter to Sim2Web Git LFS usage),C:\Users\yjche\Documents\ChatGPT\papers,2026-11-22T20:33:47.2511660+09:00,1,0.614
+r9_07q_preflight_zenodo,gh api repos/kuonijiwa/Sim2Web/hooks; gh release view v0.2.0 (read-only),C:\Users\yjche\Documents\ChatGPT\papers,2026-11-22T20:34:14.7717762+09:00,0,1.811
+r9_07e_venv,python -m venv C:/swv_r9_20261122/verify_venv,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:40:41.7397576+09:00,0,8.584
+r9_07f_install_editable,python -m pip install -e .,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:40:50.3278623+09:00,0,110.743
+r9_07g_npm_ci,npm ci,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:42:41.0852233+09:00,0,10.218
+r9_07h_npm_build,npm run build,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:42:51.3159782+09:00,0,8.705
+r9_07i_import,"Verify editable install path and report Python, Sim2Web, VTK, PyVista and NumPy versions",G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:43:00.0336918+09:00,0,9.154
+r9_07j_build_A,sim2web build examples/flac3d_cavern_iv2/sim2web.yaml --set output.dir=C:/swv_r9_20261122/fresh_builds/flac3d_cavern_iv2,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:43:09.2083731+09:00,1,12.946
+r9_07r_vtk_compatibility,git diff --check; git add pyproject.toml requirements.txt; git commit as Yongjin Cheng,G:\成果\papers\02\SimWebView,2026-11-22T20:44:19.8420785+09:00,0,1.817
+r9_07s_push_vtk_compatibility,git push origin main,G:\成果\papers\02\SimWebView,2026-11-22T20:44:21.7138921+09:00,0,7.863
+r9_07t_sync_compatibility,git pull --ff-only origin main; git lfs pull; git diff --name-only original-clone..HEAD,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:45:26.4859835+09:00,0,3.374
+r9_07u_new_venv,python -m venv C:/swv_r9_20261122/verify_vtk95_venv,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:45:29.8935286+09:00,0,7.146
+r9_07va_editable,python -m pip install -e .,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:45:37.0443277+09:00,0,67.407
+r9_07vb_npm_ci,npm ci,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:46:44.4653535+09:00,0,7.512
+r9_07vc_npm_build,npm run build,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:46:51.9925285+09:00,0,8.295
+r9_07vd_import,Verify import from the fresh checkout and print runtime versions,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:47:00.2972325+09:00,0,8.544
+r9_07w_build_A,sim2web build examples/flac3d_cavern_iv2/sim2web.yaml --set output.dir=C:/swv_r9_20261122/fresh_builds_vtk95/flac3d_cavern_iv2,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:47:08.8593095+09:00,0,76.869
+r9_07x_validate_A,sim2web validate examples/flac3d_cavern_iv2/sim2web.yaml --set output.dir=C:/swv_r9_20261122/fresh_builds_vtk95/flac3d_cavern_iv2,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:48:25.7389237+09:00,0,57.216
+r9_07w_build_stages,sim2web build examples/flac3d_cavern_stages/sim2web.yaml --set output.dir=C:/swv_r9_20261122/fresh_builds_vtk95/flac3d_cavern_stages,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:49:22.9634282+09:00,0,396.786
+r9_07x_validate_stages,sim2web validate examples/flac3d_cavern_stages/sim2web.yaml --set output.dir=C:/swv_r9_20261122/fresh_builds_vtk95/flac3d_cavern_stages,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T20:55:59.7721007+09:00,0,282.436
+r9_07y_install_test_extra,"python -m pip install -e .[test,convert]",G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T21:00:42.2210238+09:00,0,13.712
+r9_07z_python_tests,python -m pytest -q,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T21:00:55.9424884+09:00,0,17.137
+r9_07za_viewer_tests,npm run test:viewer,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T21:01:13.0949095+09:00,0,1.197
+r9_07zb_workbench_tests,npm run test:workbench,G:\成果\papers\02\Sim2Web_verify_v0.2.0_r9_20261122,2026-11-22T21:01:14.3012910+09:00,0,0.773
+r9_07zc_audit,"Verify every r9 gate, source diff, checked-out version and main commit metadata",G:\成果\papers\02\SimWebView,2026-11-22T21:02:08.9356563+09:00,0,0.703
