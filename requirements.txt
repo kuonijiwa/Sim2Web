@@ -3,5 +3,5 @@
 numpy==1.26.4
 scipy==1.11.4
 pyvista==0.46.3
-vtk==9.5.0
+vtk==9.5.2
 pyyaml==6.0.2

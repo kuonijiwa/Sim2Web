@@ -22,7 +22,7 @@ dependencies = [
   "numpy>=1.24",
   "scipy>=1.10",
   "pyvista>=0.43",
-  "vtk>=9.2",
+  "vtk>=9.2,<9.6",  # Region labelling uses vtkIdFilter, removed in VTK 9.6.
   "pyyaml>=6.0",
 ]
 
