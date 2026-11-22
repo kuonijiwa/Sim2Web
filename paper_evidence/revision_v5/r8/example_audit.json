@@ -1,0 +1,338 @@
+{
+  "D": {
+    "r4": {
+      "schema": "sim2web-index/2",
+      "validation_passed": true,
+      "failures": [],
+      "site_bytes": 62992601,
+      "stages": {
+        "EXC12_dis": {
+          "source_cells": 548417,
+          "layers": {
+            "exterior": {
+              "faces": 20293,
+              "bytes": 2248198
+            },
+            "excavation": {
+              "faces": 17004,
+              "bytes": 1785830
+            }
+          },
+          "sections": 112,
+          "product_bytes": 61202916,
+          "excavation": {
+            "internal_faces_removed": 85215,
+            "faces": 17004,
+            "area": 6418.370306401537,
+            "connected_regions": 1,
+            "internal_contact_faces": 89901
+          }
+        }
+      }
+    },
+    "r8": {
+      "schema": "sim2web-index/2",
+      "validation_passed": true,
+      "failures": [],
+      "site_bytes": 62992604,
+      "stages": {
+        "EXC12_dis": {
+          "source_cells": 548417,
+          "layers": {
+            "exterior": {
+              "faces": 20293,
+              "bytes": 2248198
+            },
+            "excavation": {
+              "faces": 17004,
+              "bytes": 1785830
+            }
+          },
+          "sections": 112,
+          "product_bytes": 61202916,
+          "excavation": {
+            "internal_faces_removed": 85215,
+            "faces": 17004,
+            "area": 6418.370306401537,
+            "connected_regions": 1,
+            "internal_contact_faces": 89901
+          }
+        }
+      }
+    },
+    "product_records_match": true,
+    "whole_site_delta_bytes": 3,
+    "size_changes": {
+      "model_cache/build_report.json": 3
+    }
+  },
+  "F": {
+    "r4": {
+      "schema": "sim2web-index/2",
+      "validation_passed": true,
+      "failures": [],
+      "site_bytes": 112225069,
+      "stages": {
+        "kala_final": {
+          "source_cells": 393228,
+          "layers": {
+            "exterior": {
+              "faces": 19394,
+              "bytes": 2352584
+            }
+          },
+          "sections": 150,
+          "product_bytes": 110336486,
+          "excavation": {
+            "internal_contact_faces": 673628
+          }
+        }
+      }
+    },
+    "r8": {
+      "schema": "sim2web-index/2",
+      "validation_passed": true,
+      "failures": [],
+      "site_bytes": 112225069,
+      "stages": {
+        "kala_final": {
+          "source_cells": 393228,
+          "layers": {
+            "exterior": {
+              "faces": 19394,
+              "bytes": 2352584
+            }
+          },
+          "sections": 150,
+          "product_bytes": 110336486,
+          "excavation": {
+            "internal_contact_faces": 673628
+          }
+        }
+      }
+    },
+    "product_records_match": true,
+    "whole_site_delta_bytes": 0,
+    "size_changes": {}
+  },
+  "STAGES": {
+    "schema": "sim2web-index/2",
+    "validation_passed": true,
+    "failures": [],
+    "site_bytes": 447063101,
+    "stages": {
+      "I-1": {
+        "source_cells": 1211385,
+        "layers": {
+          "excavation": {
+            "faces": 20142,
+            "bytes": 2068850
+          }
+        },
+        "sections": 133,
+        "product_bytes": 91023747,
+        "excavation": {
+          "faces": 20142,
+          "area": 14468.04729019864,
+          "connected_regions": 1
+        }
+      },
+      "I-3": {
+        "source_cells": 1211385,
+        "layers": {
+          "excavation": {
+            "faces": 26182,
+            "bytes": 2700926
+          }
+        },
+        "sections": 133,
+        "product_bytes": 90522967,
+        "excavation": {
+          "faces": 26182,
+          "area": 18840.747172659205,
+          "connected_regions": 1
+        }
+      },
+      "II-2": {
+        "source_cells": 1211385,
+        "layers": {
+          "excavation": {
+            "faces": 27837,
+            "bytes": 2881642
+          }
+        },
+        "sections": 133,
+        "product_bytes": 89010323,
+        "excavation": {
+          "faces": 27837,
+          "area": 20545.420224403486,
+          "connected_regions": 1
+        }
+      },
+      "III-3": {
+        "source_cells": 1211385,
+        "layers": {
+          "excavation": {
+            "faces": 30644,
+            "bytes": 3174262
+          }
+        },
+        "sections": 133,
+        "product_bytes": 87564271,
+        "excavation": {
+          "faces": 30644,
+          "area": 22412.211769335514,
+          "connected_regions": 1
+        }
+      },
+      "IV-2": {
+        "source_cells": 1211385,
+        "layers": {
+          "excavation": {
+            "faces": 49677,
+            "bytes": 5099246
+          }
+        },
+        "sections": 133,
+        "product_bytes": 85306723,
+        "excavation": {
+          "faces": 49677,
+          "area": 31376.719497087186,
+          "connected_regions": 1
+        }
+      }
+    }
+  },
+  "lfs": {
+    "A": {
+      "input": {
+        "files": 1,
+        "bytes": 225499841,
+        "all_materialized": true
+      },
+      "site": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "output": {
+        "files": 133,
+        "bytes": 82916294,
+        "all_materialized": true
+      },
+      "built_site_on_disk_bytes": 84751852
+    },
+    "B": {
+      "input": {
+        "files": 1,
+        "bytes": 107876873,
+        "all_materialized": true
+      },
+      "site": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "output": {
+        "files": 156,
+        "bytes": 86259534,
+        "all_materialized": true
+      },
+      "built_site_on_disk_bytes": 88177936
+    },
+    "C": {
+      "input": {
+        "files": 1,
+        "bytes": 97224531,
+        "all_materialized": true
+      },
+      "site": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "output": {
+        "files": 152,
+        "bytes": 142303273,
+        "all_materialized": true
+      },
+      "built_site_on_disk_bytes": 134143618
+    },
+    "D": {
+      "input": {
+        "files": 1,
+        "bytes": 102899853,
+        "all_materialized": true
+      },
+      "site": {
+        "files": 114,
+        "bytes": 61202916,
+        "all_materialized": true
+      },
+      "output": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "built_site_on_disk_bytes": 62992604
+    },
+    "E": {
+      "input": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "site": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "output": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "built_site_on_disk_bytes": 2919067
+    },
+    "F": {
+      "input": {
+        "files": 1,
+        "bytes": 74976421,
+        "all_materialized": true
+      },
+      "site": {
+        "files": 151,
+        "bytes": 110336486,
+        "all_materialized": true
+      },
+      "output": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "built_site_on_disk_bytes": 112225069
+    },
+    "STAGES": {
+      "input": {
+        "files": 5,
+        "bytes": 1127499214,
+        "all_materialized": true
+      },
+      "site": {
+        "files": 670,
+        "bytes": 443428031,
+        "all_materialized": true
+      },
+      "output": {
+        "files": 0,
+        "bytes": 0,
+        "all_materialized": true
+      },
+      "built_site_on_disk_bytes": 447063101
+    }
+  },
+  "lfs_unique_A_to_F_bytes": 1091496022,
+  "lfs_logical_A_to_F_bytes": 1091496022,
+  "site_v01_directories": [],
+  "site_v01_test_references": []
+}

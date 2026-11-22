@@ -1,0 +1,3397 @@
+[
+  {
+    "id": "I-1",
+    "expectedFiles": 134,
+    "measuredFiles": 134,
+    "surfaceBytes": 1974924,
+    "sectionsBytes": 86669500,
+    "records": [
+      {
+        "file": "model_cache/I-1/cavity_surface.vtp",
+        "status": 200,
+        "bytes": 1974924
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-112.vtp",
+        "status": 200,
+        "bytes": 24796
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-107.vtp",
+        "status": 200,
+        "bytes": 24784
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-102.vtp",
+        "status": 200,
+        "bytes": 28972
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-97.vtp",
+        "status": 200,
+        "bytes": 27436
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-92.vtp",
+        "status": 200,
+        "bytes": 30224
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-87.vtp",
+        "status": 200,
+        "bytes": 37932
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-82.vtp",
+        "status": 200,
+        "bytes": 60748
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-77.vtp",
+        "status": 200,
+        "bytes": 105044
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-72.vtp",
+        "status": 200,
+        "bytes": 131360
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-67.vtp",
+        "status": 200,
+        "bytes": 140628
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-62.vtp",
+        "status": 200,
+        "bytes": 138468
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-57.vtp",
+        "status": 200,
+        "bytes": 121112
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-52.vtp",
+        "status": 200,
+        "bytes": 121540
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-47.vtp",
+        "status": 200,
+        "bytes": 142768
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-42.vtp",
+        "status": 200,
+        "bytes": 144284
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-37.vtp",
+        "status": 200,
+        "bytes": 168764
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-32.vtp",
+        "status": 200,
+        "bytes": 185100
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-27.vtp",
+        "status": 200,
+        "bytes": 215256
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-22.vtp",
+        "status": 200,
+        "bytes": 285756
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-17.vtp",
+        "status": 200,
+        "bytes": 371972
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-12.vtp",
+        "status": 200,
+        "bytes": 538956
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-7.vtp",
+        "status": 200,
+        "bytes": 605304
+      },
+      {
+        "file": "model_cache/I-1/slice_x_-2.vtp",
+        "status": 200,
+        "bytes": 584028
+      },
+      {
+        "file": "model_cache/I-1/slice_x_3.vtp",
+        "status": 200,
+        "bytes": 621596
+      },
+      {
+        "file": "model_cache/I-1/slice_x_8.vtp",
+        "status": 200,
+        "bytes": 601232
+      },
+      {
+        "file": "model_cache/I-1/slice_x_9.9.vtp",
+        "status": 200,
+        "bytes": 623688
+      },
+      {
+        "file": "model_cache/I-1/slice_x_13.vtp",
+        "status": 200,
+        "bytes": 590028
+      },
+      {
+        "file": "model_cache/I-1/slice_x_18.vtp",
+        "status": 200,
+        "bytes": 569792
+      },
+      {
+        "file": "model_cache/I-1/slice_x_23.vtp",
+        "status": 200,
+        "bytes": 638584
+      },
+      {
+        "file": "model_cache/I-1/slice_x_28.vtp",
+        "status": 200,
+        "bytes": 787424
+      },
+      {
+        "file": "model_cache/I-1/slice_x_32.5.vtp",
+        "status": 200,
+        "bytes": 942552
+      },
+      {
+        "file": "model_cache/I-1/slice_x_33.vtp",
+        "status": 200,
+        "bytes": 878336
+      },
+      {
+        "file": "model_cache/I-1/slice_x_38.vtp",
+        "status": 200,
+        "bytes": 804728
+      },
+      {
+        "file": "model_cache/I-1/slice_x_43.vtp",
+        "status": 200,
+        "bytes": 821288
+      },
+      {
+        "file": "model_cache/I-1/slice_x_47.vtp",
+        "status": 200,
+        "bytes": 1021928
+      },
+      {
+        "file": "model_cache/I-1/slice_x_48.vtp",
+        "status": 200,
+        "bytes": 1010708
+      },
+      {
+        "file": "model_cache/I-1/slice_x_53.vtp",
+        "status": 200,
+        "bytes": 970820
+      },
+      {
+        "file": "model_cache/I-1/slice_x_58.vtp",
+        "status": 200,
+        "bytes": 1060208
+      },
+      {
+        "file": "model_cache/I-1/slice_x_61.5.vtp",
+        "status": 200,
+        "bytes": 1185128
+      },
+      {
+        "file": "model_cache/I-1/slice_x_63.vtp",
+        "status": 200,
+        "bytes": 1116756
+      },
+      {
+        "file": "model_cache/I-1/slice_x_68.vtp",
+        "status": 200,
+        "bytes": 900772
+      },
+      {
+        "file": "model_cache/I-1/slice_x_73.vtp",
+        "status": 200,
+        "bytes": 966324
+      },
+      {
+        "file": "model_cache/I-1/slice_x_76.vtp",
+        "status": 200,
+        "bytes": 938836
+      },
+      {
+        "file": "model_cache/I-1/slice_x_78.vtp",
+        "status": 200,
+        "bytes": 835128
+      },
+      {
+        "file": "model_cache/I-1/slice_x_83.vtp",
+        "status": 200,
+        "bytes": 831676
+      },
+      {
+        "file": "model_cache/I-1/slice_x_88.vtp",
+        "status": 200,
+        "bytes": 883952
+      },
+      {
+        "file": "model_cache/I-1/slice_x_88.5.vtp",
+        "status": 200,
+        "bytes": 906400
+      },
+      {
+        "file": "model_cache/I-1/slice_x_93.vtp",
+        "status": 200,
+        "bytes": 752328
+      },
+      {
+        "file": "model_cache/I-1/slice_x_98.vtp",
+        "status": 200,
+        "bytes": 653120
+      },
+      {
+        "file": "model_cache/I-1/slice_x_103.vtp",
+        "status": 200,
+        "bytes": 602716
+      },
+      {
+        "file": "model_cache/I-1/slice_x_108.vtp",
+        "status": 200,
+        "bytes": 502996
+      },
+      {
+        "file": "model_cache/I-1/slice_x_113.vtp",
+        "status": 200,
+        "bytes": 541856
+      },
+      {
+        "file": "model_cache/I-1/slice_x_118.vtp",
+        "status": 200,
+        "bytes": 479028
+      },
+      {
+        "file": "model_cache/I-1/slice_x_123.vtp",
+        "status": 200,
+        "bytes": 418820
+      },
+      {
+        "file": "model_cache/I-1/slice_x_128.vtp",
+        "status": 200,
+        "bytes": 367408
+      },
+      {
+        "file": "model_cache/I-1/slice_x_133.vtp",
+        "status": 200,
+        "bytes": 315072
+      },
+      {
+        "file": "model_cache/I-1/slice_x_138.vtp",
+        "status": 200,
+        "bytes": 246476
+      },
+      {
+        "file": "model_cache/I-1/slice_x_143.vtp",
+        "status": 200,
+        "bytes": 196052
+      },
+      {
+        "file": "model_cache/I-1/slice_x_148.vtp",
+        "status": 200,
+        "bytes": 219584
+      },
+      {
+        "file": "model_cache/I-1/slice_x_153.vtp",
+        "status": 200,
+        "bytes": 195212
+      },
+      {
+        "file": "model_cache/I-1/slice_x_158.vtp",
+        "status": 200,
+        "bytes": 200356
+      },
+      {
+        "file": "model_cache/I-1/slice_x_163.vtp",
+        "status": 200,
+        "bytes": 208696
+      },
+      {
+        "file": "model_cache/I-1/slice_x_168.vtp",
+        "status": 200,
+        "bytes": 233588
+      },
+      {
+        "file": "model_cache/I-1/slice_x_173.vtp",
+        "status": 200,
+        "bytes": 306620
+      },
+      {
+        "file": "model_cache/I-1/slice_x_178.vtp",
+        "status": 200,
+        "bytes": 311824
+      },
+      {
+        "file": "model_cache/I-1/slice_x_183.vtp",
+        "status": 200,
+        "bytes": 292944
+      },
+      {
+        "file": "model_cache/I-1/slice_x_188.vtp",
+        "status": 200,
+        "bytes": 264240
+      },
+      {
+        "file": "model_cache/I-1/slice_x_193.vtp",
+        "status": 200,
+        "bytes": 208452
+      },
+      {
+        "file": "model_cache/I-1/slice_x_198.vtp",
+        "status": 200,
+        "bytes": 156464
+      },
+      {
+        "file": "model_cache/I-1/slice_x_203.vtp",
+        "status": 200,
+        "bytes": 133568
+      },
+      {
+        "file": "model_cache/I-1/slice_x_208.vtp",
+        "status": 200,
+        "bytes": 127768
+      },
+      {
+        "file": "model_cache/I-1/slice_x_213.vtp",
+        "status": 200,
+        "bytes": 116236
+      },
+      {
+        "file": "model_cache/I-1/slice_x_218.vtp",
+        "status": 200,
+        "bytes": 46416
+      },
+      {
+        "file": "model_cache/I-1/slice_x_223.vtp",
+        "status": 200,
+        "bytes": 30384
+      },
+      {
+        "file": "model_cache/I-1/slice_x_228.vtp",
+        "status": 200,
+        "bytes": 24908
+      },
+      {
+        "file": "model_cache/I-1/slice_x_233.vtp",
+        "status": 200,
+        "bytes": 26228
+      },
+      {
+        "file": "model_cache/I-1/slice_x_238.vtp",
+        "status": 200,
+        "bytes": 22700
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-69.vtp",
+        "status": 200,
+        "bytes": 41832
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-64.vtp",
+        "status": 200,
+        "bytes": 47540
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-59.vtp",
+        "status": 200,
+        "bytes": 78640
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-54.vtp",
+        "status": 200,
+        "bytes": 94248
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-49.vtp",
+        "status": 200,
+        "bytes": 110308
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-44.vtp",
+        "status": 200,
+        "bytes": 155168
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-39.vtp",
+        "status": 200,
+        "bytes": 258536
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-34.vtp",
+        "status": 200,
+        "bytes": 395688
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-29.vtp",
+        "status": 200,
+        "bytes": 618860
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-24.vtp",
+        "status": 200,
+        "bytes": 721260
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-19.vtp",
+        "status": 200,
+        "bytes": 861676
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-14.vtp",
+        "status": 200,
+        "bytes": 980096
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-9.vtp",
+        "status": 200,
+        "bytes": 1110340
+      },
+      {
+        "file": "model_cache/I-1/slice_y_-4.vtp",
+        "status": 200,
+        "bytes": 1273992
+      },
+      {
+        "file": "model_cache/I-1/slice_y_1.vtp",
+        "status": 200,
+        "bytes": 1599584
+      },
+      {
+        "file": "model_cache/I-1/slice_y_6.vtp",
+        "status": 200,
+        "bytes": 1709772
+      },
+      {
+        "file": "model_cache/I-1/slice_y_11.vtp",
+        "status": 200,
+        "bytes": 1498384
+      },
+      {
+        "file": "model_cache/I-1/slice_y_16.vtp",
+        "status": 200,
+        "bytes": 1691280
+      },
+      {
+        "file": "model_cache/I-1/slice_y_21.vtp",
+        "status": 200,
+        "bytes": 1487740
+      },
+      {
+        "file": "model_cache/I-1/slice_y_26.vtp",
+        "status": 200,
+        "bytes": 1329860
+      },
+      {
+        "file": "model_cache/I-1/slice_y_31.vtp",
+        "status": 200,
+        "bytes": 1376256
+      },
+      {
+        "file": "model_cache/I-1/slice_y_36.vtp",
+        "status": 200,
+        "bytes": 1177076
+      },
+      {
+        "file": "model_cache/I-1/slice_y_41.vtp",
+        "status": 200,
+        "bytes": 1176900
+      },
+      {
+        "file": "model_cache/I-1/slice_y_46.vtp",
+        "status": 200,
+        "bytes": 1098956
+      },
+      {
+        "file": "model_cache/I-1/slice_y_51.vtp",
+        "status": 200,
+        "bytes": 1108428
+      },
+      {
+        "file": "model_cache/I-1/slice_y_56.vtp",
+        "status": 200,
+        "bytes": 1117708
+      },
+      {
+        "file": "model_cache/I-1/slice_y_61.vtp",
+        "status": 200,
+        "bytes": 1117808
+      },
+      {
+        "file": "model_cache/I-1/slice_y_66.vtp",
+        "status": 200,
+        "bytes": 884296
+      },
+      {
+        "file": "model_cache/I-1/slice_y_71.vtp",
+        "status": 200,
+        "bytes": 897368
+      },
+      {
+        "file": "model_cache/I-1/slice_y_76.vtp",
+        "status": 200,
+        "bytes": 611752
+      },
+      {
+        "file": "model_cache/I-1/slice_y_81.vtp",
+        "status": 200,
+        "bytes": 235308
+      },
+      {
+        "file": "model_cache/I-1/slice_y_86.vtp",
+        "status": 200,
+        "bytes": 118696
+      },
+      {
+        "file": "model_cache/I-1/slice_y_91.vtp",
+        "status": 200,
+        "bytes": 88916
+      },
+      {
+        "file": "model_cache/I-1/slice_y_96.vtp",
+        "status": 200,
+        "bytes": 65620
+      },
+      {
+        "file": "model_cache/I-1/slice_y_101.vtp",
+        "status": 200,
+        "bytes": 45944
+      },
+      {
+        "file": "model_cache/I-1/slice_y_106.vtp",
+        "status": 200,
+        "bytes": 43804
+      },
+      {
+        "file": "model_cache/I-1/slice_y_111.vtp",
+        "status": 200,
+        "bytes": 39844
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-37.vtp",
+        "status": 200,
+        "bytes": 67804
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-32.vtp",
+        "status": 200,
+        "bytes": 68564
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-27.vtp",
+        "status": 200,
+        "bytes": 77636
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-22.vtp",
+        "status": 200,
+        "bytes": 80800
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-17.vtp",
+        "status": 200,
+        "bytes": 102268
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-12.vtp",
+        "status": 200,
+        "bytes": 355672
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-7.vtp",
+        "status": 200,
+        "bytes": 1436932
+      },
+      {
+        "file": "model_cache/I-1/slice_z_-2.vtp",
+        "status": 200,
+        "bytes": 2390020
+      },
+      {
+        "file": "model_cache/I-1/slice_z_3.vtp",
+        "status": 200,
+        "bytes": 3428936
+      },
+      {
+        "file": "model_cache/I-1/slice_z_8.vtp",
+        "status": 200,
+        "bytes": 3765252
+      },
+      {
+        "file": "model_cache/I-1/slice_z_13.vtp",
+        "status": 200,
+        "bytes": 4134992
+      },
+      {
+        "file": "model_cache/I-1/slice_z_18.vtp",
+        "status": 200,
+        "bytes": 3289732
+      },
+      {
+        "file": "model_cache/I-1/slice_z_23.vtp",
+        "status": 200,
+        "bytes": 3583772
+      },
+      {
+        "file": "model_cache/I-1/slice_z_28.vtp",
+        "status": 200,
+        "bytes": 2257292
+      },
+      {
+        "file": "model_cache/I-1/slice_z_33.vtp",
+        "status": 200,
+        "bytes": 932984
+      },
+      {
+        "file": "model_cache/I-1/slice_z_38.vtp",
+        "status": 200,
+        "bytes": 250236
+      },
+      {
+        "file": "model_cache/I-1/slice_z_43.vtp",
+        "status": 200,
+        "bytes": 90664
+      },
+      {
+        "file": "model_cache/I-1/slice_z_48.vtp",
+        "status": 200,
+        "bytes": 75560
+      },
+      {
+        "file": "model_cache/I-1/slice_z_53.vtp",
+        "status": 200,
+        "bytes": 65724
+      }
+    ]
+  },
+  {
+    "id": "I-3",
+    "expectedFiles": 134,
+    "measuredFiles": 134,
+    "surfaceBytes": 2577680,
+    "sectionsBytes": 85661688,
+    "records": [
+      {
+        "file": "model_cache/I-3/cavity_surface.vtp",
+        "status": 200,
+        "bytes": 2577680
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-112.vtp",
+        "status": 200,
+        "bytes": 24772
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-107.vtp",
+        "status": 200,
+        "bytes": 24796
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-102.vtp",
+        "status": 200,
+        "bytes": 29008
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-97.vtp",
+        "status": 200,
+        "bytes": 27412
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-92.vtp",
+        "status": 200,
+        "bytes": 30216
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-87.vtp",
+        "status": 200,
+        "bytes": 37948
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-82.vtp",
+        "status": 200,
+        "bytes": 60708
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-77.vtp",
+        "status": 200,
+        "bytes": 104968
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-72.vtp",
+        "status": 200,
+        "bytes": 131268
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-67.vtp",
+        "status": 200,
+        "bytes": 140572
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-62.vtp",
+        "status": 200,
+        "bytes": 138500
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-57.vtp",
+        "status": 200,
+        "bytes": 121088
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-52.vtp",
+        "status": 200,
+        "bytes": 121536
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-47.vtp",
+        "status": 200,
+        "bytes": 142624
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-42.vtp",
+        "status": 200,
+        "bytes": 144168
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-37.vtp",
+        "status": 200,
+        "bytes": 168468
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-32.vtp",
+        "status": 200,
+        "bytes": 184916
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-27.vtp",
+        "status": 200,
+        "bytes": 215212
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-22.vtp",
+        "status": 200,
+        "bytes": 285660
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-17.vtp",
+        "status": 200,
+        "bytes": 371736
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-12.vtp",
+        "status": 200,
+        "bytes": 539628
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-7.vtp",
+        "status": 200,
+        "bytes": 607868
+      },
+      {
+        "file": "model_cache/I-3/slice_x_-2.vtp",
+        "status": 200,
+        "bytes": 589744
+      },
+      {
+        "file": "model_cache/I-3/slice_x_3.vtp",
+        "status": 200,
+        "bytes": 600052
+      },
+      {
+        "file": "model_cache/I-3/slice_x_8.vtp",
+        "status": 200,
+        "bytes": 583660
+      },
+      {
+        "file": "model_cache/I-3/slice_x_9.9.vtp",
+        "status": 200,
+        "bytes": 602092
+      },
+      {
+        "file": "model_cache/I-3/slice_x_13.vtp",
+        "status": 200,
+        "bytes": 571004
+      },
+      {
+        "file": "model_cache/I-3/slice_x_18.vtp",
+        "status": 200,
+        "bytes": 553436
+      },
+      {
+        "file": "model_cache/I-3/slice_x_23.vtp",
+        "status": 200,
+        "bytes": 624844
+      },
+      {
+        "file": "model_cache/I-3/slice_x_28.vtp",
+        "status": 200,
+        "bytes": 763120
+      },
+      {
+        "file": "model_cache/I-3/slice_x_32.5.vtp",
+        "status": 200,
+        "bytes": 936524
+      },
+      {
+        "file": "model_cache/I-3/slice_x_33.vtp",
+        "status": 200,
+        "bytes": 872244
+      },
+      {
+        "file": "model_cache/I-3/slice_x_38.vtp",
+        "status": 200,
+        "bytes": 789524
+      },
+      {
+        "file": "model_cache/I-3/slice_x_43.vtp",
+        "status": 200,
+        "bytes": 805296
+      },
+      {
+        "file": "model_cache/I-3/slice_x_47.vtp",
+        "status": 200,
+        "bytes": 1010416
+      },
+      {
+        "file": "model_cache/I-3/slice_x_48.vtp",
+        "status": 200,
+        "bytes": 1000228
+      },
+      {
+        "file": "model_cache/I-3/slice_x_53.vtp",
+        "status": 200,
+        "bytes": 961732
+      },
+      {
+        "file": "model_cache/I-3/slice_x_58.vtp",
+        "status": 200,
+        "bytes": 1041628
+      },
+      {
+        "file": "model_cache/I-3/slice_x_61.5.vtp",
+        "status": 200,
+        "bytes": 1170852
+      },
+      {
+        "file": "model_cache/I-3/slice_x_63.vtp",
+        "status": 200,
+        "bytes": 1109672
+      },
+      {
+        "file": "model_cache/I-3/slice_x_68.vtp",
+        "status": 200,
+        "bytes": 887808
+      },
+      {
+        "file": "model_cache/I-3/slice_x_73.vtp",
+        "status": 200,
+        "bytes": 939816
+      },
+      {
+        "file": "model_cache/I-3/slice_x_76.vtp",
+        "status": 200,
+        "bytes": 919860
+      },
+      {
+        "file": "model_cache/I-3/slice_x_78.vtp",
+        "status": 200,
+        "bytes": 814620
+      },
+      {
+        "file": "model_cache/I-3/slice_x_83.vtp",
+        "status": 200,
+        "bytes": 812080
+      },
+      {
+        "file": "model_cache/I-3/slice_x_88.vtp",
+        "status": 200,
+        "bytes": 861836
+      },
+      {
+        "file": "model_cache/I-3/slice_x_88.5.vtp",
+        "status": 200,
+        "bytes": 890252
+      },
+      {
+        "file": "model_cache/I-3/slice_x_93.vtp",
+        "status": 200,
+        "bytes": 737092
+      },
+      {
+        "file": "model_cache/I-3/slice_x_98.vtp",
+        "status": 200,
+        "bytes": 643404
+      },
+      {
+        "file": "model_cache/I-3/slice_x_103.vtp",
+        "status": 200,
+        "bytes": 584064
+      },
+      {
+        "file": "model_cache/I-3/slice_x_108.vtp",
+        "status": 200,
+        "bytes": 488576
+      },
+      {
+        "file": "model_cache/I-3/slice_x_113.vtp",
+        "status": 200,
+        "bytes": 546304
+      },
+      {
+        "file": "model_cache/I-3/slice_x_118.vtp",
+        "status": 200,
+        "bytes": 480868
+      },
+      {
+        "file": "model_cache/I-3/slice_x_123.vtp",
+        "status": 200,
+        "bytes": 418528
+      },
+      {
+        "file": "model_cache/I-3/slice_x_128.vtp",
+        "status": 200,
+        "bytes": 367036
+      },
+      {
+        "file": "model_cache/I-3/slice_x_133.vtp",
+        "status": 200,
+        "bytes": 314652
+      },
+      {
+        "file": "model_cache/I-3/slice_x_138.vtp",
+        "status": 200,
+        "bytes": 246048
+      },
+      {
+        "file": "model_cache/I-3/slice_x_143.vtp",
+        "status": 200,
+        "bytes": 195496
+      },
+      {
+        "file": "model_cache/I-3/slice_x_148.vtp",
+        "status": 200,
+        "bytes": 219012
+      },
+      {
+        "file": "model_cache/I-3/slice_x_153.vtp",
+        "status": 200,
+        "bytes": 194572
+      },
+      {
+        "file": "model_cache/I-3/slice_x_158.vtp",
+        "status": 200,
+        "bytes": 199896
+      },
+      {
+        "file": "model_cache/I-3/slice_x_163.vtp",
+        "status": 200,
+        "bytes": 208268
+      },
+      {
+        "file": "model_cache/I-3/slice_x_168.vtp",
+        "status": 200,
+        "bytes": 233364
+      },
+      {
+        "file": "model_cache/I-3/slice_x_173.vtp",
+        "status": 200,
+        "bytes": 306416
+      },
+      {
+        "file": "model_cache/I-3/slice_x_178.vtp",
+        "status": 200,
+        "bytes": 311568
+      },
+      {
+        "file": "model_cache/I-3/slice_x_183.vtp",
+        "status": 200,
+        "bytes": 292652
+      },
+      {
+        "file": "model_cache/I-3/slice_x_188.vtp",
+        "status": 200,
+        "bytes": 263976
+      },
+      {
+        "file": "model_cache/I-3/slice_x_193.vtp",
+        "status": 200,
+        "bytes": 208296
+      },
+      {
+        "file": "model_cache/I-3/slice_x_198.vtp",
+        "status": 200,
+        "bytes": 156276
+      },
+      {
+        "file": "model_cache/I-3/slice_x_203.vtp",
+        "status": 200,
+        "bytes": 133376
+      },
+      {
+        "file": "model_cache/I-3/slice_x_208.vtp",
+        "status": 200,
+        "bytes": 127468
+      },
+      {
+        "file": "model_cache/I-3/slice_x_213.vtp",
+        "status": 200,
+        "bytes": 115996
+      },
+      {
+        "file": "model_cache/I-3/slice_x_218.vtp",
+        "status": 200,
+        "bytes": 46368
+      },
+      {
+        "file": "model_cache/I-3/slice_x_223.vtp",
+        "status": 200,
+        "bytes": 30332
+      },
+      {
+        "file": "model_cache/I-3/slice_x_228.vtp",
+        "status": 200,
+        "bytes": 24928
+      },
+      {
+        "file": "model_cache/I-3/slice_x_233.vtp",
+        "status": 200,
+        "bytes": 26192
+      },
+      {
+        "file": "model_cache/I-3/slice_x_238.vtp",
+        "status": 200,
+        "bytes": 22712
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-69.vtp",
+        "status": 200,
+        "bytes": 41876
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-64.vtp",
+        "status": 200,
+        "bytes": 47556
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-59.vtp",
+        "status": 200,
+        "bytes": 78816
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-54.vtp",
+        "status": 200,
+        "bytes": 94504
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-49.vtp",
+        "status": 200,
+        "bytes": 110336
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-44.vtp",
+        "status": 200,
+        "bytes": 155048
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-39.vtp",
+        "status": 200,
+        "bytes": 257204
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-34.vtp",
+        "status": 200,
+        "bytes": 392384
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-29.vtp",
+        "status": 200,
+        "bytes": 614512
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-24.vtp",
+        "status": 200,
+        "bytes": 719752
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-19.vtp",
+        "status": 200,
+        "bytes": 862488
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-14.vtp",
+        "status": 200,
+        "bytes": 977364
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-9.vtp",
+        "status": 200,
+        "bytes": 1127664
+      },
+      {
+        "file": "model_cache/I-3/slice_y_-4.vtp",
+        "status": 200,
+        "bytes": 1301868
+      },
+      {
+        "file": "model_cache/I-3/slice_y_1.vtp",
+        "status": 200,
+        "bytes": 1547668
+      },
+      {
+        "file": "model_cache/I-3/slice_y_6.vtp",
+        "status": 200,
+        "bytes": 1560756
+      },
+      {
+        "file": "model_cache/I-3/slice_y_11.vtp",
+        "status": 200,
+        "bytes": 1485536
+      },
+      {
+        "file": "model_cache/I-3/slice_y_16.vtp",
+        "status": 200,
+        "bytes": 1528052
+      },
+      {
+        "file": "model_cache/I-3/slice_y_21.vtp",
+        "status": 200,
+        "bytes": 1443880
+      },
+      {
+        "file": "model_cache/I-3/slice_y_26.vtp",
+        "status": 200,
+        "bytes": 1351080
+      },
+      {
+        "file": "model_cache/I-3/slice_y_31.vtp",
+        "status": 200,
+        "bytes": 1389280
+      },
+      {
+        "file": "model_cache/I-3/slice_y_36.vtp",
+        "status": 200,
+        "bytes": 1175080
+      },
+      {
+        "file": "model_cache/I-3/slice_y_41.vtp",
+        "status": 200,
+        "bytes": 1173724
+      },
+      {
+        "file": "model_cache/I-3/slice_y_46.vtp",
+        "status": 200,
+        "bytes": 1091964
+      },
+      {
+        "file": "model_cache/I-3/slice_y_51.vtp",
+        "status": 200,
+        "bytes": 1101852
+      },
+      {
+        "file": "model_cache/I-3/slice_y_56.vtp",
+        "status": 200,
+        "bytes": 1114120
+      },
+      {
+        "file": "model_cache/I-3/slice_y_61.vtp",
+        "status": 200,
+        "bytes": 1116192
+      },
+      {
+        "file": "model_cache/I-3/slice_y_66.vtp",
+        "status": 200,
+        "bytes": 884168
+      },
+      {
+        "file": "model_cache/I-3/slice_y_71.vtp",
+        "status": 200,
+        "bytes": 896216
+      },
+      {
+        "file": "model_cache/I-3/slice_y_76.vtp",
+        "status": 200,
+        "bytes": 611396
+      },
+      {
+        "file": "model_cache/I-3/slice_y_81.vtp",
+        "status": 200,
+        "bytes": 235144
+      },
+      {
+        "file": "model_cache/I-3/slice_y_86.vtp",
+        "status": 200,
+        "bytes": 118644
+      },
+      {
+        "file": "model_cache/I-3/slice_y_91.vtp",
+        "status": 200,
+        "bytes": 88856
+      },
+      {
+        "file": "model_cache/I-3/slice_y_96.vtp",
+        "status": 200,
+        "bytes": 65588
+      },
+      {
+        "file": "model_cache/I-3/slice_y_101.vtp",
+        "status": 200,
+        "bytes": 45928
+      },
+      {
+        "file": "model_cache/I-3/slice_y_106.vtp",
+        "status": 200,
+        "bytes": 43836
+      },
+      {
+        "file": "model_cache/I-3/slice_y_111.vtp",
+        "status": 200,
+        "bytes": 39828
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-37.vtp",
+        "status": 200,
+        "bytes": 69160
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-32.vtp",
+        "status": 200,
+        "bytes": 69928
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-27.vtp",
+        "status": 200,
+        "bytes": 79212
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-22.vtp",
+        "status": 200,
+        "bytes": 82768
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-17.vtp",
+        "status": 200,
+        "bytes": 104916
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-12.vtp",
+        "status": 200,
+        "bytes": 373548
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-7.vtp",
+        "status": 200,
+        "bytes": 1509716
+      },
+      {
+        "file": "model_cache/I-3/slice_z_-2.vtp",
+        "status": 200,
+        "bytes": 2489656
+      },
+      {
+        "file": "model_cache/I-3/slice_z_3.vtp",
+        "status": 200,
+        "bytes": 3528368
+      },
+      {
+        "file": "model_cache/I-3/slice_z_8.vtp",
+        "status": 200,
+        "bytes": 3816512
+      },
+      {
+        "file": "model_cache/I-3/slice_z_13.vtp",
+        "status": 200,
+        "bytes": 4231448
+      },
+      {
+        "file": "model_cache/I-3/slice_z_18.vtp",
+        "status": 200,
+        "bytes": 2997404
+      },
+      {
+        "file": "model_cache/I-3/slice_z_23.vtp",
+        "status": 200,
+        "bytes": 3163204
+      },
+      {
+        "file": "model_cache/I-3/slice_z_28.vtp",
+        "status": 200,
+        "bytes": 2304544
+      },
+      {
+        "file": "model_cache/I-3/slice_z_33.vtp",
+        "status": 200,
+        "bytes": 955292
+      },
+      {
+        "file": "model_cache/I-3/slice_z_38.vtp",
+        "status": 200,
+        "bytes": 252092
+      },
+      {
+        "file": "model_cache/I-3/slice_z_43.vtp",
+        "status": 200,
+        "bytes": 91532
+      },
+      {
+        "file": "model_cache/I-3/slice_z_48.vtp",
+        "status": 200,
+        "bytes": 76456
+      },
+      {
+        "file": "model_cache/I-3/slice_z_53.vtp",
+        "status": 200,
+        "bytes": 66624
+      }
+    ]
+  },
+  {
+    "id": "II-2",
+    "expectedFiles": 134,
+    "measuredFiles": 134,
+    "surfaceBytes": 2748856,
+    "sectionsBytes": 83989980,
+    "records": [
+      {
+        "file": "model_cache/II-2/cavity_surface.vtp",
+        "status": 200,
+        "bytes": 2748856
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-112.vtp",
+        "status": 200,
+        "bytes": 24780
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-107.vtp",
+        "status": 200,
+        "bytes": 24780
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-102.vtp",
+        "status": 200,
+        "bytes": 28980
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-97.vtp",
+        "status": 200,
+        "bytes": 27352
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-92.vtp",
+        "status": 200,
+        "bytes": 30148
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-87.vtp",
+        "status": 200,
+        "bytes": 37936
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-82.vtp",
+        "status": 200,
+        "bytes": 60720
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-77.vtp",
+        "status": 200,
+        "bytes": 104964
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-72.vtp",
+        "status": 200,
+        "bytes": 131192
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-67.vtp",
+        "status": 200,
+        "bytes": 140496
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-62.vtp",
+        "status": 200,
+        "bytes": 138428
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-57.vtp",
+        "status": 200,
+        "bytes": 121088
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-52.vtp",
+        "status": 200,
+        "bytes": 121432
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-47.vtp",
+        "status": 200,
+        "bytes": 142564
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-42.vtp",
+        "status": 200,
+        "bytes": 144056
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-37.vtp",
+        "status": 200,
+        "bytes": 168436
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-32.vtp",
+        "status": 200,
+        "bytes": 184708
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-27.vtp",
+        "status": 200,
+        "bytes": 214828
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-22.vtp",
+        "status": 200,
+        "bytes": 285360
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-17.vtp",
+        "status": 200,
+        "bytes": 370968
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-12.vtp",
+        "status": 200,
+        "bytes": 539536
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-7.vtp",
+        "status": 200,
+        "bytes": 607472
+      },
+      {
+        "file": "model_cache/II-2/slice_x_-2.vtp",
+        "status": 200,
+        "bytes": 590692
+      },
+      {
+        "file": "model_cache/II-2/slice_x_3.vtp",
+        "status": 200,
+        "bytes": 579888
+      },
+      {
+        "file": "model_cache/II-2/slice_x_8.vtp",
+        "status": 200,
+        "bytes": 558184
+      },
+      {
+        "file": "model_cache/II-2/slice_x_9.9.vtp",
+        "status": 200,
+        "bytes": 576760
+      },
+      {
+        "file": "model_cache/II-2/slice_x_13.vtp",
+        "status": 200,
+        "bytes": 548008
+      },
+      {
+        "file": "model_cache/II-2/slice_x_18.vtp",
+        "status": 200,
+        "bytes": 537572
+      },
+      {
+        "file": "model_cache/II-2/slice_x_23.vtp",
+        "status": 200,
+        "bytes": 608544
+      },
+      {
+        "file": "model_cache/II-2/slice_x_28.vtp",
+        "status": 200,
+        "bytes": 740008
+      },
+      {
+        "file": "model_cache/II-2/slice_x_32.5.vtp",
+        "status": 200,
+        "bytes": 904940
+      },
+      {
+        "file": "model_cache/II-2/slice_x_33.vtp",
+        "status": 200,
+        "bytes": 844948
+      },
+      {
+        "file": "model_cache/II-2/slice_x_38.vtp",
+        "status": 200,
+        "bytes": 772200
+      },
+      {
+        "file": "model_cache/II-2/slice_x_43.vtp",
+        "status": 200,
+        "bytes": 783124
+      },
+      {
+        "file": "model_cache/II-2/slice_x_47.vtp",
+        "status": 200,
+        "bytes": 984700
+      },
+      {
+        "file": "model_cache/II-2/slice_x_48.vtp",
+        "status": 200,
+        "bytes": 976272
+      },
+      {
+        "file": "model_cache/II-2/slice_x_53.vtp",
+        "status": 200,
+        "bytes": 941432
+      },
+      {
+        "file": "model_cache/II-2/slice_x_58.vtp",
+        "status": 200,
+        "bytes": 1019600
+      },
+      {
+        "file": "model_cache/II-2/slice_x_61.5.vtp",
+        "status": 200,
+        "bytes": 1149700
+      },
+      {
+        "file": "model_cache/II-2/slice_x_63.vtp",
+        "status": 200,
+        "bytes": 1088004
+      },
+      {
+        "file": "model_cache/II-2/slice_x_68.vtp",
+        "status": 200,
+        "bytes": 872012
+      },
+      {
+        "file": "model_cache/II-2/slice_x_73.vtp",
+        "status": 200,
+        "bytes": 916796
+      },
+      {
+        "file": "model_cache/II-2/slice_x_76.vtp",
+        "status": 200,
+        "bytes": 897660
+      },
+      {
+        "file": "model_cache/II-2/slice_x_78.vtp",
+        "status": 200,
+        "bytes": 789588
+      },
+      {
+        "file": "model_cache/II-2/slice_x_83.vtp",
+        "status": 200,
+        "bytes": 792500
+      },
+      {
+        "file": "model_cache/II-2/slice_x_88.vtp",
+        "status": 200,
+        "bytes": 837720
+      },
+      {
+        "file": "model_cache/II-2/slice_x_88.5.vtp",
+        "status": 200,
+        "bytes": 864248
+      },
+      {
+        "file": "model_cache/II-2/slice_x_93.vtp",
+        "status": 200,
+        "bytes": 711392
+      },
+      {
+        "file": "model_cache/II-2/slice_x_98.vtp",
+        "status": 200,
+        "bytes": 622580
+      },
+      {
+        "file": "model_cache/II-2/slice_x_103.vtp",
+        "status": 200,
+        "bytes": 552536
+      },
+      {
+        "file": "model_cache/II-2/slice_x_108.vtp",
+        "status": 200,
+        "bytes": 471896
+      },
+      {
+        "file": "model_cache/II-2/slice_x_113.vtp",
+        "status": 200,
+        "bytes": 548836
+      },
+      {
+        "file": "model_cache/II-2/slice_x_118.vtp",
+        "status": 200,
+        "bytes": 481640
+      },
+      {
+        "file": "model_cache/II-2/slice_x_123.vtp",
+        "status": 200,
+        "bytes": 419032
+      },
+      {
+        "file": "model_cache/II-2/slice_x_128.vtp",
+        "status": 200,
+        "bytes": 367360
+      },
+      {
+        "file": "model_cache/II-2/slice_x_133.vtp",
+        "status": 200,
+        "bytes": 315312
+      },
+      {
+        "file": "model_cache/II-2/slice_x_138.vtp",
+        "status": 200,
+        "bytes": 246140
+      },
+      {
+        "file": "model_cache/II-2/slice_x_143.vtp",
+        "status": 200,
+        "bytes": 195568
+      },
+      {
+        "file": "model_cache/II-2/slice_x_148.vtp",
+        "status": 200,
+        "bytes": 218980
+      },
+      {
+        "file": "model_cache/II-2/slice_x_153.vtp",
+        "status": 200,
+        "bytes": 194476
+      },
+      {
+        "file": "model_cache/II-2/slice_x_158.vtp",
+        "status": 200,
+        "bytes": 199660
+      },
+      {
+        "file": "model_cache/II-2/slice_x_163.vtp",
+        "status": 200,
+        "bytes": 208136
+      },
+      {
+        "file": "model_cache/II-2/slice_x_168.vtp",
+        "status": 200,
+        "bytes": 233084
+      },
+      {
+        "file": "model_cache/II-2/slice_x_173.vtp",
+        "status": 200,
+        "bytes": 306372
+      },
+      {
+        "file": "model_cache/II-2/slice_x_178.vtp",
+        "status": 200,
+        "bytes": 311680
+      },
+      {
+        "file": "model_cache/II-2/slice_x_183.vtp",
+        "status": 200,
+        "bytes": 292756
+      },
+      {
+        "file": "model_cache/II-2/slice_x_188.vtp",
+        "status": 200,
+        "bytes": 263932
+      },
+      {
+        "file": "model_cache/II-2/slice_x_193.vtp",
+        "status": 200,
+        "bytes": 208184
+      },
+      {
+        "file": "model_cache/II-2/slice_x_198.vtp",
+        "status": 200,
+        "bytes": 156216
+      },
+      {
+        "file": "model_cache/II-2/slice_x_203.vtp",
+        "status": 200,
+        "bytes": 133396
+      },
+      {
+        "file": "model_cache/II-2/slice_x_208.vtp",
+        "status": 200,
+        "bytes": 127492
+      },
+      {
+        "file": "model_cache/II-2/slice_x_213.vtp",
+        "status": 200,
+        "bytes": 115900
+      },
+      {
+        "file": "model_cache/II-2/slice_x_218.vtp",
+        "status": 200,
+        "bytes": 46344
+      },
+      {
+        "file": "model_cache/II-2/slice_x_223.vtp",
+        "status": 200,
+        "bytes": 30328
+      },
+      {
+        "file": "model_cache/II-2/slice_x_228.vtp",
+        "status": 200,
+        "bytes": 24916
+      },
+      {
+        "file": "model_cache/II-2/slice_x_233.vtp",
+        "status": 200,
+        "bytes": 26236
+      },
+      {
+        "file": "model_cache/II-2/slice_x_238.vtp",
+        "status": 200,
+        "bytes": 22716
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-69.vtp",
+        "status": 200,
+        "bytes": 41836
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-64.vtp",
+        "status": 200,
+        "bytes": 47540
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-59.vtp",
+        "status": 200,
+        "bytes": 78832
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-54.vtp",
+        "status": 200,
+        "bytes": 94276
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-49.vtp",
+        "status": 200,
+        "bytes": 110212
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-44.vtp",
+        "status": 200,
+        "bytes": 154964
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-39.vtp",
+        "status": 200,
+        "bytes": 257936
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-34.vtp",
+        "status": 200,
+        "bytes": 392648
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-29.vtp",
+        "status": 200,
+        "bytes": 612492
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-24.vtp",
+        "status": 200,
+        "bytes": 718912
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-19.vtp",
+        "status": 200,
+        "bytes": 860748
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-14.vtp",
+        "status": 200,
+        "bytes": 980172
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-9.vtp",
+        "status": 200,
+        "bytes": 1126776
+      },
+      {
+        "file": "model_cache/II-2/slice_y_-4.vtp",
+        "status": 200,
+        "bytes": 1301324
+      },
+      {
+        "file": "model_cache/II-2/slice_y_1.vtp",
+        "status": 200,
+        "bytes": 1466748
+      },
+      {
+        "file": "model_cache/II-2/slice_y_6.vtp",
+        "status": 200,
+        "bytes": 1431108
+      },
+      {
+        "file": "model_cache/II-2/slice_y_11.vtp",
+        "status": 200,
+        "bytes": 1365444
+      },
+      {
+        "file": "model_cache/II-2/slice_y_16.vtp",
+        "status": 200,
+        "bytes": 1417944
+      },
+      {
+        "file": "model_cache/II-2/slice_y_21.vtp",
+        "status": 200,
+        "bytes": 1385572
+      },
+      {
+        "file": "model_cache/II-2/slice_y_26.vtp",
+        "status": 200,
+        "bytes": 1350196
+      },
+      {
+        "file": "model_cache/II-2/slice_y_31.vtp",
+        "status": 200,
+        "bytes": 1389132
+      },
+      {
+        "file": "model_cache/II-2/slice_y_36.vtp",
+        "status": 200,
+        "bytes": 1176696
+      },
+      {
+        "file": "model_cache/II-2/slice_y_41.vtp",
+        "status": 200,
+        "bytes": 1172324
+      },
+      {
+        "file": "model_cache/II-2/slice_y_46.vtp",
+        "status": 200,
+        "bytes": 1092456
+      },
+      {
+        "file": "model_cache/II-2/slice_y_51.vtp",
+        "status": 200,
+        "bytes": 1101952
+      },
+      {
+        "file": "model_cache/II-2/slice_y_56.vtp",
+        "status": 200,
+        "bytes": 1114416
+      },
+      {
+        "file": "model_cache/II-2/slice_y_61.vtp",
+        "status": 200,
+        "bytes": 1116052
+      },
+      {
+        "file": "model_cache/II-2/slice_y_66.vtp",
+        "status": 200,
+        "bytes": 882564
+      },
+      {
+        "file": "model_cache/II-2/slice_y_71.vtp",
+        "status": 200,
+        "bytes": 896096
+      },
+      {
+        "file": "model_cache/II-2/slice_y_76.vtp",
+        "status": 200,
+        "bytes": 611264
+      },
+      {
+        "file": "model_cache/II-2/slice_y_81.vtp",
+        "status": 200,
+        "bytes": 235040
+      },
+      {
+        "file": "model_cache/II-2/slice_y_86.vtp",
+        "status": 200,
+        "bytes": 118576
+      },
+      {
+        "file": "model_cache/II-2/slice_y_91.vtp",
+        "status": 200,
+        "bytes": 88824
+      },
+      {
+        "file": "model_cache/II-2/slice_y_96.vtp",
+        "status": 200,
+        "bytes": 65552
+      },
+      {
+        "file": "model_cache/II-2/slice_y_101.vtp",
+        "status": 200,
+        "bytes": 45964
+      },
+      {
+        "file": "model_cache/II-2/slice_y_106.vtp",
+        "status": 200,
+        "bytes": 43856
+      },
+      {
+        "file": "model_cache/II-2/slice_y_111.vtp",
+        "status": 200,
+        "bytes": 39844
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-37.vtp",
+        "status": 200,
+        "bytes": 69280
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-32.vtp",
+        "status": 200,
+        "bytes": 70028
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-27.vtp",
+        "status": 200,
+        "bytes": 79424
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-22.vtp",
+        "status": 200,
+        "bytes": 83048
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-17.vtp",
+        "status": 200,
+        "bytes": 105388
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-12.vtp",
+        "status": 200,
+        "bytes": 376152
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-7.vtp",
+        "status": 200,
+        "bytes": 1517528
+      },
+      {
+        "file": "model_cache/II-2/slice_z_-2.vtp",
+        "status": 200,
+        "bytes": 2493012
+      },
+      {
+        "file": "model_cache/II-2/slice_z_3.vtp",
+        "status": 200,
+        "bytes": 3536712
+      },
+      {
+        "file": "model_cache/II-2/slice_z_8.vtp",
+        "status": 200,
+        "bytes": 3839292
+      },
+      {
+        "file": "model_cache/II-2/slice_z_13.vtp",
+        "status": 200,
+        "bytes": 3661916
+      },
+      {
+        "file": "model_cache/II-2/slice_z_18.vtp",
+        "status": 200,
+        "bytes": 3002272
+      },
+      {
+        "file": "model_cache/II-2/slice_z_23.vtp",
+        "status": 200,
+        "bytes": 3153120
+      },
+      {
+        "file": "model_cache/II-2/slice_z_28.vtp",
+        "status": 200,
+        "bytes": 2297552
+      },
+      {
+        "file": "model_cache/II-2/slice_z_33.vtp",
+        "status": 200,
+        "bytes": 953680
+      },
+      {
+        "file": "model_cache/II-2/slice_z_38.vtp",
+        "status": 200,
+        "bytes": 251972
+      },
+      {
+        "file": "model_cache/II-2/slice_z_43.vtp",
+        "status": 200,
+        "bytes": 91668
+      },
+      {
+        "file": "model_cache/II-2/slice_z_48.vtp",
+        "status": 200,
+        "bytes": 76536
+      },
+      {
+        "file": "model_cache/II-2/slice_z_53.vtp",
+        "status": 200,
+        "bytes": 66692
+      }
+    ]
+  },
+  {
+    "id": "III-3",
+    "expectedFiles": 134,
+    "measuredFiles": 134,
+    "surfaceBytes": 3026504,
+    "sectionsBytes": 82353992,
+    "records": [
+      {
+        "file": "model_cache/III-3/cavity_surface.vtp",
+        "status": 200,
+        "bytes": 3026504
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-112.vtp",
+        "status": 200,
+        "bytes": 24772
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-107.vtp",
+        "status": 200,
+        "bytes": 24792
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-102.vtp",
+        "status": 200,
+        "bytes": 29016
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-97.vtp",
+        "status": 200,
+        "bytes": 27368
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-92.vtp",
+        "status": 200,
+        "bytes": 30184
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-87.vtp",
+        "status": 200,
+        "bytes": 37912
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-82.vtp",
+        "status": 200,
+        "bytes": 60692
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-77.vtp",
+        "status": 200,
+        "bytes": 104876
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-72.vtp",
+        "status": 200,
+        "bytes": 131156
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-67.vtp",
+        "status": 200,
+        "bytes": 140500
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-62.vtp",
+        "status": 200,
+        "bytes": 138404
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-57.vtp",
+        "status": 200,
+        "bytes": 120996
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-52.vtp",
+        "status": 200,
+        "bytes": 121296
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-47.vtp",
+        "status": 200,
+        "bytes": 142328
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-42.vtp",
+        "status": 200,
+        "bytes": 143896
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-37.vtp",
+        "status": 200,
+        "bytes": 168252
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-32.vtp",
+        "status": 200,
+        "bytes": 184500
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-27.vtp",
+        "status": 200,
+        "bytes": 214800
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-22.vtp",
+        "status": 200,
+        "bytes": 285432
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-17.vtp",
+        "status": 200,
+        "bytes": 371428
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-12.vtp",
+        "status": 200,
+        "bytes": 539472
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-7.vtp",
+        "status": 200,
+        "bytes": 607240
+      },
+      {
+        "file": "model_cache/III-3/slice_x_-2.vtp",
+        "status": 200,
+        "bytes": 592436
+      },
+      {
+        "file": "model_cache/III-3/slice_x_3.vtp",
+        "status": 200,
+        "bytes": 556168
+      },
+      {
+        "file": "model_cache/III-3/slice_x_8.vtp",
+        "status": 200,
+        "bytes": 538664
+      },
+      {
+        "file": "model_cache/III-3/slice_x_9.9.vtp",
+        "status": 200,
+        "bytes": 545816
+      },
+      {
+        "file": "model_cache/III-3/slice_x_13.vtp",
+        "status": 200,
+        "bytes": 523360
+      },
+      {
+        "file": "model_cache/III-3/slice_x_18.vtp",
+        "status": 200,
+        "bytes": 516648
+      },
+      {
+        "file": "model_cache/III-3/slice_x_23.vtp",
+        "status": 200,
+        "bytes": 585860
+      },
+      {
+        "file": "model_cache/III-3/slice_x_28.vtp",
+        "status": 200,
+        "bytes": 711708
+      },
+      {
+        "file": "model_cache/III-3/slice_x_32.5.vtp",
+        "status": 200,
+        "bytes": 874776
+      },
+      {
+        "file": "model_cache/III-3/slice_x_33.vtp",
+        "status": 200,
+        "bytes": 813976
+      },
+      {
+        "file": "model_cache/III-3/slice_x_38.vtp",
+        "status": 200,
+        "bytes": 736520
+      },
+      {
+        "file": "model_cache/III-3/slice_x_43.vtp",
+        "status": 200,
+        "bytes": 751776
+      },
+      {
+        "file": "model_cache/III-3/slice_x_47.vtp",
+        "status": 200,
+        "bytes": 945900
+      },
+      {
+        "file": "model_cache/III-3/slice_x_48.vtp",
+        "status": 200,
+        "bytes": 939692
+      },
+      {
+        "file": "model_cache/III-3/slice_x_53.vtp",
+        "status": 200,
+        "bytes": 912668
+      },
+      {
+        "file": "model_cache/III-3/slice_x_58.vtp",
+        "status": 200,
+        "bytes": 989604
+      },
+      {
+        "file": "model_cache/III-3/slice_x_61.5.vtp",
+        "status": 200,
+        "bytes": 1118588
+      },
+      {
+        "file": "model_cache/III-3/slice_x_63.vtp",
+        "status": 200,
+        "bytes": 1056200
+      },
+      {
+        "file": "model_cache/III-3/slice_x_68.vtp",
+        "status": 200,
+        "bytes": 846108
+      },
+      {
+        "file": "model_cache/III-3/slice_x_73.vtp",
+        "status": 200,
+        "bytes": 887896
+      },
+      {
+        "file": "model_cache/III-3/slice_x_76.vtp",
+        "status": 200,
+        "bytes": 867400
+      },
+      {
+        "file": "model_cache/III-3/slice_x_78.vtp",
+        "status": 200,
+        "bytes": 750988
+      },
+      {
+        "file": "model_cache/III-3/slice_x_83.vtp",
+        "status": 200,
+        "bytes": 758636
+      },
+      {
+        "file": "model_cache/III-3/slice_x_88.vtp",
+        "status": 200,
+        "bytes": 802672
+      },
+      {
+        "file": "model_cache/III-3/slice_x_88.5.vtp",
+        "status": 200,
+        "bytes": 830792
+      },
+      {
+        "file": "model_cache/III-3/slice_x_93.vtp",
+        "status": 200,
+        "bytes": 679836
+      },
+      {
+        "file": "model_cache/III-3/slice_x_98.vtp",
+        "status": 200,
+        "bytes": 595096
+      },
+      {
+        "file": "model_cache/III-3/slice_x_103.vtp",
+        "status": 200,
+        "bytes": 516336
+      },
+      {
+        "file": "model_cache/III-3/slice_x_108.vtp",
+        "status": 200,
+        "bytes": 431180
+      },
+      {
+        "file": "model_cache/III-3/slice_x_113.vtp",
+        "status": 200,
+        "bytes": 552812
+      },
+      {
+        "file": "model_cache/III-3/slice_x_118.vtp",
+        "status": 200,
+        "bytes": 483808
+      },
+      {
+        "file": "model_cache/III-3/slice_x_123.vtp",
+        "status": 200,
+        "bytes": 419180
+      },
+      {
+        "file": "model_cache/III-3/slice_x_128.vtp",
+        "status": 200,
+        "bytes": 367540
+      },
+      {
+        "file": "model_cache/III-3/slice_x_133.vtp",
+        "status": 200,
+        "bytes": 315924
+      },
+      {
+        "file": "model_cache/III-3/slice_x_138.vtp",
+        "status": 200,
+        "bytes": 246652
+      },
+      {
+        "file": "model_cache/III-3/slice_x_143.vtp",
+        "status": 200,
+        "bytes": 195900
+      },
+      {
+        "file": "model_cache/III-3/slice_x_148.vtp",
+        "status": 200,
+        "bytes": 218984
+      },
+      {
+        "file": "model_cache/III-3/slice_x_153.vtp",
+        "status": 200,
+        "bytes": 194392
+      },
+      {
+        "file": "model_cache/III-3/slice_x_158.vtp",
+        "status": 200,
+        "bytes": 199600
+      },
+      {
+        "file": "model_cache/III-3/slice_x_163.vtp",
+        "status": 200,
+        "bytes": 207996
+      },
+      {
+        "file": "model_cache/III-3/slice_x_168.vtp",
+        "status": 200,
+        "bytes": 233016
+      },
+      {
+        "file": "model_cache/III-3/slice_x_173.vtp",
+        "status": 200,
+        "bytes": 306280
+      },
+      {
+        "file": "model_cache/III-3/slice_x_178.vtp",
+        "status": 200,
+        "bytes": 311448
+      },
+      {
+        "file": "model_cache/III-3/slice_x_183.vtp",
+        "status": 200,
+        "bytes": 292468
+      },
+      {
+        "file": "model_cache/III-3/slice_x_188.vtp",
+        "status": 200,
+        "bytes": 263736
+      },
+      {
+        "file": "model_cache/III-3/slice_x_193.vtp",
+        "status": 200,
+        "bytes": 207928
+      },
+      {
+        "file": "model_cache/III-3/slice_x_198.vtp",
+        "status": 200,
+        "bytes": 156276
+      },
+      {
+        "file": "model_cache/III-3/slice_x_203.vtp",
+        "status": 200,
+        "bytes": 133304
+      },
+      {
+        "file": "model_cache/III-3/slice_x_208.vtp",
+        "status": 200,
+        "bytes": 127692
+      },
+      {
+        "file": "model_cache/III-3/slice_x_213.vtp",
+        "status": 200,
+        "bytes": 115912
+      },
+      {
+        "file": "model_cache/III-3/slice_x_218.vtp",
+        "status": 200,
+        "bytes": 46340
+      },
+      {
+        "file": "model_cache/III-3/slice_x_223.vtp",
+        "status": 200,
+        "bytes": 30348
+      },
+      {
+        "file": "model_cache/III-3/slice_x_228.vtp",
+        "status": 200,
+        "bytes": 24888
+      },
+      {
+        "file": "model_cache/III-3/slice_x_233.vtp",
+        "status": 200,
+        "bytes": 26268
+      },
+      {
+        "file": "model_cache/III-3/slice_x_238.vtp",
+        "status": 200,
+        "bytes": 22724
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-69.vtp",
+        "status": 200,
+        "bytes": 41920
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-64.vtp",
+        "status": 200,
+        "bytes": 47644
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-59.vtp",
+        "status": 200,
+        "bytes": 78724
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-54.vtp",
+        "status": 200,
+        "bytes": 94336
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-49.vtp",
+        "status": 200,
+        "bytes": 110592
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-44.vtp",
+        "status": 200,
+        "bytes": 155172
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-39.vtp",
+        "status": 200,
+        "bytes": 258544
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-34.vtp",
+        "status": 200,
+        "bytes": 395496
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-29.vtp",
+        "status": 200,
+        "bytes": 617484
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-24.vtp",
+        "status": 200,
+        "bytes": 721148
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-19.vtp",
+        "status": 200,
+        "bytes": 861228
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-14.vtp",
+        "status": 200,
+        "bytes": 985008
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-9.vtp",
+        "status": 200,
+        "bytes": 1135232
+      },
+      {
+        "file": "model_cache/III-3/slice_y_-4.vtp",
+        "status": 200,
+        "bytes": 1316908
+      },
+      {
+        "file": "model_cache/III-3/slice_y_1.vtp",
+        "status": 200,
+        "bytes": 1255504
+      },
+      {
+        "file": "model_cache/III-3/slice_y_6.vtp",
+        "status": 200,
+        "bytes": 1301280
+      },
+      {
+        "file": "model_cache/III-3/slice_y_11.vtp",
+        "status": 200,
+        "bytes": 1262372
+      },
+      {
+        "file": "model_cache/III-3/slice_y_16.vtp",
+        "status": 200,
+        "bytes": 1316368
+      },
+      {
+        "file": "model_cache/III-3/slice_y_21.vtp",
+        "status": 200,
+        "bytes": 1186952
+      },
+      {
+        "file": "model_cache/III-3/slice_y_26.vtp",
+        "status": 200,
+        "bytes": 1365044
+      },
+      {
+        "file": "model_cache/III-3/slice_y_31.vtp",
+        "status": 200,
+        "bytes": 1395072
+      },
+      {
+        "file": "model_cache/III-3/slice_y_36.vtp",
+        "status": 200,
+        "bytes": 1180528
+      },
+      {
+        "file": "model_cache/III-3/slice_y_41.vtp",
+        "status": 200,
+        "bytes": 1174224
+      },
+      {
+        "file": "model_cache/III-3/slice_y_46.vtp",
+        "status": 200,
+        "bytes": 1094036
+      },
+      {
+        "file": "model_cache/III-3/slice_y_51.vtp",
+        "status": 200,
+        "bytes": 1102452
+      },
+      {
+        "file": "model_cache/III-3/slice_y_56.vtp",
+        "status": 200,
+        "bytes": 1113864
+      },
+      {
+        "file": "model_cache/III-3/slice_y_61.vtp",
+        "status": 200,
+        "bytes": 1114716
+      },
+      {
+        "file": "model_cache/III-3/slice_y_66.vtp",
+        "status": 200,
+        "bytes": 881808
+      },
+      {
+        "file": "model_cache/III-3/slice_y_71.vtp",
+        "status": 200,
+        "bytes": 894792
+      },
+      {
+        "file": "model_cache/III-3/slice_y_76.vtp",
+        "status": 200,
+        "bytes": 610648
+      },
+      {
+        "file": "model_cache/III-3/slice_y_81.vtp",
+        "status": 200,
+        "bytes": 234840
+      },
+      {
+        "file": "model_cache/III-3/slice_y_86.vtp",
+        "status": 200,
+        "bytes": 118576
+      },
+      {
+        "file": "model_cache/III-3/slice_y_91.vtp",
+        "status": 200,
+        "bytes": 88992
+      },
+      {
+        "file": "model_cache/III-3/slice_y_96.vtp",
+        "status": 200,
+        "bytes": 65516
+      },
+      {
+        "file": "model_cache/III-3/slice_y_101.vtp",
+        "status": 200,
+        "bytes": 45940
+      },
+      {
+        "file": "model_cache/III-3/slice_y_106.vtp",
+        "status": 200,
+        "bytes": 43848
+      },
+      {
+        "file": "model_cache/III-3/slice_y_111.vtp",
+        "status": 200,
+        "bytes": 39848
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-37.vtp",
+        "status": 200,
+        "bytes": 69472
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-32.vtp",
+        "status": 200,
+        "bytes": 70184
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-27.vtp",
+        "status": 200,
+        "bytes": 79712
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-22.vtp",
+        "status": 200,
+        "bytes": 83356
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-17.vtp",
+        "status": 200,
+        "bytes": 105720
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-12.vtp",
+        "status": 200,
+        "bytes": 379088
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-7.vtp",
+        "status": 200,
+        "bytes": 1526404
+      },
+      {
+        "file": "model_cache/III-3/slice_z_-2.vtp",
+        "status": 200,
+        "bytes": 2494268
+      },
+      {
+        "file": "model_cache/III-3/slice_z_3.vtp",
+        "status": 200,
+        "bytes": 3595488
+      },
+      {
+        "file": "model_cache/III-3/slice_z_8.vtp",
+        "status": 200,
+        "bytes": 3617996
+      },
+      {
+        "file": "model_cache/III-3/slice_z_13.vtp",
+        "status": 200,
+        "bytes": 3698544
+      },
+      {
+        "file": "model_cache/III-3/slice_z_18.vtp",
+        "status": 200,
+        "bytes": 3008976
+      },
+      {
+        "file": "model_cache/III-3/slice_z_23.vtp",
+        "status": 200,
+        "bytes": 3155204
+      },
+      {
+        "file": "model_cache/III-3/slice_z_28.vtp",
+        "status": 200,
+        "bytes": 2296124
+      },
+      {
+        "file": "model_cache/III-3/slice_z_33.vtp",
+        "status": 200,
+        "bytes": 951792
+      },
+      {
+        "file": "model_cache/III-3/slice_z_38.vtp",
+        "status": 200,
+        "bytes": 251644
+      },
+      {
+        "file": "model_cache/III-3/slice_z_43.vtp",
+        "status": 200,
+        "bytes": 91748
+      },
+      {
+        "file": "model_cache/III-3/slice_z_48.vtp",
+        "status": 200,
+        "bytes": 76744
+      },
+      {
+        "file": "model_cache/III-3/slice_z_53.vtp",
+        "status": 200,
+        "bytes": 66844
+      }
+    ]
+  },
+  {
+    "id": "IV-2",
+    "expectedFiles": 134,
+    "measuredFiles": 134,
+    "surfaceBytes": 5279104,
+    "sectionsBytes": 77765800,
+    "records": [
+      {
+        "file": "model_cache/IV-2/cavity_surface.vtp",
+        "status": 200,
+        "bytes": 5279104
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-112.vtp",
+        "status": 200,
+        "bytes": 24728
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-107.vtp",
+        "status": 200,
+        "bytes": 24776
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-102.vtp",
+        "status": 200,
+        "bytes": 28956
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-97.vtp",
+        "status": 200,
+        "bytes": 27392
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-92.vtp",
+        "status": 200,
+        "bytes": 30164
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-87.vtp",
+        "status": 200,
+        "bytes": 37916
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-82.vtp",
+        "status": 200,
+        "bytes": 60612
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-77.vtp",
+        "status": 200,
+        "bytes": 104820
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-72.vtp",
+        "status": 200,
+        "bytes": 131132
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-67.vtp",
+        "status": 200,
+        "bytes": 140492
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-62.vtp",
+        "status": 200,
+        "bytes": 138348
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-57.vtp",
+        "status": 200,
+        "bytes": 120984
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-52.vtp",
+        "status": 200,
+        "bytes": 121224
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-47.vtp",
+        "status": 200,
+        "bytes": 142392
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-42.vtp",
+        "status": 200,
+        "bytes": 143984
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-37.vtp",
+        "status": 200,
+        "bytes": 168176
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-32.vtp",
+        "status": 200,
+        "bytes": 184444
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-27.vtp",
+        "status": 200,
+        "bytes": 214508
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-22.vtp",
+        "status": 200,
+        "bytes": 285188
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-17.vtp",
+        "status": 200,
+        "bytes": 371076
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-12.vtp",
+        "status": 200,
+        "bytes": 539704
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-7.vtp",
+        "status": 200,
+        "bytes": 603648
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_-2.vtp",
+        "status": 200,
+        "bytes": 587676
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_3.vtp",
+        "status": 200,
+        "bytes": 515096
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_8.vtp",
+        "status": 200,
+        "bytes": 521140
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_9.9.vtp",
+        "status": 200,
+        "bytes": 527144
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_13.vtp",
+        "status": 200,
+        "bytes": 507060
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_18.vtp",
+        "status": 200,
+        "bytes": 499280
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_23.vtp",
+        "status": 200,
+        "bytes": 563732
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_28.vtp",
+        "status": 200,
+        "bytes": 681480
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_32.5.vtp",
+        "status": 200,
+        "bytes": 703004
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_33.vtp",
+        "status": 200,
+        "bytes": 686384
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_38.vtp",
+        "status": 200,
+        "bytes": 707236
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_43.vtp",
+        "status": 200,
+        "bytes": 727324
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_47.vtp",
+        "status": 200,
+        "bytes": 739536
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_48.vtp",
+        "status": 200,
+        "bytes": 809748
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_53.vtp",
+        "status": 200,
+        "bytes": 887304
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_58.vtp",
+        "status": 200,
+        "bytes": 946968
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_61.5.vtp",
+        "status": 200,
+        "bytes": 884360
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_63.vtp",
+        "status": 200,
+        "bytes": 955492
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_68.vtp",
+        "status": 200,
+        "bytes": 826080
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_73.vtp",
+        "status": 200,
+        "bytes": 862196
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_76.vtp",
+        "status": 200,
+        "bytes": 727240
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_78.vtp",
+        "status": 200,
+        "bytes": 723656
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_83.vtp",
+        "status": 200,
+        "bytes": 722744
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_88.vtp",
+        "status": 200,
+        "bytes": 662980
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_88.5.vtp",
+        "status": 200,
+        "bytes": 661780
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_93.vtp",
+        "status": 200,
+        "bytes": 664924
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_98.vtp",
+        "status": 200,
+        "bytes": 574096
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_103.vtp",
+        "status": 200,
+        "bytes": 495312
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_108.vtp",
+        "status": 200,
+        "bytes": 418708
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_113.vtp",
+        "status": 200,
+        "bytes": 538312
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_118.vtp",
+        "status": 200,
+        "bytes": 472304
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_123.vtp",
+        "status": 200,
+        "bytes": 408364
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_128.vtp",
+        "status": 200,
+        "bytes": 356992
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_133.vtp",
+        "status": 200,
+        "bytes": 301312
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_138.vtp",
+        "status": 200,
+        "bytes": 236100
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_143.vtp",
+        "status": 200,
+        "bytes": 189532
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_148.vtp",
+        "status": 200,
+        "bytes": 203964
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_153.vtp",
+        "status": 200,
+        "bytes": 180004
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_158.vtp",
+        "status": 200,
+        "bytes": 189132
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_163.vtp",
+        "status": 200,
+        "bytes": 203380
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_168.vtp",
+        "status": 200,
+        "bytes": 221980
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_173.vtp",
+        "status": 200,
+        "bytes": 290656
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_178.vtp",
+        "status": 200,
+        "bytes": 293300
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_183.vtp",
+        "status": 200,
+        "bytes": 282236
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_188.vtp",
+        "status": 200,
+        "bytes": 243500
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_193.vtp",
+        "status": 200,
+        "bytes": 199804
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_198.vtp",
+        "status": 200,
+        "bytes": 141472
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_203.vtp",
+        "status": 200,
+        "bytes": 123188
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_208.vtp",
+        "status": 200,
+        "bytes": 118884
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_213.vtp",
+        "status": 200,
+        "bytes": 117744
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_218.vtp",
+        "status": 200,
+        "bytes": 46456
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_223.vtp",
+        "status": 200,
+        "bytes": 30444
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_228.vtp",
+        "status": 200,
+        "bytes": 24972
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_233.vtp",
+        "status": 200,
+        "bytes": 26276
+      },
+      {
+        "file": "model_cache/IV-2/slice_x_238.vtp",
+        "status": 200,
+        "bytes": 22820
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-69.vtp",
+        "status": 200,
+        "bytes": 41920
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-64.vtp",
+        "status": 200,
+        "bytes": 47592
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-59.vtp",
+        "status": 200,
+        "bytes": 74884
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-54.vtp",
+        "status": 200,
+        "bytes": 93060
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-49.vtp",
+        "status": 200,
+        "bytes": 107516
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-44.vtp",
+        "status": 200,
+        "bytes": 151120
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-39.vtp",
+        "status": 200,
+        "bytes": 258112
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-34.vtp",
+        "status": 200,
+        "bytes": 311856
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-29.vtp",
+        "status": 200,
+        "bytes": 603912
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-24.vtp",
+        "status": 200,
+        "bytes": 713872
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-19.vtp",
+        "status": 200,
+        "bytes": 834680
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-14.vtp",
+        "status": 200,
+        "bytes": 959852
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-9.vtp",
+        "status": 200,
+        "bytes": 1124748
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_-4.vtp",
+        "status": 200,
+        "bytes": 1308904
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_1.vtp",
+        "status": 200,
+        "bytes": 1133736
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_6.vtp",
+        "status": 200,
+        "bytes": 1201920
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_11.vtp",
+        "status": 200,
+        "bytes": 979320
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_16.vtp",
+        "status": 200,
+        "bytes": 1239716
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_21.vtp",
+        "status": 200,
+        "bytes": 1057516
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_26.vtp",
+        "status": 200,
+        "bytes": 1356656
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_31.vtp",
+        "status": 200,
+        "bytes": 1375340
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_36.vtp",
+        "status": 200,
+        "bytes": 1148244
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_41.vtp",
+        "status": 200,
+        "bytes": 1159740
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_46.vtp",
+        "status": 200,
+        "bytes": 1098936
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_51.vtp",
+        "status": 200,
+        "bytes": 1110296
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_56.vtp",
+        "status": 200,
+        "bytes": 993824
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_61.vtp",
+        "status": 200,
+        "bytes": 1067500
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_66.vtp",
+        "status": 200,
+        "bytes": 869568
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_71.vtp",
+        "status": 200,
+        "bytes": 901340
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_76.vtp",
+        "status": 200,
+        "bytes": 608716
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_81.vtp",
+        "status": 200,
+        "bytes": 234980
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_86.vtp",
+        "status": 200,
+        "bytes": 117584
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_91.vtp",
+        "status": 200,
+        "bytes": 87328
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_96.vtp",
+        "status": 200,
+        "bytes": 65636
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_101.vtp",
+        "status": 200,
+        "bytes": 45892
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_106.vtp",
+        "status": 200,
+        "bytes": 43832
+      },
+      {
+        "file": "model_cache/IV-2/slice_y_111.vtp",
+        "status": 200,
+        "bytes": 39856
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-37.vtp",
+        "status": 200,
+        "bytes": 69832
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-32.vtp",
+        "status": 200,
+        "bytes": 70588
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-27.vtp",
+        "status": 200,
+        "bytes": 80084
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-22.vtp",
+        "status": 200,
+        "bytes": 83704
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-17.vtp",
+        "status": 200,
+        "bytes": 106172
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-12.vtp",
+        "status": 200,
+        "bytes": 382776
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-7.vtp",
+        "status": 200,
+        "bytes": 1532776
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_-2.vtp",
+        "status": 200,
+        "bytes": 2346804
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_3.vtp",
+        "status": 200,
+        "bytes": 2642504
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_8.vtp",
+        "status": 200,
+        "bytes": 3456256
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_13.vtp",
+        "status": 200,
+        "bytes": 3596520
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_18.vtp",
+        "status": 200,
+        "bytes": 3032468
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_23.vtp",
+        "status": 200,
+        "bytes": 3162292
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_28.vtp",
+        "status": 200,
+        "bytes": 2295876
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_33.vtp",
+        "status": 200,
+        "bytes": 951800
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_38.vtp",
+        "status": 200,
+        "bytes": 252108
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_43.vtp",
+        "status": 200,
+        "bytes": 92096
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_48.vtp",
+        "status": 200,
+        "bytes": 77068
+      },
+      {
+        "file": "model_cache/IV-2/slice_z_53.vtp",
+        "status": 200,
+        "bytes": 67100
+      }
+    ]
+  }
+]

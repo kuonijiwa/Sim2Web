@@ -1,0 +1,52 @@
+{
+  "index": "index.json",
+  "schema": "simwebview-index/2",
+  "stages": {
+    "gravity": {
+      "exact_arrays": 41,
+      "exact_tuples": 103692,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 300,
+      "interpolated_tuples": 180250,
+      "max_interp_nrmse": 5.5357326368189276e-08,
+      "max_interp_abs_error": {
+        "X_Disp": 3.892172445452147e-09,
+        "Y_Disp": 5.476400929960157e-10,
+        "Z_Disp": 7.234792310378824e-09,
+        "TotalDisplacement": 7.952915369660585e-09,
+        "Stress_XX": 0.42149738626903854,
+        "Stress_YY": 0.2527678915648721,
+        "Stress_ZZ": 0.8392636682838202,
+        "Stress_Min_Principal": 0.7630956543143839,
+        "Stress_Mid_Principal": 0.39568407091428526,
+        "Stress_Max_Principal": 0.3644190214545233
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 7,
+      "fallback_max_abs_error": {
+        "X_Disp": 8.894590639376993e-10,
+        "Y_Disp": 1.5805490840821793e-11,
+        "Z_Disp": 2.005775691371614e-09,
+        "TotalDisplacement": 1.8953882352512608e-09,
+        "Stress_XX": 0.1954196093720384,
+        "Stress_YY": 0.06020389939658344,
+        "Stress_ZZ": 0.08699305087793618,
+        "Stress_Min_Principal": 0.13031323184259236,
+        "Stress_Mid_Principal": 0.0602038994547911,
+        "Stress_Max_Principal": 0.05015237795305438
+      },
+      "probe_disagreements": 0,
+      "vertices_on_discontinuities": 0,
+      "cell_restricted_max_abs_error": {},
+      "max_jump_across_discontinuity": {},
+      "magnitude_vs_vector_norm": {
+        "max_abs": 3.5499833836438732e-09,
+        "max_relative_to_span": 9.632072879399173e-08
+      },
+      "files": 31,
+      "max_exact_nrmse_vs_float64": 1.4212738948904604e-08,
+      "failures": []
+    }
+  },
+  "failures": []
+}

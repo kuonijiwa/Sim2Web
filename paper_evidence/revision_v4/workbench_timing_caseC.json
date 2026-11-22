@@ -1,0 +1,34 @@
+{
+  "sim2web": "0.2.0.dev0",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.11.18",
+  "inputs": [
+    "/home/claude/SimWebView/examples/3dec_slope/input/slopemodel.vtu"
+  ],
+  "validation_passed": true,
+  "primary_bytes": 2620417,
+  "sections": 151,
+  "steps": {
+    "read_model (inspect)": {
+      "seconds": 2.076496031000005,
+      "ui_latency_median_s": 0.18521222100000045,
+      "ui_latency_worst_s": 0.19790564100000552
+    },
+    "preview (surfaces)": {
+      "seconds": 7.968082761000005,
+      "ui_latency_median_s": 0.17943254300001854,
+      "ui_latency_worst_s": 0.35526603200000295
+    },
+    "build (full)": {
+      "seconds": 67.20620115,
+      "ui_latency_median_s": 0.18133806700001287,
+      "ui_latency_worst_s": 0.2455520720000095
+    },
+    "validate (every 5th section)": {
+      "seconds": 27.474251005000013,
+      "ui_latency_median_s": 0.2037323939999851,
+      "ui_latency_worst_s": 0.3476699200000155
+    }
+  },
+  "note": "client and server in one process; latency covers job status and project state"
+}

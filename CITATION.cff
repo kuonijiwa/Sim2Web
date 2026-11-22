@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: >-
-  If you use SimWebView, please cite this software using the metadata below
+  If you use Sim2Web, please cite this software using the metadata below
   and identify the exact repository commit or release used.
 type: software
 license: MIT
-title: "SimWebView: Web-based visualization of large geotechnical simulation models"
-version: 0.1.0a0
-repository-code: "https://github.com/kuonijiwa/SimWebView"
-url: "https://github.com/kuonijiwa/SimWebView"
+title: "Sim2Web: one-click post-processing and verifiable web publishing of geotechnical simulation results"
+version: 0.2.0.dev0
+repository-code: "https://github.com/kuonijiwa/Sim2Web"
+url: "https://github.com/kuonijiwa/Sim2Web"
 authors:
   - family-names: "Cheng"
     given-names: "Yongjin"
@@ -15,10 +15,10 @@ authors:
     given-names: "Weijiang"
   - name: "HydroChina Itasca"
 abstract: >-
-  Offline processing and browser presentation of large geotechnical simulation
-  models: outer-surface inspection, inner excavation-surface inspection, and
-  data reduction and partitioning. Three FLAC3D and 3DEC examples include
-  retained field associations, source identifiers and editable Vue/vtk.js viewers.
+  A configuration-driven Python library and data-driven browser viewer that
+  prepare geotechnical simulation results (VTK unstructured grids) for browser
+  review: exterior and excavation surfaces, axis-aligned sections, field
+  associations and source identifiers, with independent validation.
 keywords:
   - geotechnical engineering
   - scientific visualization

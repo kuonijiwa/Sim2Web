@@ -1,0 +1,94 @@
+{
+  "schema": "sim2web-example-data/1",
+  "status": "Draft URLs. Replace RECORD_ID after dataset publication.",
+  "cases": {
+    "A": {
+      "example": "flac3d_cavern_iv2",
+      "archive": "Sim2Web_case_A.zip",
+      "members": [
+        "case.yaml",
+        "input/IV-2.vtu",
+        "README.md"
+      ],
+      "bytes": 103595994,
+      "sha256": "bc1a6b6d8b89fac38e98c555f4ce07bc9c7333aeabd6db4a1d4212a4fd9b0ade",
+      "url": "https://zenodo.org/records/RECORD_ID/files/Sim2Web_case_A.zip?download=1"
+    },
+    "B": {
+      "example": "flac3d_slope_exac23",
+      "archive": "Sim2Web_case_B.zip",
+      "members": [
+        "case.yaml",
+        "input/exac_23.vtu",
+        "README.md"
+      ],
+      "bytes": 46585434,
+      "sha256": "b227cc5f883b375159f660ca8eda8a2c7ced9840ff65371b3cc744582b36f8dc",
+      "url": "https://zenodo.org/records/RECORD_ID/files/Sim2Web_case_B.zip?download=1"
+    },
+    "C": {
+      "example": "3dec_slope",
+      "archive": "Sim2Web_case_C.zip",
+      "members": [
+        "case.yaml",
+        "input/slopemodel.vtu",
+        "README.md"
+      ],
+      "bytes": 47188856,
+      "sha256": "cd8815b3d67b177af4611cbc8c0fb2de2fcd601ebfe00b3fab4760eb10228ca9",
+      "url": "https://zenodo.org/records/RECORD_ID/files/Sim2Web_case_C.zip?download=1"
+    },
+    "D": {
+      "example": "flac3d_pit_case4",
+      "archive": "Sim2Web_case_D.zip",
+      "members": [
+        "case.yaml",
+        "input/EXC12_dis.vtu",
+        "README.md"
+      ],
+      "bytes": 51623770,
+      "sha256": "e69afdd3d1955df70eebe31720a609b7f773e57ee2873dedca73de42f64c1504",
+      "url": "https://zenodo.org/records/RECORD_ID/files/Sim2Web_case_D.zip?download=1"
+    },
+    "E": {
+      "example": "ogs_slope",
+      "archive": "Sim2Web_case_E.zip",
+      "members": [
+        "case.yaml",
+        "input/slope_result_ts_1_t_1.000000.vtu",
+        "README.md"
+      ],
+      "bytes": 1975054,
+      "sha256": "722e7829eca0870599778484bdc6796c1ef8459891e9fe3e18110c54864b8226",
+      "url": "https://zenodo.org/records/RECORD_ID/files/Sim2Web_case_E.zip?download=1"
+    },
+    "F": {
+      "example": "3dec_slope_case_f",
+      "archive": "Sim2Web_case_F.zip",
+      "members": [
+        "case.yaml",
+        "input/kala_final.vtu",
+        "README.md"
+      ],
+      "bytes": 36294503,
+      "sha256": "efcff64f344096dd996c358fa753a329b89a727f2165a2ad0a715114f3272067",
+      "url": "https://zenodo.org/records/RECORD_ID/files/Sim2Web_case_F.zip?download=1"
+    },
+    "STAGES": {
+      "example": "flac3d_cavern_stages",
+      "archive": "Sim2Web_case_STAGES.zip",
+      "members": [
+        "case.yaml",
+        "input/I-1.vtu",
+        "input/I-3.vtu",
+        "input/II-2.vtu",
+        "input/III-3.vtu",
+        "input/IV-2.vtu",
+        "README.md"
+      ],
+      "bytes": 548316460,
+      "sha256": "9bfbdffc362d4f4899e1f43c33d9ed22325b6a5234ffb0510aab451534f9c633",
+      "url": "https://zenodo.org/records/RECORD_ID/files/Sim2Web_case_STAGES.zip?download=1"
+    }
+  }
+}

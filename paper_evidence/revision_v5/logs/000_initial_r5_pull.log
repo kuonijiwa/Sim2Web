@@ -1,0 +1,3 @@
+Wall time is the original shell call's 3.159 s for all three commands. The timestamp was unavailable in that tool response.
+The r6 SHA-256 matched. The intermediate r5 bundle passed git bundle verify.
+The fast-forward exited 128 when a Git LFS fetch for the historical fig1_architecture.png returned 404. See 001 for the partial-checkout recovery and 004 for the successful retry with GIT_LFS_SKIP_SMUDGE=1.

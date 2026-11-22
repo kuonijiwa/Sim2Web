@@ -1,0 +1,73 @@
+{
+  "case": "C",
+  "source": "G:\\成果\\papers\\02\\SimWebView\\examples\\3dec_slope\\input\\slopemodel.vtu",
+  "source_bytes": 97224531,
+  "points": 599508,
+  "cells": 495965,
+  "retained_cells": 495965,
+  "vtk_cell_types": {
+    "10": 495965
+  },
+  "binary_bytes": 28275232,
+  "gzip_bytes": 11794285,
+  "gzip_level": 6,
+  "positions": [
+    570.0,
+    630.0,
+    690.0,
+    750.0,
+    810.0,
+    870.0,
+    930.0,
+    990.0,
+    1050.0,
+    1110.0
+  ],
+  "w_indices": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    48,
+    54
+  ],
+  "first_index": 4,
+  "correctness_indices": [
+    0,
+    4,
+    9
+  ],
+  "camera": [
+    3672.5553477727626,
+    369.99879913599165,
+    2104.0694184715953,
+    840.0,
+    369.99879913599165,
+    2104.0694184715953,
+    0,
+    0,
+    1,
+    410.7205254270506
+  ],
+  "projection": "parallel, x-normal",
+  "viewport": [
+    1600,
+    900
+  ],
+  "layers": [
+    "exterior"
+  ],
+  "range": [
+    0.0,
+    0.014239802025258541
+  ],
+  "range_mode": "full",
+  "colormap": "jet",
+  "bands": 8,
+  "retained_filter": "Apply the shipped void rule after receiving whole topology.",
+  "field": "TotalDisplacement, interpolate nodal magnitude as the shipped viewer does. Source point vectors require no cell-data averaging."
+}

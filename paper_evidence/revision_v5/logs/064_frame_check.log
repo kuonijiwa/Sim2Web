@@ -1,0 +1,188 @@
+{
+  "window_pixels": [
+    1600,
+    900
+  ],
+  "crop_x_pixels": [
+    410,
+    1180
+  ],
+  "section_index": 9,
+  "cases": {
+    "A": {
+      "x_m": 238.0,
+      "LAN": {
+        "B": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        },
+        "S-local": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        },
+        "S-remote": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        },
+        "W": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        }
+      },
+      "4G": {
+        "B": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        },
+        "S-local": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        },
+        "S-remote": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        },
+        "W": {
+          "bounds_px": [
+            410,
+            120,
+            1179,
+            779
+          ],
+          "pixels": 508200,
+          "iou_against_B": 1.0
+        }
+      }
+    },
+    "C": {
+      "x_m": 1110.0,
+      "LAN": {
+        "B": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208320,
+          "iou_against_B": 1.0
+        },
+        "S-local": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208320,
+          "iou_against_B": 1.0
+        },
+        "S-remote": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208253,
+          "iou_against_B": 0.9996783794162827
+        },
+        "W": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208320,
+          "iou_against_B": 1.0
+        }
+      },
+      "4G": {
+        "B": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208320,
+          "iou_against_B": 1.0
+        },
+        "S-local": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208320,
+          "iou_against_B": 1.0
+        },
+        "S-remote": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208253,
+          "iou_against_B": 0.9996783794162827
+        },
+        "W": {
+          "bounds_px": [
+            658,
+            72,
+            941,
+            837
+          ],
+          "pixels": 208320,
+          "iou_against_B": 1.0
+        }
+      }
+    }
+  },
+  "passed": true
+}

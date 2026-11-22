@@ -1,18 +1,13 @@
-# Case C — 3DEC slope
+# Case C: 3DEC discontinuous slope (70,021 blocks)
 
-This cross-solver example retains one `slopemodel` input.  The displayed object
-is the **OUTER EXPOSED SURFACE**, with axis-aligned **SECTION** meshes.  Separate
-blocks and disconnected surface components are physically valid for this case.
+Configuration: [`sim2web.yaml`](sim2web.yaml). Input: `input/*.vtu` (Git LFS).
 
 ```bash
-python processing/process.py
-npm run build:3dec-slope
+sim2web build examples/3dec_slope/sim2web.yaml       # writes examples/3dec_slope/site
+sim2web validate examples/3dec_slope/sim2web.yaml
+sim2web serve examples/3dec_slope/site
 ```
 
-Input is `input/slopemodel.vtu`; products are written beneath
-`output/model_cache/slopemodel/`.  The editable frontend entry component is
-`frontend/src/App.vue`.  Full-model opacity defaults to 100% for the clearest
-validated display.
-
-Stress uses exact CellData, material identifiers are categorical CellData, and
-displacement fields are continuous PointData.
+* Primary product: the **exterior surface** with block-to-block contact faces removed (32,800 of 917,062 extracted faces remain).
+* Void identification: labels first, stress fallback; this model contains no void cells. Run `sim2web sensitivity examples/3dec_slope/sim2web.yaml` for the threshold/tolerance sweep.
+* `output/model_cache/` holds the fixtures for the byte-level regression test. The current viewer reads `site/`.

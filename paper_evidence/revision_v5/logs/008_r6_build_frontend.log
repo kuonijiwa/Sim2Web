@@ -1,0 +1,30 @@
+
+> sim2web-viewer@0.2.0-dev.0 build
+> npm run build:viewer && npm run build:workbench
+
+
+> sim2web-viewer@0.2.0-dev.0 build:viewer
+> vite build --config viewer/vite.config.js
+
+vite v6.4.6 building for production...
+transforming...
+✓ 273 modules transformed.
+rendering chunks...
+computing gzip size...
+../src/sim2web/viewer_dist/index.html                     0.52 kB │ gzip:   0.32 kB
+../src/sim2web/viewer_dist/assets/index-BRWC9aVK.css      5.11 kB │ gzip:   1.58 kB
+../src/sim2web/viewer_dist/assets/index-BkuvQ62y.js   1,381.96 kB │ gzip: 377.36 kB
+✓ built in 5.74s
+
+> sim2web-viewer@0.2.0-dev.0 build:workbench
+> vite build --config workbench/vite.config.js
+
+vite v6.4.6 building for production...
+transforming...
+✓ 22 modules transformed.
+rendering chunks...
+computing gzip size...
+../src/sim2web/workbench_dist/index.html                   0.53 kB │ gzip:  0.32 kB
+../src/sim2web/workbench_dist/assets/index-vXlGCtlH.css    6.48 kB │ gzip:  1.96 kB
+../src/sim2web/workbench_dist/assets/index-vGTJzs3n.js   113.29 kB │ gzip: 41.33 kB
+✓ built in 953ms

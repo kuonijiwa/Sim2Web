@@ -1,0 +1,8 @@
+[slopemodel] 599508 points, 495965 cells
+[slopemodel] stress order XX,YY,ZZ,XY,XZ,YZ (configuration, matches file)
+[slopemodel] void cells: 0 (stress (no label matched))
+[slopemodel] connected mesh regions (blocks): 70021
+[slopemodel] internal block-contact faces removed from the exterior: 895769
+[slopemodel] layers: ['exterior'], sections: 151
+Index written to C:\swv_r6_20261121\site_C\model_cache\index.json
+Package: C:\swv_r6_20261121\site_C

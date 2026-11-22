@@ -1,0 +1,15 @@
+"C:\Program Files\nodejs\node.exe" benchmark/web_slicing/measure.mjs C:/swv_r6_20261121 C B LAN C:/swv_r4_20261121/venv/Scripts/python.exe 5 5
+SUCCESS: The process with PID 39260 (child process of PID 38116) has been terminated.
+SUCCESS: The process with PID 36708 (child process of PID 38116) has been terminated.
+SUCCESS: The process with PID 39664 (child process of PID 10080) has been terminated.
+SUCCESS: The process with PID 13144 (child process of PID 10080) has been terminated.
+SUCCESS: The process with PID 396 (child process of PID 10080) has been terminated.
+SUCCESS: The process with PID 36508 (child process of PID 10080) has been terminated.
+SUCCESS: The process with PID 27304 (child process of PID 10080) has been terminated.
+SUCCESS: The process with PID 32064 (child process of PID 10080) has been terminated.
+SUCCESS: The process with PID 36388 (child process of PID 10080) has been terminated.
+SUCCESS: The process with PID 38116 (child process of PID 19528) has been terminated.
+SUCCESS: The process with PID 10080 (child process of PID 19528) has been terminated.
+SUCCESS: The process with PID 39288 (child process of PID 38684) has been terminated.
+SUCCESS: The process with PID 19528 (child process of PID 38684) has been terminated.
+SUCCESS: The process with PID 38684 (child process of PID 1176) has been terminated.

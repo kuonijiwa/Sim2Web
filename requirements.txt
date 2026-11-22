@@ -1,6 +1,7 @@
+# Validated environment (Windows 11 and Ubuntu, Python 3.11).
+# The package itself accepts the compatible ranges in pyproject.toml.
 numpy==1.26.4
 scipy==1.11.4
 pyvista==0.46.3
 vtk==9.5.0
-pytest>=8.0
-psutil>=5.9
+pyyaml==6.0.2

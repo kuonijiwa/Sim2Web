@@ -1,0 +1,46 @@
+# Case E: OpenGeoSys 6.5.9 small-deformation slope (open-source solver; regenerate with make_mesh.py).
+schema: sim2web-config/1
+title: "Case E: OpenGeoSys two-layer slope"
+description: >-
+  Linear-elastic slope with a weak layer under gravity, solved with OpenGeoSys.
+  Stress is nodal (PointData), as in most finite-element codes.
+solver: OpenGeoSys 6.5.9 (SMALL_DEFORMATION)
+
+input:
+  stages:
+    - {file: input/slope_result_ts_1_t_1.000000.vtu, name: gravity}
+
+output:
+  dir: site
+
+fields:
+  displacement: {name: displacement, unit: m}
+  stress:
+    name: sigma
+    # OGS writes no ComponentName attributes. The order was determined with a
+    # simple-shear test (u = 0.001 z e_x): the XZ stress appears in column 6 and
+    # equals G * 0.001 (no sqrt(2) factor), i.e. Voigt order.
+    order: "XX,YY,ZZ,XY,YZ,XZ"
+    unit: Pa
+    sign_convention: "OpenGeoSys convention: tension positive"
+  categories:
+    - {name: MaterialIDs, label: "Material", labels: {"0": "Rock", "1": "Weak layer"}}
+
+geometry:
+  primary: exterior
+  exterior: {enabled: true, split_by_group: true}
+  excavation: {enabled: false}
+  groups: {field: MaterialIDs}
+  display_averaging: per_group
+
+sections:
+  axes: [x, y, z]
+  spacing: 10
+  placement: integer_grid
+  min_points: 10
+
+viewer:
+  subtitle: "Exterior, layers and sections; nodal stress"
+  default_field: Stress_Min_Principal
+  default_axis: y
+  range_mode: p5_p95

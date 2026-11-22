@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "G:\成果\papers\02\SimWebView\paper_evidence\revision_v5\figures\draw_figure1.py", line 89, in <module>
+    assert not violations, violations
+           ^^^^^^^^^^^^^^
+AssertionError: ['Named-component VTU']

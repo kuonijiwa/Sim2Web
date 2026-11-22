@@ -1,0 +1,1228 @@
+{
+  "version": "ParaView 5.13.3 / Sim2Web 722176f / Chrome 160.0.8157.0",
+  "host": "Windows 11 build 26300, Intel i7-10750H, 15.8 GiB, Intel UHD Graphics / Quadro P620",
+  "cases": {
+    "A": {
+      "M1": {
+        "ParaView_GUI_native_trace": {
+          "lines_total": 8443,
+          "nonblank_noncomment": 5411,
+          "file": "cases/A/paraview_gui_native_trace.py",
+          "slice_calls": 132,
+          "export_calls": 1,
+          "reader_calls": 1,
+          "trace_origin_assignments": 264,
+          "trace_complete": true
+        },
+        "ParaView_GUI_trace_positions_audit": {
+          "native_trace": "paraview_gui_native_trace.py",
+          "total_lines": 8443,
+          "effective_lines": 5411,
+          "reader_calls": 1,
+          "slices": 132,
+          "with_position": 132,
+          "export_calls": [
+            "C:\\swv_r4_20261121\\pv_gui_complete\\A\\scene.vtkjs"
+          ],
+          "exact_section_positions_match": true,
+          "missing_positions": [],
+          "unexpected_positions": [],
+          "scope": "Static AST check of GUI-generated Python trace against positions in Sim2Web index. The desktop separately executed the actual export."
+        },
+        "ParaView_mode": "Desktop macro generated native ParaView trace with actual filters, proxy property-change hooks, and export. Original A also manually opened and started from Tools; it is retained separately.",
+        "Sim2Web_changed_config_lines": 36,
+        "Sim2Web_workbench_clicks_from_seeded_config": 14
+      },
+      "M2": {
+        "ParaView_pvpython_package_seconds": 194.50489880004898,
+        "ParaView_pvpython_process_seconds": 233.27961860003415,
+        "Glance_official_reembed_seconds": 3.473,
+        "ParaView_GUI_macro_seconds": 326.16787140001543,
+        "ParaView_manually_timed_GUI_seconds": null,
+        "Sim2Web_build_seconds": 99.566,
+        "Sim2Web_validate_seconds": 122.07
+      },
+      "M3": {
+        "ParaView_surface_bytes": 11918924,
+        "ParaView_vtkjs_bytes": 180133823,
+        "ParaView_bundled_html_bytes": 245522661,
+        "ParaView_official_template_html_bytes": 256286362,
+        "Sim2Web_primary_bytes": 5099246,
+        "Sim2Web_mesh_product_bytes": 82913238,
+        "Sim2Web_static_site_bytes": 84502592.0
+      },
+      "M4": {
+        "ParaView_Glance": {
+          "first_image_ms": [
+            42481.39999997616,
+            31214,
+            23722
+          ],
+          "median_first_image_ms": 31214,
+          "rendered_runs": 3,
+          "planned_runs": 3,
+          "export_bytes": 256286362,
+          "vtkjs_export_bytes": 180133823,
+          "glance_viewer_bytes": 16081381,
+          "clock_source": "cases/A/paraview_corrected/glance_split_geometry_browser.json",
+          "runs": [
+            {
+              "run": 1,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:63055/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:63055/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 308196,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 24616.600000023842,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 308196,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 24616.600000023842,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 42481.39999997616
+            },
+            {
+              "run": 2,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:63055/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:63055/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 308196,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 22748,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 308196,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 22748,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 31214
+            },
+            {
+              "run": 3,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:63055/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:63055/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 308196,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 15769.700000047684,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 308196,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 15769.700000047684,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 23722
+            }
+          ],
+          "field_switch_ms": null,
+          "section_switch_ms": null,
+          "interaction_qualification": "Glance actors have individual visibility switches. The recorded two-actor action is an optional proxy, no section slider.",
+          "interaction_trials": [
+            {
+              "run": 1,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:49417/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:49417/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 308196,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 16279.300000071526,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 308196,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 16279.300000071526,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 24995.899999976158,
+              "fieldSwitchError": "TimeoutError: locator.click: Timeout 9000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.v-select__slot').filter({ hasText: 'Displacement_Magnitude' }).first()\u001b[22m\n",
+              "controlsError": "Error: UI interaction did not return within 42 seconds",
+              "sectionSwitchError": "Error: locator.count: Target page, context or browser has been closed"
+            }
+          ]
+        },
+        "Sim2Web": {
+          "first_image_ms": [
+            2868.7999999523163,
+            2369.9000000953674,
+            3083.8000000715256
+          ],
+          "median_first_image_ms": 2868.7999999523163,
+          "median_section_switch_ms": 89.9,
+          "median_startup_bytes": 6071587,
+          "field_switch_ms": 116.65000003576279,
+          "all_viewer_checks_passed": true,
+          "browser": "160.0.8157.0",
+          "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        }
+      },
+      "M5": {
+        "ParaView": {
+          "file": "IV-2.vtu",
+          "array": "Stress",
+          "cells": 1211385,
+          "retained_cells": 983438,
+          "component_names_in_file": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "XZ",
+            "YZ"
+          ],
+          "vtk_filter_order": "XX,YY,ZZ,XY,YZ,XZ",
+          "vtk_filter_matches_vtk_order": true,
+          "principal": {
+            "min": {
+              "correct_range": [
+                -45.14997431865718,
+                -0.0010148254860926124
+              ],
+              "generic_range": [
+                -41.837069246031184,
+                -0.0011028797949439173
+              ],
+              "max_abs_error": 3.837639372515108,
+              "max_error_percent_of_range": 8.49995086397409,
+              "cells_error_over_1pct_of_range": 28838,
+              "cells_positive_generic_but_not_correct": null
+            },
+            "mid": {
+              "correct_range": [
+                -13.765892978154943,
+                0.1286898656512618
+              ],
+              "generic_range": [
+                -24.343814659532452,
+                0.06676248847108111
+              ],
+              "max_abs_error": 10.577921681377509,
+              "max_error_percent_of_range": 76.12982556070645,
+              "cells_error_over_1pct_of_range": 253356,
+              "cells_positive_generic_but_not_correct": null
+            },
+            "max": {
+              "correct_range": [
+                -12.632434284286916,
+                0.12868986565126195
+              ],
+              "generic_range": [
+                -7.060737128341292,
+                2.1111135414784408
+              ],
+              "max_abs_error": 7.215170289877238,
+              "max_error_percent_of_range": 56.540240539170625,
+              "cells_error_over_1pct_of_range": 225462,
+              "cells_positive_generic_but_not_correct": 14711
+            }
+          },
+          "vtk_filter_matches_file_order": false
+        },
+        "ParaView_reordered_with_one_filter": {
+          "original_labels": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "XZ",
+            "YZ"
+          ],
+          "enabled_tensor_order": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "YZ",
+            "XZ"
+          ],
+          "additional_operations": 1,
+          "max_abs_mpa_min_mid_max": [
+            2.1316282072803006e-14,
+            9.769962616701378e-15,
+            8.881784197001252e-15
+          ],
+          "false_tensile_due_to_roundoff": 0,
+          "false_tensile_using_1e_9_mpa_sign_epsilon": 0,
+          "note": "An explicit tensor reorder can be added as one Programmable Filter before the native principal stress filter. Does not change reported default timing/size."
+        },
+        "Sim2Web_exact_mismatches": 0
+      },
+      "M6": {
+        "ParaView": null,
+        "Sim2Web": {
+          "status": "ok",
+          "gradient_per_m": 0.021681362576355466,
+          "fit_r2": 0.4035749095567005,
+          "bins_used": 20,
+          "compression_increases_with_depth": true,
+          "implied_unit_weight_kN_m3_if_Pa": 2.1681362576355466e-05,
+          "implied_unit_weight_kN_m3_if_kPa": 0.021681362576355466,
+          "implied_unit_weight_kN_m3_if_MPa": 21.681362576355465,
+          "implied_unit_weight_kN_m3_if_GPa": 21681.362576355466,
+          "consistent_units": [
+            "MPa"
+          ],
+          "declared": "MPa",
+          "declared_consistent": true,
+          "association": "cell"
+        }
+      },
+      "M7": {
+        "ParaView_default_has_separate_excavation": false,
+        "additional_user_steps_for_equivalence": 4,
+        "steps_description": "对同一 absmax 再取互补空区分支；提取空区面；按接触容差筛出实体一侧的相邻面；将筛选结果单独着色并导出。",
+        "step_count_measurement": "Processing operations, excluding baseline operations. For A/D generic VTK results audit geometry separately.",
+        "additional_steps_geometry_audit": {
+          "case": "A",
+          "unmodified_ExtractSurface_faces": 51973,
+          "extra_operations": 4,
+          "refined_faces": 49677,
+          "refined_area_m2": 31376.71949708719,
+          "sim2web_faces": 49677,
+          "sim2web_area_m2": 31376.719379156035,
+          "void_cells": 227947,
+          "tolerance_m": 1e-05,
+          "unmatched_refined_centers_at_1mm": 0,
+          "unmatched_reference_centers_at_1mm": 0,
+          "test_scope": "Additional filters implemented with generic VTK/PyVista operations on the actual ParaView Extract Surface output. Compares geometric face centers, no values or winding."
+        },
+        "Sim2Web_excavation_layers": [
+          "excavation"
+        ]
+      },
+      "M8": {
+        "ParaView_extract_surface_faces": 51973,
+        "ParaView_extract_surface_bytes": 11918924,
+        "Sim2Web_exterior_faces": null,
+        "Sim2Web_exterior_bytes": null,
+        "Sim2Web_internal_faces": "keep"
+      },
+      "M9": {
+        "ParaView": "Extract Surface IDs may exist only in intermediate VTP. Glance does not provide direct source VTU point/cell drill-through in this experiment.",
+        "Sim2Web": {
+          "source_point_ids": true,
+          "source_cell_ids": true
+        }
+      },
+      "M10": {
+        "ParaView_sections": 132,
+        "ParaView_archive_audit": {
+          "case": "A",
+          "archive_bytes": 180133823,
+          "actors": 133,
+          "slices": 132,
+          "actors_with_displacement_magnitude": 133,
+          "actors_with_all_principal_stresses": 133,
+          "primary_original_ids": {
+            "points": [
+              "vtkOriginalPointIds"
+            ],
+            "cells": [
+              "vtkOriginalCellIds"
+            ]
+          }
+        },
+        "ParaView_interaction": "Slice actors, individual visibility, no ordered section slider.",
+        "Sim2Web_sections": 132,
+        "Sim2Web_interaction": "Axis and section slider."
+      },
+      "M11": {
+        "ParaView": "No independent archive-to-VTU verification in the default workflow.",
+        "Sim2Web_validate_exit": 0,
+        "Sim2Web_validation_failures": [],
+        "Sim2Web_validation": {
+          "IV-2": {
+            "exact_arrays": 935,
+            "exact_tuples": 6396076,
+            "exact_mismatches": 0,
+            "interpolated_arrays": 528,
+            "interpolated_tuples": 2924588,
+            "max_interp_nrmse": 1.828928483514052e-07,
+            "max_interp_abs_error": {
+              "X_Disp": 9.016547136459115e-08,
+              "Y_Disp": 1.869125703874222e-07,
+              "Z_Disp": 2.266727539345387e-07,
+              "TotalDisplacement": 1.6701486478597032e-07
+            },
+            "unlocated_section_points": 0,
+            "closest_cell_fallback_points": 3891,
+            "fallback_max_abs_error": {
+              "X_Disp": 3.0426758720282015e-11,
+              "Y_Disp": 1.584870673936295e-11,
+              "Z_Disp": 5.836061642585928e-11,
+              "TotalDisplacement": 6.212614713655103e-11
+            },
+            "probe_disagreements": 21,
+            "vertices_on_discontinuities": 9,
+            "cell_restricted_max_abs_error": {
+              "X_Disp": 7.454662107118752e-08,
+              "Y_Disp": 1.2283716178075263e-06,
+              "Z_Disp": 3.790957680843308e-07
+            },
+            "max_jump_across_discontinuity": {
+              "X_Disp": 3.250008984412821e-07,
+              "Y_Disp": 2.5059372869055095e-06,
+              "Z_Disp": 8.186664784710224e-07
+            },
+            "magnitude_vs_vector_norm": {
+              "max_abs": 1.739428923813735e-09,
+              "max_relative_to_span": 1.0248602700142629e-07
+            },
+            "files": 133,
+            "max_exact_nrmse_vs_float64": 1.694261901452693e-07,
+            "failures": []
+          }
+        }
+      }
+    },
+    "C": {
+      "M1": {
+        "ParaView_GUI_native_trace": {
+          "lines_total": 9642,
+          "nonblank_noncomment": 6192,
+          "file": "cases/C/paraview_gui_native_trace.py",
+          "slice_calls": 151,
+          "export_calls": 1,
+          "reader_calls": 1,
+          "trace_origin_assignments": 302,
+          "trace_complete": true
+        },
+        "ParaView_GUI_trace_positions_audit": {
+          "native_trace": "paraview_gui_native_trace.py",
+          "total_lines": 9642,
+          "effective_lines": 6192,
+          "reader_calls": 1,
+          "slices": 151,
+          "with_position": 151,
+          "export_calls": [
+            "C:\\swv_r4_20261121\\pv_gui_complete\\C\\scene.vtkjs"
+          ],
+          "exact_section_positions_match": true,
+          "missing_positions": [],
+          "unexpected_positions": [],
+          "scope": "Static AST check of GUI-generated Python trace against positions in Sim2Web index. The desktop separately executed the actual export."
+        },
+        "ParaView_mode": "Desktop macro generated native ParaView trace with actual filters, proxy property-change hooks, and export. Original A also manually opened and started from Tools; it is retained separately.",
+        "Sim2Web_changed_config_lines": 17,
+        "Sim2Web_workbench_clicks_from_seeded_config": 14
+      },
+      "M2": {
+        "ParaView_pvpython_package_seconds": 364.27208969998173,
+        "ParaView_pvpython_process_seconds": 454.3913164999103,
+        "Glance_official_reembed_seconds": 5.196,
+        "ParaView_GUI_macro_seconds": 747.2364109000191,
+        "ParaView_manually_timed_GUI_seconds": null,
+        "Sim2Web_build_seconds": 101.59,
+        "Sim2Web_validate_seconds": 344.27
+      },
+      "M3": {
+        "ParaView_surface_bytes": 187591097,
+        "ParaView_vtkjs_bytes": 318405218,
+        "ParaView_bundled_html_bytes": 429884521,
+        "ParaView_official_template_html_bytes": 440648222,
+        "Sim2Web_primary_bytes": 2620417,
+        "Sim2Web_mesh_product_bytes": 132241437,
+        "Sim2Web_static_site_bytes": 133851840.0
+      },
+      "M4": {
+        "ParaView_Glance": {
+          "first_image_ms": [
+            52694.700000047684,
+            49043.199999928474,
+            39360.10000002384
+          ],
+          "median_first_image_ms": 49043.199999928474,
+          "rendered_runs": 3,
+          "planned_runs": 3,
+          "export_bytes": 440648222,
+          "vtkjs_export_bytes": 318405218,
+          "glance_viewer_bytes": 16081381,
+          "clock_source": "cases/C/paraview_corrected/glance_split_geometry_browser.json",
+          "runs": [
+            {
+              "run": 1,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:53631/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:53631/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 2751186,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 33986,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 2751186,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 33986,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 52694.700000047684
+            },
+            {
+              "run": 2,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:53631/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:53631/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 2751186,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 39655.699999928474,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 2751186,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 39655.699999928474,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 49043.199999928474
+            },
+            {
+              "run": 3,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:53631/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:53631/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 2751186,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 27538.800000071526,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 2751186,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 27538.800000071526,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 39360.10000002384
+            }
+          ],
+          "field_switch_ms": null,
+          "section_switch_ms": null,
+          "interaction_qualification": "Glance actors have individual visibility switches. The recorded two-actor action is an optional proxy, no section slider.",
+          "interaction_trials": [
+            {
+              "run": 1,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:54261/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:54261/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 2751186,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 21338,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 2751186,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 21338,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 32270.199999928474,
+              "fieldSwitchError": "TimeoutError: locator.click: Timeout 9000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.v-select__slot').filter({ hasText: 'Displacement_Magnitude' }).first()\u001b[22m\n",
+              "controlsError": "Error: UI interaction did not return within 42 seconds",
+              "sectionSwitchError": "Error: locator.count: Target page, context or browser has been closed"
+            }
+          ]
+        },
+        "Sim2Web": {
+          "first_image_ms": [
+            2894.100000023842,
+            2661.600000023842,
+            2242.399999976158
+          ],
+          "median_first_image_ms": 2661.600000023842,
+          "median_section_switch_ms": 132.6,
+          "median_startup_bytes": 3619133,
+          "field_switch_ms": 99.25,
+          "all_viewer_checks_passed": true,
+          "browser": "160.0.8157.0",
+          "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        }
+      },
+      "M5": {
+        "ParaView": {
+          "file": "slopemodel.vtu",
+          "array": "Stress",
+          "cells": 495965,
+          "retained_cells": 495965,
+          "component_names_in_file": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "XZ",
+            "YZ"
+          ],
+          "vtk_filter_order": "XX,YY,ZZ,XY,YZ,XZ",
+          "vtk_filter_matches_vtk_order": true,
+          "principal": {
+            "min": {
+              "correct_range": [
+                -211.2533999922867,
+                0.5129143997647709
+              ],
+              "generic_range": [
+                -215.73887896246075,
+                0.28480112063215185
+              ],
+              "max_abs_error": 14.609444908400846,
+              "max_error_percent_of_range": 6.898852138189361,
+              "cells_error_over_1pct_of_range": 781,
+              "cells_positive_generic_but_not_correct": null
+            },
+            "mid": {
+              "correct_range": [
+                -117.84453091262496,
+                1.60605785209512
+              ],
+              "generic_range": [
+                -99.2695025858706,
+                2.993102126163402
+              ],
+              "max_abs_error": 36.3238206445671,
+              "max_error_percent_of_range": 30.409076271790966,
+              "cells_error_over_1pct_of_range": 78627,
+              "cells_positive_generic_but_not_correct": null
+            },
+            "max": {
+              "correct_range": [
+                -68.10434404434838,
+                8.636083427294484
+              ],
+              "generic_range": [
+                -82.19389340092873,
+                8.243940793472206
+              ],
+              "max_abs_error": 21.71437573616621,
+              "max_error_percent_of_range": 28.295875396563453,
+              "cells_error_over_1pct_of_range": 59214,
+              "cells_positive_generic_but_not_correct": 19608
+            }
+          },
+          "vtk_filter_matches_file_order": false
+        },
+        "ParaView_reordered_with_one_filter": {
+          "original_labels": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "XZ",
+            "YZ"
+          ],
+          "enabled_tensor_order": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "YZ",
+            "XZ"
+          ],
+          "additional_operations": 1,
+          "max_abs_mpa_min_mid_max": [
+            8.526512829121202e-14,
+            5.684341886080802e-14,
+            1.7763568394002505e-14
+          ],
+          "false_tensile_due_to_roundoff": 0,
+          "false_tensile_using_1e_9_mpa_sign_epsilon": 0,
+          "note": "An explicit tensor reorder can be added as one Programmable Filter before the native principal stress filter. Does not change reported default timing/size."
+        },
+        "Sim2Web_exact_mismatches": 0
+      },
+      "M6": {
+        "ParaView": null,
+        "Sim2Web": {
+          "status": "ok",
+          "gradient_per_m": 0.009873923496018115,
+          "fit_r2": 0.52877404824727,
+          "bins_used": 20,
+          "compression_increases_with_depth": true,
+          "implied_unit_weight_kN_m3_if_Pa": 9.873923496018115e-06,
+          "implied_unit_weight_kN_m3_if_kPa": 0.009873923496018115,
+          "implied_unit_weight_kN_m3_if_MPa": 9.873923496018115,
+          "implied_unit_weight_kN_m3_if_GPa": 9873.923496018115,
+          "consistent_units": [
+            "MPa"
+          ],
+          "declared": "MPa",
+          "declared_consistent": true,
+          "association": "cell"
+        }
+      },
+      "M7": {
+        "ParaView_default_has_separate_excavation": false,
+        "additional_user_steps_for_equivalence": 0,
+        "steps_description": "本协议仅要求边坡外表面，不设坑腔层。若需要与 Sim2Web 外表面等效，还要单独去除块体间内部面。",
+        "step_count_measurement": "Processing operations, excluding baseline operations. For A/D generic VTK results audit geometry separately.",
+        "additional_steps_geometry_audit": {},
+        "Sim2Web_excavation_layers": []
+      },
+      "M8": {
+        "ParaView_extract_surface_faces": 917062,
+        "ParaView_extract_surface_bytes": 187591097,
+        "Sim2Web_exterior_faces": 21293,
+        "Sim2Web_exterior_bytes": 2620417,
+        "Sim2Web_internal_faces": "drop"
+      },
+      "M9": {
+        "ParaView": "Extract Surface IDs may exist only in intermediate VTP. Glance does not provide direct source VTU point/cell drill-through in this experiment.",
+        "Sim2Web": {
+          "source_point_ids": true,
+          "source_cell_ids": true
+        }
+      },
+      "M10": {
+        "ParaView_sections": 151,
+        "ParaView_archive_audit": {
+          "case": "C",
+          "archive_bytes": 318405218,
+          "actors": 152,
+          "slices": 151,
+          "actors_with_displacement_magnitude": 152,
+          "actors_with_all_principal_stresses": 152,
+          "primary_original_ids": {
+            "points": [
+              "vtkOriginalPointIds"
+            ],
+            "cells": [
+              "vtkOriginalCellIds"
+            ]
+          }
+        },
+        "ParaView_interaction": "Slice actors, individual visibility, no ordered section slider.",
+        "Sim2Web_sections": 151,
+        "Sim2Web_interaction": "Axis and section slider."
+      },
+      "M11": {
+        "ParaView": "No independent archive-to-VTU verification in the default workflow.",
+        "Sim2Web_validate_exit": 0,
+        "Sim2Web_validation_failures": [],
+        "Sim2Web_validation": {
+          "slopemodel": {
+            "exact_arrays": 916,
+            "exact_tuples": 8281562,
+            "exact_mismatches": 0,
+            "interpolated_arrays": 604,
+            "interpolated_tuples": 6227100,
+            "max_interp_nrmse": 1.7433412646507626e-06,
+            "max_interp_abs_error": {
+              "X_Disp": 1.8125212250698483e-07,
+              "Y_Disp": 1.9128470657172561e-07,
+              "Z_Disp": 2.4486291057680096e-07,
+              "TotalDisplacement": 1.6519034496873235e-07
+            },
+            "unlocated_section_points": 0,
+            "closest_cell_fallback_points": 41,
+            "fallback_max_abs_error": {
+              "X_Disp": 8.731929046699159e-08,
+              "Y_Disp": 5.8901328823038335e-09,
+              "Z_Disp": 4.607551119643633e-08,
+              "TotalDisplacement": 9.87270626657405e-08
+            },
+            "probe_disagreements": 218274,
+            "vertices_on_discontinuities": 22,
+            "cell_restricted_max_abs_error": {
+              "X_Disp": 5.464875604281518e-07,
+              "Y_Disp": 3.116977091046475e-07,
+              "Z_Disp": 6.522102899849357e-07
+            },
+            "max_jump_across_discontinuity": {
+              "X_Disp": 4.5443694399009693e-07,
+              "Y_Disp": 2.515218709040704e-07,
+              "Z_Disp": 3.388473324290029e-07
+            },
+            "magnitude_vs_vector_norm": {
+              "max_abs": 9.607832914676484e-10,
+              "max_relative_to_span": 5.8159653407917076e-08
+            },
+            "files": 152,
+            "max_exact_nrmse_vs_float64": 4.546698080932165e-08,
+            "failures": []
+          }
+        }
+      }
+    },
+    "D": {
+      "M1": {
+        "ParaView_GUI_native_trace": {
+          "lines_total": 7149,
+          "nonblank_noncomment": 4579,
+          "file": "cases/D/paraview_gui_native_trace.py",
+          "slice_calls": 112,
+          "export_calls": 1,
+          "reader_calls": 1,
+          "trace_origin_assignments": 224,
+          "trace_complete": true
+        },
+        "ParaView_GUI_trace_positions_audit": {
+          "native_trace": "paraview_gui_native_trace.py",
+          "total_lines": 7149,
+          "effective_lines": 4579,
+          "reader_calls": 1,
+          "slices": 112,
+          "with_position": 112,
+          "export_calls": [
+            "C:\\swv_r4_20261121\\pv_gui_complete\\D\\scene.vtkjs"
+          ],
+          "exact_section_positions_match": true,
+          "missing_positions": [],
+          "unexpected_positions": [],
+          "scope": "Static AST check of GUI-generated Python trace against positions in Sim2Web index. The desktop separately executed the actual export."
+        },
+        "ParaView_mode": "Desktop macro generated native ParaView trace with actual filters, proxy property-change hooks, and export. Original A also manually opened and started from Tools; it is retained separately.",
+        "Sim2Web_changed_config_lines": 35,
+        "Sim2Web_workbench_clicks_from_seeded_config": 14
+      },
+      "M2": {
+        "ParaView_pvpython_package_seconds": 165.21946029993705,
+        "ParaView_pvpython_process_seconds": 194.91441470000427,
+        "Glance_official_reembed_seconds": 3.024,
+        "ParaView_GUI_macro_seconds": 514.6609556000913,
+        "ParaView_manually_timed_GUI_seconds": null,
+        "Sim2Web_build_seconds": 144.505,
+        "Sim2Web_validate_seconds": 81.52
+      },
+      "M3": {
+        "ParaView_surface_bytes": 24222498,
+        "ParaView_vtkjs_bytes": 138040732,
+        "ParaView_bundled_html_bytes": 189398541,
+        "ParaView_official_template_html_bytes": 200162242,
+        "Sim2Web_primary_bytes": 2248198,
+        "Sim2Web_mesh_product_bytes": 61202916,
+        "Sim2Web_static_site_bytes": 62766024.0
+      },
+      "M4": {
+        "ParaView_Glance": {
+          "first_image_ms": [
+            23636,
+            24634.600000023842,
+            23432.399999976158
+          ],
+          "median_first_image_ms": 23636,
+          "rendered_runs": 3,
+          "planned_runs": 3,
+          "export_bytes": 200162242,
+          "vtkjs_export_bytes": 138040732,
+          "glance_viewer_bytes": 16081381,
+          "clock_source": "cases/D/glance_split_geometry_browser.json",
+          "runs": [
+            {
+              "run": 1,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:58983/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:58983/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 629436,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 15737.399999976158,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 629436,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 15737.399999976158,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 23636
+            },
+            {
+              "run": 2,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:58983/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:58983/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 629436,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 17007.399999976158,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 629436,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 17007.399999976158,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 24634.600000023842
+            },
+            {
+              "run": 3,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:58983/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:58983/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 629436,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 14561.799999952316,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 629436,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 14561.799999952316,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 23432.399999976158
+            }
+          ],
+          "field_switch_ms": null,
+          "section_switch_ms": null,
+          "interaction_qualification": "Glance actors have individual visibility switches. The recorded two-actor action is an optional proxy, no section slider.",
+          "interaction_trials": [
+            {
+              "run": 1,
+              "browser": "160.0.8157.0",
+              "errors": [],
+              "failedRequests": [
+                [
+                  "http://127.0.0.1:55441/glance-external-ITKReader.c320fe727f1960de6a12.js",
+                  "net::ERR_ABORTED"
+                ],
+                [
+                  "http://127.0.0.1:55441/glance-external-Workbox.90844adf6eef162f4191.js",
+                  "net::ERR_ABORTED"
+                ]
+              ],
+              "firstModelDraw": {
+                "count": 629436,
+                "drawMethod": "drawArrays",
+                "firstDrawMs": 12601.399999976158,
+                "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+              },
+              "count": 629436,
+              "drawMethod": "drawArrays",
+              "firstDrawMs": 12601.399999976158,
+              "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+              "firstImageMs": 20045.799999952316,
+              "fieldSwitchError": "TimeoutError: locator.click: Timeout 9000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.v-select__slot').filter({ hasText: 'Displacement_Magnitude' }).first()\u001b[22m\n",
+              "controlsError": "Error: UI interaction did not return within 42 seconds",
+              "sectionSwitchError": "Error: locator.count: Target page, context or browser has been closed"
+            }
+          ]
+        },
+        "Sim2Web": {
+          "first_image_ms": [
+            3686.1999999284744,
+            3713.600000023842,
+            3161.2999999523163
+          ],
+          "median_first_image_ms": 3686.1999999284744,
+          "median_section_switch_ms": 82.3,
+          "median_startup_bytes": 5338425,
+          "field_switch_ms": 100.05000001192093,
+          "all_viewer_checks_passed": true,
+          "browser": "160.0.8157.0",
+          "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009BC4) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        }
+      },
+      "M5": {
+        "ParaView": {
+          "file": "EXC12_dis.vtu",
+          "array": "Stress",
+          "cells": 548417,
+          "retained_cells": 548417,
+          "component_names_in_file": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "XZ",
+            "YZ"
+          ],
+          "vtk_filter_order": "XX,YY,ZZ,XY,YZ,XZ",
+          "vtk_filter_matches_vtk_order": true,
+          "principal": {
+            "min": {
+              "correct_range": [
+                -10.219283656391053,
+                0.03796592832515069
+              ],
+              "generic_range": [
+                -9.586516354273877,
+                0.034936478643073025
+              ],
+              "max_abs_error": 1.4058129270756377,
+              "max_error_percent_of_range": 13.70555445165697,
+              "cells_error_over_1pct_of_range": 30344,
+              "cells_positive_generic_but_not_correct": null
+            },
+            "mid": {
+              "correct_range": [
+                -3.780342910606502,
+                0.37385419484730464
+              ],
+              "generic_range": [
+                -5.66829090973625,
+                1.3662625332418998
+              ],
+              "max_abs_error": 3.1529704643826904,
+              "max_error_percent_of_range": 75.8984319796318,
+              "cells_error_over_1pct_of_range": 101750,
+              "cells_positive_generic_but_not_correct": null
+            },
+            "max": {
+              "correct_range": [
+                -2.564095741061364,
+                5.386120088494028
+              ],
+              "generic_range": [
+                -2.5130688899056373,
+                5.21569163503735
+              ],
+              "max_abs_error": 1.762585854920874,
+              "max_error_percent_of_range": 22.17028936960879,
+              "cells_error_over_1pct_of_range": 25378,
+              "cells_positive_generic_but_not_correct": 3808
+            }
+          },
+          "vtk_filter_matches_file_order": false
+        },
+        "ParaView_reordered_with_one_filter": {
+          "original_labels": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "XZ",
+            "YZ"
+          ],
+          "enabled_tensor_order": [
+            "XX",
+            "YY",
+            "ZZ",
+            "XY",
+            "YZ",
+            "XZ"
+          ],
+          "additional_operations": 1,
+          "max_abs_mpa_min_mid_max": [
+            8.881784197001252e-15,
+            3.1086244689504383e-15,
+            2.6645352591003757e-15
+          ],
+          "false_tensile_due_to_roundoff": 0,
+          "false_tensile_using_1e_9_mpa_sign_epsilon": 0,
+          "note": "An explicit tensor reorder can be added as one Programmable Filter before the native principal stress filter. Does not change reported default timing/size."
+        },
+        "Sim2Web_exact_mismatches": 0
+      },
+      "M6": {
+        "ParaView": null,
+        "Sim2Web": {
+          "status": "ok",
+          "gradient_per_m": 0.014619231318917524,
+          "fit_r2": 0.9927175485951204,
+          "bins_used": 20,
+          "compression_increases_with_depth": true,
+          "implied_unit_weight_kN_m3_if_Pa": 1.4619231318917524e-05,
+          "implied_unit_weight_kN_m3_if_kPa": 0.014619231318917524,
+          "implied_unit_weight_kN_m3_if_MPa": 14.619231318917524,
+          "implied_unit_weight_kN_m3_if_GPa": 14619.231318917524,
+          "consistent_units": [
+            "MPa"
+          ],
+          "declared": "MPa",
+          "declared_consistent": true,
+          "association": "cell"
+        }
+      },
+      "M7": {
+        "ParaView_default_has_separate_excavation": false,
+        "additional_user_steps_for_equivalence": 3,
+        "steps_description": "剔除模型六个盒面；对剩余候选面两侧采样并排除实体–实体界面；将剩余坑面单独着色并导出。",
+        "step_count_measurement": "Processing operations, excluding baseline operations. For A/D generic VTK results audit geometry separately.",
+        "additional_steps_geometry_audit": {
+          "case": "D",
+          "unmodified_ExtractSurface_faces": 105508,
+          "extra_operations": 3,
+          "refined_faces": 17004,
+          "refined_area_m2": 6418.370306401537,
+          "sim2web_faces": 17004,
+          "sim2web_area_m2": 6418.370276750652,
+          "box_faces_removed": 3289,
+          "faces_with_solid_both_sides_removed": 85215,
+          "domain_tolerance_m": 0.001,
+          "unmatched_refined_centers_at_1mm": 0,
+          "unmatched_reference_centers_at_1mm": 0,
+          "test_scope": "Additional filters implemented with generic VTK/PyVista operations on the actual ParaView Extract Surface output. Compares geometric face centers, no values or winding."
+        },
+        "Sim2Web_excavation_layers": [
+          "excavation"
+        ]
+      },
+      "M8": {
+        "ParaView_extract_surface_faces": 105508,
+        "ParaView_extract_surface_bytes": 24222498,
+        "Sim2Web_exterior_faces": 20293,
+        "Sim2Web_exterior_bytes": 2248198,
+        "Sim2Web_internal_faces": "drop"
+      },
+      "M9": {
+        "ParaView": "Extract Surface IDs may exist only in intermediate VTP. Glance does not provide direct source VTU point/cell drill-through in this experiment.",
+        "Sim2Web": {
+          "source_point_ids": true,
+          "source_cell_ids": true
+        }
+      },
+      "M10": {
+        "ParaView_sections": 112,
+        "ParaView_archive_audit": {
+          "case": "D",
+          "archive_bytes": 138040732,
+          "actors": 113,
+          "slices": 112,
+          "actors_with_displacement_magnitude": 113,
+          "actors_with_all_principal_stresses": 113,
+          "primary_original_ids": {
+            "points": [
+              "vtkOriginalPointIds"
+            ],
+            "cells": [
+              "vtkOriginalCellIds"
+            ]
+          }
+        },
+        "ParaView_interaction": "Slice actors, individual visibility, no ordered section slider.",
+        "Sim2Web_sections": 112,
+        "Sim2Web_interaction": "Axis and section slider."
+      },
+      "M11": {
+        "ParaView": "No independent archive-to-VTU verification in the default workflow.",
+        "Sim2Web_validate_exit": 0,
+        "Sim2Web_validation_failures": [],
+        "Sim2Web_validation": {
+          "EXC12_dis": {
+            "exact_arrays": 806,
+            "exact_tuples": 4638297,
+            "exact_mismatches": 0,
+            "interpolated_arrays": 448,
+            "interpolated_tuples": 2057800,
+            "max_interp_nrmse": 3.3459531678228876e-07,
+            "max_interp_abs_error": {
+              "X_Disp": 1.1891466514030082e-07,
+              "Y_Disp": 1.34201005155387e-07,
+              "Z_Disp": 1.2477199179449297e-07,
+              "TotalDisplacement": 1.0350480605849505e-07
+            },
+            "unlocated_section_points": 0,
+            "closest_cell_fallback_points": 68,
+            "fallback_max_abs_error": {
+              "X_Disp": 2.1283641624299243e-10,
+              "Y_Disp": 9.382541141592093e-11,
+              "Z_Disp": 1.8621666708629192e-10,
+              "TotalDisplacement": 1.5036170485788203e-10
+            },
+            "probe_disagreements": 9617,
+            "vertices_on_discontinuities": 9138,
+            "cell_restricted_max_abs_error": {
+              "X_Disp": 6.743733045946887e-10,
+              "Y_Disp": 1.54058186688363e-08,
+              "Z_Disp": 2.2409321780224138e-07
+            },
+            "max_jump_across_discontinuity": {
+              "X_Disp": 0.007345791850943738,
+              "Y_Disp": 0.007242304203604228,
+              "Z_Disp": 0.0020337790641550947
+            },
+            "magnitude_vs_vector_norm": {
+              "max_abs": 9.207991227139223e-10,
+              "max_relative_to_span": 8.511138027981959e-08
+            },
+            "files": 114,
+            "max_exact_nrmse_vs_float64": 2.0283773192299834e-07,
+            "failures": []
+          }
+        }
+      }
+    }
+  }
+}

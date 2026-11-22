@@ -1,0 +1,171 @@
+{
+  "page": "http://47.97.56.104:8102/",
+  "index": "http://47.97.56.104:8102/model_cache/index.json",
+  "chrome": "160.0.8157.0",
+  "schema": "legacy stage-keyed index without schema field",
+  "title": null,
+  "solver": null,
+  "ui": {
+    "title": "HFH洞室群三维预测模型",
+    "ids": null,
+    "menus": [
+      [
+        "I-1",
+        "I-3",
+        "II-2",
+        "III-3",
+        "IV-2"
+      ],
+      [
+        "总位移 (m)",
+        "X位移 (m)",
+        "Y位移 (m)",
+        "Z位移 (m)",
+        "最大主应力 σ1 (MPa)",
+        "最小主应力 σ3 (MPa)",
+        "中间主应力 σ2 (MPa)",
+        "σxx (MPa)",
+        "σyy (MPa)",
+        "σzz (MPa)",
+        "塑性区",
+        "塑性区"
+      ]
+    ]
+  },
+  "fields": [
+    "Y_Disp",
+    "X_Disp",
+    "Group Slot : Default_ID",
+    "Z_Disp",
+    "Stress_YY",
+    "Stress_ZZ",
+    "TotalDisplacement",
+    "Stress_Mid_Principal",
+    "Stress_XX",
+    "Stress_Max_Principal",
+    "Stress_Min_Principal",
+    "Group Slot : Default"
+  ],
+  "stages": [
+    {
+      "id": "I-1",
+      "label": "I-1",
+      "cavity": "model_cache/I-1/cavity_surface.vtp",
+      "fields": [
+        "Y_Disp",
+        "X_Disp",
+        "Group Slot : Default_ID",
+        "Z_Disp",
+        "Stress_YY",
+        "Stress_ZZ",
+        "TotalDisplacement",
+        "Stress_Mid_Principal",
+        "Stress_XX",
+        "Stress_Max_Principal",
+        "Stress_Min_Principal",
+        "Group Slot : Default"
+      ],
+      "sectionCounts": {
+        "x": 77,
+        "y": 37,
+        "z": 19
+      }
+    },
+    {
+      "id": "I-3",
+      "label": "I-3",
+      "cavity": "model_cache/I-3/cavity_surface.vtp",
+      "fields": [
+        "Y_Disp",
+        "X_Disp",
+        "Group Slot : Default_ID",
+        "Z_Disp",
+        "Stress_YY",
+        "Stress_ZZ",
+        "TotalDisplacement",
+        "Stress_Mid_Principal",
+        "Stress_XX",
+        "Stress_Max_Principal",
+        "Stress_Min_Principal",
+        "Group Slot : Default"
+      ],
+      "sectionCounts": {
+        "x": 77,
+        "y": 37,
+        "z": 19
+      }
+    },
+    {
+      "id": "II-2",
+      "label": "II-2",
+      "cavity": "model_cache/II-2/cavity_surface.vtp",
+      "fields": [
+        "Y_Disp",
+        "X_Disp",
+        "Group Slot : Default_ID",
+        "Z_Disp",
+        "Stress_YY",
+        "Stress_ZZ",
+        "TotalDisplacement",
+        "Stress_Mid_Principal",
+        "Stress_XX",
+        "Stress_Max_Principal",
+        "Stress_Min_Principal",
+        "Group Slot : Default"
+      ],
+      "sectionCounts": {
+        "x": 77,
+        "y": 37,
+        "z": 19
+      }
+    },
+    {
+      "id": "III-3",
+      "label": "III-3",
+      "cavity": "model_cache/III-3/cavity_surface.vtp",
+      "fields": [
+        "Y_Disp",
+        "X_Disp",
+        "Group Slot : Default_ID",
+        "Z_Disp",
+        "Stress_YY",
+        "Stress_ZZ",
+        "TotalDisplacement",
+        "Stress_Mid_Principal",
+        "Stress_XX",
+        "Stress_Max_Principal",
+        "Stress_Min_Principal",
+        "Group Slot : Default"
+      ],
+      "sectionCounts": {
+        "x": 77,
+        "y": 37,
+        "z": 19
+      }
+    },
+    {
+      "id": "IV-2",
+      "label": "IV-2",
+      "cavity": "model_cache/IV-2/cavity_surface.vtp",
+      "fields": [
+        "Y_Disp",
+        "X_Disp",
+        "Group Slot : Default_ID",
+        "Z_Disp",
+        "Stress_YY",
+        "Stress_ZZ",
+        "TotalDisplacement",
+        "Stress_Mid_Principal",
+        "Stress_XX",
+        "Stress_Max_Principal",
+        "Stress_Min_Principal",
+        "Group Slot : Default"
+      ],
+      "sectionCounts": {
+        "x": 77,
+        "y": 37,
+        "z": 19
+      }
+    }
+  ]
+}

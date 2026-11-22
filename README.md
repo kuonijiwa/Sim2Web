@@ -1,151 +1,151 @@
-# SimWebView
+# Sim2Web
 
-Web-based visualization of large geotechnical simulation models.
+**One-click post-processing and verifiable web publishing of geotechnical simulation results.**
 
-SimWebView combines offline Python processing with editable Vue/vtk.js viewers.
-It prepares exterior surfaces, inner excavation surfaces, and separate surface
-and section files for browser-based engineering review. Selected physical fields
-retain their point or cell associations and source identifiers.
+(Formerly SimWebView. Old configurations, packages and the `simwebview`
+command keep working.)
 
-This upload package retains version 0.1.0-alpha.0, publication revision 2, and
-the English-interface update dated 2026-09-16. The display-name update changes
-documentation and citation metadata only: numerical logic, meshes, frontend
-logic and historical evidence are unchanged. See `docs/RELEASE_IDENTITY.md`.
-Dependencies, caches and local builds are not included.
-
-Repository: https://github.com/kuonijiwa/SimWebView
-
-SimWebView is the current display name and repository name. The internal
-`geosimvis` Python package retains its earlier name for compatibility.
-Exactly three real 3D examples are included:
-
-| Case | Solver | Retained model/stage | Primary displayed object |
-|---|---|---|---|
-| A | FLAC3D | `IV-2` | **INNER EXCAVATION SURFACE** |
-| B | FLAC3D | `exac_23` (the source spelling) | **OUTER EXPOSED SURFACE** |
-| C | 3DEC | `slopemodel` | **OUTER EXPOSED SURFACE** |
-
-No 2D implementation and no historical excavation stages are included.  A 2D
-workflow can use the same data hand-off, but is outside this release candidate.
-
-## Workflow
+Sim2Web turns a three-dimensional simulation result (a VTK unstructured grid
+exported from FLAC3D, 3DEC or any other solver) into a static web package that a
+reviewer can open in a browser: the exterior surface, the excavation boundary,
+pre-computed internal sections and the physical fields on them, with every
+published value traceable to the source cell or node it came from.
 
 ```text
-FLAC3D/3DEC VTU -> case Python processor -> surface/SECTION VTP
-                                                  -> Vue + vtk.js viewer
-                                                  -> static server or IIS
+model.vtu ─┐
+case.yaml ─┴─► sim2web build ─► site/index.html + site/model_cache/{index.json, *.vtp}
+                sim2web validate ─► validation_summary.json, validation_pairs.csv
 ```
 
-The case processors are preserved as independent scripts because their working
-geometries differ. Geometry extraction is unchanged from the frozen validation
-candidate. This publication revision adds source identifiers, explicit display-only
-array names, categorical-array safeguards, and output-derived display ranges.
-The frontends remain separate editable Vue applications. See
-`docs/PUBLICATION_REVISION.md` for the changes and validation scope.
+* **One library, no per-case code.** A YAML configuration declares the input
+  arrays (displacement, stress and its component order, categories), how voids
+  are identified, which surfaces and sections to produce and how the viewer
+  starts. The three example models are three configuration files.
+* **One data-driven viewer.** The browser application reads `index.json` and
+  builds its controls from it: stages, fields (with units and point/cell
+  association), layers, sections, colour scales. It needs no editing for a new
+  model; titles, colour maps and defaults come from the configuration.
+* **Traceable fields.** Stress and categories stay cell data and are coloured
+  per cell; averaged copies for smooth display are marked `_DisplayOnly`.
+  `Source_Cell_ID` and `Source_Point_ID` link every product back to the source
+  mesh; clicking in the viewer shows them with the exact values.
+* **Independent validation.** `sim2web validate` recomputes every published
+  value from the raw source arrays and compares: exact copies bit for bit,
+  interpolated section values against an independent shape-function evaluation,
+  and the package files against the hashes recorded at build time.
+* **Static delivery.** Any static web server (IIS, nginx, GitHub Pages, `sim2web serve`) is enough.
 
-## Quick start
-
-Install Git and Git LFS, then obtain both the source and large model assets:
+## Installation
 
 ```bash
-git lfs install
-git clone https://github.com/kuonijiwa/SimWebView.git
-cd SimWebView
-git lfs pull
+python -m pip install "sim2web @ git+https://github.com/kuonijiwa/Sim2Web"
 ```
 
-These commands apply once this package has been uploaded. A source ZIP may
-contain LFS pointers rather than the models; use an LFS-enabled clone. The
-included outputs can be viewed without regenerating them.
-
-Python 3.10+ is required.  The versions used for the closure validation are
-pinned in `requirements.txt`.
+Python 3.10 or later. The browser viewer is bundled in released wheels; when
+installing from a source checkout, build it once with Node.js 20+:
 
 ```bash
-python -m pip install -r requirements.txt
-python -m pytest
-
-npm ci
-npm run build
+git clone https://github.com/kuonijiwa/Sim2Web && cd Sim2Web
+python -m pip install -e ".[test]"
+npm ci && npm run build                  # writes src/sim2web/viewer_dist and workbench_dist
 ```
 
-For a local viewer, run `npm run dev:cavern`, `npm run dev:flac3d-slope`, or
-`npm run dev:3dec-slope`, then open the URL printed by Vite. Node.js 20+ is
-required. To regenerate data deliberately, use the following commands; they
-replace the corresponding example's generated output products:
+The three example models are stored with Git LFS (`git lfs pull`).
+
+Keep solvers and their Python packages (OpenGeoSys, FEniCS, MOOSE tools, …)
+in separate environments: Sim2Web needs only the result files they write, and
+solver wheels may require library versions that conflict with the pinned
+`requirements.txt`.
+
+## Quick start with your own model
 
 ```bash
-python examples/flac3d_cavern_iv2/processing/process.py
-python examples/flac3d_slope_exac23/processing/process.py
-python examples/3dec_slope/processing/process.py
+sim2web inspect mymodel.vtu --draft-config case.yaml   # lists arrays, drafts a configuration
+# edit case.yaml: check every line marked REVIEW (stress order, units, sign, void rule)
+sim2web build case.yaml                                # writes site/
+sim2web validate case.yaml                             # independent checks; exit code 1 on failure
+sim2web serve site                                     # http://127.0.0.1:8000/
 ```
 
-An editable install (`python -m pip install -e .`) is optional for development;
-the three processors are directly executable and do not depend on installation
-of the small `geosimvis` helper package.
+The input checklist and every configuration option are described in
+[docs/CONFIGURATION.md](docs/CONFIGURATION.md).
 
-Individual frontends can be built with `npm run build:cavern`,
-`npm run build:flac3d-slope`, or `npm run build:3dec-slope`.  Their `dist/`
-directories can be served by any static server.  See
-`docs/IIS_DEPLOYMENT.md` for IIS-specific instructions.
+## Example cases
 
-## Expected products
-
-Each example contains one raw `.vtu`, one processor, retained `.vtp` products,
-an index manifest, and Vue source.  Running a processor replaces only that
-example's `output/model_cache` products.  Surface roles are explicit in each
-case README.
-
-## Field semantics
-
-- displacement components and magnitude are continuous PointData;
-- stress components/principal values retain CellData association and the
-  corresponding source-derived values subject to Float32 conversion;
-- any PointData stress arrays are display-only interpolated values and do not
-  replace quantitative CellData;
-- material/group identifiers are categorical CellData and use discrete
-  rendering;
-- `SECTION` products are planar cuts generated by the case processors.
-
-Units follow each exported case: length/displacement is labelled in metres;
-Case A retains the supplied MPa stress convention, while Cases B and C label
-stress in pascals.  The processors do not infer or convert units.
-
-## Data size and Git LFS
-
-The raw VTU inputs and many processed VTP files are intentionally retained for
-reproducibility.  `.gitattributes` routes VTU/VTP and image evidence through Git
-LFS. See `docs/GITHUB_UPLOAD.md` before the first push. Install Git LFS before
-cloning or pushing the repository:
+| Case | Solver | Configuration | Primary product | Notes |
+|---|---|---|---|---|
+| A | FLAC3D | [`examples/flac3d_cavern_iv2/sim2web.yaml`](examples/flac3d_cavern_iv2/sim2web.yaml) | excavation surface | underground cavern, stress-based void identification |
+| B | FLAC3D | [`examples/flac3d_slope_exac23/sim2web.yaml`](examples/flac3d_slope_exac23/sim2web.yaml) | exterior surface | slope with excavated zones; supplementary excavation contact |
+| C | 3DEC | [`examples/3dec_slope/sim2web.yaml`](examples/3dec_slope/sim2web.yaml) | exterior surface | 70 021 blocks; internal block contacts removed, joint discontinuities preserved in sections |
+| D | FLAC3D | [`examples/flac3d_pit_case4/sim2web.yaml`](examples/flac3d_pit_case4/sim2web.yaml) | exterior surface | deep pit with the walls and floor in a separate excavation layer |
+| E | OpenGeoSys | [`examples/ogs_slope/sim2web.yaml`](examples/ogs_slope/sim2web.yaml) | exterior surface | open-source FE solver, nodal stress in Voigt order; model generated and solved from the repository |
+| F | 3DEC | [`examples/3dec_slope_case_f/sim2web.yaml`](examples/3dec_slope_case_f/sim2web.yaml) | exterior surface | Kala slope with geometric contact removal and preserved discontinuities |
 
 ```bash
-git lfs install
-git lfs pull
+sim2web build examples/flac3d_cavern_iv2/sim2web.yaml
+sim2web validate examples/flac3d_cavern_iv2/sim2web.yaml
+sim2web serve examples/flac3d_cavern_iv2/site
 ```
 
-Updated measured sizes, two-run timings, determinism checks, and source-to-output
-array comparisons are recorded in `paper_evidence/revision_v2/`. These supersede
-earlier display screenshots and timing records for this revised candidate only.
-Do not replace the large raw inputs with synthetic stand-ins.
+## Workbench
 
-## Known limitations
+```bash
+sim2web gui my_project
+```
 
-- This is application validation, not a general-purpose converter for every
-  Itasca export schema.
-- Each case processor expects the demonstrated array names and mesh semantics.
-- Large static VTP assets can dominate first-load time and browser memory.
-- The 3DEC surface contains disconnected components; component counts are not
-  validated physical block counts.
-- The package does not perform mechanical field transfer or conservative
-  coupling.
+opens a local processing workbench in the browser: open a model, confirm
+fields and units (with the component-order and unit checks shown as you
+choose), set geometry and sections, preview, build, validate and export. It
+writes the same `case.yaml` the command line uses and shows the result in the
+published viewer. See [docs/WORKBENCH.md](docs/WORKBENCH.md).
 
-## Citation and licence
+## Further commands
 
-Code and project documentation: MIT (`LICENSE`). Example data and case evidence:
-CC BY 4.0 (`DATA_LICENSE.md`). Copyright (c) 2026 HydroChina Itasca.
-Third-party dependencies retain their own licences.
+| Command | Purpose |
+|---|---|
+| `sim2web sensitivity case.yaml` | sweep the void threshold and contact tolerance; report boundary stability |
+| `sim2web verify-interpolation case.yaml` | replace displacement by a linear field and check section values analytically |
+| `sim2web convert result.e result.vtu` | convert Exodus (any time step), MED, XDMF, Gmsh, …; assemble `stress_xx …` into tensors with component names |
+| `abaqus python tools/abaqus_odb_to_vtu.py job.odb job.vtu` | export an Abaqus result with named stress components |
+| `sim2web build case.yaml --set sections.spacing=5` | override any option from the command line |
+| `node benchmark/browser_benchmark.mjs --site site` | measure load time, section switching, frame rate and memory in Chromium, and verify the rendered field association |
 
-Use `CITATION.cff` for the software title, contributors, repository and version.
-Software attribution: Yongjin Cheng, Weijiang Chu, and HydroChina Itasca.
-No archive DOI or public release date is asserted before publication. Once the
-package is uploaded, identify the exact public commit or tag when citing it.
+## Python API
+
+```python
+from sim2web import load_config, build, validate_package
+
+cfg = load_config("case.yaml", overrides=["sections.spacing=5"])
+result = build(cfg)
+report = validate_package(cfg)
+assert not report["failures"]
+```
+
+Lower-level building blocks (`sim2web.fields`, `sim2web.regions`,
+`sim2web.geometry`) can be used directly in custom workflows.
+
+## Documentation
+
+* [Workbench: processing in the browser](docs/WORKBENCH.md)
+* [Configuration and input checklist](docs/CONFIGURATION.md)
+* [Field semantics: associations, display-only arrays, sections](docs/FIELD_SEMANTICS.md)
+* [Validation: what is checked and how to read the reports](docs/VALIDATION.md)
+* [Viewer: features, links, customisation, embedding](docs/VIEWER.md)
+* [Deployment on IIS and other static servers](docs/IIS_DEPLOYMENT.md)
+* [Changes since v0.1](CHANGELOG.md)
+
+## Scope
+
+Sim2Web reads VTK unstructured grids with linear 3D cells; other formats
+are converted with `sim2web convert` or, for Abaqus, the export script in
+`tools/`. Zone (cell) and nodal (point) stress are both supported. Sections are pre-computed and axis-aligned, so the
+browser does no geometry processing; arbitrary interactive cutting is not
+provided. Packages can contain several stages (for example construction
+stages); the viewer switches between them with a common or per-stage colour
+scale.
+
+## Licence and citation
+
+Code and documentation: MIT. Example data: CC BY 4.0 with attribution to
+HydroChina Itasca (see `DATA_LICENSE.md`). Please cite the software using
+`CITATION.cff`.

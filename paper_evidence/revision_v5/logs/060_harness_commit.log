@@ -1,0 +1,24 @@
+warning: in the working copy of 'benchmark/web_slicing/prepare.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/sampler.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/trame_app.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/vite.config.mjs', LF will be replaced by CRLF the next time Git touches it
+[r6/web-slicing 4cbcae3] Add reproducible browser and trame slicing benchmarks
+ 18 files changed, 1505 insertions(+)
+ create mode 100644 benchmark/web_slicing/README.md
+ create mode 100644 benchmark/web_slicing/check_browser.mjs
+ create mode 100644 benchmark/web_slicing/check_frames.py
+ create mode 100644 benchmark/web_slicing/check_vtk.py
+ create mode 100644 benchmark/web_slicing/collect.py
+ create mode 100644 benchmark/web_slicing/cutter.mjs
+ create mode 100644 benchmark/web_slicing/index.html
+ create mode 100644 benchmark/web_slicing/instrument.mjs
+ create mode 100644 benchmark/web_slicing/measure.mjs
+ create mode 100644 benchmark/web_slicing/page.js
+ create mode 100644 benchmark/web_slicing/prepare.py
+ create mode 100644 benchmark/web_slicing/sampler.py
+ create mode 100644 benchmark/web_slicing/serve.mjs
+ create mode 100644 benchmark/web_slicing/trame_app.py
+ create mode 100644 benchmark/web_slicing/vite.config.mjs
+ create mode 100644 benchmark/web_slicing/worker.mjs
+ create mode 100644 benchmark/web_slicing/ws_echo.py
+ create mode 100644 benchmark/web_slicing/ws_probe.mjs

@@ -1,0 +1,10 @@
+3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)] Windows-11-10.0.26300-SP0
+vtk 9.5.0
+pyvista 0.46.3
+numpy 1.26.4
+scipy 1.11.4
+trame 4.0.0
+trame-vtk 2.11.17
+trame-vuetify 3.3.0
+psutil 7.2.2
+matplotlib 3.11.2

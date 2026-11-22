@@ -1,0 +1,71 @@
+import '@kitware/vtk.js/Rendering/Profiles/Geometry';
+import vtkGenericRenderWindow from '@kitware/vtk.js/Rendering/Misc/GenericRenderWindow';
+import vtkMapper from '@kitware/vtk.js/Rendering/Core/Mapper';
+import vtkActor from '@kitware/vtk.js/Rendering/Core/Actor';
+import vtkPolyData from '@kitware/vtk.js/Common/DataModel/PolyData';
+import vtkDataArray from '@kitware/vtk.js/Common/Core/DataArray';
+import vtkColorTransferFunction from '@kitware/vtk.js/Rendering/Core/ColorTransferFunction';
+import { bandedNodes } from '../../viewer/src/lib/colormaps.js';
+
+const frame = () => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+const config = await fetch('/case.json').then(r=>r.json());
+const view = vtkGenericRenderWindow.newInstance({background:[1,1,1],listenWindowResize:true});
+view.setContainer(document.querySelector('#viewport'));
+view.resize();
+const renderer = view.getRenderer();
+const camera = renderer.getActiveCamera();
+const c = config.camera;
+camera.setPosition(...c.slice(0,3)); camera.setFocalPoint(...c.slice(3,6));
+camera.setViewUp(...c.slice(6,9)); camera.setParallelProjection(true); camera.setParallelScale(c[9]);
+const mapper = vtkMapper.newInstance();
+const table = vtkColorTransferFunction.newInstance();
+for (const node of bandedNodes(...config.range,config.bands,config.colormap).nodes) table.addRGBPoint(...node);
+mapper.setLookupTable(table);
+mapper.setUseLookupTableScalarRange(true);
+mapper.setScalarModeToUsePointData();
+mapper.setColorModeToMapScalars();
+mapper.setInterpolateScalarsBeforeMapping(true);
+const actor = vtkActor.newInstance();
+actor.setMapper(mapper);
+renderer.addActor(actor);
+const worker = new Worker(new URL('./worker.mjs', import.meta.url), {type:'module'});
+function rpc(data, transfer=[]) {
+  return new Promise((resolve,reject)=>{
+    worker.onmessage = ({data:r}) => r.type==='error' ? reject(Error(r.error)) : resolve(r);
+    worker.onerror = reject;
+    worker.postMessage(data,transfer);
+  });
+}
+const api = { timings:null, firstImage:null };
+window.__R6__ = api;
+const section = document.querySelector('#section');
+const result = document.querySelector('#value');
+
+api.select = async index => {
+  const x = config.positions[index];
+  const geom = await rpc({type:'cut',x});
+  const data = vtkPolyData.newInstance();
+  data.getPoints().setData(geom.points,3);
+  data.getPolys().setData(geom.polys);
+  data.getPointData().setScalars(vtkDataArray.newInstance({name:'TotalDisplacement',values:geom.values,numberOfComponents:1}));
+  mapper.setInputData(data);
+  renderer.resetCameraClippingRange();
+  section.value = index;
+  result.value = ' ' + x + ' m';
+  view.getRenderWindow().render();
+  await frame();
+  api.last = {index,x,cutMs:geom.ms,triangles:geom.polys.length/4};
+  api.geometry = geom;
+  api.renderedAt = performance.now();
+  return api.last;
+};
+section.addEventListener('change',()=>api.select(Number(section.value)).catch(console.error));
+const downloadStart = performance.now();
+const response = await fetch('/volume.bin',{cache:'no-store'});
+if(!response.ok)throw Error(response.statusText);
+const volume = await response.arrayBuffer();
+const download = performance.now()-downloadStart;
+api.timings = {download,...(await rpc({type:'load',buffer:volume},[volume])).timings};
+await api.select(config.first_index);
+api.timings.firstCut = api.last.cutMs;
+api.firstImage = api.renderedAt;

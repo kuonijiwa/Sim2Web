@@ -1,0 +1,7 @@
+{"phase": "load", "case": "C", "mode": "local", "source_read_s": 1.2625501999864355, "model_and_derive_s": 1.3107176999328658, "first_cut_s": 0.024329100036993623, "app_setup_s": 4.349822700023651, "triangles": 12588}
+
+App running at:
+ - Local:   http://127.0.0.1:18772/
+ - Network: http://127.0.0.1:18772/
+
+Note that for multi-users you need to use and configure a launcher.

@@ -1,0 +1,8 @@
+[IV-2] 764381 points, 1211385 cells
+[IV-2] stress order XX,YY,ZZ,XY,XZ,YZ (configuration, matches file)
+[IV-2] void cells: 227947 (stress)
+[IV-2] connected mesh regions (blocks): 1
+[IV-2] internal faces: auto -> keep
+[IV-2] layers: ['excavation'], sections: 132
+Index written to C:\swv_r6_20261121\site_A\model_cache\index.json
+Package: C:\swv_r6_20261121\site_A

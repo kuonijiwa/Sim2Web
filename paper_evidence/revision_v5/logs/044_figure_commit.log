@@ -1,0 +1,483 @@
+paper_evidence/revision_v5/figures/draw_figure1.py:103: new blank line at EOF.
+paper_evidence/revision_v5/figures/fig1_architecture.svg:24: trailing whitespace.
++   <path d="M 0 198.425197 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:25: trailing whitespace.
++L 467.716535 198.425197 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:26: trailing whitespace.
++L 467.716535 0 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:27: trailing whitespace.
++L 0 0 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:33: trailing whitespace.
++    <path d="M 8.929134 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:34: trailing whitespace.
++L 105.874016 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:35: trailing whitespace.
++Q 109.133858 147.401575 109.133858 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:36: trailing whitespace.
++L 109.133858 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:37: trailing whitespace.
++Q 109.133858 4.251969 105.874016 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:38: trailing whitespace.
++L 8.929134 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:39: trailing whitespace.
++Q 5.669291 4.251969 5.669291 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:40: trailing whitespace.
++L 5.669291 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:41: trailing whitespace.
++Q 5.669291 147.401575 8.929134 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:46: trailing whitespace.
++    <path d="M 125.149606 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:47: trailing whitespace.
++L 222.094488 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:48: trailing whitespace.
++Q 225.354331 147.401575 225.354331 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:49: trailing whitespace.
++L 225.354331 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:50: trailing whitespace.
++Q 225.354331 4.251969 222.094488 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:51: trailing whitespace.
++L 125.149606 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:52: trailing whitespace.
++Q 121.889764 4.251969 121.889764 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:53: trailing whitespace.
++L 121.889764 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:54: trailing whitespace.
++Q 121.889764 147.401575 125.149606 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:59: trailing whitespace.
++    <path d="M 241.370079 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:60: trailing whitespace.
++L 338.314961 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:61: trailing whitespace.
++Q 341.574803 147.401575 341.574803 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:62: trailing whitespace.
++L 341.574803 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:63: trailing whitespace.
++Q 341.574803 4.251969 338.314961 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:64: trailing whitespace.
++L 241.370079 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:65: trailing whitespace.
++Q 238.110236 4.251969 238.110236 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:66: trailing whitespace.
++L 238.110236 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:67: trailing whitespace.
++Q 238.110236 147.401575 241.370079 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:72: trailing whitespace.
++    <path d="M 357.590551 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:73: trailing whitespace.
++L 454.535433 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:74: trailing whitespace.
++Q 457.795276 147.401575 457.795276 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:75: trailing whitespace.
++L 457.795276 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:76: trailing whitespace.
++Q 457.795276 4.251969 454.535433 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:77: trailing whitespace.
++L 357.590551 4.251969 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:78: trailing whitespace.
++Q 354.330709 4.251969 354.330709 7.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:79: trailing whitespace.
++L 354.330709 144.141732 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:80: trailing whitespace.
++Q 354.330709 147.401575 357.590551 147.401575 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:85: trailing whitespace.
++    <path d="M 14.598425 53.858268 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:86: trailing whitespace.
++L 100.204724 53.858268 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:87: trailing whitespace.
++Q 103.464567 53.858268 103.464567 50.598425 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:88: trailing whitespace.
++L 103.464567 29.338583 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:89: trailing whitespace.
++Q 103.464567 26.07874 100.204724 26.07874 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:90: trailing whitespace.
++L 14.598425 26.07874 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:91: trailing whitespace.
++Q 11.338583 26.07874 11.338583 29.338583 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:92: trailing whitespace.
++L 11.338583 50.598425 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:93: trailing whitespace.
++Q 11.338583 53.858268 14.598425 53.858268 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:98: trailing whitespace.
++    <path d="M 14.598425 85.03937 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:99: trailing whitespace.
++L 100.204724 85.03937 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:100: trailing whitespace.
++Q 103.464567 85.03937 103.464567 81.779528 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:101: trailing whitespace.
++L 103.464567 59.669291 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:102: trailing whitespace.
++Q 103.464567 56.409449 100.204724 56.409449 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:103: trailing whitespace.
++L 14.598425 56.409449 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:104: trailing whitespace.
++Q 11.338583 56.409449 11.338583 59.669291 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:105: trailing whitespace.
++L 11.338583 81.779528 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:106: trailing whitespace.
++Q 11.338583 85.03937 14.598425 85.03937 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:111: trailing whitespace.
++    <path d="M 14.598425 116.220472 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:112: trailing whitespace.
++L 100.204724 116.220472 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:113: trailing whitespace.
++Q 103.464567 116.220472 103.464567 112.96063 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:114: trailing whitespace.
++L 103.464567 91.700787 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:115: trailing whitespace.
++Q 103.464567 88.440945 100.204724 88.440945 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:116: trailing whitespace.
++L 14.598425 88.440945 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:117: trailing whitespace.
++Q 11.338583 88.440945 11.338583 91.700787 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:118: trailing whitespace.
++L 11.338583 112.96063 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:119: trailing whitespace.
++Q 11.338583 116.220472 14.598425 116.220472 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:124: trailing whitespace.
++    <path d="M 14.598425 143.433071 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:125: trailing whitespace.
++L 100.204724 143.433071 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:126: trailing whitespace.
++Q 103.464567 143.433071 103.464567 140.173228 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:127: trailing whitespace.
++L 103.464567 122.031496 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:128: trailing whitespace.
++Q 103.464567 118.771654 100.204724 118.771654 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:129: trailing whitespace.
++L 14.598425 118.771654 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:130: trailing whitespace.
++Q 11.338583 118.771654 11.338583 122.031496 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:131: trailing whitespace.
++L 11.338583 140.173228 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:132: trailing whitespace.
++Q 11.338583 143.433071 14.598425 143.433071 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:137: trailing whitespace.
++    <path d="M 130.818898 56.692913 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:138: trailing whitespace.
++L 216.425197 56.692913 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:139: trailing whitespace.
++Q 219.685039 56.692913 219.685039 53.433071 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:140: trailing whitespace.
++L 219.685039 34.440945 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:141: trailing whitespace.
++Q 219.685039 31.181102 216.425197 31.181102 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:142: trailing whitespace.
++L 130.818898 31.181102 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:143: trailing whitespace.
++Q 127.559055 31.181102 127.559055 34.440945 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:144: trailing whitespace.
++L 127.559055 53.433071 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:145: trailing whitespace.
++Q 127.559055 56.692913 130.818898 56.692913 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:150: trailing whitespace.
++    <path d="M 130.818898 96.377953 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:151: trailing whitespace.
++L 216.425197 96.377953 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:152: trailing whitespace.
++Q 219.685039 96.377953 219.685039 93.11811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:153: trailing whitespace.
++L 219.685039 71.291339 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:154: trailing whitespace.
++Q 219.685039 68.031496 216.425197 68.031496 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:155: trailing whitespace.
++L 130.818898 68.031496 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:156: trailing whitespace.
++Q 127.559055 68.031496 127.559055 71.291339 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:157: trailing whitespace.
++L 127.559055 93.11811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:158: trailing whitespace.
++Q 127.559055 96.377953 130.818898 96.377953 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:163: trailing whitespace.
++    <path d="M 130.818898 141.732283 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:164: trailing whitespace.
++L 216.425197 141.732283 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:165: trailing whitespace.
++Q 219.685039 141.732283 219.685039 138.472441 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:166: trailing whitespace.
++L 219.685039 115.228346 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:167: trailing whitespace.
++Q 219.685039 111.968504 216.425197 111.968504 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:168: trailing whitespace.
++L 130.818898 111.968504 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:169: trailing whitespace.
++Q 127.559055 111.968504 127.559055 115.228346 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:170: trailing whitespace.
++L 127.559055 138.472441 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:171: trailing whitespace.
++Q 127.559055 141.732283 130.818898 141.732283 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:176: trailing whitespace.
++    <path d="M 247.03937 53.858268 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:177: trailing whitespace.
++L 332.645669 53.858268 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:178: trailing whitespace.
++Q 335.905512 53.858268 335.905512 50.598425 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:179: trailing whitespace.
++L 335.905512 28.771654 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:180: trailing whitespace.
++Q 335.905512 25.511811 332.645669 25.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:181: trailing whitespace.
++L 247.03937 25.511811 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:182: trailing whitespace.
++Q 243.779528 25.511811 243.779528 28.771654 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:183: trailing whitespace.
++L 243.779528 50.598425 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:184: trailing whitespace.
++Q 243.779528 53.858268 247.03937 53.858268 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:189: trailing whitespace.
++    <path d="M 247.03937 84.047244 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:190: trailing whitespace.
++L 332.645669 84.047244 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:191: trailing whitespace.
++Q 335.905512 84.047244 335.905512 80.787402 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:192: trailing whitespace.
++L 335.905512 58.677165 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:193: trailing whitespace.
++Q 335.905512 55.417323 332.645669 55.417323 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:194: trailing whitespace.
++L 247.03937 55.417323 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:195: trailing whitespace.
++Q 243.779528 55.417323 243.779528 58.677165 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:196: trailing whitespace.
++L 243.779528 80.787402 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:197: trailing whitespace.
++Q 243.779528 84.047244 247.03937 84.047244 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:202: trailing whitespace.
++    <path d="M 247.03937 114.23622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:203: trailing whitespace.
++L 332.645669 114.23622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:204: trailing whitespace.
++Q 335.905512 114.23622 335.905512 110.976378 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:205: trailing whitespace.
++L 335.905512 88.866142 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:206: trailing whitespace.
++Q 335.905512 85.606299 332.645669 85.606299 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:207: trailing whitespace.
++L 247.03937 85.606299 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:208: trailing whitespace.
++Q 243.779528 85.606299 243.779528 88.866142 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:209: trailing whitespace.
++L 243.779528 110.976378 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:210: trailing whitespace.
++Q 243.779528 114.23622 247.03937 114.23622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:215: trailing whitespace.
++    <path d="M 247.03937 144.425197 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:216: trailing whitespace.
++L 332.645669 144.425197 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:217: trailing whitespace.
++Q 335.905512 144.425197 335.905512 141.165354 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:218: trailing whitespace.
++L 335.905512 119.055118 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:219: trailing whitespace.
++Q 335.905512 115.795276 332.645669 115.795276 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:220: trailing whitespace.
++L 247.03937 115.795276 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:221: trailing whitespace.
++Q 243.779528 115.795276 243.779528 119.055118 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:222: trailing whitespace.
++L 243.779528 141.165354 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:223: trailing whitespace.
++Q 243.779528 144.425197 247.03937 144.425197 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:228: trailing whitespace.
++    <path d="M 363.259843 66.614173 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:229: trailing whitespace.
++L 448.866142 66.614173 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:230: trailing whitespace.
++Q 452.125984 66.614173 452.125984 63.354331 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:231: trailing whitespace.
++L 452.125984 40.110236 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:232: trailing whitespace.
++Q 452.125984 36.850394 448.866142 36.850394 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:233: trailing whitespace.
++L 363.259843 36.850394 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:234: trailing whitespace.
++Q 360 36.850394 360 40.110236 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:235: trailing whitespace.
++L 360 63.354331 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:236: trailing whitespace.
++Q 360 66.614173 363.259843 66.614173 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:241: trailing whitespace.
++    <path d="M 363.259843 107.716535 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:242: trailing whitespace.
++L 448.866142 107.716535 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:243: trailing whitespace.
++Q 452.125984 107.716535 452.125984 104.456693 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:244: trailing whitespace.
++L 452.125984 79.795276 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:245: trailing whitespace.
++Q 452.125984 76.535433 448.866142 76.535433 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:246: trailing whitespace.
++L 363.259843 76.535433 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:247: trailing whitespace.
++Q 360 76.535433 360 79.795276 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:248: trailing whitespace.
++L 360 104.456693 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:249: trailing whitespace.
++Q 360 107.716535 363.259843 107.716535 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:254: trailing whitespace.
++    <path d="M 146.409449 188.503937 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:255: trailing whitespace.
++L 321.307087 188.503937 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:256: trailing whitespace.
++Q 324.566929 188.503937 324.566929 185.244094 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:257: trailing whitespace.
++L 324.566929 162 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:258: trailing whitespace.
++Q 324.566929 158.740157 321.307087 158.740157 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:259: trailing whitespace.
++L 146.409449 158.740157 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:260: trailing whitespace.
++Q 143.149606 158.740157 143.149606 162 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:261: trailing whitespace.
++L 143.149606 185.244094 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:262: trailing whitespace.
++Q 143.149606 188.503937 146.409449 188.503937 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:267: trailing whitespace.
++    <path d="M 173.622047 57.866849 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:268: trailing whitespace.
++L 173.622047 66.007167 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:270: trailing whitespace.
++    <path d="M 171.862047 61.386849 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:271: trailing whitespace.
++L 173.622047 57.866849 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:272: trailing whitespace.
++L 175.382047 61.386849 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:275: trailing whitespace.
++    <path d="M 175.382047 62.487167 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:276: trailing whitespace.
++L 173.622047 66.007167 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:277: trailing whitespace.
++L 171.862047 62.487167 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:282: trailing whitespace.
++    <path d="M 173.622047 98.402282 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:283: trailing whitespace.
++L 173.622047 110.794568 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:285: trailing whitespace.
++    <path d="M 171.862047 101.922282 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:286: trailing whitespace.
++L 173.622047 98.402282 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:287: trailing whitespace.
++L 175.382047 101.922282 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:290: trailing whitespace.
++    <path d="M 175.382047 107.274568 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:291: trailing whitespace.
++L 173.622047 110.794568 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:292: trailing whitespace.
++L 171.862047 107.274568 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:297: trailing whitespace.
++    <path d="M 289.84252 53.858268 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:298: trailing whitespace.
++L 289.84252 54.243387 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:300: trailing whitespace.
++    <path d="M 290.36252 53.203387 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:301: trailing whitespace.
++L 289.84252 54.243387 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:302: trailing whitespace.
++L 289.32252 53.203387 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:307: trailing whitespace.
++    <path d="M 289.84252 84.047244 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:308: trailing whitespace.
++L 289.84252 84.432364 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:310: trailing whitespace.
++    <path d="M 290.36252 83.392364 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:311: trailing whitespace.
++L 289.84252 84.432364 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:312: trailing whitespace.
++L 289.32252 83.392364 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:317: trailing whitespace.
++    <path d="M 289.84252 114.23622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:318: trailing whitespace.
++L 289.84252 114.62134 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:320: trailing whitespace.
++    <path d="M 290.36252 113.58134 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:321: trailing whitespace.
++L 289.84252 114.62134 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:322: trailing whitespace.
++L 289.32252 113.58134 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:327: trailing whitespace.
++    <path d="M 406.062992 66.614173 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:328: trailing whitespace.
++L 406.062992 75.361497 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:330: trailing whitespace.
++    <path d="M 407.822992 71.841497 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:331: trailing whitespace.
++L 406.062992 75.361497 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:332: trailing whitespace.
++L 404.302992 71.841497 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:337: trailing whitespace.
++    <path d="M 103.464567 132.377953 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:338: trailing whitespace.
++L 113.385827 132.377953 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:339: trailing whitespace.
++L 113.385827 82.204724 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:340: trailing whitespace.
++L 125.534726 82.204724 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:342: trailing whitespace.
++    <path d="M 122.014726 80.444724 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:343: trailing whitespace.
++L 125.534726 82.204724 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:344: trailing whitespace.
++L 122.014726 83.964724 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:349: trailing whitespace.
++    <path d="M 220.251969 82.204724 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:350: trailing whitespace.
++L 231.023622 82.204724 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:351: trailing whitespace.
++L 231.023622 39.685039 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:352: trailing whitespace.
++L 241.755198 39.685039 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:354: trailing whitespace.
++    <path d="M 238.235198 37.925039 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:355: trailing whitespace.
++L 241.755198 39.685039 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:356: trailing whitespace.
++L 238.235198 41.445039 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:361: trailing whitespace.
++    <path d="M 335.905512 127.559055 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:362: trailing whitespace.
++L 345.826772 127.559055 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:363: trailing whitespace.
++L 345.826772 51.023622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:364: trailing whitespace.
++L 357.975671 51.023622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:366: trailing whitespace.
++    <path d="M 354.455671 49.263622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:367: trailing whitespace.
++L 357.975671 51.023622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:368: trailing whitespace.
++L 354.455671 52.783622 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:373: trailing whitespace.
++    <path d="M 57.401575 143.433071 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:374: trailing whitespace.
++L 57.401575 173.622047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:375: trailing whitespace.
++L 141.576447 173.622047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:377: trailing whitespace.
++    <path d="M 138.056447 171.862047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:378: trailing whitespace.
++L 141.576447 173.622047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:379: trailing whitespace.
++L 138.056447 175.382047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:384: trailing whitespace.
++    <path d="M 452.125984 51.732283 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:385: trailing whitespace.
++L 462.047244 51.732283 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:386: trailing whitespace.
++L 462.047244 173.622047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:387: trailing whitespace.
++L 326.990483 173.622047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:389: trailing whitespace.
++    <path d="M 330.510483 175.382047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:390: trailing whitespace.
++L 326.990483 173.622047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:391: trailing whitespace.
++L 330.510483 171.862047 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:396: trailing whitespace.
++    <path d="M 173.622047 158.740157 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:397: trailing whitespace.
++L 173.622047 143.305443 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:399: trailing whitespace.
++    <path d="M 171.862047 146.825443 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:400: trailing whitespace.
++L 173.622047 143.305443 
+paper_evidence/revision_v5/figures/fig1_architecture.svg:401: trailing whitespace.
++L 175.382047 146.825443 

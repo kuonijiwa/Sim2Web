@@ -1,0 +1,212 @@
+{
+  "index": "index.json",
+  "schema": "sim2web-index/2",
+  "stages": {
+    "I-1": {
+      "exact_arrays": 942,
+      "exact_tuples": 7078455,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 532,
+      "interpolated_tuples": 3428056,
+      "max_interp_nrmse": 1.9138896747418684e-07,
+      "max_interp_abs_error": {
+        "X_Disp": 7.21239211312185e-08,
+        "Y_Disp": 8.76068653592085e-08,
+        "Z_Disp": 1.4724466196075237e-07,
+        "TotalDisplacement": 8.633142770759702e-08
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 3975,
+      "fallback_max_abs_error": {
+        "X_Disp": 4.324830123460813e-13,
+        "Y_Disp": 1.3757953057410343e-12,
+        "Z_Disp": 9.624109134502781e-13,
+        "TotalDisplacement": 1.4600215178192467e-12
+      },
+      "probe_disagreements": 12,
+      "vertices_on_discontinuities": 1,
+      "cell_restricted_max_abs_error": {
+        "X_Disp": 1.5735609855600276e-10,
+        "Y_Disp": 5.767137854512799e-10,
+        "Z_Disp": 1.793091540264885e-09
+      },
+      "max_jump_across_discontinuity": {
+        "X_Disp": 4.927496533184742e-08,
+        "Y_Disp": 5.132288389883403e-08,
+        "Z_Disp": 3.17056996532606e-07
+      },
+      "magnitude_vs_vector_norm": {
+        "max_abs": 8.441215625792919e-10,
+        "max_relative_to_span": 9.704951110440041e-08
+      },
+      "files": 134,
+      "max_exact_nrmse_vs_float64": 8.633634724032396e-07,
+      "failures": []
+    },
+    "I-3": {
+      "exact_arrays": 942,
+      "exact_tuples": 6969357,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 532,
+      "interpolated_tuples": 3341644,
+      "max_interp_nrmse": 1.9138856624281595e-07,
+      "max_interp_abs_error": {
+        "X_Disp": 7.214468720199334e-08,
+        "Y_Disp": 9.197770532010227e-08,
+        "Z_Disp": 1.7654043507208013e-07,
+        "TotalDisplacement": 1.7533860313841132e-07
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 3975,
+      "fallback_max_abs_error": {
+        "X_Disp": 1.3396579695774177e-12,
+        "Y_Disp": 8.381509963828355e-12,
+        "Z_Disp": 2.004601457551211e-12,
+        "TotalDisplacement": 8.618960572018573e-12
+      },
+      "probe_disagreements": 12,
+      "vertices_on_discontinuities": 1,
+      "cell_restricted_max_abs_error": {
+        "X_Disp": 1.5004755763077006e-10,
+        "Y_Disp": 5.346250959298304e-11,
+        "Z_Disp": 1.8068902384515625e-09
+      },
+      "max_jump_across_discontinuity": {
+        "X_Disp": 5.176574687144626e-08,
+        "Y_Disp": 5.230142006214678e-08,
+        "Z_Disp": 5.282594706989066e-07
+      },
+      "magnitude_vs_vector_norm": {
+        "max_abs": 1.8404876477029486e-09,
+        "max_relative_to_span": 1.0334951480276107e-07
+      },
+      "files": 134,
+      "max_exact_nrmse_vs_float64": 3.450411468805048e-07,
+      "failures": []
+    },
+    "II-2": {
+      "exact_arrays": 942,
+      "exact_tuples": 6859789,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 532,
+      "interpolated_tuples": 3274716,
+      "max_interp_nrmse": 1.5913174926328377e-07,
+      "max_interp_abs_error": {
+        "X_Disp": 8.993624431478746e-08,
+        "Y_Disp": 1.2176365337596194e-07,
+        "Z_Disp": 2.2749619168074364e-07,
+        "TotalDisplacement": 1.7220620940512632e-07
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 3975,
+      "fallback_max_abs_error": {
+        "X_Disp": 2.052400074275319e-12,
+        "Y_Disp": 7.000111230647767e-12,
+        "Z_Disp": 1.4656806468111164e-12,
+        "TotalDisplacement": 7.163926655989216e-12
+      },
+      "probe_disagreements": 12,
+      "vertices_on_discontinuities": 2,
+      "cell_restricted_max_abs_error": {
+        "X_Disp": 5.2905705322594827e-11,
+        "Y_Disp": 5.653760023083959e-11,
+        "Z_Disp": 2.8056425927089e-10
+      },
+      "max_jump_across_discontinuity": {
+        "X_Disp": 5.409160830290331e-08,
+        "Y_Disp": 1.437217987924769e-07,
+        "Z_Disp": 4.967201479282729e-07
+      },
+      "magnitude_vs_vector_norm": {
+        "max_abs": 1.8464938016105048e-09,
+        "max_relative_to_span": 1.039006017564708e-07
+      },
+      "files": 134,
+      "max_exact_nrmse_vs_float64": 2.873039482946735e-07,
+      "failures": []
+    },
+    "III-3": {
+      "exact_arrays": 942,
+      "exact_tuples": 6745123,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 532,
+      "interpolated_tuples": 3196716,
+      "max_interp_nrmse": 1.692322107556531e-07,
+      "max_interp_abs_error": {
+        "X_Disp": 9.012064463648694e-08,
+        "Y_Disp": 1.6074162430029966e-07,
+        "Z_Disp": 2.2713271391282654e-07,
+        "TotalDisplacement": 1.6853785584042096e-07
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 3975,
+      "fallback_max_abs_error": {
+        "X_Disp": 3.842363954646783e-12,
+        "Y_Disp": 9.049586906823067e-12,
+        "Z_Disp": 3.819325914497001e-12,
+        "TotalDisplacement": 9.208115497364408e-12
+      },
+      "probe_disagreements": 18,
+      "vertices_on_discontinuities": 4,
+      "cell_restricted_max_abs_error": {
+        "X_Disp": 5.679037426951916e-11,
+        "Y_Disp": 5.348203657826352e-10,
+        "Z_Disp": 9.7282601158738e-10
+      },
+      "max_jump_across_discontinuity": {
+        "X_Disp": 2.3827675714981067e-07,
+        "Y_Disp": 1.7838158632306998e-07,
+        "Z_Disp": 6.124173509772235e-07
+      },
+      "magnitude_vs_vector_norm": {
+        "max_abs": 1.822742567991753e-09,
+        "max_relative_to_span": 1.0399350061660647e-07
+      },
+      "files": 134,
+      "max_exact_nrmse_vs_float64": 2.305795043445163e-07,
+      "failures": []
+    },
+    "IV-2": {
+      "exact_arrays": 942,
+      "exact_tuples": 6570516,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 532,
+      "interpolated_tuples": 3015360,
+      "max_interp_nrmse": 1.828928483514052e-07,
+      "max_interp_abs_error": {
+        "X_Disp": 9.610255394655685e-08,
+        "Y_Disp": 1.869125703874222e-07,
+        "Z_Disp": 2.266727539345387e-07,
+        "TotalDisplacement": 1.6701486478597032e-07
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 3975,
+      "fallback_max_abs_error": {
+        "X_Disp": 3.0426758720282015e-11,
+        "Y_Disp": 1.584870673936295e-11,
+        "Z_Disp": 5.836061642585928e-11,
+        "TotalDisplacement": 6.212614713655103e-11
+      },
+      "probe_disagreements": 25,
+      "vertices_on_discontinuities": 10,
+      "cell_restricted_max_abs_error": {
+        "X_Disp": 7.454662107118752e-08,
+        "Y_Disp": 1.2283716178075263e-06,
+        "Z_Disp": 4.561573455447664e-07
+      },
+      "max_jump_across_discontinuity": {
+        "X_Disp": 3.250008984412821e-07,
+        "Y_Disp": 2.5059372869055095e-06,
+        "Z_Disp": 8.186664784710224e-07
+      },
+      "magnitude_vs_vector_norm": {
+        "max_abs": 1.7741121627334877e-09,
+        "max_relative_to_span": 1.0452954100292585e-07
+      },
+      "files": 134,
+      "max_exact_nrmse_vs_float64": 1.694261901452693e-07,
+      "failures": []
+    }
+  },
+  "failures": []
+}

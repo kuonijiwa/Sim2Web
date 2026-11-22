@@ -1,0 +1,49 @@
+# Case B: FLAC3D slope, state "exac_23" (identifier as spelled in the source file).
+schema: sim2web-config/1
+title: "Case B: FLAC3D slope (exac_23)"
+description: >-
+  Conventional slope; exterior and internal views of the same cell-based
+  stress field.  The excavated part is exported as zero-stress zones, whose
+  contact surface is kept as a supplementary layer.
+solver: FLAC3D
+
+input:
+  stages:
+    - {file: input/exac_23.vtu, name: exac_23}
+
+output:
+  dir: site
+
+fields:
+  displacement: {name: Displacement, unit: m}
+  stress:
+    name: Stress
+    # As declared by the ComponentName attributes of the VTU (checked at build time).
+    order: "XX,YY,ZZ,XY,XZ,YZ"
+    unit: Pa
+    sign_convention: "FLAC3D convention: tension positive, compression negative"
+  categories:
+    - {name: "Group Slot : Default", label: "Group (slot Default)"}
+
+geometry:
+  primary: exterior
+  exterior: {enabled: true, split_by_group: true}
+  excavation:
+    enabled: true
+    strategy: stress
+    null_threshold: 1.0e-8              # Pa
+    contact_tolerance: 1.0e-3           # m
+  groups: {field: "Group Slot : Default"}
+  display_averaging: per_group
+
+sections:
+  axes: [x, y, z]
+  spacing: 10
+  placement: integer_grid
+  min_points: 10
+
+viewer:
+  subtitle: "Slope exterior, excavation contact and sections"
+  default_field: Stress_Max_Principal
+  default_axis: y
+  range_mode: p5_p95

@@ -1,0 +1,64 @@
+{
+  "width_cm": 16.5,
+  "height_cm": 5.711811725641788,
+  "gap_cm": 0.2,
+  "panel_label_pt": 9,
+  "capture_state": {
+    "stages": [
+      "I-1",
+      "II-2",
+      "IV-2"
+    ],
+    "field": "Stress_Min_Principal",
+    "limits": [
+      -12.247395277023315,
+      -1.1023685634136207
+    ],
+    "limits_method": "P5\u2013P95 of excavation face values pooled over all five construction stages",
+    "common_camera": [
+      -367.2911243592357,
+      -700.2945345498879,
+      430.4391039732712,
+      61.39882819905073,
+      14.18871971392285,
+      16.03881650026101,
+      0.2291108506922656,
+      0.38185141782044274,
+      0.8953757383375899,
+      74.8626326541114
+    ]
+  },
+  "panels": {
+    "I-1": {
+      "capture_pixels": [
+        2280,
+        1440
+      ],
+      "width_cm": 5.366666666666667,
+      "effective_dpi": 1079.1055900621116
+    },
+    "II-2": {
+      "capture_pixels": [
+        2280,
+        1440
+      ],
+      "width_cm": 5.366666666666667,
+      "effective_dpi": 1079.1055900621116
+    },
+    "IV-2": {
+      "capture_pixels": [
+        2280,
+        1440
+      ],
+      "width_cm": 5.366666666666667,
+      "effective_dpi": 1079.1055900621116
+    }
+  },
+  "legend_min_text_pt": 6.738289069798478,
+  "legend_capture_pixels": [
+    4720,
+    484
+  ],
+  "model_css": ".panel.collapsed, .right { display: none !important; }",
+  "legend_css": ".panel, .viewport { visibility: hidden !important; }\n.shell { background: #fff !important; }\n.right { inset: 0 !important; align-items: stretch !important; }\n.legend { border: 0 !important; box-shadow: none !important; border-radius: 0 !important;\n  background: #fff !important; padding: 8px 8px 12px !important; }\n.legend-title { font: 700 25px/1.2 Arial, sans-serif !important; margin-bottom: 9px !important; }\n.legend-sub { display: none !important; }\n.legend .bands { flex-direction: row !important; margin: 0 60px !important;\n  font: 400 24px/1 Arial, sans-serif !important; }\n.legend .band-row { position: relative; display: block !important; flex: 1 1 0;\n  height: 62px !important; }\n.legend .band-row .swatch.tall { width: 100%; height: 24px !important; border: 0; }\n.legend .band-row.last { flex: 0 0 0; }\n.legend .tick { position: absolute; left: 0; top: 30px; transform: translateX(-50%) !important;\n  white-space: nowrap; }\n"
+}

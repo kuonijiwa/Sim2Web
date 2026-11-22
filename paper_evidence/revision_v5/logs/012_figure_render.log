@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "G:\成果\papers\02\SimWebView\paper_evidence\revision_v5\figures\draw_figure1.py", line 12, in <module>
+    fig = plt.figure(figsize=(WIDTH / 25.4, HEIGHT / 25.4), facecolor="white")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\swv_r6_20261121\trame_lib\matplotlib\pyplot.py", line 1096, in figure
+    manager = new_figure_manager(
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\swv_r6_20261121\trame_lib\matplotlib\pyplot.py", line 576, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\swv_r6_20261121\trame_lib\matplotlib\backend_bases.py", line 3664, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\swv_r6_20261121\trame_lib\matplotlib\backend_bases.py", line 3669, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\swv_r6_20261121\trame_lib\matplotlib\backend_bases.py", line 1836, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\swv_r6_20261121\trame_lib\matplotlib\backends\_backend_tk.py", line 546, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\tkinter\__init__.py", line 2346, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    {C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\tcl\tcl8.6}
+
+
+
+This probably means that Tcl wasn't installed properly.
+

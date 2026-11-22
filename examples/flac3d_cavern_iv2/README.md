@@ -1,18 +1,13 @@
-# Case A — FLAC3D cavern, IV-2
+# Case A: FLAC3D underground cavern, stage IV-2
 
-This representative final-stage case produces and displays the **INNER
-EXCAVATION SURFACE** and axis-aligned **SECTION** meshes.
+Configuration: [`sim2web.yaml`](sim2web.yaml). Input: `input/*.vtu` (Git LFS).
 
 ```bash
-python examples/flac3d_cavern_iv2/processing/process.py
-npm run build:cavern
+sim2web build examples/flac3d_cavern_iv2/sim2web.yaml       # writes examples/flac3d_cavern_iv2/site
+sim2web validate examples/flac3d_cavern_iv2/sim2web.yaml
+sim2web serve examples/flac3d_cavern_iv2/site
 ```
 
-Run both commands from the repository root. Alternatively, inside this case
-directory, run `python processing/process.py`; the processor resolves its data
-paths from the script location. Input is `input/IV-2.vtu` and
-products are written under `output/model_cache/IV-2/`.  The editable frontend
-entry component is `frontend/src/App.vue`.
-
-Stress is rendered from exact CellData where available.  PointData stress is an
-optional display interpolation only.  Displacement is continuous PointData.
+* Primary product: the solid-side **excavation surface** (the cavern walls are hidden by the outer model boundary).
+* Void identification: stress-based: null zones carry exactly zero stress; the smallest non-zero |σ| of a retained cell is 0.030 MPa, more than six decades above the 1e-8 threshold. Run `sim2web sensitivity examples/flac3d_cavern_iv2/sim2web.yaml` for the threshold/tolerance sweep.
+* `output/model_cache/` holds the fixtures for the byte-level regression test. The current viewer reads `site/`.

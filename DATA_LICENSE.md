@@ -13,8 +13,8 @@ Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode.en
 
 You may share and adapt these data, including commercially, subject to those
 terms: give appropriate credit, link to the licence, and indicate changes.
-Suggested credit: "SimWebView example data, HydroChina Itasca, CC BY 4.0",
-together with https://github.com/kuonijiwa/SimWebView and the version used. Attribution does
+Suggested credit: "Sim2Web example data, HydroChina Itasca, CC BY 4.0",
+together with https://github.com/kuonijiwa/Sim2Web and the version used. Attribution does
 not imply endorsement. No accuracy or fitness warranty is provided.
 
 Python, JavaScript, Vue and other software source files, tests and project

@@ -1,0 +1,759 @@
+{
+  "site": "examples/flac3d_cavern_iv2/site",
+  "gzip": false,
+  "host": {
+    "platform": "linux 6.18.44-fc-v726",
+    "cpus": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "cores": 2,
+    "memoryGiB": 7.8
+  },
+  "runs": [
+    {
+      "run": 1,
+      "browser": "153.0.8010.12",
+      "renderer": "ANGLE (Mesa, Vulkan 1.4.335 (llvmpipe (LLVM 20.1.2 256 bits) (0x00000000)), llvmpipe)",
+      "navigationToFirstImageMs": 1278.7000000001863,
+      "indexToFirstImageMs": 1152,
+      "wallClockMs": 1291,
+      "startupBytes": 6077403,
+      "startupFiles": [
+        {
+          "file": "model_cache/IV-2/sections/slice_x_63.vtp",
+          "bytes": 972521,
+          "fetchMs": 104.3,
+          "parseMs": 166.8
+        },
+        {
+          "file": "model_cache/IV-2/excavation_surface.vtp",
+          "bytes": 5104882,
+          "fetchMs": 317.5,
+          "parseMs": 236.4
+        }
+      ],
+      "serverBytesAtStartup": 7613359,
+      "heapAfterStartupMiB": 10.3,
+      "sectionSwitches": [
+        {
+          "axis": "x",
+          "value": -112,
+          "ms": 104.4,
+          "cached": false,
+          "bytes": 25329
+        },
+        {
+          "axis": "x",
+          "value": -72,
+          "ms": 107.2,
+          "cached": false,
+          "bytes": 134925
+        },
+        {
+          "axis": "x",
+          "value": -27,
+          "ms": 109.9,
+          "cached": false,
+          "bytes": 221237
+        },
+        {
+          "axis": "x",
+          "value": 8,
+          "ms": 134.1,
+          "cached": false,
+          "bytes": 535237
+        },
+        {
+          "axis": "x",
+          "value": 48,
+          "ms": 173.3,
+          "cached": false,
+          "bytes": 826785
+        },
+        {
+          "axis": "x",
+          "value": 88,
+          "ms": 150.6,
+          "cached": false,
+          "bytes": 678061
+        },
+        {
+          "axis": "x",
+          "value": 128,
+          "ms": 118.5,
+          "cached": false,
+          "bytes": 376721
+        },
+        {
+          "axis": "x",
+          "value": 163,
+          "ms": 154.5,
+          "cached": false,
+          "bytes": 214793
+        },
+        {
+          "axis": "x",
+          "value": 203,
+          "ms": 102.7,
+          "cached": false,
+          "bytes": 137809
+        },
+        {
+          "axis": "x",
+          "value": 238,
+          "ms": 103.5,
+          "cached": false,
+          "bytes": 23329
+        },
+        {
+          "axis": "y",
+          "value": -69,
+          "ms": 140.2,
+          "cached": false,
+          "bytes": 42993
+        },
+        {
+          "axis": "y",
+          "value": -49,
+          "ms": 120,
+          "cached": false,
+          "bytes": 110801
+        },
+        {
+          "axis": "y",
+          "value": -29,
+          "ms": 150,
+          "cached": false,
+          "bytes": 622017
+        },
+        {
+          "axis": "y",
+          "value": -9,
+          "ms": 211.2,
+          "cached": false,
+          "bytes": 1154489
+        },
+        {
+          "axis": "y",
+          "value": 11,
+          "ms": 204.3,
+          "cached": false,
+          "bytes": 1189209
+        },
+        {
+          "axis": "y",
+          "value": 31,
+          "ms": 194,
+          "cached": false,
+          "bytes": 1411017
+        },
+        {
+          "axis": "y",
+          "value": 51,
+          "ms": 186.9,
+          "cached": false,
+          "bytes": 1137081
+        },
+        {
+          "axis": "y",
+          "value": 71,
+          "ms": 173,
+          "cached": false,
+          "bytes": 923129
+        },
+        {
+          "axis": "y",
+          "value": 91,
+          "ms": 105.6,
+          "cached": false,
+          "bytes": 89993
+        },
+        {
+          "axis": "y",
+          "value": 111,
+          "ms": 96.5,
+          "cached": false,
+          "bytes": 40745
+        },
+        {
+          "axis": "z",
+          "value": -37,
+          "ms": 109.4,
+          "cached": false,
+          "bytes": 71505
+        },
+        {
+          "axis": "z",
+          "value": -27,
+          "ms": 117.6,
+          "cached": false,
+          "bytes": 82053
+        },
+        {
+          "axis": "z",
+          "value": -17,
+          "ms": 124.1,
+          "cached": false,
+          "bytes": 109461
+        },
+        {
+          "axis": "z",
+          "value": -7,
+          "ms": 243.1,
+          "cached": false,
+          "bytes": 1573949
+        },
+        {
+          "axis": "z",
+          "value": 3,
+          "ms": 334.8,
+          "cached": false,
+          "bytes": 2681853
+        },
+        {
+          "axis": "z",
+          "value": 13,
+          "ms": 423.3,
+          "cached": false,
+          "bytes": 3793469
+        },
+        {
+          "axis": "z",
+          "value": 23,
+          "ms": 376.3,
+          "cached": false,
+          "bytes": 3224069
+        },
+        {
+          "axis": "z",
+          "value": 33,
+          "ms": 190,
+          "cached": false,
+          "bytes": 976153
+        },
+        {
+          "axis": "z",
+          "value": 43,
+          "ms": 118.4,
+          "cached": false,
+          "bytes": 94793
+        },
+        {
+          "axis": "z",
+          "value": 53,
+          "ms": 108,
+          "cached": false,
+          "bytes": 68649
+        }
+      ],
+      "errors": [],
+      "heapAfterSweepMiB": 14.1,
+      "frameRate": {
+        "frames": 120,
+        "seconds": 11.199700000000187,
+        "fps": 10.714572711768886
+      },
+      "sectionSwitchMedianMs": 140.2,
+      "sectionSwitchMaxMs": 423.3,
+      "verificationPassed": true,
+      "verificationChecks": 60,
+      "verificationFailures": 0
+    },
+    {
+      "run": 2,
+      "browser": "153.0.8010.12",
+      "renderer": "ANGLE (Mesa, Vulkan 1.4.335 (llvmpipe (LLVM 20.1.2 256 bits) (0x00000000)), llvmpipe)",
+      "navigationToFirstImageMs": 1286.8999999999069,
+      "indexToFirstImageMs": 1165.2999999998137,
+      "wallClockMs": 1298,
+      "startupBytes": 6077403,
+      "startupFiles": [
+        {
+          "file": "model_cache/IV-2/sections/slice_x_63.vtp",
+          "bytes": 972521,
+          "fetchMs": 146.9,
+          "parseMs": 109.1
+        },
+        {
+          "file": "model_cache/IV-2/excavation_surface.vtp",
+          "bytes": 5104882,
+          "fetchMs": 258.9,
+          "parseMs": 223.8
+        }
+      ],
+      "serverBytesAtStartup": 7613359,
+      "heapAfterStartupMiB": 9.3,
+      "sectionSwitches": [
+        {
+          "axis": "x",
+          "value": -112,
+          "ms": 116.2,
+          "cached": false,
+          "bytes": 25329
+        },
+        {
+          "axis": "x",
+          "value": -72,
+          "ms": 130.2,
+          "cached": false,
+          "bytes": 134925
+        },
+        {
+          "axis": "x",
+          "value": -27,
+          "ms": 124.2,
+          "cached": false,
+          "bytes": 221237
+        },
+        {
+          "axis": "x",
+          "value": 8,
+          "ms": 162.1,
+          "cached": false,
+          "bytes": 535237
+        },
+        {
+          "axis": "x",
+          "value": 48,
+          "ms": 189.1,
+          "cached": false,
+          "bytes": 826785
+        },
+        {
+          "axis": "x",
+          "value": 88,
+          "ms": 170,
+          "cached": false,
+          "bytes": 678061
+        },
+        {
+          "axis": "x",
+          "value": 128,
+          "ms": 129.1,
+          "cached": false,
+          "bytes": 376721
+        },
+        {
+          "axis": "x",
+          "value": 163,
+          "ms": 116.5,
+          "cached": false,
+          "bytes": 214793
+        },
+        {
+          "axis": "x",
+          "value": 203,
+          "ms": 103.8,
+          "cached": false,
+          "bytes": 137809
+        },
+        {
+          "axis": "x",
+          "value": 238,
+          "ms": 101.1,
+          "cached": false,
+          "bytes": 23329
+        },
+        {
+          "axis": "y",
+          "value": -69,
+          "ms": 103.2,
+          "cached": false,
+          "bytes": 42993
+        },
+        {
+          "axis": "y",
+          "value": -49,
+          "ms": 109.6,
+          "cached": false,
+          "bytes": 110801
+        },
+        {
+          "axis": "y",
+          "value": -29,
+          "ms": 163.6,
+          "cached": false,
+          "bytes": 622017
+        },
+        {
+          "axis": "y",
+          "value": -9,
+          "ms": 252.9,
+          "cached": false,
+          "bytes": 1154489
+        },
+        {
+          "axis": "y",
+          "value": 11,
+          "ms": 178.2,
+          "cached": false,
+          "bytes": 1189209
+        },
+        {
+          "axis": "y",
+          "value": 31,
+          "ms": 206.6,
+          "cached": false,
+          "bytes": 1411017
+        },
+        {
+          "axis": "y",
+          "value": 51,
+          "ms": 182.1,
+          "cached": false,
+          "bytes": 1137081
+        },
+        {
+          "axis": "y",
+          "value": 71,
+          "ms": 188.9,
+          "cached": false,
+          "bytes": 923129
+        },
+        {
+          "axis": "y",
+          "value": 91,
+          "ms": 97.7,
+          "cached": false,
+          "bytes": 89993
+        },
+        {
+          "axis": "y",
+          "value": 111,
+          "ms": 95.3,
+          "cached": false,
+          "bytes": 40745
+        },
+        {
+          "axis": "z",
+          "value": -37,
+          "ms": 104.5,
+          "cached": false,
+          "bytes": 71505
+        },
+        {
+          "axis": "z",
+          "value": -27,
+          "ms": 118,
+          "cached": false,
+          "bytes": 82053
+        },
+        {
+          "axis": "z",
+          "value": -17,
+          "ms": 110.6,
+          "cached": false,
+          "bytes": 109461
+        },
+        {
+          "axis": "z",
+          "value": -7,
+          "ms": 264.2,
+          "cached": false,
+          "bytes": 1573949
+        },
+        {
+          "axis": "z",
+          "value": 3,
+          "ms": 308.7,
+          "cached": false,
+          "bytes": 2681853
+        },
+        {
+          "axis": "z",
+          "value": 13,
+          "ms": 379.9,
+          "cached": false,
+          "bytes": 3793469
+        },
+        {
+          "axis": "z",
+          "value": 23,
+          "ms": 390,
+          "cached": false,
+          "bytes": 3224069
+        },
+        {
+          "axis": "z",
+          "value": 33,
+          "ms": 215,
+          "cached": false,
+          "bytes": 976153
+        },
+        {
+          "axis": "z",
+          "value": 43,
+          "ms": 113.5,
+          "cached": false,
+          "bytes": 94793
+        },
+        {
+          "axis": "z",
+          "value": 53,
+          "ms": 121.1,
+          "cached": false,
+          "bytes": 68649
+        }
+      ],
+      "errors": [],
+      "heapAfterSweepMiB": 12.5,
+      "frameRate": {
+        "frames": 120,
+        "seconds": 11.533399999999906,
+        "fps": 10.40456413546751
+      },
+      "sectionSwitchMedianMs": 130.2,
+      "sectionSwitchMaxMs": 390,
+      "verificationPassed": true,
+      "verificationChecks": 60,
+      "verificationFailures": 0
+    },
+    {
+      "run": 3,
+      "browser": "153.0.8010.12",
+      "renderer": "ANGLE (Mesa, Vulkan 1.4.335 (llvmpipe (LLVM 20.1.2 256 bits) (0x00000000)), llvmpipe)",
+      "navigationToFirstImageMs": 1309,
+      "indexToFirstImageMs": 1183.2999999998137,
+      "wallClockMs": 1321,
+      "startupBytes": 6077403,
+      "startupFiles": [
+        {
+          "file": "model_cache/IV-2/sections/slice_x_63.vtp",
+          "bytes": 972521,
+          "fetchMs": 116.5,
+          "parseMs": 141.7
+        },
+        {
+          "file": "model_cache/IV-2/excavation_surface.vtp",
+          "bytes": 5104882,
+          "fetchMs": 283.5,
+          "parseMs": 226.1
+        }
+      ],
+      "serverBytesAtStartup": 7613359,
+      "heapAfterStartupMiB": 8.6,
+      "sectionSwitches": [
+        {
+          "axis": "x",
+          "value": -112,
+          "ms": 115.8,
+          "cached": false,
+          "bytes": 25329
+        },
+        {
+          "axis": "x",
+          "value": -72,
+          "ms": 131.1,
+          "cached": false,
+          "bytes": 134925
+        },
+        {
+          "axis": "x",
+          "value": -27,
+          "ms": 114.9,
+          "cached": false,
+          "bytes": 221237
+        },
+        {
+          "axis": "x",
+          "value": 8,
+          "ms": 144.2,
+          "cached": false,
+          "bytes": 535237
+        },
+        {
+          "axis": "x",
+          "value": 48,
+          "ms": 159.9,
+          "cached": false,
+          "bytes": 826785
+        },
+        {
+          "axis": "x",
+          "value": 88,
+          "ms": 151,
+          "cached": false,
+          "bytes": 678061
+        },
+        {
+          "axis": "x",
+          "value": 128,
+          "ms": 116.7,
+          "cached": false,
+          "bytes": 376721
+        },
+        {
+          "axis": "x",
+          "value": 163,
+          "ms": 113.5,
+          "cached": false,
+          "bytes": 214793
+        },
+        {
+          "axis": "x",
+          "value": 203,
+          "ms": 114,
+          "cached": false,
+          "bytes": 137809
+        },
+        {
+          "axis": "x",
+          "value": 238,
+          "ms": 97.1,
+          "cached": false,
+          "bytes": 23329
+        },
+        {
+          "axis": "y",
+          "value": -69,
+          "ms": 96.5,
+          "cached": false,
+          "bytes": 42993
+        },
+        {
+          "axis": "y",
+          "value": -49,
+          "ms": 108.7,
+          "cached": false,
+          "bytes": 110801
+        },
+        {
+          "axis": "y",
+          "value": -29,
+          "ms": 161.5,
+          "cached": false,
+          "bytes": 622017
+        },
+        {
+          "axis": "y",
+          "value": -9,
+          "ms": 214.4,
+          "cached": false,
+          "bytes": 1154489
+        },
+        {
+          "axis": "y",
+          "value": 11,
+          "ms": 166.7,
+          "cached": false,
+          "bytes": 1189209
+        },
+        {
+          "axis": "y",
+          "value": 31,
+          "ms": 220.2,
+          "cached": false,
+          "bytes": 1411017
+        },
+        {
+          "axis": "y",
+          "value": 51,
+          "ms": 175.2,
+          "cached": false,
+          "bytes": 1137081
+        },
+        {
+          "axis": "y",
+          "value": 71,
+          "ms": 167.4,
+          "cached": false,
+          "bytes": 923129
+        },
+        {
+          "axis": "y",
+          "value": 91,
+          "ms": 110,
+          "cached": false,
+          "bytes": 89993
+        },
+        {
+          "axis": "y",
+          "value": 111,
+          "ms": 101.8,
+          "cached": false,
+          "bytes": 40745
+        },
+        {
+          "axis": "z",
+          "value": -37,
+          "ms": 126.3,
+          "cached": false,
+          "bytes": 71505
+        },
+        {
+          "axis": "z",
+          "value": -27,
+          "ms": 120.3,
+          "cached": false,
+          "bytes": 82053
+        },
+        {
+          "axis": "z",
+          "value": -17,
+          "ms": 124.3,
+          "cached": false,
+          "bytes": 109461
+        },
+        {
+          "axis": "z",
+          "value": -7,
+          "ms": 233.9,
+          "cached": false,
+          "bytes": 1573949
+        },
+        {
+          "axis": "z",
+          "value": 3,
+          "ms": 324.6,
+          "cached": false,
+          "bytes": 2681853
+        },
+        {
+          "axis": "z",
+          "value": 13,
+          "ms": 395.1,
+          "cached": false,
+          "bytes": 3793469
+        },
+        {
+          "axis": "z",
+          "value": 23,
+          "ms": 337,
+          "cached": false,
+          "bytes": 3224069
+        },
+        {
+          "axis": "z",
+          "value": 33,
+          "ms": 198,
+          "cached": false,
+          "bytes": 976153
+        },
+        {
+          "axis": "z",
+          "value": 43,
+          "ms": 117.2,
+          "cached": false,
+          "bytes": 94793
+        },
+        {
+          "axis": "z",
+          "value": 53,
+          "ms": 114.7,
+          "cached": false,
+          "bytes": 68649
+        }
+      ],
+      "errors": [],
+      "heapAfterSweepMiB": 12.6,
+      "frameRate": {
+        "frames": 120,
+        "seconds": 11.847700000000186,
+        "fps": 10.1285481570261
+      },
+      "sectionSwitchMedianMs": 131.1,
+      "sectionSwitchMaxMs": 395.1,
+      "verificationPassed": true,
+      "verificationChecks": 60,
+      "verificationFailures": 0
+    }
+  ]
+}

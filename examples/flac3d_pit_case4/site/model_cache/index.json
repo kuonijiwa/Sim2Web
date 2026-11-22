@@ -1,0 +1,3826 @@
+{
+  "schema": "sim2web-index/2",
+  "generator": {
+    "name": "sim2web",
+    "version": "0.2.0.dev0"
+  },
+  "title": "Case D: FLAC3D excavation pit",
+  "description": "Circular deep pit (about 32 m wide, floor at z = -57.5 m) in a 150 m x 150 m x 111 m domain. The excavated zones were deleted before export, so the model contains no void cells; the pit walls and floor are found as the boundary of the retained solid that does not lie on the box faces of the domain.",
+  "solver": "FLAC3D",
+  "config_sha256": "ae663ca8fa52bda7f6ffc2d6d9a248375c3225383ebce233dbd3c30bcb33933c",
+  "viewer": {
+    "title": "Case D: FLAC3D excavation pit",
+    "subtitle": "Ground surface, pit walls and floor, sections",
+    "default_field": "TotalDisplacement",
+    "default_axis": "x",
+    "colormap": "jet",
+    "bands": 8,
+    "background": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "range_mode": "p5_p95",
+    "length_unit": "m"
+  },
+  "fields": {
+    "TotalDisplacement": {
+      "label": "Displacement magnitude",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "X_Disp": {
+      "label": "X displacement",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "Y_Disp": {
+      "label": "Y displacement",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "Z_Disp": {
+      "label": "Z displacement",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "Stress_Max_Principal": {
+      "label": "Maximum principal stress (algebraic)",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "FLAC3D convention: tension positive, compression negative"
+    },
+    "Stress_Mid_Principal": {
+      "label": "Intermediate principal stress",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "FLAC3D convention: tension positive, compression negative"
+    },
+    "Stress_Min_Principal": {
+      "label": "Minimum principal stress (algebraic)",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "FLAC3D convention: tension positive, compression negative"
+    },
+    "Stress_XX": {
+      "label": "Normal stress σxx",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "FLAC3D convention: tension positive, compression negative"
+    },
+    "Stress_YY": {
+      "label": "Normal stress σyy",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "FLAC3D convention: tension positive, compression negative"
+    },
+    "Stress_ZZ": {
+      "label": "Normal stress σzz",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "FLAC3D convention: tension positive, compression negative"
+    },
+    "Group Slot : Default_ID": {
+      "label": "Group",
+      "unit": "",
+      "association": "cell",
+      "kind": "categorical",
+      "source": "Group Slot : Default",
+      "categories": [
+        {
+          "code": 0,
+          "value": "Boundary1",
+          "label": "Boundary1"
+        },
+        {
+          "code": 1,
+          "value": "None",
+          "label": "Unassigned (None)"
+        }
+      ]
+    }
+  },
+  "ranges": {
+    "TotalDisplacement": {
+      "min": 0.0,
+      "max": 0.010743419639766216
+    },
+    "X_Disp": {
+      "min": -0.0073534403927624226,
+      "max": 0.007327255327254534
+    },
+    "Y_Disp": {
+      "min": -0.007259551901370287,
+      "max": 0.007188418414443731
+    },
+    "Z_Disp": {
+      "min": -0.01071704737842083,
+      "max": 0.0022637899965047836
+    },
+    "Stress_Max_Principal": {
+      "min": -2.2323343753814697,
+      "max": 3.288937568664551
+    },
+    "Stress_Mid_Principal": {
+      "min": -3.7189362049102783,
+      "max": 0.35198119282722473
+    },
+    "Stress_Min_Principal": {
+      "min": -9.362878799438477,
+      "max": 0.02957621030509472
+    },
+    "Stress_XX": {
+      "min": -5.794389247894287,
+      "max": 1.4641695022583008
+    },
+    "Stress_YY": {
+      "min": -5.681067943572998,
+      "max": 1.7948970794677734
+    },
+    "Stress_ZZ": {
+      "min": -7.1792707443237305,
+      "max": 2.690380096435547
+    },
+    "Group Slot : Default_ID": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "stages": [
+    {
+      "id": "EXC12_dis",
+      "label": "EXC12_dis",
+      "source": {
+        "file": "EXC12_dis.vtu",
+        "sha256": "5accc289db001aef9f82b2da766200fae75f406d564bf1084598d8e5962a1585",
+        "bytes": 102899853,
+        "points": 332510,
+        "cells": 548417
+      },
+      "void": {
+        "method": "removed_zones (no void cells in the export)",
+        "cells": 0
+      },
+      "mesh_regions": 5,
+      "internal_faces": "drop",
+      "stress_component_order": {
+        "order": "XX,YY,ZZ,XY,XZ,YZ",
+        "source": "file ComponentName attributes"
+      },
+      "layers": [
+        {
+          "id": "exterior",
+          "label": "Exterior surface",
+          "kind": "exterior",
+          "role": "primary",
+          "file": "model_cache/EXC12_dis/exterior_surface.vtp",
+          "bytes": 2248198,
+          "sha256": "bec8a7ade84e744833ebe3978bf7c2e4b89fdd819dcf189e4fd6d76d58162fba",
+          "points": 22439,
+          "cells": 20293,
+          "point_arrays": [
+            "Source_Point_ID",
+            "Stress_Max_Principal_DisplayOnly",
+            "Stress_Mid_Principal_DisplayOnly",
+            "Stress_Min_Principal_DisplayOnly",
+            "Stress_XX_DisplayOnly",
+            "Stress_YY_DisplayOnly",
+            "Stress_ZZ_DisplayOnly",
+            "TotalDisplacement",
+            "X_Disp",
+            "Y_Disp",
+            "Z_Disp"
+          ],
+          "cell_arrays": [
+            "Group Slot : Default",
+            "Group Slot : Default_ID",
+            "Source_Cell_ID",
+            "Stress_Max_Principal",
+            "Stress_Mid_Principal",
+            "Stress_Min_Principal",
+            "Stress_XX",
+            "Stress_YY",
+            "Stress_ZZ"
+          ]
+        },
+        {
+          "id": "excavation",
+          "label": "Excavation surface",
+          "kind": "excavation",
+          "role": "supplementary",
+          "file": "model_cache/EXC12_dis/excavation_surface.vtp",
+          "bytes": 1785830,
+          "sha256": "3b53a8c52cc21df3e67ca98f630f0d0d8445d2d99f28cb69a51d7f4f4d06b22f",
+          "points": 16878,
+          "cells": 17004,
+          "point_arrays": [
+            "Source_Point_ID",
+            "Stress_Max_Principal_DisplayOnly",
+            "Stress_Mid_Principal_DisplayOnly",
+            "Stress_Min_Principal_DisplayOnly",
+            "Stress_XX_DisplayOnly",
+            "Stress_YY_DisplayOnly",
+            "Stress_ZZ_DisplayOnly",
+            "TotalDisplacement",
+            "X_Disp",
+            "Y_Disp",
+            "Z_Disp"
+          ],
+          "cell_arrays": [
+            "Group Slot : Default",
+            "Group Slot : Default_ID",
+            "Source_Cell_ID",
+            "Stress_Max_Principal",
+            "Stress_Mid_Principal",
+            "Stress_Min_Principal",
+            "Stress_XX",
+            "Stress_YY",
+            "Stress_ZZ"
+          ]
+        }
+      ],
+      "sections": {
+        "x": [
+          {
+            "value": -46.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-46.vtp",
+            "bytes": 69397,
+            "sha256": "ba83651d6be9e49eb8e8e88a63df0a90a1a3e4de9601dda8de66d67b835fe424",
+            "points": 634,
+            "cells": 613,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -42.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-42.vtp",
+            "bytes": 78817,
+            "sha256": "df09df00ca3704756eeebbbf3305f50138d7ff73abd1ee9b043b1957c72c85f0",
+            "points": 691,
+            "cells": 740,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -38.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-38.vtp",
+            "bytes": 126741,
+            "sha256": "693eb52aa17a9e2cf43727c6aa0a145fa67ad17ab2a43e95c54049f7d559a1bf",
+            "points": 1090,
+            "cells": 1296,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -34.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-34.vtp",
+            "bytes": 172357,
+            "sha256": "8f6d6420cdb032158081b1532dc8f0215f389727a34b6222d80cab76db13bfb7",
+            "points": 1508,
+            "cells": 1772,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -30.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-30.vtp",
+            "bytes": 174889,
+            "sha256": "b1063b80f5837832aff297a5524ed824890d73705b66e2ab2c02cb7743d31595",
+            "points": 1580,
+            "cells": 1746,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -26.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-26.vtp",
+            "bytes": 139689,
+            "sha256": "a6009438585b88e1ad449c2b4a96fbcd91984e85d333646ede5359b007ae6c55",
+            "points": 1265,
+            "cells": 1377,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -22.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-22.vtp",
+            "bytes": 195045,
+            "sha256": "a00dd23d382d392393dc2b1bdbf74758ca0d514b77d49d662b1bbeb41f150b9c",
+            "points": 1741,
+            "cells": 2021,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -18.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-18.vtp",
+            "bytes": 572805,
+            "sha256": "adb32b693351615e5e39bc6cbe57b4529da1d74b121064ad1437b504ade53f9d",
+            "points": 4996,
+            "cells": 6236,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -14.942,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-14.942.vtp",
+            "bytes": 1208365,
+            "sha256": "b30584875e32f6db7baf5884a35080483df6243d26c99a4f9efe696b6a7a43aa",
+            "points": 10985,
+            "cells": 12641,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -14.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-14.vtp",
+            "bytes": 1296537,
+            "sha256": "68dd1e6f8edd922d844815ae51ec22ad8af6cc445e299d2f005e3ec9481205cc",
+            "points": 11954,
+            "cells": 13526,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -13.743,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-13.743.vtp",
+            "bytes": 1333701,
+            "sha256": "c5f9fcd4d5463aae710297985470db9ec15aed33106e4d7e0afaaf4973b809f3",
+            "points": 12348,
+            "cells": 13821,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -10.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-10.vtp",
+            "bytes": 1135961,
+            "sha256": "db2695be40157745b572e1c534730681e9462fe34c103b203dde940b3b028acb",
+            "points": 10311,
+            "cells": 11819,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -6.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-6.vtp",
+            "bytes": 987097,
+            "sha256": "5e34e42a5f6e1a1b19c307108790dad707fbfb0c35f66d2cdbf73283b0f5b300",
+            "points": 8926,
+            "cells": 10248,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -2.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_-2.vtp",
+            "bytes": 868081,
+            "sha256": "2944eab355ca08c0b6a947e0c7d2ece5775ea14b64e3f99b4caea848792b7715",
+            "points": 7893,
+            "cells": 8956,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 0.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_0.vtp",
+            "bytes": 829349,
+            "sha256": "087de201ca29ae09cbe8641f1270aeb773e5ca3afca952eb764484fd073d53f5",
+            "points": 7771,
+            "cells": 8847,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_2.vtp",
+            "bytes": 890149,
+            "sha256": "13939764fa4426940ce451f806d77916427efae296fbbcf570692ea882b4fa1c",
+            "points": 8129,
+            "cells": 9174,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 6.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_6.vtp",
+            "bytes": 1046673,
+            "sha256": "25f16db9ebe0f20eaeccdf2c025a923b167539c7521d32eb9193aaf76e1cebdc",
+            "points": 9470,
+            "cells": 10909,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 10.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_10.vtp",
+            "bytes": 1203805,
+            "sha256": "371189d31ecaa57266ae79bd6a8d86ba4223189a0beaf2ef825930b039b0e1fc",
+            "points": 10972,
+            "cells": 12550,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 13.743,
+            "file": "model_cache/EXC12_dis/sections/slice_x_13.743.vtp",
+            "bytes": 1530077,
+            "sha256": "3d14ea40bd7528fa5d959fe57ab19cdf130706d948b629f6db938a5feff5cf18",
+            "points": 14066,
+            "cells": 15988,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 14.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_14.vtp",
+            "bytes": 1473225,
+            "sha256": "73aea1c6a57a78ec1e9885602ededeb1ec616eb2eb663c7cb4fef125a45340e8",
+            "points": 13486,
+            "cells": 15489,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 14.942,
+            "file": "model_cache/EXC12_dis/sections/slice_x_14.942.vtp",
+            "bytes": 1304397,
+            "sha256": "0c54e606750af8050396b620818f557124bee1a88c69ab52f2a644e6472d9e0d",
+            "points": 11856,
+            "cells": 13679,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 18.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_18.vtp",
+            "bytes": 667433,
+            "sha256": "aa579b3104929e3c9b312e0d938b092cb9858efad0589bb43cde651383faa506",
+            "points": 5919,
+            "cells": 7192,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 22.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_22.vtp",
+            "bytes": 366729,
+            "sha256": "b97b0bc7f036fc4214b1411ed0a6854dcffe314cfcc2e0df551b12ef8a3b46e4",
+            "points": 3307,
+            "cells": 3875,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 26.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_26.vtp",
+            "bytes": 282173,
+            "sha256": "f6680bfb90d79ced11d03f1b5d40ff5e546eca737c7548f2e211c5765e15e2fc",
+            "points": 2601,
+            "cells": 2921,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 30.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_30.vtp",
+            "bytes": 305317,
+            "sha256": "64cf82498d27bdf93e966548978600d7d5305030554fe94451e888609b72b8b8",
+            "points": 2804,
+            "cells": 3174,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 34.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_34.vtp",
+            "bytes": 362697,
+            "sha256": "a6a39ead7f1e18075a82ff50b1a373e2a600d44edb730fe166a34c86c049ed0d",
+            "points": 3281,
+            "cells": 3830,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 38.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_38.vtp",
+            "bytes": 365561,
+            "sha256": "74bf92a39916e9a05ca916920be4f547865db2da628b5e10ed93cf8939701465",
+            "points": 3283,
+            "cells": 3909,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 42.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_42.vtp",
+            "bytes": 325825,
+            "sha256": "a272668a5f92f031adcaeacd525f67fb64761ca022a61adef4e5a7896ee42a19",
+            "points": 2916,
+            "cells": 3520,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 46.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_46.vtp",
+            "bytes": 293689,
+            "sha256": "13fa35828616476792478c51eb7acaa645ab535ba9a0964926433fd654058451",
+            "points": 2643,
+            "cells": 3169,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 50.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_50.vtp",
+            "bytes": 279029,
+            "sha256": "bda9bd361732fec76a99be3478f48437693ee672136371e816deb9eae966a7de",
+            "points": 2522,
+            "cells": 2993,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 54.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_54.vtp",
+            "bytes": 274229,
+            "sha256": "29b4a63dd8e3d04939f255e0dd030a56b43ec17d42da2fb6833359fd43957ff0",
+            "points": 2479,
+            "cells": 2955,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 58.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_58.vtp",
+            "bytes": 254765,
+            "sha256": "3af7044fab057c35d1da59157cf0eb2a594ad29f4802b1bef4dad438bdb10e6f",
+            "points": 2309,
+            "cells": 2750,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 62.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_62.vtp",
+            "bytes": 241205,
+            "sha256": "4050c9551978813f522dc0a0e6dfefbab8e741710f4e5151b73469b16264b3fc",
+            "points": 2194,
+            "cells": 2580,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 66.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_66.vtp",
+            "bytes": 248357,
+            "sha256": "bbe60ae2d4a075a9549d384559c7b56f20e4cd63aa5c24485cce0383ed7dea2c",
+            "points": 2254,
+            "cells": 2672,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 70.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_70.vtp",
+            "bytes": 276909,
+            "sha256": "75061c8cb63c7df92da126f66ab3b9b612f0b7ea36cc8b9f377c76d911db2d78",
+            "points": 2495,
+            "cells": 3000,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 74.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_74.vtp",
+            "bytes": 254153,
+            "sha256": "29076c3c6894e0209c682287d60958f3cac89f20872d00495538b2c79667001b",
+            "points": 2303,
+            "cells": 2721,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 78.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_78.vtp",
+            "bytes": 244037,
+            "sha256": "82590869457c70a0477dbe44329b046b5a2725e37009af53129eb6d68cc99579",
+            "points": 2211,
+            "cells": 2609,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 82.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_82.vtp",
+            "bytes": 241149,
+            "sha256": "a2bbfe1e4ddb1d5dbed33f668477acab6f41880e3dd72484106d51100f61d63a",
+            "points": 2182,
+            "cells": 2570,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 86.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_86.vtp",
+            "bytes": 249721,
+            "sha256": "b7d3329c4e16099ff613d0a975538aa65a84d88ea5b3c94f100af57da51a39d1",
+            "points": 2233,
+            "cells": 2693,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 90.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_90.vtp",
+            "bytes": 245981,
+            "sha256": "d8dc98b7411530a185ee432748b75666a919bab2f2858229753879cc69cfd80f",
+            "points": 2216,
+            "cells": 2629,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 94.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_94.vtp",
+            "bytes": 248109,
+            "sha256": "09f5fc61e98843fd429a8dd06669d042b9e2c44c8bb79ed023f490eb7f45f86d",
+            "points": 2276,
+            "cells": 2615,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 98.0,
+            "file": "model_cache/EXC12_dis/sections/slice_x_98.vtp",
+            "bytes": 195057,
+            "sha256": "454e8c98923aa8f3bd4de3b20e7a049c7f3b9d6594c68f5a4f1abe2b1b483fcf",
+            "points": 1812,
+            "cells": 1986,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          }
+        ],
+        "y": [
+          {
+            "value": -46.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-46.vtp",
+            "bytes": 66477,
+            "sha256": "2b6045af43ccbe9096e15b5ba6cc3ca5bc2c971bace382123bea5db383a546ff",
+            "points": 604,
+            "cells": 585,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -42.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-42.vtp",
+            "bytes": 70865,
+            "sha256": "2fe3bf40d08c5354a1d38cc52cea07cfaa085c7fbe73181b54f877745b6d071e",
+            "points": 620,
+            "cells": 654,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -38.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-38.vtp",
+            "bytes": 113441,
+            "sha256": "1d51711ba1749b0f0b26ac1a05fd124edef924a77897662912dfdf8fab441570",
+            "points": 970,
+            "cells": 1168,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -34.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-34.vtp",
+            "bytes": 168021,
+            "sha256": "b0ed94504ef76dc159b354bbf46e9c3f0698aeaafc7af963766e2cfbfd9eca86",
+            "points": 1468,
+            "cells": 1731,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -30.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-30.vtp",
+            "bytes": 175925,
+            "sha256": "1969e7af7eb277b68ec71fa7bde23e11c5cd2d7c2f0368273b737c2ea339c1db",
+            "points": 1590,
+            "cells": 1751,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -26.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-26.vtp",
+            "bytes": 141289,
+            "sha256": "3564ef1b6311c0f3990b52fe60419b187b260425aa590d73c36748a0a3ec2466",
+            "points": 1282,
+            "cells": 1398,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -22.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-22.vtp",
+            "bytes": 196209,
+            "sha256": "0e19eb063dce0cd55e5bbf04c20adf4598f4fe014d60137fd3fd82b969aded56",
+            "points": 1768,
+            "cells": 2004,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -18.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-18.vtp",
+            "bytes": 580637,
+            "sha256": "ef784a5f91b2e27455d78a79b26cc24e55f618df6bf453793e0b4411fe42ac17",
+            "points": 5121,
+            "cells": 6254,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -14.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-14.vtp",
+            "bytes": 1366757,
+            "sha256": "37cbde4b03cb4218c53e63432e3eb5a6bdd27725b9d80fcd262d4e8a90d495cd",
+            "points": 12559,
+            "cells": 14337,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -10.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-10.vtp",
+            "bytes": 1397205,
+            "sha256": "7896cbe8e6272f30b2a22fea56004fe127ea30705a71dc8df76385eeb4416c75",
+            "points": 12770,
+            "cells": 14608,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -6.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-6.vtp",
+            "bytes": 1283073,
+            "sha256": "01564afc5eabd48ab5b4ad802c9e04b765c5a27983413f7dbcba95e694ee3b7d",
+            "points": 11787,
+            "cells": 13464,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -2.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_-2.vtp",
+            "bytes": 1228145,
+            "sha256": "0e739532d0708bb6c543a0ea13a833155ff2c6f040613f6a9f760888ee68bfd4",
+            "points": 11291,
+            "cells": 12947,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 0.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_0.vtp",
+            "bytes": 1139825,
+            "sha256": "f8a1b370197068176c94a7562b6830fe91be62a03c5f76fa9f1f9555ee7e3c3e",
+            "points": 10605,
+            "cells": 12263,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_2.vtp",
+            "bytes": 1219665,
+            "sha256": "70bbb6983bcf8817c346bae9c458e634817ce14faf09b619b2b0a9953b39af68",
+            "points": 11164,
+            "cells": 12893,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 6.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_6.vtp",
+            "bytes": 1390781,
+            "sha256": "5d5bd5978c3b23a67248bbf7011a91331d16cffdafe311e1ad634a9b8924f072",
+            "points": 12739,
+            "cells": 14712,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 10.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_10.vtp",
+            "bytes": 1406449,
+            "sha256": "8899626d150e86d610fab083a019711a02e6c06abe6a6d30246c9f5ecfd9d88f",
+            "points": 12930,
+            "cells": 14715,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 14.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_14.vtp",
+            "bytes": 1586245,
+            "sha256": "27037a462f09f5c7b78482a32d31abb3ed891b3da90c67ee7ea98609d0c2a0ef",
+            "points": 14576,
+            "cells": 16761,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 18.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_18.vtp",
+            "bytes": 766161,
+            "sha256": "409e889228a74bef6484b1dde59631db34a9fe3c0f1fea807726d105e41c0124",
+            "points": 6758,
+            "cells": 8322,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 22.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_22.vtp",
+            "bytes": 308465,
+            "sha256": "a9539eb0fb3217e0003fca925936d892823f3cdba147e4b7a746d3962bf120ec",
+            "points": 2756,
+            "cells": 3271,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 26.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_26.vtp",
+            "bytes": 213181,
+            "sha256": "3aafeb881d5d1f000423ebf27b553be4ba223bdfca0fd6fce5441f204b3fb55d",
+            "points": 1937,
+            "cells": 2204,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 30.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_30.vtp",
+            "bytes": 215845,
+            "sha256": "56f61ccb50d4a300cfc18fe7ce60780d0eaba71880a4707a089ddcda3fe12cce",
+            "points": 1964,
+            "cells": 2210,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 34.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_34.vtp",
+            "bytes": 270333,
+            "sha256": "a1decb9030268805c580d99bc4dc49c6f86d7c3fd6a3f2d0abf4e9e3f5b8b6be",
+            "points": 2418,
+            "cells": 2835,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 38.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_38.vtp",
+            "bytes": 277129,
+            "sha256": "331d7bbca728d60d0ac2eabc93dcf0e19d9ea5745a73adedb637456696d8cb85",
+            "points": 2461,
+            "cells": 2963,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 42.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_42.vtp",
+            "bytes": 250757,
+            "sha256": "409fcc4e9d6b475aeff07814040de0ae645f22a75881eee5fafb8c95133c8405",
+            "points": 2242,
+            "cells": 2670,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 46.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_46.vtp",
+            "bytes": 242077,
+            "sha256": "e1302a4ec5d480bf3d790059189babf4626886f246d3edd8e5ad1d4cba062221",
+            "points": 2160,
+            "cells": 2596,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 50.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_50.vtp",
+            "bytes": 219313,
+            "sha256": "6adaf51db9301619c9d011d7c8e16e023f8ec04a3bee475a40915e66ada65669",
+            "points": 1971,
+            "cells": 2334,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 54.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_54.vtp",
+            "bytes": 220653,
+            "sha256": "666b0ad320446d74ba19b00c40e71d22cfdc66ccbdbec5c1a485b3cce2767fc2",
+            "points": 1973,
+            "cells": 2366,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 58.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_58.vtp",
+            "bytes": 199889,
+            "sha256": "f2b0e19587f9c3e07db9c489d59a86e07539b735321499455e0757b426a7dfde",
+            "points": 1781,
+            "cells": 2142,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 62.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_62.vtp",
+            "bytes": 183893,
+            "sha256": "178e18be92d54aa08cc3204b77f0212efd7bb3e7c601d6297d54747e7234d9cf",
+            "points": 1641,
+            "cells": 1956,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 66.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_66.vtp",
+            "bytes": 183385,
+            "sha256": "a0b454bc1fc3df8f71217bf624e74d2929b82b4583cd4b4da69dcd0a4247f2b8",
+            "points": 1639,
+            "cells": 1951,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 70.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_70.vtp",
+            "bytes": 180397,
+            "sha256": "7763995d0bc5d72303d842ff6076c1ee281fa7066a21b68770944d96f2c43299",
+            "points": 1611,
+            "cells": 1908,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 74.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_74.vtp",
+            "bytes": 165245,
+            "sha256": "4fda557e578a0f29831b8ecddd9b7bf788d60bb398f473e5e13b98c33d462791",
+            "points": 1467,
+            "cells": 1749,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 78.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_78.vtp",
+            "bytes": 141061,
+            "sha256": "051b4d3fe4d262c3094dc4fa99c0e7226b61abd84db18566008efdb096f9972b",
+            "points": 1257,
+            "cells": 1458,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 82.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_82.vtp",
+            "bytes": 134429,
+            "sha256": "8c8ff2569abce9810f09c37ba0061d1a859439941144e474acfeb97adab6c4f9",
+            "points": 1197,
+            "cells": 1373,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 86.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_86.vtp",
+            "bytes": 130113,
+            "sha256": "a657ddb2498a41b57ebcee2ae7dd7a8f56ced0453b26c4e2b372811d6fc1af5a",
+            "points": 1150,
+            "cells": 1331,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 90.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_90.vtp",
+            "bytes": 85917,
+            "sha256": "3d7b143d98fca1ac54f5fc34d5b94fc8d575be5b6bcb7c172a1f9617242125c5",
+            "points": 751,
+            "cells": 835,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 94.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_94.vtp",
+            "bytes": 69501,
+            "sha256": "52e0ac30865e6430c2536c754ff855c6bf863efc09b7b99b05bf5ee2863c7ce6",
+            "points": 616,
+            "cells": 636,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 98.0,
+            "file": "model_cache/EXC12_dis/sections/slice_y_98.vtp",
+            "bytes": 59265,
+            "sha256": "4bbe48f4b64c6eeb22344dee93ff4fa7a2c55522100b950a432772583b72de66",
+            "points": 534,
+            "cells": 511,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          }
+        ],
+        "z": [
+          {
+            "value": -96.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-96.vtp",
+            "bytes": 48569,
+            "sha256": "04945283f438e156b4402435252bf3d3a20e8cb8223673a93160e37db74ffde4",
+            "points": 419,
+            "cells": 468,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -92.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-92.vtp",
+            "bytes": 57473,
+            "sha256": "ebadc4bbccb97f71bd01534e8999fbd99c883c69b468b054e2adb16cc67093da",
+            "points": 501,
+            "cells": 564,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -88.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-88.vtp",
+            "bytes": 62293,
+            "sha256": "e2977bf2bd049cb43d48d9cf3e2845a6b8b0fb2edc974015730be612de4f3b4d",
+            "points": 550,
+            "cells": 622,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -84.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-84.vtp",
+            "bytes": 68813,
+            "sha256": "84abc0f9ec81275f1d6764ac2c3f4544cfed2c1b4a5d2088bf447732cc756015",
+            "points": 608,
+            "cells": 699,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -80.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-80.vtp",
+            "bytes": 74169,
+            "sha256": "9dd0b8eeb914272c18abe1c179a81d557738e49351eb243639765cc9a5a5bd58",
+            "points": 663,
+            "cells": 752,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -76.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-76.vtp",
+            "bytes": 91209,
+            "sha256": "0c0ba07d197cde4bd2f666f49a87a0104ca051a5dcf9ddc67087bf275142c152",
+            "points": 820,
+            "cells": 953,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -72.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-72.vtp",
+            "bytes": 294645,
+            "sha256": "40b5d05b20f786a0521bd7e3a7f60bd2d044e288efe0efe80144b720bddb7751",
+            "points": 2670,
+            "cells": 3366,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -68.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-68.vtp",
+            "bytes": 554821,
+            "sha256": "ea3e0470a3d2fd4f6289fd243321882b302261f0abb06aae1fa83cfd37c57020",
+            "points": 5142,
+            "cells": 6305,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -64.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-64.vtp",
+            "bytes": 933237,
+            "sha256": "b5235605fba12c02cc819ed0e4f59cf52cee54535c7a9c3b64cd4a27c425d09d",
+            "points": 8849,
+            "cells": 10464,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -60.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-60.vtp",
+            "bytes": 1072177,
+            "sha256": "a910ab0975b272aa05fe9718481b5cf0eebef1e8017daccdad4582582a9130aa",
+            "points": 10226,
+            "cells": 11734,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -57.5003,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-57.5.vtp",
+            "bytes": 1206625,
+            "sha256": "d2b724b6a71492e4442833f53e84ebd45284ff6cfaaa2db90816f67b3fcedca1",
+            "points": 11621,
+            "cells": 13034,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -56.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-56.vtp",
+            "bytes": 1491377,
+            "sha256": "b523fc1f985c2d10e0a3f47466bb85ab484e60e91d0bcb88404faafde67e0fda",
+            "points": 14095,
+            "cells": 16210,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -52.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-52.vtp",
+            "bytes": 1261969,
+            "sha256": "bec46edca323d9023300704bae9f275151c0eae629e9b18077d40148d2b85da9",
+            "points": 11765,
+            "cells": 13773,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -48.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-48.vtp",
+            "bytes": 1052365,
+            "sha256": "56a3122fe991dbf5d9391d7459787c0073fa6a607ce96bc2fb8ac42f2c7a5efe",
+            "points": 9792,
+            "cells": 11483,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -44.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-44.vtp",
+            "bytes": 976373,
+            "sha256": "4ec0b62fc1657184c52bc048d2157329dcdd0affad760ab59b6172c7bb208d7f",
+            "points": 9088,
+            "cells": 10425,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -40.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-40.vtp",
+            "bytes": 709349,
+            "sha256": "ac74916755eadd1a29a78dac5778d3816e26b4edd4b3ee71bcff7d9faac51010",
+            "points": 6505,
+            "cells": 7595,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -36.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-36.vtp",
+            "bytes": 467937,
+            "sha256": "a43ee1801260591e4126870962b4b460f1ca826b6b56a268e6d235b77bdda897",
+            "points": 4304,
+            "cells": 4884,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -32.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-32.vtp",
+            "bytes": 494429,
+            "sha256": "9dc9f8a49c84d84352c77bdb2b4bfb4cfd1fbecfae6304deff97e35c264ac365",
+            "points": 4504,
+            "cells": 5106,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -28.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-28.vtp",
+            "bytes": 437885,
+            "sha256": "84a8d70855bc4caf7231777aca2a42cce3bdda3904e49f1d7bf21396f74e8dde",
+            "points": 4006,
+            "cells": 4444,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -24.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-24.vtp",
+            "bytes": 356925,
+            "sha256": "1d9af57a7de2b0ad6834d0d19de2cfe9d419c9031b60a4d3b60fb0006a487710",
+            "points": 3333,
+            "cells": 3593,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -20.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-20.vtp",
+            "bytes": 405545,
+            "sha256": "d1a8b9f75e5ff9f0e6aafde196e0636756b193d9d5dd383a4f972460ef35f006",
+            "points": 3785,
+            "cells": 4033,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -16.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-16.vtp",
+            "bytes": 445069,
+            "sha256": "973c776ccded3303aa34e5b0c25b447ba5282df00392c97c111442118ff37e3d",
+            "points": 4084,
+            "cells": 4557,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -12.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-12.vtp",
+            "bytes": 474861,
+            "sha256": "88881f3879b4e333fb52d7f223432b935e105417ddcff24200a59e93b29d7204",
+            "points": 4364,
+            "cells": 4889,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -8.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-8.vtp",
+            "bytes": 440669,
+            "sha256": "1d60ee5b6a17c8eb718190b69da4243d1154bcc0366eae30373c09a93efa1754",
+            "points": 4155,
+            "cells": 4396,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -6.0003,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-6.vtp",
+            "bytes": 389025,
+            "sha256": "8231f8e0b06974c525aefea18ee02fd56470d0fa00a28f10bc4fa21b1a79e6a6",
+            "points": 3706,
+            "cells": 4039,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -4.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-4.vtp",
+            "bytes": 309481,
+            "sha256": "e93292b799f1873149c00cb717bbb8dc546edd08fcd31ddab5bf1001ec95b148",
+            "points": 2977,
+            "cells": 3110,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": -3.5001,
+            "file": "model_cache/EXC12_dis/sections/slice_z_-3.5.vtp",
+            "bytes": 354869,
+            "sha256": "c2a51674549bded14a1a13a40a54551634992b5bfc18b0cadc01a102221738b3",
+            "points": 3389,
+            "cells": 3651,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 0.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_0.vtp",
+            "bytes": 339773,
+            "sha256": "0060152f1fe3c9af3240dc5b5ed31fbe45778dad05ce36ac61f34594d9805687",
+            "points": 3213,
+            "cells": 3503,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1.4999,
+            "file": "model_cache/EXC12_dis/sections/slice_z_1.5.vtp",
+            "bytes": 299209,
+            "sha256": "064ce4016e8fc3f324fee6f65a82607787c4b9a9f4c334ac152683ab1519d8a8",
+            "points": 2877,
+            "cells": 3101,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 4.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_4.vtp",
+            "bytes": 277901,
+            "sha256": "f4a67fc64f76b420a351eb842cdeaf011d3333e33083cc6e707769253ba730ee",
+            "points": 2617,
+            "cells": 2835,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 6.4999,
+            "file": "model_cache/EXC12_dis/sections/slice_z_6.5.vtp",
+            "bytes": 457237,
+            "sha256": "f42eea0b7cf5c648ff9f461119b844a601172704d34f08a4a75fb9ac5afd6fc8",
+            "points": 4208,
+            "cells": 4863,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 8.0,
+            "file": "model_cache/EXC12_dis/sections/slice_z_8.vtp",
+            "bytes": 355309,
+            "sha256": "7f3a4f5447c8d838bd399a32603c6b8e9069f08e543dc51a837802de0fd2d2e3",
+            "points": 3259,
+            "cells": 3722,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Group Slot : Default",
+              "Group Slot : Default_ID",
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          }
+        ]
+      },
+      "section_rules": {
+        "placement": "integer_grid",
+        "spacing": 4.0,
+        "displacement_magnitude": "vector_norm",
+        "preserve_discontinuities": false,
+        "point_stress_principal": null,
+        "display_averaging": "per_group"
+      },
+      "fields": {
+        "TotalDisplacement": {
+          "min": 0.0,
+          "max": 0.010743419639766216,
+          "p5": 4.8418529149785176e-05,
+          "p95": 0.00555502381175756
+        },
+        "X_Disp": {
+          "min": -0.0073534403927624226,
+          "max": 0.007327255327254534,
+          "p5": -0.0018451543932314963,
+          "p95": 0.0020370139623992136
+        },
+        "Y_Disp": {
+          "min": -0.007259551901370287,
+          "max": 0.007188418414443731,
+          "p5": -0.0016443954198621213,
+          "p95": 0.0015030356880743009
+        },
+        "Z_Disp": {
+          "min": -0.01071704737842083,
+          "max": 0.0022637899965047836,
+          "p5": -0.0020142256165854634,
+          "p95": 0.0002724620833760124
+        },
+        "Stress_Max_Principal": {
+          "min": -2.2323343753814697,
+          "max": 3.288937568664551,
+          "p5": -1.0020187497138977,
+          "p95": 0.12140568643808289
+        },
+        "Stress_Mid_Principal": {
+          "min": -3.7189362049102783,
+          "max": 0.35198119282722473,
+          "p5": -1.4343973398208618,
+          "p95": -0.010355557966977371
+        },
+        "Stress_Min_Principal": {
+          "min": -9.362878799438477,
+          "max": 0.02957621030509472,
+          "p5": -1.923111295700073,
+          "p95": -0.0398926563560964
+        },
+        "Stress_XX": {
+          "min": -5.794389247894287,
+          "max": 1.4641695022583008,
+          "p5": -1.4508919715881348,
+          "p95": -0.0013576783239841461
+        },
+        "Stress_YY": {
+          "min": -5.681067943572998,
+          "max": 1.7948970794677734,
+          "p5": -1.509423851966858,
+          "p95": -0.0026924929115922035
+        },
+        "Stress_ZZ": {
+          "min": -7.1792707443237305,
+          "max": 2.690380096435547,
+          "p5": -1.2901983618736266,
+          "p95": -0.01487623369321252
+        },
+        "Group Slot : Default_ID": {
+          "min": 0.0,
+          "max": 1.0,
+          "p5": 0.0,
+          "p95": 1.0
+        }
+      }
+    }
+  ]
+}

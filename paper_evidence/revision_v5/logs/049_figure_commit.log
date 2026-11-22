@@ -1,0 +1,9 @@
+warning: in the working copy of 'paper_evidence/revision_v5/figures/draw_figure1.py', LF will be replaced by CRLF the next time Git touches it
+[r6/web-slicing a16bdb7] Redraw the Sim2Web architecture figure
+ 6 files changed, 640 insertions(+)
+ create mode 100644 paper_evidence/revision_v5/figures/.gitattributes
+ create mode 100644 paper_evidence/revision_v5/figures/draw_figure1.py
+ create mode 100644 paper_evidence/revision_v5/figures/fig1_architecture.pdf
+ create mode 100644 paper_evidence/revision_v5/figures/fig1_architecture.png
+ create mode 100644 paper_evidence/revision_v5/figures/fig1_architecture.svg
+ create mode 100644 paper_evidence/revision_v5/figures/figure1_print_check.json

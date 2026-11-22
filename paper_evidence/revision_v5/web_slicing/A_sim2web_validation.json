@@ -1,0 +1,48 @@
+{
+  "index": "index.json",
+  "schema": "sim2web-index/2",
+  "stages": {
+    "IV-2": {
+      "exact_arrays": 935,
+      "exact_tuples": 6396076,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 528,
+      "interpolated_tuples": 2924588,
+      "max_interp_nrmse": 1.828928483514052e-07,
+      "max_interp_abs_error": {
+        "X_Disp": 9.016547136459115e-08,
+        "Y_Disp": 1.869125703874222e-07,
+        "Z_Disp": 2.266727539345387e-07,
+        "TotalDisplacement": 1.6701486478597032e-07
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 3891,
+      "fallback_max_abs_error": {
+        "X_Disp": 3.0426758720282015e-11,
+        "Y_Disp": 1.584870673936295e-11,
+        "Z_Disp": 5.836061642585928e-11,
+        "TotalDisplacement": 6.212614713655103e-11
+      },
+      "probe_disagreements": 21,
+      "vertices_on_discontinuities": 9,
+      "cell_restricted_max_abs_error": {
+        "X_Disp": 7.454662107118752e-08,
+        "Y_Disp": 1.2283716178075263e-06,
+        "Z_Disp": 3.790957680843308e-07
+      },
+      "max_jump_across_discontinuity": {
+        "X_Disp": 3.250008984412821e-07,
+        "Y_Disp": 2.5059372869055095e-06,
+        "Z_Disp": 8.186664784710224e-07
+      },
+      "magnitude_vs_vector_norm": {
+        "max_abs": 1.739428923813735e-09,
+        "max_relative_to_span": 1.0248602700142629e-07
+      },
+      "files": 133,
+      "max_exact_nrmse_vs_float64": 1.694261901452693e-07,
+      "failures": []
+    }
+  },
+  "failures": []
+}

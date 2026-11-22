@@ -1,0 +1,46 @@
+schema: sim2web-config/1
+title: 'Case F: 3DEC Kala slope'
+description: Discontinuous (block) slope with a dense retained surface topology.
+solver: 3DEC
+input:
+  stages:
+  - file: input/kala_final.vtu
+    name: kala_final
+output:
+  dir: site
+fields:
+  displacement:
+    name: Displacement
+    unit: m
+  stress:
+    name: Stress
+    order: from_file
+    unit: MPa
+    sign_convention: '3DEC convention: tension positive, compression negative'
+geometry:
+  primary: exterior
+  exterior:
+    enabled: true
+    split_by_group: true
+    internal_faces: drop
+    internal_faces_method: geometric
+  excavation:
+    enabled: false
+    strategy: labels_then_stress
+    null_threshold: 1.0e-06
+    contact_tolerance: 0.001
+  groups: {}
+  display_averaging: per_group
+sections:
+  axes:
+  - x
+  - y
+  - z
+  spacing: 10
+  placement: interior
+  min_points: 0
+  preserve_discontinuities: true
+viewer:
+  subtitle: Exterior surface and sections
+  default_field: TotalDisplacement
+  default_axis: y

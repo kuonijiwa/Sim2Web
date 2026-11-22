@@ -3,25 +3,53 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "geosimvis"
-version = "0.1.0a0"
-description = "VTU-to-VTP post-processing and static Web visualization examples"
+name = "sim2web"
+dynamic = ["version"]
+description = "One-click post-processing and verifiable web publishing of geotechnical simulation results"
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
+authors = [{name = "Yongjin Cheng"}, {name = "Weijiang Chu"}]
+keywords = ["geotechnical engineering", "scientific visualization", "VTK", "PyVista", "web visualization"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Visualization",
+]
+# Compatible ranges for users; requirements.txt pins the validated environment.
 dependencies = [
-  "numpy==1.26.4",
-  "scipy==1.11.4",
-  "pyvista==0.46.3",
-  "vtk==9.5.0",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pyvista>=0.43",
+  "vtk>=9.2",
+  "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
-test = ["pytest>=8.0", "psutil>=5.9"]
+test = ["pytest>=8.0"]
+convert = ["meshio>=5.3"]
+
+[project.scripts]
+sim2web = "sim2web.cli:main"
+simwebview = "sim2web.cli:main"  # former name, kept as an alias
+
+[project.urls]
+Repository = "https://github.com/kuonijiwa/Sim2Web"
+
+[tool.setuptools.dynamic]
+version = {attr = "sim2web._version.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["sim2web*"]
+
+[tool.setuptools.package-data]
+sim2web = ["viewer_dist/*", "viewer_dist/**/*", "workbench_dist/*", "workbench_dist/**/*", "py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+markers = [
+  "realdata: needs the Git LFS case models (skipped when only LFS pointers are present)",
+  "slow: long-running end-to-end checks",
+]

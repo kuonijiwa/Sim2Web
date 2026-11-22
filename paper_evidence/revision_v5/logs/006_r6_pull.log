@@ -1,0 +1,14 @@
+From C:/swv_r6_20261121/sim2web_r6.bundle
+ * branch            refactor/sim2web -> FETCH_HEAD
+Updating 0a9ba7c..f2b4511
+Fast-forward
+ paper_evidence/revision_v4/figures/build.js      |   2 +-
+ paper_evidence/revision_v4/figures/content.js    |  80 +++---
+ paper_evidence/revision_v4/figures/make_figs.py  |  11 +-
+ paper_evidence/revision_v4/manuscript/build.js   | 134 +++++++++
+ paper_evidence/revision_v4/manuscript/keep.json  | 339 +++++++++++++++++++++++
+ paper_evidence/revision_v4/manuscript/make_v5.js | 216 +++++++++++++++
+ 6 files changed, 744 insertions(+), 38 deletions(-)
+ create mode 100644 paper_evidence/revision_v4/manuscript/build.js
+ create mode 100644 paper_evidence/revision_v4/manuscript/keep.json
+ create mode 100644 paper_evidence/revision_v4/manuscript/make_v5.js

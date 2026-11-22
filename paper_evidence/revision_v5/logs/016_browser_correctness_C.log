@@ -1,0 +1,13 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:52557/
+Call log:
+[2m  - navigating to "http://127.0.0.1:52557/", waiting until "load"[22m
+
+    at G:\成果\papers\02\SimWebView\benchmark\web_slicing\check_browser.mjs:15:14 {
+  name: 'Error'
+}
+
+Node.js v24.19.0

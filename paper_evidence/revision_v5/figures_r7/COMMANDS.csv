@@ -1,0 +1,29 @@
+﻿id,command,cwd,started_at,exit_code,duration_seconds
+001_input_verification,Get-FileHash -Algorithm SHA256 sim2web_r7.bundle; git bundle verify sim2web_r7.bundle; git bundle list-heads sim2web_r7.bundle,G:\成果\papers\02\SimWebView,2026-11-21T23:03:03.8505818+09:00,0,0.263
+002_checkout_and_pull,git switch refactor/sim2web; git pull --ff-only C:/swv_r7_20261121/sim2web_r7.bundle refactor/sim2web,G:\成果\papers\02\SimWebView,2026-11-21T23:03:04.1666968+09:00,128,3.572
+003_preserve_partial_checkout,Preserve untracked directories written by the interrupted checkout under C:/swv_r7_20261121,G:\成果\papers\02\SimWebView,2026-11-21T23:03:43.6918383+09:00,0,0.449
+004_pull_r7,GIT_LFS_SKIP_SMUDGE=1 git pull --ff-only C:/swv_r7_20261121/sim2web_r7.bundle refactor/sim2web,G:\成果\papers\02\SimWebView,2026-11-21T23:03:44.2078923+09:00,0,1.814
+005_branch,git rev-parse --short HEAD; git switch -c r7/figures,G:\成果\papers\02\SimWebView,2026-11-21T23:03:46.0363158+09:00,0,0.761
+006_build_uis,npm run build,G:\成果\papers\02\SimWebView,2026-11-21T23:03:46.8081952+09:00,0,10.968
+007_pdf_runtime,C:/swv_r4_20261121/venv/Scripts/python.exe -m pip install --target C:/swv_r7_20261121/python_lib reportlab pypdf,C:\Users\yjche\Documents\ChatGPT\papers,2026-11-21T23:03:43.6970961+09:00,0,12.928
+008_manuscript_reference,Download read-only v6 manuscript reference from Google Drive,G:\成果\papers\02\SimWebView,2026-11-21T23:05:34.6257863+09:00,0,1.836
+009_workbench_input,Copy the existing public OpenGeoSys case E final-time VTU to an isolated workbench project,G:\成果\papers\02\SimWebView,2026-11-21T23:05:36.5254227+09:00,0,0.089
+010_workbench_service,C:/swv_r4_20261121/venv/Scripts/sim2web.exe gui C:/swv_r7_20261121/caseE --port 18794 --no-browser,G:\成果\papers\02\SimWebView,2026-11-21T23:05:41.8033703+09:00,1,858.465
+011_capture_workbench,node benchmark/figures_r7/capture_workbench.mjs http://127.0.0.1:18794/workbench/ C:/swv_r7_20261121/caseE/input/slope_result_ts_1_t_1.000000.vtu C:/swv_r7_20261121/out,G:\成果\papers\02\SimWebView,2026-11-21T23:08:41.8825626+09:00,1,32.671
+012_framing,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/figures_r7/prepare_views.py C:/swv_r4_20261121/model_runs C:/swv_r7_20261121,G:\成果\papers\02\SimWebView,2026-11-21T23:10:14.1239477+09:00,0,6.659
+013_captures,node benchmark/figures_r7/capture_viewers.mjs C:/swv_r7_20261121/view_states_local.json C:/swv_r7_20261121/out,G:\成果\papers\02\SimWebView,2026-11-21T23:11:21.3619489+09:00,1,3.397
+014_capture_workbench,node benchmark/figures_r7/capture_workbench.mjs http://127.0.0.1:18794/workbench/ C:/swv_r7_20261121/caseE/input/slope_result_ts_1_t_1.000000.vtu C:/swv_r7_20261121/out,G:\成果\papers\02\SimWebView,2026-11-21T23:11:58.0821863+09:00,0,14.854
+015_capture_B_to_F,node benchmark/figures_r7/capture_viewers.mjs C:/swv_r7_20261121/view_states_local.json C:/swv_r7_20261121/out BCDEF,G:\成果\papers\02\SimWebView,2026-11-21T23:11:58.0842183+09:00,1,6.708
+016_probe_pilot,node benchmark/figures_r7/capture_viewers.mjs C:/swv_r7_20261121/view_states_local.json C:/swv_r7_20261121/probe_pilot A,G:\成果\papers\02\SimWebView,2026-11-21T23:11:58.1024864+09:00,1,4.452
+017_framing_with_probe,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/figures_r7/prepare_views.py C:/swv_r4_20261121/model_runs C:/swv_r7_20261121,G:\成果\papers\02\SimWebView,2026-11-21T23:13:51.8193140+09:00,0,5.157
+018_capture_figure4,node benchmark/figures_r7/capture_viewers.mjs C:/swv_r7_20261121/view_states_local.json C:/swv_r7_20261121/out,G:\成果\papers\02\SimWebView,2026-11-21T23:13:57.0294301+09:00,1,4.731
+019_final_wb_input,Copy the public final-time OGS VTU byte-for-byte to a fresh isolated project as ogs_slope.vtu,G:\成果\papers\02\SimWebView,2026-11-21T23:13:51.8193189+09:00,0,0.112
+020_final_wb_service,C:/swv_r4_20261121/venv/Scripts/sim2web.exe gui C:/swv_r7_20261121/caseE_final --port 18795 --no-browser,G:\成果\papers\02\SimWebView,2026-11-21T23:13:51.9743954+09:00,1,368.513
+021_final_workbench_capture,node benchmark/figures_r7/capture_workbench.mjs http://127.0.0.1:18795/workbench/ C:/swv_r7_20261121/caseE_final/input/ogs_slope.vtu C:/swv_r7_20261121/out,G:\成果\papers\02\SimWebView,2026-11-21T23:14:50.7010569+09:00,0,12.365
+022_capture_figure4,node benchmark/figures_r7/capture_viewers.mjs C:/swv_r7_20261121/view_states_local.json C:/swv_r7_20261121/out,G:\成果\papers\02\SimWebView,2026-11-21T23:15:22.5878593+09:00,0,10.942
+023_compose,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/figures_r7/compose_print.py C:/swv_r7_20261121/out paper_evidence/revision_v5/figures_r7,G:\成果\papers\02\SimWebView,2026-11-21T23:17:29.8470194+09:00,0,18.302
+024_frame_clear_of_probe,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/figures_r7/prepare_views.py C:/swv_r4_20261121/model_runs C:/swv_r7_20261121,G:\成果\papers\02\SimWebView,2026-11-21T23:18:25.8471809+09:00,0,4.69
+025_recapture_figure4,node benchmark/figures_r7/capture_viewers.mjs C:/swv_r7_20261121/view_states_local.json C:/swv_r7_20261121/out,G:\成果\papers\02\SimWebView,2026-11-21T23:18:30.5819615+09:00,0,10.255
+026_stop_workbenches,Stop the two Sim2Web processes launched for the isolated r7 workbench projects,G:\成果\papers\02\SimWebView,2026-11-21T23:19:59.7874979+09:00,0,0.694
+027_compose_final,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/figures_r7/compose_print.py C:/swv_r7_20261121/out paper_evidence/revision_v5/figures_r7,G:\成果\papers\02\SimWebView,2026-11-21T23:20:00.5513816+09:00,0,16.101
+028_render_print_proof,pdftoppm -r 142 -png paper_evidence/revision_v5/figures_r7/contact_sheets_100pct.pdf C:/swv_r7_20261121/proof; pdfinfo paper_evidence/revision_v5/figures_r7/fig2_workbench.pdf; pdfinfo paper_evidence/revision_v5/figures_r7/fig4_cases.pdf,G:\成果\papers\02\SimWebView,2026-11-21T23:20:16.6857114+09:00,0,1.657

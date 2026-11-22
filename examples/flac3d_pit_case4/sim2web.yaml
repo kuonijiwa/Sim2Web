@@ -1,0 +1,53 @@
+# Case D: FLAC3D deep excavation pit.
+schema: sim2web-config/1
+title: "Case D: FLAC3D excavation pit"
+description: >-
+  Circular deep pit (about 32 m wide, floor at z = -57.5 m) in a 150 m x 150 m x 111 m
+  domain. The excavated zones were deleted before export, so the model contains no
+  void cells; the pit walls and floor are found as the boundary of the retained solid
+  that does not lie on the box faces of the domain.
+solver: FLAC3D
+
+input:
+  stages:
+    - {file: input/EXC12_dis.vtu, name: EXC12_dis}
+
+output:
+  dir: site
+
+fields:
+  displacement: {name: Displacement, unit: m}
+  stress:
+    name: Stress
+    order: from_file                      # the VTU declares XX,YY,ZZ,XY,XZ,YZ
+    unit: MPa                             # vertical stress gradient implies about 14 kN/m3 in MPa (Pa/kPa impossible)
+    sign_convention: "FLAC3D convention: tension positive, compression negative"
+  categories:
+    - name: "Group Slot : Default"
+      label: "Group"
+      labels: {"Boundary1": "Boundary1", "None": "Unassigned (None)"}   # REVIEW: meaning of the groups
+
+geometry:
+  primary: exterior                       # the pit opens at the ground surface
+  exterior: {enabled: true, split_by_group: true}
+  excavation:
+    enabled: true
+    strategy: removed_zones               # excavated zones were deleted, not nulled
+    contact_tolerance: 1.0e-3             # m: distance from a box face that still counts as "on" it
+  groups: {field: "Group Slot : Default"}
+  display_averaging: per_group
+
+sections:
+  axes: [x, y, z]
+  spacing: 4
+  placement: integer_grid
+  positions:
+    x: [-14.942, -13.743, 0, 13.743, 14.942]
+    y: [0]
+    z: [-57.5003, -6.0003, -3.5001, 1.4999, 6.4999]   # exposed horizontal surfaces seen in the model
+
+viewer:
+  subtitle: "Ground surface, pit walls and floor, sections"
+  default_field: TotalDisplacement
+  default_axis: x
+  range_mode: p5_p95

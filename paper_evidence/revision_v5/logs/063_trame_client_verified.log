@@ -1,0 +1,9 @@
+{
+  "version": "3.3.5",
+  "dependencies": {
+    "@kitware/vtk.js": "36.0.0",
+    "@vitejs/plugin-vue": "^4.0.0"
+  },
+  "gitHead": "54477a3a35f73602f98d14329d91ef37e047394b"
+}
+Published and installed SHA-256: 6d3e20a67b32c8a10443b2df7a1e7b32a459b944cf6f630695e260b5406b4b57 / 6D3E20A67B32C8A10443B2DF7A1E7B32A459B944CF6F630695E260B5406B4B57

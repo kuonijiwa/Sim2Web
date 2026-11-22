@@ -1,0 +1,206 @@
+{
+  "2": {
+    "width_cm": 16.5,
+    "height_cm": 16.765242063492064,
+    "gap_cm": 0.2,
+    "label_font_pt": 9,
+    "composed_resolution_px": [
+      3898,
+      3961
+    ],
+    "panels": {
+      "a": {
+        "print_width_cm": 16.5,
+        "print_height_cm": 5.848660714285714,
+        "capture_px": [
+          4480,
+          1588
+        ],
+        "css_viewport_width_px": 1120,
+        "device_scale_factor": 4,
+        "effective_dpi": 689.6484848484849,
+        "smallest_meaningful_glyph_height_pt": 7.099268841394826,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "blocked_build": 22,
+          "file_warning": 17,
+          "selector": 17,
+          "step": 22,
+          "unit_weight": 20
+        },
+        "injected_css": ".top, .steps, .log, .nav-buttons { display: none !important; }\n.app { grid-template-rows: auto; height: auto; background: #fff; }\n.form, .diagnostics { overflow: visible; }\n.form { padding: 16px 20px 14px; }\n.form h2, .diagnostics h2 { font-size: 26px; line-height: 1.15; }\n.form h3 { font-size: 22px; margin: 7px 0 5px; }\n.form .notice, .diagnostics .title, .diagnostics .detail { font-size: 21px; line-height: 1.23; }\n.form .notice { margin: 5px 0 0; }\n.app { grid-template-columns: minmax(0, 2.14fr) minmax(0, 1fr); grid-template-areas: 'centre diag'; }\n.centre { display: block; }\n.viewer { display: none; }\n.form .row { grid-template-columns: 155px minmax(0, 1fr); gap: 10px; padding: 4px 0; }\n.form .row > label, .form .row select { font-size: 21px; }\n.form .row select { max-width: 100%; font: 400 23px/1.2 'Arial Narrow', Arial, sans-serif; }\n.form .row:nth-of-type(1), .form .row:nth-of-type(2), .form .row:nth-of-type(3), .form .row:nth-of-type(6),\n.form h3:first-of-type, .form h3:last-of-type, .form > div > .hint, .form table.data, .form > div > p.muted,\n.diagnostics li:not(.error):not(.ok) { display: none; }\n.diagnostics { padding: 16px 14px; }\n.diagnostics li { padding: 9px 10px; }\n"
+      },
+      "b": {
+        "print_width_cm": 16.5,
+        "print_height_cm": 9.855803571428572,
+        "capture_px": [
+          4480,
+          2676
+        ],
+        "css_viewport_width_px": 1120,
+        "device_scale_factor": 4,
+        "effective_dpi": 689.6484848484849,
+        "smallest_meaningful_glyph_height_pt": 6.2640607424071995,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "build_result": 15,
+          "package_viewer": 22,
+          "step": 22,
+          "validation_pass": 22
+        },
+        "injected_css": ".top, .steps, .log, .nav-buttons { display: none !important; }\n.app { grid-template-rows: auto; height: auto; background: #fff; }\n.form, .diagnostics { overflow: visible; }\n.form { padding: 16px 20px 14px; }\n.form h2, .diagnostics h2 { font-size: 26px; line-height: 1.15; }\n.form h3 { font-size: 22px; margin: 7px 0 5px; }\n.form .notice, .diagnostics .title, .diagnostics .detail { font-size: 21px; line-height: 1.23; }\n.form .notice { margin: 5px 0 0; }\n.app { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'centre'; }\n.centre { grid-template-rows: auto 268px; }\n.diagnostics, .form > div > p.muted, .form > div > .inline { display: none; }\n.form .hint, .form table.data { font-size: 20px; line-height: 1.12; }\n.form table.data td, .form table.data th { padding: 3px 8px; }\n.form table.data:nth-of-type(2) tbody tr:nth-child(n+4) { display: none; }\n.viewer-label { font-size: 21px; }\n",
+        "embedded_viewer_css": ".panel.collapsed { display: none !important; }\n.right { display: none !important; }\n"
+      }
+    }
+  },
+  "4": {
+    "width_cm": 16.5,
+    "height_cm": 16.878666666666664,
+    "gap_cm": 0.2,
+    "label_font_pt": 9,
+    "composed_resolution_px": [
+      3898,
+      3988
+    ],
+    "panels": {
+      "a": {
+        "print_width_cm": 8.1,
+        "print_height_cm": 5.0625,
+        "capture_px": [
+          2880,
+          1800
+        ],
+        "css_viewport_width_px": 960,
+        "device_scale_factor": 3,
+        "effective_dpi": 903.1111111111111,
+        "smallest_meaningful_glyph_height_pt": 6.218503937007873,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "legend_tick": 26,
+          "legend_title": 27
+        },
+        "injected_css": ".panel.collapsed { display: none !important; }\n.right { top: 8px !important; right: 8px !important; bottom: auto !important; gap: 0 !important; }\n.legend { width: 232px; min-width: 0 !important; padding: 10px; box-shadow: none !important; background: #fff !important; }\n.legend-title { font: 700 38px/1.06 'Arial Narrow', Arial, sans-serif !important; color: #1f2d3d; margin-bottom: 14px !important; }\n.legend-sub { display: none !important; }\n.bands { font: 400 36px/1 Arial, sans-serif !important; font-variant-numeric: tabular-nums; }\n.band-row { height: 39px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch { flex: 0 0 16px; }\n.band-row .swatch.tall { height: 39px !important; }\n.band-row.last { height: 30px !important; }\n.probe { position: fixed; left: 8px; top: 8px; width: 706px !important; max-height: none !important;\n  padding: 7px 11px; box-shadow: none !important; background: #fff !important; }\n.probe-head { font-size: 27px !important; }\n.probe-head .link { display: none; }\n.probe .kv { font-size: 26px !important; margin-top: 2px !important; }\n.probe .kv td { padding: 2px 4px !important; }\n.probe .kv tr:not(:nth-child(2)):not(.active) { display: none; }\n",
+        "model_width_fraction": 0.7354166666666667,
+        "model_extent_capture_x_px": [
+          24,
+          2141
+        ]
+      },
+      "b": {
+        "print_width_cm": 8.1,
+        "print_height_cm": 5.0625,
+        "capture_px": [
+          2880,
+          1800
+        ],
+        "css_viewport_width_px": 960,
+        "device_scale_factor": 3,
+        "effective_dpi": 903.1111111111111,
+        "smallest_meaningful_glyph_height_pt": 6.218503937007873,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "legend_tick": 26,
+          "legend_title": 27
+        },
+        "injected_css": ".panel.collapsed { display: none !important; }\n.right { top: 8px !important; right: 8px !important; bottom: auto !important; gap: 0 !important; }\n.legend { width: 232px; min-width: 0 !important; padding: 10px; box-shadow: none !important; background: #fff !important; }\n.legend-title { font: 700 38px/1.06 'Arial Narrow', Arial, sans-serif !important; color: #1f2d3d; margin-bottom: 14px !important; }\n.legend-sub { display: none !important; }\n.bands { font: 400 36px/1 Arial, sans-serif !important; font-variant-numeric: tabular-nums; }\n.band-row { height: 39px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch { flex: 0 0 16px; }\n.band-row .swatch.tall { height: 39px !important; }\n.band-row.last { height: 30px !important; }\n",
+        "model_width_fraction": 0.7354166666666667,
+        "model_extent_capture_x_px": [
+          24,
+          2141
+        ]
+      },
+      "c": {
+        "print_width_cm": 8.1,
+        "print_height_cm": 5.0625,
+        "capture_px": [
+          2880,
+          1800
+        ],
+        "css_viewport_width_px": 960,
+        "device_scale_factor": 3,
+        "effective_dpi": 903.1111111111111,
+        "smallest_meaningful_glyph_height_pt": 6.218503937007873,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "legend_tick": 26,
+          "legend_title": 35
+        },
+        "injected_css": ".panel.collapsed { display: none !important; }\n.right { top: 8px !important; right: 8px !important; bottom: auto !important; gap: 0 !important; }\n.legend { width: 232px; min-width: 0 !important; padding: 10px; box-shadow: none !important; background: #fff !important; }\n.legend-title { font: 700 38px/1.06 'Arial Narrow', Arial, sans-serif !important; color: #1f2d3d; margin-bottom: 14px !important; }\n.legend-sub { display: none !important; }\n.bands { font: 400 36px/1 Arial, sans-serif !important; font-variant-numeric: tabular-nums; }\n.band-row { height: 39px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch { flex: 0 0 16px; }\n.band-row .swatch.tall { height: 39px !important; }\n.band-row.last { height: 30px !important; }\n",
+        "model_width_fraction": 0.7319444444444444,
+        "model_extent_capture_x_px": [
+          29,
+          2136
+        ]
+      },
+      "d": {
+        "print_width_cm": 8.1,
+        "print_height_cm": 5.0625,
+        "capture_px": [
+          2880,
+          1800
+        ],
+        "css_viewport_width_px": 960,
+        "device_scale_factor": 3,
+        "effective_dpi": 903.1111111111111,
+        "smallest_meaningful_glyph_height_pt": 6.218503937007873,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "legend_tick": 26,
+          "legend_title": 27
+        },
+        "injected_css": ".panel.collapsed { display: none !important; }\n.right { top: 8px !important; right: 8px !important; bottom: auto !important; gap: 0 !important; }\n.legend { width: 232px; min-width: 0 !important; padding: 10px; box-shadow: none !important; background: #fff !important; }\n.legend-title { font: 700 38px/1.06 'Arial Narrow', Arial, sans-serif !important; color: #1f2d3d; margin-bottom: 14px !important; }\n.legend-sub { display: none !important; }\n.bands { font: 400 36px/1 Arial, sans-serif !important; font-variant-numeric: tabular-nums; }\n.band-row { height: 39px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch { flex: 0 0 16px; }\n.band-row .swatch.tall { height: 39px !important; }\n.band-row.last { height: 30px !important; }\n",
+        "model_width_fraction": 0.7354166666666667,
+        "model_extent_capture_x_px": [
+          24,
+          2141
+        ]
+      },
+      "e": {
+        "print_width_cm": 8.1,
+        "print_height_cm": 5.0625,
+        "capture_px": [
+          2880,
+          1800
+        ],
+        "css_viewport_width_px": 960,
+        "device_scale_factor": 3,
+        "effective_dpi": 903.1111111111111,
+        "smallest_meaningful_glyph_height_pt": 6.218503937007873,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "legend_tick": 26,
+          "legend_title": 27
+        },
+        "injected_css": ".panel.collapsed { display: none !important; }\n.right { top: 8px !important; right: 8px !important; bottom: auto !important; gap: 0 !important; }\n.legend { width: 232px; min-width: 0 !important; padding: 10px; box-shadow: none !important; background: #fff !important; }\n.legend-title { font: 700 38px/1.06 'Arial Narrow', Arial, sans-serif !important; color: #1f2d3d; margin-bottom: 14px !important; }\n.legend-sub { display: none !important; }\n.bands { font: 400 36px/1 Arial, sans-serif !important; font-variant-numeric: tabular-nums; }\n.band-row { height: 39px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch { flex: 0 0 16px; }\n.band-row .swatch.tall { height: 39px !important; }\n.band-row.last { height: 30px !important; }\n",
+        "model_width_fraction": 0.7354166666666667,
+        "model_extent_capture_x_px": [
+          24,
+          2141
+        ]
+      },
+      "f": {
+        "print_width_cm": 8.1,
+        "print_height_cm": 5.0625,
+        "capture_px": [
+          2880,
+          1800
+        ],
+        "css_viewport_width_px": 960,
+        "device_scale_factor": 3,
+        "effective_dpi": 903.1111111111111,
+        "smallest_meaningful_glyph_height_pt": 6.218503937007873,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "legend_tick": 26,
+          "legend_title": 35
+        },
+        "injected_css": ".panel.collapsed { display: none !important; }\n.right { top: 8px !important; right: 8px !important; bottom: auto !important; gap: 0 !important; }\n.legend { width: 232px; min-width: 0 !important; padding: 10px; box-shadow: none !important; background: #fff !important; }\n.legend-title { font: 700 38px/1.06 'Arial Narrow', Arial, sans-serif !important; color: #1f2d3d; margin-bottom: 14px !important; }\n.legend-sub { display: none !important; }\n.bands { font: 400 36px/1 Arial, sans-serif !important; font-variant-numeric: tabular-nums; }\n.band-row { height: 39px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch { flex: 0 0 16px; }\n.band-row .swatch.tall { height: 39px !important; }\n.band-row.last { height: 30px !important; }\n",
+        "model_width_fraction": 0.7319444444444444,
+        "model_extent_capture_x_px": [
+          29,
+          2136
+        ]
+      }
+    }
+  }
+}

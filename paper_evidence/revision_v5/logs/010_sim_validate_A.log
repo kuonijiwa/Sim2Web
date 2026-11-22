@@ -1,0 +1,4 @@
+[IV-2] files=133 exact arrays=935 (mismatches 0), interpolated arrays=528, max interpolation nRMSE=1.829e-07, failures=0
+Summary: C:\swv_r6_20261121\site_A\validation\validation_summary.json
+Pairs:   C:\swv_r6_20261121\site_A\validation\validation_pairs.csv
+All checks passed.

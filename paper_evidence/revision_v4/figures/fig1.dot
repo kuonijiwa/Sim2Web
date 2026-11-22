@@ -1,0 +1,37 @@
+digraph G {
+  rankdir=LR; nodesep=0.25; ranksep=0.35; bgcolor="white"; dpi=300;
+  node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=10, color="#9a988f", fillcolor="#f4f3ef", fontcolor="#0b0b0b", penwidth=1];
+  edge [color="#52514e", arrowsize=0.6, penwidth=1];
+
+  subgraph cluster_in { label="Solver results"; fontname="DejaVu Sans"; fontsize=10; fontcolor="#52514e"; style="rounded"; color="#c8c6bf";
+    itasca [label="FLAC3D / 3DEC\nVTU export"];
+    other  [label="Exodus (MOOSE), MED,\nXDMF, Gmsh"];
+    abq    [label="Abaqus ODB"];
+    ogs    [label="OpenGeoSys VTU"];
+  }
+  convert [label="sim2web convert\n(time step, component\nassembly, names)"];
+  odbx    [label="ODB exporter\n(abaqus python)"];
+  vtu     [label="VTU with\ncomponent names", fillcolor="#ffffff"];
+
+  subgraph cluster_ui { label="User interfaces"; fontname="DejaVu Sans"; fontsize=10; fontcolor="#52514e"; style="rounded"; color="#c8c6bf";
+    gui [label="Workbench\nsim2web gui", fillcolor="#dbe8f8", color="#2a78d6"];
+    cli [label="CLI / Python API"];
+  }
+  cfg [label="case.yaml\n(declarative\nconfiguration)", shape=note, fillcolor="#ffffff"];
+
+  subgraph cluster_lib { label="sim2web library"; fontname="DejaVu Sans"; fontsize=10; fontcolor="#52514e"; style="rounded"; color="#2a78d6";
+    checks [label="Input checks\ncomponent order from file\nunit from gravity gradient"];
+    geom   [label="Geometry\nexterior / excavation surface\ninternal-face removal"];
+    sect   [label="Sections\ninterpolated fields,\ndiscontinuities kept"];
+    pub    [label="Publisher\nVTP + index.json\nsource IDs, field roles"];
+  }
+  pkg  [label="Static package\nsite/ (no server code)", fillcolor="#ffffff"];
+  val  [label="Independent validation\nsim2web validate", fillcolor="#e3f4ec", color="#1baf7a"];
+  view [label="Browser viewer\nVue + vtk.js", fillcolor="#dbe8f8", color="#2a78d6"];
+
+  itasca -> vtu; ogs -> vtu; other -> convert -> vtu; abq -> odbx -> vtu;
+  gui -> cfg [dir=both]; cli -> cfg;
+  vtu -> checks; cfg -> checks;
+  checks -> geom -> sect -> pub -> pkg;
+  pkg -> view; pkg -> val; vtu -> val [style=dashed, constraint=false];
+}

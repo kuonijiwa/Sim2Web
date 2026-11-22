@@ -1,0 +1,45 @@
+vite v6.4.6 building for production...
+transforming...
+✓ 237 modules transformed.
+✗ Build failed in 2.15s
+error during build:
+[vite:esbuild-transpile] Transform failed with 3 errors:
+assets/index-!~{001}~.js:42885:15: ERROR: Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)
+assets/index-!~{001}~.js:42937:15: ERROR: Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)
+assets/index-!~{001}~.js:42938:0: ERROR: Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)
+file: assets/index-!~{001}~.js:42885:15
+
+Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)
+42883|  
+42884|  const frame = () => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+42885|  const config = await fetch('/case.json').then(r=>r.json());
+   |                 ^
+42886|  const view = vtkGenericRenderWindow$1.newInstance({background:[1,1,1],listenWindowResize:true});
+42887|  view.setContainer(document.querySelector('#viewport'));
+
+Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)
+42935|  };
+42936|  section.addEventListener('change',()=>api.select(Number(section.value)).catch(console.error));
+42937|  api.timings = (await rpc({type:'load',url:'/volume.bin'})).timings;
+   |                 ^
+42938|  await api.select(config.first_index);
+42939|  api.timings.firstCut = api.last.cutMs;
+
+Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)
+42936|  section.addEventListener('change',()=>api.select(Number(section.value)).catch(console.error));
+42937|  api.timings = (await rpc({type:'load',url:'/volume.bin'})).timings;
+42938|  await api.select(config.first_index);
+   |  ^
+42939|  api.timings.firstCut = api.last.cutMs;
+42940|  api.firstImage = api.renderedAt;
+
+    at failureErrorWithLog (G:\成果\papers\02\SimWebView\node_modules\esbuild\lib\main.js:1467:15)
+    at G:\成果\papers\02\SimWebView\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (G:\成果\papers\02\SimWebView\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (G:\成果\papers\02\SimWebView\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (G:\成果\papers\02\SimWebView\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)

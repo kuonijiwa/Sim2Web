@@ -1,0 +1,54 @@
+{
+  "simwebview": "0.2.0.dev0",
+  "python": "3.11.18",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "pyvista": "0.46.3",
+  "vtk": "9.5.0",
+  "numpy": "1.26.4",
+  "config_sha256": "c24786ef6ed435d39035bb21450911c78002a30fb647c510e71ca708c3baadbf",
+  "seconds_total": 1.5377589649999663,
+  "stages": [
+    {
+      "stage": "gravity",
+      "seconds": {
+        "read": 0.02750550700011445,
+        "fields": 0.014214687000048798,
+        "classify": 1.2715000138996402e-05,
+        "partition": 0.013792314000056649,
+        "exterior": 0.017894845000000714,
+        "write": 0.33899143400003595,
+        "sections": 1.0911341300000004
+      },
+      "output_bytes": 1424425,
+      "primary_bytes": 338401,
+      "section_count": 30,
+      "void_diagnostics": {},
+      "stress_unit_check": {
+        "status": "ok",
+        "gradient_per_m": 16541.58190343809,
+        "fit_r2": 0.9259217657095388,
+        "bins_used": 20,
+        "compression_increases_with_depth": true,
+        "implied_unit_weight_kN_m3_if_Pa": 16.54158190343809,
+        "implied_unit_weight_kN_m3_if_kPa": 16541.58190343809,
+        "implied_unit_weight_kN_m3_if_MPa": 16541581.903438091,
+        "implied_unit_weight_kN_m3_if_GPa": 16541581903.438091,
+        "consistent_units": [
+          "Pa"
+        ],
+        "declared": "Pa",
+        "declared_consistent": true,
+        "association": "point"
+      },
+      "excavation_boundary": {},
+      "triangle_quality_summary": {
+        "criterion": "area <= 1e-12 * bbox_diagonal^2",
+        "section_triangles": 33078,
+        "section_degenerate": 0,
+        "max_degenerate_area_fraction": 0.0,
+        "duplicate_triangles": 0,
+        "invalid_indices": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+﻿id,command,cwd,started_at,exit_code,duration_seconds
+001_download_instructions,Download raw CODEX_TASK_r8_sim2web.md from Google Drive,G:\成果\papers\02\SimWebView,2026-11-22T18:22:45.8165891+09:00,0,0.695
+002_branch,git status --porcelain; git rev-parse --short HEAD; git switch -c r8/release ae5b84d,G:\成果\papers\02\SimWebView,2026-11-22T18:23:05.3085731+09:00,0,1.976
+003_chrome_survey,node benchmark/r8/survey_site.mjs http://47.97.56.104:8102/ paper_evidence/revision_v5/r8/site_survey,G:\成果\papers\02\SimWebView,2026-11-22T18:24:18.7328416+09:00,0,5.67
+004_materialize_DF,"Copy the source VTUs named in the r4 D/F configs, normalize local paths, and check that the settings match",G:\成果\papers\02\SimWebView,2026-11-22T18:26:08.7389250+09:00,1,1.333
+004b_materialize_DF,Finalize relative case F configuration and hash the copied r4 D/F VTUs,G:\成果\papers\02\SimWebView,2026-11-22T18:26:33.3651292+09:00,0,1.793
+005_build_D,C:/swv_r4_20261121/venv/Scripts/sim2web.exe build examples/flac3d_pit_case4/sim2web.yaml,G:\成果\papers\02\SimWebView,2026-11-22T18:26:35.2135942+09:00,0,67.994
+005_build_F,C:/swv_r4_20261121/venv/Scripts/sim2web.exe build examples/3dec_slope_case_f/sim2web.yaml,G:\成果\papers\02\SimWebView,2026-11-22T18:28:06.4506146+09:00,0,58.282
+006_validate_D,C:/swv_r4_20261121/venv/Scripts/sim2web.exe validate examples/flac3d_pit_case4/sim2web.yaml,G:\成果\papers\02\SimWebView,2026-11-22T18:27:43.2190720+09:00,0,23.22
+006_validate_F,C:/swv_r4_20261121/venv/Scripts/sim2web.exe validate examples/3dec_slope_case_f/sim2web.yaml,G:\成果\papers\02\SimWebView,2026-11-22T18:29:04.7431130+09:00,0,89.655
+007_prepare_stages,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/prepare_stages.py G:/成果/papers/02/SimWebView/examples/cavern_excavation_stage_flac3d paper_evidence/revision_v5/r8/site_survey/index.json examples/flac3d_cavern_iv2/sim2web.yaml examples/flac3d_cavern_stages,G:\成果\papers\02\SimWebView,2026-11-22T18:27:49.1597712+09:00,0,11.913
+008_build_stages,C:/swv_r4_20261121/venv/Scripts/sim2web.exe build examples/flac3d_cavern_stages/sim2web.yaml,G:\成果\papers\02\SimWebView,2026-11-22T18:28:01.1247289+09:00,0,447.04
+009_validate_stages,C:/swv_r4_20261121/venv/Scripts/sim2web.exe validate examples/flac3d_cavern_stages/sim2web.yaml,G:\成果\papers\02\SimWebView,2026-11-22T18:35:28.1773731+09:00,0,333.077
+010_read_legacy_site,node benchmark/r8/survey_site.mjs http://47.97.56.104:8102/ paper_evidence/revision_v5/r8/site_survey,G:\成果\papers\02\SimWebView,2026-11-22T18:28:39.8803584+09:00,0,8.621
+011_site_head_sizes,node benchmark/r8/survey_sizes.mjs paper_evidence/revision_v5/r8/site_survey,G:\成果\papers\02\SimWebView,2026-11-22T18:28:48.5682162+09:00,0,588.642
+012_python_default,C:/swv_r4_20261121/venv/Scripts/python.exe -m pytest -q,G:\成果\papers\02\SimWebView,2026-11-22T18:30:13.8039741+09:00,0,19.074
+013_viewer,npm run test:viewer,G:\成果\papers\02\SimWebView,2026-11-22T18:30:32.9503448+09:00,0,1.839
+014_workbench,npm run test:workbench,G:\成果\papers\02\SimWebView,2026-11-22T18:30:34.8012868+09:00,0,0.78
+015_dataset,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/package_dataset.py examples dist/zenodo_dataset,G:\成果\papers\02\SimWebView,2026-11-22T18:30:13.8006453+09:00,0,78.747
+016_realdata,SIM2WEB_REALDATA=1 C:/swv_r4_20261121/venv/Scripts/python.exe -m pytest -m realdata -q --basetemp G:/成果/papers/02/codex_r8_realdata_20261122,G:\成果\papers\02\SimWebView,2026-11-22T18:31:42.1662083+09:00,0,672.093
+017_commit_public_DF,"Stage D/F configurations, source VTUs and built sites; commit the public example update",G:\成果\papers\02\SimWebView,2026-11-22T18:33:41.3922322+09:00,2,4.802
+018_commit_DF,Preserve generated site bytes; check hand-written changes; verify D/F LFS pointers and commit,G:\成果\papers\02\SimWebView,2026-11-22T18:34:30.4752262+09:00,0,5.162
+019_dataset_readme,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/package_dataset.py examples dist/zenodo_dataset,G:\成果\papers\02\SimWebView,2026-11-22T18:36:06.2004358+09:00,0,87.389
+020_fetch_help,C:/swv_r4_20261121/venv/Scripts/python.exe tools/fetch_example_data.py --help,G:\成果\papers\02\SimWebView,2026-11-22T18:37:33.6536719+09:00,0,0.271
+021_draft_url_check,C:/swv_r4_20261121/venv/Scripts/python.exe tools/fetch_example_data.py A --output-dir C:/swv_r8_20261122/fetch_check,G:\成果\papers\02\SimWebView,2026-11-22T18:37:33.9359853+09:00,1,0.243
+022_stage_figure_state,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/stage_figure_camera.py examples/flac3d_cavern_stages/site C:/swv_r8_20261122/stage_figure_state.json,G:\成果\papers\02\SimWebView,2026-11-22T18:36:33.5359426+09:00,0,1.475
+023_stage_figure_capture,node benchmark/r8/capture_stage_figure.mjs examples/flac3d_cavern_stages/site C:/swv_r8_20261122/stage_figure_state.json C:/swv_r8_20261122/stage_captures,G:\成果\papers\02\SimWebView,2026-11-22T18:36:35.0819707+09:00,0,7.158
+024_stage_figure_compose,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/compose_stage_figure.py C:/swv_r8_20261122/stage_captures paper_evidence/revision_v5/r8/fig_multistage.png paper_evidence/revision_v5/r8/stage_figure_print_check.json,G:\成果\papers\02\SimWebView,2026-11-22T18:36:42.2562749+09:00,0,1.168
+025_stage_figure_pooled,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/stage_figure_camera.py examples/flac3d_cavern_stages/site C:/swv_r8_20261122/stage_figure_state.json,G:\成果\papers\02\SimWebView,2026-11-22T18:37:43.1902836+09:00,0,1.569
+026_capture_pooled,node benchmark/r8/capture_stage_figure.mjs examples/flac3d_cavern_stages/site C:/swv_r8_20261122/stage_figure_state.json C:/swv_r8_20261122/stage_captures,G:\成果\papers\02\SimWebView,2026-11-22T18:37:44.8177268+09:00,0,6.989
+027_compose_pooled,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/compose_stage_figure.py C:/swv_r8_20261122/stage_captures paper_evidence/revision_v5/r8/fig_multistage.png paper_evidence/revision_v5/r8/stage_figure_print_check.json,G:\成果\papers\02\SimWebView,2026-11-22T18:37:51.8165569+09:00,0,1.054
+028_retry_head_metadata,node benchmark/r8/survey_sizes.mjs paper_evidence/revision_v5/r8/site_survey (resume only missing size responses),G:\成果\papers\02\SimWebView,2026-11-22T18:39:50.3558484+09:00,0,211.279
+029_stage_benchmark_pilot,node benchmark/r8/stage_benchmark.mjs examples/flac3d_cavern_stages/site LAN C:/swv_r8_20261122/pilot_stage_benchmark.json 1,G:\成果\papers\02\SimWebView,2026-11-22T18:40:27.4437473+09:00,0,5.58
+030_commit_stages,Stage and verify the five public VTUs and validated multi-stage site; commit the construction example,G:\成果\papers\02\SimWebView,2026-11-22T18:41:46.5088104+09:00,0,18.881
+031_compare_outputs,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/audit_examples.py C:/swv_r4_20261121/model_runs paper_evidence/revision_v5/r8/example_audit.json,G:\成果\papers\02\SimWebView,2026-11-22T18:42:05.4663045+09:00,1,0.194
+032_bench_4G,node benchmark/r8/stage_benchmark.mjs examples/flac3d_cavern_stages/site 4G paper_evidence/revision_v5/r8/stage_benchmark_4G.json 3,G:\成果\papers\02\SimWebView,2026-11-22T18:43:09.6277413+09:00,0,29.994
+032_bench_LAN,node benchmark/r8/stage_benchmark.mjs examples/flac3d_cavern_stages/site LAN paper_evidence/revision_v5/r8/stage_benchmark_LAN.json 3,G:\成果\papers\02\SimWebView,2026-11-22T18:42:56.8170413+09:00,0,12.758
+033_compare_outputs,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/audit_examples.py C:/swv_r4_20261121/model_runs paper_evidence/revision_v5/r8/example_audit.json,G:\成果\papers\02\SimWebView,2026-11-22T18:43:13.7215442+09:00,0,1.326
+034_remaining_head,node benchmark/r8/survey_sizes.mjs paper_evidence/revision_v5/r8/site_survey (retry missing HTTP HEAD metadata over fresh connections),G:\成果\papers\02\SimWebView,2026-11-22T18:43:50.0928971+09:00,0,16.951
+035_report,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/report_evidence.py paper_evidence/revision_v5/r8 C:/swv_r8_20261122/logs dist/zenodo_dataset,G:\成果\papers\02\SimWebView,2026-11-22T18:44:31.9066080+09:00,0,0.304
+036_commit_evidence,git add -- benchmark/r8 paper_evidence/revision_v5/r8; git diff --cached --check; audit source trees and commit the r8 evidence,G:\成果\papers\02\SimWebView,2026-11-22T18:44:32.2504946+09:00,0,1.656
+037_bundle,git bundle create C:/swv_r8_20261122/sim2web_r8.bundle 92f40f5..r8/release; git bundle verify C:/swv_r8_20261122/sim2web_r8.bundle,G:\成果\papers\02\SimWebView,2026-11-22T18:44:33.9201886+09:00,0,0.287
+038_split_delivery,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/split_delivery.py C:/swv_r8_20261122/sim2web_r8.bundle C:/swv_r8_20261122/deliver,G:\成果\papers\02\SimWebView,2026-11-22T18:44:34.2173504+09:00,0,0.472
+039_exact_audit,C:/swv_r4_20261121/venv/Scripts/python.exe benchmark/r8/audit_examples.py C:/swv_r4_20261121/model_runs paper_evidence/revision_v5/r8/example_audit.json,G:\成果\papers\02\SimWebView,2026-11-22T18:45:25.0396495+09:00,0,1.366

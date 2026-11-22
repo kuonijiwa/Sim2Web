@@ -1,0 +1,76 @@
+{
+  "case": "A",
+  "source": "G:\\\u6210\u679c\\papers\\02\\SimWebView\\examples\\flac3d_cavern_iv2\\input\\IV-2.vtu",
+  "source_bytes": 225499841,
+  "points": 764381,
+  "cells": 1211385,
+  "retained_cells": 983438,
+  "vtk_cell_types": {
+    "10": 262334,
+    "12": 588053,
+    "13": 61454,
+    "14": 299544
+  },
+  "binary_bytes": 63362600,
+  "gzip_bytes": 31597581,
+  "gzip_level": 6,
+  "positions": [
+    -112.0,
+    -72.0,
+    -27.0,
+    8.0,
+    48.0,
+    88.0,
+    128.0,
+    163.0,
+    203.0,
+    238.0
+  ],
+  "w_indices": [
+    0,
+    8,
+    17,
+    25,
+    33,
+    42,
+    50,
+    58,
+    67,
+    75
+  ],
+  "first_index": 4,
+  "correctness_indices": [
+    0,
+    4,
+    9
+  ],
+  "camera": [
+    1484.4499778747545,
+    21.699996948242102,
+    10.912275314331051,
+    65.2499961853025,
+    21.699996948242102,
+    10.912275314331051,
+    0,
+    0,
+    1,
+    65.44719999999992
+  ],
+  "projection": "parallel, x-normal",
+  "viewport": [
+    1600,
+    900
+  ],
+  "layers": [
+    "excavation"
+  ],
+  "range": [
+    0.0,
+    0.01697235181927681
+  ],
+  "range_mode": "full",
+  "colormap": "jet",
+  "bands": 8,
+  "retained_filter": "Apply the shipped void rule after receiving whole topology.",
+  "field": "TotalDisplacement, interpolate nodal magnitude as the shipped viewer does. Source point vectors require no cell-data averaging."
+}

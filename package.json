@@ -1,24 +1,25 @@
 {
-  "name": "geosimvis-three-case-candidate",
-  "version": "0.1.0-alpha.0",
+  "name": "sim2web-viewer",
+  "version": "0.2.0-dev.0",
   "private": true,
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build:cavern": "vite build --config examples/flac3d_cavern_iv2/frontend/vite.config.js",
-    "build:flac3d-slope": "vite build --config examples/flac3d_slope_exac23/frontend/vite.config.js",
-    "build:3dec-slope": "vite build --config examples/3dec_slope/frontend/vite.config.js",
-    "build": "npm run build:cavern && npm run build:flac3d-slope && npm run build:3dec-slope",
-    "dev:cavern": "vite --config examples/flac3d_cavern_iv2/frontend/vite.config.js",
-    "dev:flac3d-slope": "vite --config examples/flac3d_slope_exac23/frontend/vite.config.js",
-    "dev:3dec-slope": "vite --config examples/3dec_slope/frontend/vite.config.js"
+    "build:viewer": "vite build --config viewer/vite.config.js",
+    "dev:viewer": "vite --config viewer/vite.config.js",
+    "test:viewer": "node --test viewer/tests/lib.test.js",
+    "build:workbench": "vite build --config workbench/vite.config.js",
+    "dev:workbench": "vite --config workbench/vite.config.js",
+    "test:workbench": "node --test workbench/tests/model.test.js",
+    "build": "npm run build:viewer && npm run build:workbench"
   },
   "dependencies": {
-    "@kitware/vtk.js": "^32.12.0",
+    "@kitware/vtk.js": "^32.14.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "playwright-core": "^1.49.1",
     "vite": "^6.0.5"
   }
 }

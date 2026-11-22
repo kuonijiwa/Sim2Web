@@ -1,0 +1,1937 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ],
+      "date-time": "2026-08-12T03:31:43Z",
+      "timestamp": 1786505503238,
+      "version": "build-2736575974"
+    },
+    "reference-count": 21,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2026-06-01T00:00:00Z",
+          "timestamp": 1780272000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2026-06-01T00:00:00Z",
+          "timestamp": 1780272000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              26
+            ]
+          ],
+          "date-time": "2026-03-26T00:00:00Z",
+          "timestamp": 1774483200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "SoftwareX"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.softx.2026.102630",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          31
+        ]
+      ],
+      "date-time": "2026-03-31T08:56:03Z",
+      "timestamp": 1774947363000
+    },
+    "page": "102630",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "special_numbering": "C",
+    "title": [
+      "GEOMODELATOR-GUI: A web-based graphical user interface for 3D geological modelling"
+    ],
+    "prefix": "10.1016",
+    "volume": "34",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6317-5113",
+        "authenticated-orcid": false,
+        "given": "Thomas",
+        "family": "Kempka",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin",
+        "family": "Nakaten",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elena",
+        "family": "Chabab",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0001",
+        "unstructured": "Nakaten, B., 2025a. GeomodelatorGUI - web-based graphical user interface for Geomodelator, developed using Streamlit and Flask. https://doi.org/10.5880/GFZ.AJPH.2025.002."
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0002",
+        "unstructured": "Nakaten, B., 2025b GEOMODELATOR - A python library to generate simple structured 2.5D and 3D cell-based VTK models/files with layer, fault and seams as corresponding element/zone groups for further processing or integrating into a simulator framework (TRANSPORTSE). https://doi.org/10.5880/GFZ.AJPH.2025.001."
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0003",
+        "unstructured": "Juergen, R., Mayer, W., van Havre, Y., 2001. FreeCAD. FreeCAD."
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0004",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.1038/s41586-020-2649-2",
+        "article-title": "Array programming with NumPy",
+        "volume": "585",
+        "author": "Harris",
+        "year": "2020",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0005",
+        "series-title": "The paraview guide: updated for paraview version 4.3, full color version",
+        "author": "Ayachit",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0006",
+        "series-title": "Proceedings of the 25th International Conference on World Wide Web. International World Wide Web Conferences Steering Committee",
+        "first-page": "263",
+        "article-title": "Foundations of JSON schema",
+        "author": "Pezoa",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0007",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nakaten, B., Chabab, E., Kempka, T., 2025. GEOMODELATOR reloaded – now with GUI and client-server architecture. https://doi.org/10.5194/egusphere-egu25-10442.",
+        "DOI": "10.5194/egusphere-egu25-10442"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0008",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.5194/gmd-12-1-2019",
+        "article-title": "GemPy 1.0: open-source stochastic geological modeling and inversion",
+        "volume": "12",
+        "author": "De La Varga",
+        "year": "2019",
+        "journal-title": "Geosci. Model Dev"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0009",
+        "doi-asserted-by": "crossref",
+        "first-page": "3915",
+        "DOI": "10.5194/gmd-14-3915-2021",
+        "article-title": "LoopStructural 1.0: time-aware geological modelling",
+        "volume": "14",
+        "author": "Grose",
+        "year": "2021",
+        "journal-title": "Geosci. Model Dev"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "1450",
+        "DOI": "10.21105/joss.01450",
+        "article-title": "PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)",
+        "volume": "4",
+        "author": "Sullivan",
+        "year": "2019",
+        "journal-title": "JOSS"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0011",
+        "series-title": "Flask web development",
+        "author": "Grinberg",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0012",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.1038/s41592-019-0686-2",
+        "article-title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+        "volume": "17",
+        "author": "Virtanen",
+        "year": "2020",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0013",
+        "doi-asserted-by": "crossref",
+        "first-page": "47",
+        "DOI": "10.5194/adgeo-58-47-2022",
+        "article-title": "Upwelling mechanisms of deep saline waters via quaternary erosion windows considering varying hydrogeological boundary conditions",
+        "volume": "58",
+        "author": "Chabab",
+        "year": "2022",
+        "journal-title": "Adv. Geosci"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0014",
+        "doi-asserted-by": "crossref",
+        "first-page": "243",
+        "DOI": "10.1007/s00767-023-00551-8",
+        "article-title": "Numerical simulation of spatial temperature and salinity distribution in the Waiwera geothermal reservoir, New Zealand",
+        "volume": "28",
+        "author": "Kempka",
+        "year": "2023",
+        "journal-title": "Grund. - Z. Fachsekt. Hydrogeol."
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0015",
+        "article-title": "Geologic controls on the genesis of the Arctic permafrost and sub-permafrost methane hydrate-bearing system in the Beaufort–Mackenzie Delta",
+        "volume": "11",
+        "author": "Li",
+        "year": "2023",
+        "journal-title": "Front. Earth Sci."
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0016",
+        "doi-asserted-by": "crossref",
+        "first-page": "1974",
+        "DOI": "10.3390/en15061974",
+        "article-title": "Numerical simulation of hydrate formation in the LArge-scale reservoir simulator (LARS)",
+        "volume": "15",
+        "author": "Li",
+        "year": "2022",
+        "journal-title": "Energies"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0017",
+        "first-page": "4986",
+        "article-title": "Numerical simulation of coastal sub-permafrost gas hydrate formation in the Mackenzie Delta",
+        "volume": "15",
+        "author": "Li",
+        "year": "2022",
+        "journal-title": "Can. Arct. Energ."
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0018",
+        "doi-asserted-by": "crossref",
+        "first-page": "55",
+        "DOI": "10.5194/adgeo-58-55-2022",
+        "article-title": "Numerical analysis of potential contaminant migration from abandoned In situ coal conversion reactors",
+        "volume": "58",
+        "author": "Otto",
+        "year": "2022",
+        "journal-title": "Adv. Geosci"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0019",
+        "first-page": "3157",
+        "article-title": "Effects of permeability and pyrite distribution heterogeneity on pyrite oxidation in flooded lignite mine dumps",
+        "volume": "17",
+        "author": "Schnepper",
+        "year": "2025",
+        "journal-title": "Water (Basel)"
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "9314",
+        "DOI": "10.3390/app11199314",
+        "article-title": "How insoluble inclusions and intersecting layers affect the leaching process within potash seams",
+        "volume": "11",
+        "author": "Steding",
+        "year": "2021",
+        "journal-title": "Appl. Sci."
+      },
+      {
+        "key": "10.1016/j.softx.2026.102630_bib0021",
+        "first-page": "168",
+        "article-title": "Spatial and temporal evolution of leaching zones within potash seams reproduced by reactive transport simulations",
+        "volume": "13",
+        "author": "Steding",
+        "year": "2021",
+        "journal-title": "Water (Basel)"
+      }
+    ],
+    "container-title": [
+      "SoftwareX"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2352711026001238?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2352711026001238?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ],
+      "date-time": "2026-08-12T03:25:02Z",
+      "timestamp": 1786505102000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2352711026001238"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "references-count": 21,
+    "alternative-id": [
+      "S2352711026001238"
+    ],
+    "URL": "https://doi.org/10.1016/j.softx.2026.102630",
+    "relation": {},
+    "ISSN": [
+      "2352-7110"
+    ],
+    "issn-type": [
+      {
+        "value": "2352-7110",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "GEOMODELATOR-GUI: A web-based graphical user interface for 3D geological modelling",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "SoftwareX",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.softx.2026.102630",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2026 The Author(s). Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "102630"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          21
+        ]
+      ],
+      "date-time": "2026-11-21T03:14:21Z",
+      "timestamp": 1795230861214,
+      "version": "4.10.3"
+    },
+    "reference-count": 34,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2020-01-01T00:00:00Z",
+          "timestamp": 1577836800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2020-01-01T00:00:00Z",
+          "timestamp": 1577836800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              18
+            ]
+          ],
+          "date-time": "2020-02-18T00:00:00Z",
+          "timestamp": 1581984000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 48,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100011660",
+        "name": "Idaho National Laboratory",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100011660",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "SoftwareX"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.softx.2020.100430",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          3,
+          7
+        ]
+      ],
+      "date-time": "2020-03-07T05:17:41Z",
+      "timestamp": 1583558261000
+    },
+    "page": "100430",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 642,
+    "special_numbering": "C",
+    "title": [
+      "MOOSE: Enabling massively parallel multiphysics simulation"
+    ],
+    "prefix": "10.1016",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Cody J.",
+        "family": "Permann",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Derek R.",
+        "family": "Gaston",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Andrš",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert W.",
+        "family": "Carlsen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fande",
+        "family": "Kong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander D.",
+        "family": "Lindsay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jason M.",
+        "family": "Miller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John W.",
+        "family": "Peterson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew E.",
+        "family": "Slaughter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roy H.",
+        "family": "Stogner",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Richard C.",
+        "family": "Martineau",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "10",
+        "key": "10.1016/j.softx.2020.100430_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1768",
+        "DOI": "10.1016/j.nucengdes.2009.05.021",
+        "article-title": "MOOSE: A parallel computational framework for coupled systems of nonlinear equations",
+        "volume": "239",
+        "author": "Gaston",
+        "year": "2009",
+        "journal-title": "Nucl Eng Des"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.softx.2020.100430_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.1177/1094342012468181",
+        "article-title": "Multiphysics simulations: Challenges and opportunities",
+        "volume": "27",
+        "author": "Keyes",
+        "year": "2013",
+        "journal-title": "Int J High Perform Comput Appl"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.softx.2020.100430_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "20",
+        "DOI": "10.1016/j.commatsci.2011.07.028",
+        "article-title": "An object-oriented finite element framework for multiphysics phase field simulations",
+        "volume": "51",
+        "author": "Tonks",
+        "year": "2012",
+        "journal-title": "Comput Mater Sci"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b4",
+        "series-title": "Full core TREAT kinetics demonstration using Rattlesnake/BISON coupling within MAMMOTH",
+        "author": "Ortensi",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b5",
+        "series-title": "International workshop on bifurcation and degradation in geomaterials",
+        "first-page": "475",
+        "article-title": "Framework for multiscale flow simulation of deformable rocks",
+        "author": "Lesueur",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b6",
+        "unstructured": "Nakhmanson S, Mangeri J, Pitike K, Kuna L, Jokisaari A, Alpay S et al. Ferret: an open-source code for simulating thermodynamical evolution and phase transformations in complex materials systems at mesoscale. In: APS march meeting abstracts; 2017."
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b7",
+        "article-title": "Physics-based multiscale coupling for full core nuclear reactor simulation",
+        "author": "Gaston",
+        "year": "2014",
+        "journal-title": "Ann Nucl Energy"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b8",
+        "series-title": "Parallel, asynchronous ray-tracing for scalable, 3D, full-core method of characteristics neutron transport on unstructured mesh",
+        "author": "Gaston",
+        "year": "2019"
+      },
+      {
+        "issue": "100",
+        "key": "10.1016/j.softx.2020.100430_b9",
+        "article-title": "The fenics project version 1.5",
+        "volume": "3",
+        "author": "Alnæs",
+        "year": "2015",
+        "journal-title": "Arch Numer Softw"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.softx.2020.100430_b10",
+        "first-page": "24:1",
+        "article-title": "Firedrake: Automating the finite element method by composing abstractions",
+        "volume": "43",
+        "author": "Rathgeber",
+        "year": "2016",
+        "journal-title": "ACM Trans Math Software"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b11",
+        "series-title": "PETSc users manual",
+        "author": "Balay",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b12",
+        "series-title": "Modern software tools in scientific computing",
+        "first-page": "163",
+        "article-title": "Efficient management of parallelism in object oriented numerical software libraries",
+        "author": "Balay",
+        "year": "1997"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b13",
+        "series-title": "MFEM: a modular finite element methods library",
+        "author": "Anderson",
+        "year": "2019"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.softx.2020.100430_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.1145/1268776.1268779",
+        "article-title": "Deal.II—a general-purpose object-oriented finite element library",
+        "volume": "33",
+        "author": "Bangerth",
+        "year": "2007",
+        "journal-title": "ACM Trans Math Softw"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b15",
+        "series-title": "A first course in finite elements",
+        "author": "Fish",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b16",
+        "series-title": "Results from tight and loose coupled multiphysics in nuclear fuels performance simulations using BISON",
+        "author": "Novascone",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b17",
+        "series-title": "2018 IEEE/ACM 9th workshop on latest advances in scalable algorithms for large-scale systems (ScalA)",
+        "first-page": "65",
+        "article-title": "A general-purpose hierarchical mesh partitioning method with node balancing strategies for large-scale numerical simulations",
+        "author": "Kong",
+        "year": "2018"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.softx.2020.100430_b18",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/nla.2162",
+        "article-title": "A fully coupled two-level Schwarz preconditioner based on smoothed aggregation for the transient multigroup neutron diffusion equations",
+        "volume": "25",
+        "author": "Kong",
+        "year": "2018",
+        "journal-title": "Numer Linear Algebra Appl"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.softx.2020.100430_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.1016/j.jcp.2003.08.010",
+        "article-title": "Jacobian-free Newton–Krylov methods: a survey of approaches and applications",
+        "volume": "193",
+        "author": "Knoll",
+        "year": "2004",
+        "journal-title": "J Comput Phys"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.softx.2020.100430_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "856",
+        "DOI": "10.1137/0907058",
+        "article-title": "GMRES: A generalized minimal residual algorithm for solving nonsymmetric linear systems",
+        "volume": "7",
+        "author": "Saad",
+        "year": "1986",
+        "journal-title": "SIAM J Sci Stat Comput"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.softx.2020.100430_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "C73",
+        "DOI": "10.1137/15M1010567",
+        "article-title": "A highly scalable multilevel Schwarz method with boundary geometry preserving coarse spaces for 3D elasticity problems on domains with complex geometry",
+        "volume": "38",
+        "author": "Kong",
+        "year": "2016",
+        "journal-title": "SIAM J Sci Comput"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b22",
+        "series-title": "Domain decomposition: Parallel multilevel methods for elliptic partial differential equations",
+        "author": "Smith",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b23",
+        "unstructured": "Argonne Leadership Computing Facility, Argonne National Laboratory."
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b24",
+        "series-title": "Multiphysics for nuclear energy applications using a cohesive computational framework",
+        "article-title": "Multiphysics for nuclear energy applications using a cohesive computational framework",
+        "author": "Martineau",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b25",
+        "unstructured": "Novak A, Romano P, Wendt B, Rahaman R, Merzari E, Kerby L et al. Preliminary coupling of OpenMC and Nek5000 within the MOOSE framework. In: Proceedings of PHYSOR; 2018."
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b26",
+        "doi-asserted-by": "crossref",
+        "first-page": "134",
+        "DOI": "10.1016/j.expthermflusci.2011.12.002",
+        "article-title": "Friction factor, permeability and inertial coefficient of oscillating flow through porous media of packed balls",
+        "volume": "38",
+        "author": "Pamuk",
+        "year": "2012",
+        "journal-title": "Exp Therm Fluid Sci"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.softx.2020.100430_b27",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pbio.1001745",
+        "article-title": "Best practices for scientific computing",
+        "volume": "12",
+        "author": "Wilson",
+        "year": "2014",
+        "journal-title": "PLoS Biol"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.softx.2020.100430_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "340",
+        "DOI": "10.1109/TSE.2002.995420",
+        "article-title": "Success and failure factors in software reuse",
+        "volume": "28",
+        "author": "Morisio",
+        "year": "2002",
+        "journal-title": "IEEE Trans Softw Eng"
+      },
+      {
+        "issue": "3–4",
+        "key": "10.1016/j.softx.2020.100430_b29",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1007/s00366-006-0049-3",
+        "article-title": "libMesh: A C++ library for parallel adaptive mesh refinement/coarsening simulations",
+        "volume": "22",
+        "author": "Kirk",
+        "year": "2006",
+        "journal-title": "Eng Comput"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b30",
+        "series-title": "Research in support of TREAT kinetics calculations using Rattlesnake/BISON coupling within MAMMOTH",
+        "author": "DeHart",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b31",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cageo.2019.06.014",
+        "article-title": "3D non-conforming mesh model for flow in fractured porous media using Lagrange multipliers",
+        "author": "Schädle",
+        "year": "2019",
+        "journal-title": "Comput Geosci"
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b32",
+        "unstructured": "Ennis-King J, La Force T, Wilkins A. Community code for simulating CO2 storage: Modelling multiphase flow with coupled geomechanics and geochemistry using the open-source multiphysics framework MOOSE. In: 14th greenhouse gas control technologies conference Melbourne. 2018. p. 21–6."
+      },
+      {
+        "key": "10.1016/j.softx.2020.100430_b33",
+        "unstructured": "Poulet T, Schaubs P, Rachakonda PK, Douglas G, Lester D, Metcalfe G et al. The CSIRO Groundwater Cooling Project — Cooling Australia’s Latest Supercomputer with Groundwater."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.softx.2020.100430_b34",
+        "first-page": "1",
+        "article-title": "Next generation resource discovery linking geophysical sensing, modelling and interpretation",
+        "volume": "2016",
+        "author": "Regenauer-Lieb",
+        "year": "2016",
+        "journal-title": "ASEG Ext Abstr"
+      }
+    ],
+    "updated-by": [
+      {
+        "DOI": "10.1016/j.softx.2022.101202",
+        "type": "addendum",
+        "label": "Addendum",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2022,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2022-12-01T00:00:00Z",
+          "timestamp": 1669852800000
+        }
+      }
+    ],
+    "container-title": [
+      "SoftwareX"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2352711019302973?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2352711019302973?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2025-11-07T03:46:42Z",
+      "timestamp": 1762487202000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2352711019302973"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          1
+        ]
+      ]
+    },
+    "references-count": 34,
+    "alternative-id": [
+      "S2352711019302973"
+    ],
+    "URL": "https://doi.org/10.1016/j.softx.2020.100430",
+    "relation": {},
+    "ISSN": [
+      "2352-7110"
+    ],
+    "issn-type": [
+      {
+        "value": "2352-7110",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "MOOSE: Enabling massively parallel multiphysics simulation",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "SoftwareX",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.softx.2020.100430",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "simple-article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 The Authors. Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "100430"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          20
+        ]
+      ],
+      "date-time": "2026-11-20T22:53:31Z",
+      "timestamp": 1795215211684,
+      "version": "4.10.3"
+    },
+    "update-to": [
+      {
+        "DOI": "10.1016/j.softx.2022.101202",
+        "type": "addendum",
+        "label": "Addendum",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        }
+      }
+    ],
+    "reference-count": 11,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              13
+            ]
+          ],
+          "date-time": "2024-03-13T00:00:00Z",
+          "timestamp": 1710288000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100016186",
+        "name": "Idaho Operations Office, U.S. Department of Energy",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DE-AC07-05ID14517"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DE-AC07-05ID14517"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100016186",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006147",
+        "name": "Office of Nuclear Energy",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100006147",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100011660",
+        "name": "Idaho National Laboratory",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100011660",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000015",
+        "name": "US Department of Energy",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DE-NE0008983"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DE-NE0008983"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000015",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "softxjournal.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "SoftwareX"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.softx.2024.101690",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          22
+        ]
+      ],
+      "date-time": "2024-03-22T14:48:00Z",
+      "timestamp": 1711118880000
+    },
+    "page": "101690",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 182,
+    "special_numbering": "C",
+    "title": [
+      "3.0 - MOOSE: Enabling massively parallel multiphysics simulations"
+    ],
+    "prefix": "10.1016",
+    "volume": "26",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9714-4382",
+        "authenticated-orcid": false,
+        "given": "Guillaume",
+        "family": "Giudicelli",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Lindsay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Logan",
+        "family": "Harbour",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Casey",
+        "family": "Icenhour",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mengnan",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joshua E.",
+        "family": "Hansel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "German",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Patrick",
+        "family": "Behne",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Oana",
+        "family": "Marin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roy H.",
+        "family": "Stogner",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jason M.",
+        "family": "Miller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel",
+        "family": "Schwen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yaqi",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lynn",
+        "family": "Munday",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastian",
+        "family": "Schunert",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin W.",
+        "family": "Spencer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dewen",
+        "family": "Yushu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Antonio",
+        "family": "Recuero",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zachary M.",
+        "family": "Prince",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Max",
+        "family": "Nezdyur",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tianchen",
+        "family": "Hu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yinbin",
+        "family": "Miao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yeon Sang",
+        "family": "Jung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christopher",
+        "family": "Matthews",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "April",
+        "family": "Novak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brandon",
+        "family": "Langley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timothy",
+        "family": "Truster",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nuno",
+        "family": "Nobre",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brian",
+        "family": "Alger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Andrs",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fande",
+        "family": "Kong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert",
+        "family": "Carlsen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew E.",
+        "family": "Slaughter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John W.",
+        "family": "Peterson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Derek",
+        "family": "Gaston",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cody",
+        "family": "Permann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0001",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.softx.2022.101202",
+        "article-title": "2.0 - MOOSE: enabling massively parallel multiphysics simulations",
+        "volume": "20",
+        "author": "Lindsay",
+        "year": "2022",
+        "journal-title": "SoftwareX"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.softx.2024.101690_bib0002",
+        "doi-asserted-by": "crossref",
+        "first-page": "1142",
+        "DOI": "10.1080/00295450.2021.1906474",
+        "article-title": "Coupled multiphysics simulations of heat pipe microreactors using DireWolf",
+        "volume": "207",
+        "author": "Matthews",
+        "year": "2021",
+        "journal-title": "Nucl Technol"
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0003",
+        "first-page": "1",
+        "article-title": "MOOSE reactor module: an open-source capability for meshing nuclear reactor geometries",
+        "author": "Shemon",
+        "year": "2023",
+        "journal-title": "Nucl Sci Eng"
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0004",
+        "unstructured": "Hasse, J.N. (2021). poly2tri. Retrieved from GitHub: https://github.com/jhasse/poly2tri."
+      },
+      {
+        "issue": "3–4",
+        "key": "10.1016/j.softx.2024.101690_bib0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1007/s00366-006-0049-3",
+        "article-title": "libMesh: a C++ library for parallel adaptive mesh refinement/coarsening simulations",
+        "volume": "22",
+        "author": "Kirk",
+        "year": "2006",
+        "journal-title": "Eng Comput"
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0006",
+        "article-title": "Workbench analysis sequence processor",
+        "author": "Lefebvre",
+        "year": "2017",
+        "journal-title": "Comput Softw"
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0007",
+        "series-title": "INL/RPT-23-74941",
+        "author": "Biswas",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0008",
+        "doi-asserted-by": "crossref",
+        "first-page": "905",
+        "DOI": "10.1080/00295450.2020.1838877",
+        "article-title": "Automatic differentiation in MetaPhysicL and its applications in MOOSE",
+        "volume": "207",
+        "author": "Lindsay",
+        "year": "2021",
+        "journal-title": "Nucl Technol"
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0009",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.softx.2023.101621",
+        "article-title": "The MOOSE electromagnetics module",
+        "volume": "25",
+        "author": "Icenhour",
+        "year": "2024",
+        "journal-title": "SoftwareX"
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0010",
+        "unstructured": "Balay, S., Shrirang Abhyanker, Mark F. Adams, et al. 2023. PETSc Web page at https://petsc.org/."
+      },
+      {
+        "key": "10.1016/j.softx.2024.101690_bib0011",
+        "series-title": "ANL-21/39 - Revision 3.20",
+        "author": "Balay",
+        "year": "2023"
+      }
+    ],
+    "container-title": [
+      "SoftwareX"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S235271102400061X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S235271102400061X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2025-04-13T07:42:26Z",
+      "timestamp": 1744530146000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S235271102400061X"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "references-count": 11,
+    "alternative-id": [
+      "S235271102400061X"
+    ],
+    "URL": "https://doi.org/10.1016/j.softx.2024.101690",
+    "relation": {},
+    "ISSN": [
+      "2352-7110"
+    ],
+    "issn-type": [
+      {
+        "value": "2352-7110",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "3.0 - MOOSE: Enabling massively parallel multiphysics simulations",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "SoftwareX",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.softx.2024.101690",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.softx.2022.101202",
+        "name": "associatedlink",
+        "label": "CrossRef DOI link to the associated document"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "101690"
+  }
+]

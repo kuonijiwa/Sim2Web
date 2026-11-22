@@ -1,0 +1,15 @@
+warning: in the working copy of 'benchmark/web_slicing/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/check_browser.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/check_frames.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/collect.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/cutter.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/sampler.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/serve.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/vite.config.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/ws_echo.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark/web_slicing/ws_probe.mjs', LF will be replaced by CRLF the next time Git touches it
+benchmark/web_slicing/prepare.py:122: new blank line at EOF.
+benchmark/web_slicing/sampler.py:61: new blank line at EOF.
+benchmark/web_slicing/trame_app.py:181: new blank line at EOF.
+benchmark/web_slicing/vite.config.mjs:8: new blank line at EOF.

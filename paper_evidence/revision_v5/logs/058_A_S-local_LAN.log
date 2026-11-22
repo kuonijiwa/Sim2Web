@@ -1,0 +1,5 @@
+{"run":1,"status":"ok","firstMs":673.5,"transfer":{"httpBytes":2022274,"incomingWsBytes":1694327,"outgoingWsBytes":807}}
+{"run":2,"status":"ok","firstMs":798,"transfer":{"httpBytes":2022274,"incomingWsBytes":1694327,"outgoingWsBytes":807}}
+{"run":3,"status":"ok","firstMs":673.1999999284744,"transfer":{"httpBytes":2022274,"incomingWsBytes":1694327,"outgoingWsBytes":807}}
+{"run":4,"status":"ok","firstMs":713.5,"transfer":{"httpBytes":2022274,"incomingWsBytes":1694327,"outgoingWsBytes":807}}
+{"run":5,"status":"ok","firstMs":668.3999999761581,"transfer":{"httpBytes":2022274,"incomingWsBytes":1694327,"outgoingWsBytes":807}}

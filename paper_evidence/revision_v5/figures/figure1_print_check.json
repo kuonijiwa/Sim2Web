@@ -1,0 +1,10 @@
+{
+  "width_mm": 165,
+  "height_mm": 70,
+  "aspect": 2.357142857142857,
+  "minimum_font_pt": 8.1,
+  "panel_title_pt": 9.6,
+  "content_boxes": 15,
+  "dpi": 600,
+  "off_canvas_labels": []
+}

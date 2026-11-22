@@ -1,0 +1,109 @@
+{
+  "description": "Effect of reading the FLAC3D shear components as XY,YZ,XZ (v0.1) instead of the file-declared XY,XZ,YZ, over retained cells (max|stress| >= 1e-8).",
+  "A": {
+    "file_component_names": "XX,YY,ZZ,XY,XZ,YZ",
+    "unit": "MPa",
+    "retained_cells": 983438,
+    "Stress_Min_Principal": {
+      "range_correct": [
+        -45.14997431865718,
+        -0.0010148254860926124
+      ],
+      "range_v01": [
+        -41.83706924603116,
+        -0.0011028797949439175
+      ],
+      "max_abs_difference": 3.8376393725151114,
+      "max_difference_pct_of_range": 8.4999508639741,
+      "median_abs_difference": 0.003992808483594512,
+      "pct_cells_over_1pct_of_range": 2.9323658430933115,
+      "pct_cells_over_5pct_of_range": 0.017591347903985814
+    },
+    "Stress_Mid_Principal": {
+      "range_correct": [
+        -13.765892978154943,
+        0.1286898656512618
+      ],
+      "range_v01": [
+        -24.343814659532455,
+        0.0667624884710808
+      ],
+      "max_abs_difference": 10.577921681377513,
+      "max_difference_pct_of_range": 76.12982556070648,
+      "median_abs_difference": 0.024675992676272518,
+      "pct_cells_over_1pct_of_range": 25.762274795157396,
+      "pct_cells_over_5pct_of_range": 5.667871284209071
+    },
+    "Stress_Max_Principal": {
+      "range_correct": [
+        -12.632434284286916,
+        0.12868986565126195
+      ],
+      "range_v01": [
+        -7.060737128341289,
+        2.1111135414784417
+      ],
+      "max_abs_difference": 7.21517028987724,
+      "max_difference_pct_of_range": 56.54024053917063,
+      "median_abs_difference": 0.019103581464030836,
+      "pct_cells_over_1pct_of_range": 22.925898734846527,
+      "pct_cells_over_5pct_of_range": 2.2434561202638093
+    }
+  },
+  "B": {
+    "file_component_names": "XX,YY,ZZ,XY,XZ,YZ",
+    "unit": "Pa",
+    "retained_cells": 466220,
+    "Stress_Min_Principal": {
+      "range_correct": [
+        -7867851.213496205,
+        17189.457895458338
+      ],
+      "range_v01": [
+        -7867851.226271903,
+        17196.73557033444
+      ],
+      "max_abs_difference": 406572.0020689962,
+      "max_difference_pct_of_range": 5.156244831356572,
+      "median_abs_difference": 3886.3120544584235,
+      "pct_cells_over_1pct_of_range": 2.147269529406718,
+      "pct_cells_over_5pct_of_range": 0.0006434730384796877
+    },
+    "Stress_Mid_Principal": {
+      "range_correct": [
+        -3929002.9161417736,
+        72250.66485300407
+      ],
+      "range_v01": [
+        -3929001.1996716433,
+        71551.15147071825
+      ],
+      "max_abs_difference": 899114.3048638607,
+      "max_difference_pct_of_range": 22.470815374823758,
+      "median_abs_difference": 13871.835803992799,
+      "pct_cells_over_1pct_of_range": 27.517695508558194,
+      "pct_cells_over_5pct_of_range": 1.6665951696623913
+    },
+    "Stress_Max_Principal": {
+      "range_correct": [
+        -3899464.481623775,
+        120000.00000000003
+      ],
+      "range_v01": [
+        -3899466.1853182027,
+        319595.7178877111
+      ],
+      "max_abs_difference": 492542.3027948651,
+      "max_difference_pct_of_range": 12.253928478449668,
+      "median_abs_difference": 8351.581510188484,
+      "pct_cells_over_1pct_of_range": 17.478872635236584,
+      "pct_cells_over_5pct_of_range": 0.2687572390716829
+    }
+  },
+  "C": {
+    "file_component_names": "XX,YY,ZZ,XY,XZ,YZ",
+    "unit": "Pa",
+    "retained_cells": 495965,
+    "note": "v0.1 already used the file-declared order for Case C"
+  }
+}

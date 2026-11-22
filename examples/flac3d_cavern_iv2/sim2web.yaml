@@ -1,0 +1,53 @@
+# Case A: FLAC3D underground cavern, stage IV-2.
+# The excavation walls are hidden by the outer model boundary, so the primary
+# browser product is the solid-side excavation surface.
+schema: sim2web-config/1
+title: "Case A: FLAC3D underground cavern (IV-2)"
+description: >-
+  Underground cavern; the excavation surface is extracted from within the
+  surrounding rock domain and inspected together with axis-aligned sections.
+solver: FLAC3D
+
+input:
+  stages:
+    - {file: input/IV-2.vtu, name: IV-2}
+
+output:
+  dir: site
+
+fields:
+  displacement: {name: Displacement, unit: m}
+  stress:
+    name: Stress
+    # As declared by the ComponentName attributes of the VTU (checked at build time).
+    order: "XX,YY,ZZ,XY,XZ,YZ"
+    unit: MPa                            # values are stored as exported; no rescaling
+    sign_convention: "FLAC3D convention: tension positive, compression negative"
+  categories:
+    # Integer codes 0-3 of the group slot.  Add a `labels:` mapping such as
+    # {"0": "...", "1": "..."} to show descriptive names in the legend.
+    - {name: "Group Slot : Default", label: "Group (slot Default)"}
+
+geometry:
+  primary: excavation
+  exterior: {enabled: false}
+  excavation:
+    enabled: true
+    strategy: stress                    # null zones carry zero stress in this export
+    null_threshold: 1.0e-8              # native stress units (MPa)
+    contact_tolerance: 1.0e-5           # m
+    required: true
+  display_averaging: whole_solid
+
+sections:
+  axes: [x, y, z]
+  spacing: 5
+  placement: integer_grid
+  positions:
+    x: [0, 54, 108, 162, 189, 234]      # additional engineering sections
+  min_points: 10
+
+viewer:
+  subtitle: "Inner excavation surface and sections"
+  default_field: TotalDisplacement
+  default_axis: x

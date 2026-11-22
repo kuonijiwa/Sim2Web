@@ -1,0 +1,52 @@
+{
+  "case": "C",
+  "method": "vtkCutter, triangles, non-merging locator on retained mesh. Bidirectional coordinate and field agreement.",
+  "planes": [
+    {
+      "index": 0,
+      "x": 570.0,
+      "vtk_triangles": 5478,
+      "browser_triangles": 5478,
+      "triangle_error_percent": 0.0,
+      "vtk_area": 41390.78897631022,
+      "browser_area": 41390.78953974228,
+      "area_error_percent": 1.36124987290833e-06,
+      "max_displacement_diff_m": 7.024981063471465e-08,
+      "unmatched_vtk_points": 8,
+      "unmatched_browser_points": 6,
+      "coordinate_tolerance_m": 0.001,
+      "passed": false
+    },
+    {
+      "index": 4,
+      "x": 810.0,
+      "vtk_triangles": 12588,
+      "browser_triangles": 12588,
+      "triangle_error_percent": 0.0,
+      "vtk_area": 95518.87155835176,
+      "browser_area": 95518.87029384822,
+      "area_error_percent": 1.3238258840336334e-06,
+      "max_displacement_diff_m": 1.0050520216292949e-07,
+      "unmatched_vtk_points": 15,
+      "unmatched_browser_points": 12,
+      "coordinate_tolerance_m": 0.001,
+      "passed": false
+    },
+    {
+      "index": 9,
+      "x": 1110.0,
+      "vtk_triangles": 5189,
+      "browser_triangles": 5189,
+      "triangle_error_percent": 0.0,
+      "vtk_area": 174062.23288559134,
+      "browser_area": 174062.23622142337,
+      "area_error_percent": 1.9164594069598795e-06,
+      "max_displacement_diff_m": 6.33898834625282e-08,
+      "unmatched_vtk_points": 7,
+      "unmatched_browser_points": 7,
+      "coordinate_tolerance_m": 0.001,
+      "passed": false
+    }
+  ],
+  "passed": false
+}

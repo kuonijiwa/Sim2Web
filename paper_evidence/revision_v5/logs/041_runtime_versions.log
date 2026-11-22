@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<frozen os>", line 714, in __getitem__
+KeyError: 'SIM2WEB_R6_TRAME_LIB'
+v24.19.0
+{"playwright-core":"1.49.1","@kitware/vtk.js":"32.14.0","vite":"6.4.6"}
+160.0.8157.0
+paraview version 5.13.3
+199507997DDCC2E6D1A43C581D42D12ABE87915A10E6261FE236CE4B2F87C9B6 G:\成果\papers\02\SimWebView\examples\flac3d_cavern_iv2\input\IV-2.vtu
+8B5302C4113A398B97B88A782A3D4E0F410BCDF1F43F70E42CEF8F7AFFF4EF45 G:\成果\papers\02\SimWebView\examples\3dec_slope\input\slopemodel.vtu

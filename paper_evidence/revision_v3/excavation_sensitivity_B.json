@@ -1,0 +1,305 @@
+{
+  "stage": "exac_23",
+  "baseline": {
+    "null_threshold": 1e-08,
+    "contact_tolerance": 0.001,
+    "boundary_faces": 11131,
+    "boundary_area": 124208.97522177879
+  },
+  "label_reference": [],
+  "stress_distribution": {
+    "zero_stress_cells": 147468,
+    "smallest_nonzero_max_abs_stress": 2846.579208840433,
+    "cells_below": {
+      "1e-10": 147468,
+      "1e-09": 147468,
+      "1e-08": 147468,
+      "1e-07": 147468,
+      "1e-06": 147468,
+      "1e-04": 147468,
+      "1e-02": 147468
+    }
+  },
+  "rows": [
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-10,
+      "contact_tolerance": 1e-05,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-10,
+      "contact_tolerance": 0.0001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-10,
+      "contact_tolerance": 0.001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-10,
+      "contact_tolerance": 0.01,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-09,
+      "contact_tolerance": 1e-05,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-09,
+      "contact_tolerance": 0.0001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-09,
+      "contact_tolerance": 0.001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-09,
+      "contact_tolerance": 0.01,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-08,
+      "contact_tolerance": 1e-05,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-08,
+      "contact_tolerance": 0.0001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-08,
+      "contact_tolerance": 0.001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-08,
+      "contact_tolerance": 0.01,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-07,
+      "contact_tolerance": 1e-05,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-07,
+      "contact_tolerance": 0.0001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-07,
+      "contact_tolerance": 0.001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-07,
+      "contact_tolerance": 0.01,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-06,
+      "contact_tolerance": 1e-05,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-06,
+      "contact_tolerance": 0.0001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-06,
+      "contact_tolerance": 0.001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 1e-06,
+      "contact_tolerance": 0.01,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.0001,
+      "contact_tolerance": 1e-05,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.0001,
+      "contact_tolerance": 0.0001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.0001,
+      "contact_tolerance": 0.001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.0001,
+      "contact_tolerance": 0.01,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.01,
+      "contact_tolerance": 1e-05,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.01,
+      "contact_tolerance": 0.0001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.01,
+      "contact_tolerance": 0.001,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    },
+    {
+      "stage": "exac_23",
+      "null_threshold": 0.01,
+      "contact_tolerance": 0.01,
+      "void_cells": 147468,
+      "boundary_faces": 11131,
+      "boundary_area": 124208.97522177879,
+      "boundary_regions": 1,
+      "jaccard_vs_baseline": 1.0
+    }
+  ]
+}

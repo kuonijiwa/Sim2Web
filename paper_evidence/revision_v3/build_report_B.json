@@ -1,0 +1,95 @@
+{
+  "simwebview": "0.2.0.dev0",
+  "python": "3.11.18",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "pyvista": "0.46.3",
+  "vtk": "9.5.0",
+  "numpy": "1.26.4",
+  "config_sha256": "c955c2645e9df3aeef1f0b2a0335c981f13af8dd382eb12be5f46a588c3de4c3",
+  "seconds_total": 51.138872365,
+  "stages": [
+    {
+      "stage": "exac_23",
+      "seconds": {
+        "read": 0.7637169220000715,
+        "fields": 0.6433035009999912,
+        "classify": 0.8949445949999699,
+        "partition": 0.4033919789999345,
+        "excavation": 0.9515524419999792,
+        "write": 2.1055590789999314,
+        "exterior": 0.7695995719999473,
+        "sections": 44.058724756999936
+      },
+      "output_bytes": 86256706,
+      "primary_bytes": 3841426,
+      "section_count": 154,
+      "void_diagnostics": {
+        "void_cells": 147468,
+        "retained_cells": 466220,
+        "strategy": "stress",
+        "null_threshold": 1e-08,
+        "contact_tolerance": 0.001,
+        "max_abs_stress_log10_bins": [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ],
+        "histogram_retained": [
+          0,
+          114,
+          26819,
+          258220,
+          181067
+        ],
+        "histogram_void": [
+          147468,
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero_stress_cells": 147468,
+        "retained_min_max_abs_stress": 2846.579208840433,
+        "void_max_max_abs_stress": 0.0,
+        "near_null_retained_cells": 0,
+        "near_null_limit": 1e-06
+      },
+      "excavation_boundary": {
+        "faces": 11131,
+        "area": 124208.97522177879,
+        "connected_regions": 1
+      },
+      "triangle_quality_summary": {
+        "criterion": "area <= 1e-12 * bbox_diagonal^2",
+        "section_triangles": 1462082,
+        "section_degenerate": 110,
+        "max_degenerate_area_fraction": 1.2652929738202253e-11,
+        "duplicate_triangles": 0,
+        "invalid_indices": 0,
+        "layers": {
+          "excavation_surface.vtp": {
+            "triangles": 21210,
+            "degenerate": 0,
+            "criterion": "area <= 1e-12 * bbox_diagonal^2",
+            "area_limit": 3.989685460306491e-07,
+            "degenerate_area_fraction": 0.0,
+            "duplicate_triangles": 0,
+            "invalid_indices": 0
+          },
+          "exterior_surface.vtp": {
+            "triangles": 75796,
+            "degenerate": 0,
+            "criterion": "area <= 1e-12 * bbox_diagonal^2",
+            "area_limit": 8.642773318015957e-07,
+            "degenerate_area_fraction": 0.0,
+            "duplicate_triangles": 0,
+            "invalid_indices": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "index": "index.json",
+  "schema": "simwebview-index/2",
+  "stages": {
+    "slopemodel": {
+      "exact_arrays": 916,
+      "exact_tuples": 14059796,
+      "exact_mismatches": 0,
+      "interpolated_arrays": 604,
+      "interpolated_tuples": 2982248,
+      "max_interp_nrmse": 1.274459643076743e-06,
+      "max_interp_abs_error": {
+        "X_Disp": 1.812352549899988e-07,
+        "Y_Disp": 1.9082842896167053e-07,
+        "Z_Disp": 2.448173719533273e-07,
+        "TotalDisplacement": 1.6519491350286842e-07
+      },
+      "unlocated_section_points": 0,
+      "closest_cell_fallback_points": 3994,
+      "fallback_max_abs_error": {
+        "X_Disp": 0.0031299249660701302,
+        "Y_Disp": 0.002234035732530275,
+        "Z_Disp": 0.0015647540810843432,
+        "TotalDisplacement": 0.002175230392174329
+      },
+      "probe_disagreements": 29867,
+      "vertices_on_discontinuities": 19589,
+      "cell_restricted_max_abs_error": {
+        "X_Disp": 1.568195499449768e-06,
+        "Y_Disp": 3.116977091046475e-07,
+        "Z_Disp": 3.47417181351963e-06
+      },
+      "max_jump_across_discontinuity": {
+        "X_Disp": 0.005050035714521125,
+        "Y_Disp": 0.0027992939955802597,
+        "Z_Disp": 0.0048998160630825465
+      },
+      "magnitude_vs_vector_norm": {
+        "max_abs": 0.0008042204760536376,
+        "max_relative_to_span": 0.048682345505177416
+      },
+      "files": 152,
+      "max_exact_nrmse_vs_float64": 4.54164706038319e-08,
+      "failures": [
+        "model_cache/slopemodel/sections/slice_z_1980.vtp: Z_Disp on 234 vertices matches no incident source cell (max error 3.474e-06)"
+      ]
+    }
+  },
+  "failures": [
+    "slopemodel: model_cache/slopemodel/sections/slice_z_1980.vtp: Z_Disp on 234 vertices matches no incident source cell (max error 3.474e-06)"
+  ]
+}

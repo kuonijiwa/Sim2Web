@@ -1,0 +1,55 @@
+# Case C: 3DEC discontinuous slope.
+schema: sim2web-config/1
+title: "Case C: 3DEC discontinuous slope"
+description: >-
+  Discontinuous (block) slope with a dense retained surface topology.
+solver: 3DEC
+
+input:
+  stages:
+    - {file: input/slopemodel.vtu, name: slopemodel}
+
+output:
+  dir: site
+
+fields:
+  displacement: {name: Displacement, unit: m}
+  stress:
+    name: Stress
+    order: "XX,YY,ZZ,XY,XZ,YZ"          # as declared by the VTU ComponentName attributes
+    # The vertical stress gradient implies an equivalent unit weight of 9.9 kN/m3 in MPa.
+    unit: MPa
+    sign_convention: "3DEC convention: tension positive, compression negative"
+
+geometry:
+  primary: exterior
+  exterior:
+    enabled: true
+    split_by_group: true
+    # 3DEC blocks share no nodes, so surface extraction also returns every
+    # block-to-block contact face (96% of all faces in this model).  Keep only
+    # the outer surface; use `layer` to publish the contacts separately.
+    internal_faces: drop
+  excavation:
+    enabled: true                       # labels first; stress fallback; none found in this model
+    strategy: labels_then_stress
+    null_threshold: 1.0e-6              # MPa
+    contact_tolerance: 1.0e-3
+  groups:
+    # The source has no group array. Use a constant Material_ID.
+    constant_fallback: Material_ID
+  display_averaging: per_group
+
+sections:
+  axes: [x, y, z]
+  spacing: 10
+  placement: interior
+  min_points: 0
+  # Do not merge coincident vertices of different blocks: displacement jumps
+  # across joints are kept.
+  preserve_discontinuities: true
+
+viewer:
+  subtitle: "Exterior surface and sections"
+  default_field: TotalDisplacement
+  default_axis: x

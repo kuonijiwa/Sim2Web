@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "G:\成果\papers\02\SimWebView\benchmark\web_slicing\prepare.py", line 112, in <module>
+    prepare(a.case,a.site,a.out)
+  File "G:\成果\papers\02\SimWebView\benchmark\web_slicing\prepare.py", line 95, in prepare
+    info = {"case":case, "source":str(path), "source_bytes":path.stat().st_size, "points":grid.n_points,
+                                                            ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'stat'

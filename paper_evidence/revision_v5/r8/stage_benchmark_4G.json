@@ -1,0 +1,456 @@
+{
+  "network": "4G",
+  "window": [
+    1600,
+    900
+  ],
+  "profile": {
+    "downloadMbit": 20,
+    "uploadMbit": 5,
+    "latencyMs": 50
+  },
+  "stageIds": [
+    "I-1",
+    "I-3",
+    "II-2",
+    "III-3",
+    "IV-2"
+  ],
+  "runs": [
+    {
+      "run": 1,
+      "chrome": "160.0.8157.0",
+      "firstFrameMs": 1978.6000000238419,
+      "firstFrameBytes": 2589429,
+      "switches": [
+        {
+          "direction": "forward",
+          "from": "I-1",
+          "to": "I-3",
+          "latencyMs": 1358.2000000476837,
+          "encodedHttpBytes": 2613590,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "I-3",
+          "to": "II-2",
+          "latencyMs": 1404.3999999761581,
+          "encodedHttpBytes": 2736030,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "II-2",
+          "to": "III-3",
+          "latencyMs": 1495.8000000715256,
+          "encodedHttpBytes": 2928769,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "III-3",
+          "to": "IV-2",
+          "latencyMs": 2249.600000023842,
+          "encodedHttpBytes": 4337889,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "IV-2",
+          "to": "III-3",
+          "latencyMs": 42.699999928474426,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "III-3",
+          "to": "II-2",
+          "latencyMs": 40.5,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "II-2",
+          "to": "I-3",
+          "latencyMs": 46,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "I-3",
+          "to": "I-1",
+          "latencyMs": 43.5,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "run": 2,
+      "chrome": "160.0.8157.0",
+      "firstFrameMs": 2190.2999999523163,
+      "firstFrameBytes": 2589429,
+      "switches": [
+        {
+          "direction": "forward",
+          "from": "I-1",
+          "to": "I-3",
+          "latencyMs": 1337.5,
+          "encodedHttpBytes": 2613590,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "I-3",
+          "to": "II-2",
+          "latencyMs": 1381.2999999523163,
+          "encodedHttpBytes": 2736030,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "II-2",
+          "to": "III-3",
+          "latencyMs": 1481.6000000238419,
+          "encodedHttpBytes": 2928769,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "III-3",
+          "to": "IV-2",
+          "latencyMs": 2205.399999976158,
+          "encodedHttpBytes": 4337889,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "IV-2",
+          "to": "III-3",
+          "latencyMs": 43.5,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "III-3",
+          "to": "II-2",
+          "latencyMs": 46.799999952316284,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "II-2",
+          "to": "I-3",
+          "latencyMs": 49.89999997615814,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "I-3",
+          "to": "I-1",
+          "latencyMs": 45.800000071525574,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "run": 3,
+      "chrome": "160.0.8157.0",
+      "firstFrameMs": 2117.8000000715256,
+      "firstFrameBytes": 2589429,
+      "switches": [
+        {
+          "direction": "forward",
+          "from": "I-1",
+          "to": "I-3",
+          "latencyMs": 1341.3999999761581,
+          "encodedHttpBytes": 2613590,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "I-3",
+          "to": "II-2",
+          "latencyMs": 1380.6000000238419,
+          "encodedHttpBytes": 2736030,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "II-2",
+          "to": "III-3",
+          "latencyMs": 1467.5,
+          "encodedHttpBytes": 2928769,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "forward",
+          "from": "III-3",
+          "to": "IV-2",
+          "latencyMs": 2161.0999999046326,
+          "encodedHttpBytes": 4337889,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "IV-2",
+          "to": "III-3",
+          "latencyMs": 43.700000047683716,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "III-3",
+          "to": "II-2",
+          "latencyMs": 51.300000071525574,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "II-2",
+          "to": "I-3",
+          "latencyMs": 42.39999997615814,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        },
+        {
+          "direction": "backward",
+          "from": "I-3",
+          "to": "I-1",
+          "latencyMs": 39.700000047683716,
+          "encodedHttpBytes": 0,
+          "before": {
+            "axis": "x",
+            "value": 38
+          },
+          "after": {
+            "axis": "x",
+            "value": 38
+          },
+          "axisKept": true,
+          "positionKept": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

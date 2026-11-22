@@ -1,0 +1,61 @@
+{
+  "file": "slopemodel.vtu",
+  "array": "Stress",
+  "cells": 495965,
+  "retained_cells": 495965,
+  "component_names_in_file": [
+    "XX",
+    "YY",
+    "ZZ",
+    "XY",
+    "XZ",
+    "YZ"
+  ],
+  "vtk_filter_order": "XX,YY,ZZ,XY,YZ,XZ",
+  "vtk_filter_matches_vtk_order": true,
+  "principal": {
+    "min": {
+      "correct_range": [
+        -211.2533999922867,
+        0.5129143997647709
+      ],
+      "generic_range": [
+        -215.73887896246075,
+        0.28480112063215185
+      ],
+      "max_abs_error": 14.609444908400846,
+      "max_error_percent_of_range": 6.898852138189361,
+      "cells_error_over_1pct_of_range": 781,
+      "cells_positive_generic_but_not_correct": null
+    },
+    "mid": {
+      "correct_range": [
+        -117.84453091262496,
+        1.60605785209512
+      ],
+      "generic_range": [
+        -99.2695025858706,
+        2.993102126163402
+      ],
+      "max_abs_error": 36.3238206445671,
+      "max_error_percent_of_range": 30.409076271790966,
+      "cells_error_over_1pct_of_range": 78627,
+      "cells_positive_generic_but_not_correct": null
+    },
+    "max": {
+      "correct_range": [
+        -68.10434404434838,
+        8.636083427294484
+      ],
+      "generic_range": [
+        -82.19389340092873,
+        8.243940793472206
+      ],
+      "max_abs_error": 21.71437573616621,
+      "max_error_percent_of_range": 28.295875396563453,
+      "cells_error_over_1pct_of_range": 59214,
+      "cells_positive_generic_but_not_correct": 19608
+    }
+  },
+  "vtk_filter_matches_file_order": false
+}

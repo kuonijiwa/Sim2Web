@@ -1,0 +1,61 @@
+{
+  "file": "IV-2.vtu",
+  "array": "Stress",
+  "cells": 1211385,
+  "retained_cells": 983438,
+  "component_names_in_file": [
+    "XX",
+    "YY",
+    "ZZ",
+    "XY",
+    "XZ",
+    "YZ"
+  ],
+  "vtk_filter_order": "XX,YY,ZZ,XY,YZ,XZ",
+  "vtk_filter_matches_vtk_order": true,
+  "principal": {
+    "min": {
+      "correct_range": [
+        -45.14997431865718,
+        -0.0010148254860926124
+      ],
+      "generic_range": [
+        -41.837069246031184,
+        -0.0011028797949439173
+      ],
+      "max_abs_error": 3.837639372515108,
+      "max_error_percent_of_range": 8.49995086397409,
+      "cells_error_over_1pct_of_range": 28838,
+      "cells_positive_generic_but_not_correct": null
+    },
+    "mid": {
+      "correct_range": [
+        -13.765892978154943,
+        0.1286898656512618
+      ],
+      "generic_range": [
+        -24.343814659532452,
+        0.06676248847108111
+      ],
+      "max_abs_error": 10.577921681377509,
+      "max_error_percent_of_range": 76.12982556070645,
+      "cells_error_over_1pct_of_range": 253356,
+      "cells_positive_generic_but_not_correct": null
+    },
+    "max": {
+      "correct_range": [
+        -12.632434284286916,
+        0.12868986565126195
+      ],
+      "generic_range": [
+        -7.060737128341292,
+        2.1111135414784408
+      ],
+      "max_abs_error": 7.215170289877238,
+      "max_error_percent_of_range": 56.540240539170625,
+      "cells_error_over_1pct_of_range": 225462,
+      "cells_positive_generic_but_not_correct": 14711
+    }
+  },
+  "vtk_filter_matches_file_order": false
+}

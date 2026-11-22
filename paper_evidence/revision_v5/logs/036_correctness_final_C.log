@@ -1,0 +1,104 @@
+{
+  "case": "C",
+  "method": "vtkCutter with source and matching Float32 transport precision, triangles, non-merging locator, retained mesh.",
+  "gate": "All requested triangle, area and matched-value tolerances on both references. Also require 100% bidirectional matches within 1 mm on the exact transported mesh. Record original-precision unmatched points.",
+  "planes": [
+    {
+      "index": 0,
+      "x": 570.0,
+      "browser_triangles": 5478,
+      "browser_area": 41390.78953974228,
+      "coordinate_tolerance_m": 0.001,
+      "references": {
+        "original": {
+          "vtk_triangles": 5478,
+          "triangle_error_percent": 0.0,
+          "vtk_area": 41390.78897631022,
+          "area_error_percent": 1.36124987290833e-06,
+          "max_displacement_diff_m": 8.816334746671387e-10,
+          "unmatched_vtk_points": 8,
+          "unmatched_browser_points": 6,
+          "largest_nearest_position_gap_m": 0.001288836085006837,
+          "criteria_passed": true
+        },
+        "transport_precision": {
+          "vtk_triangles": 5478,
+          "triangle_error_percent": 0.0,
+          "vtk_area": 41390.78973650467,
+          "area_error_percent": 4.753772137153172e-07,
+          "max_displacement_diff_m": 8.161253845038324e-12,
+          "unmatched_vtk_points": 0,
+          "unmatched_browser_points": 0,
+          "largest_nearest_position_gap_m": 0.0001220703125,
+          "criteria_passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "index": 4,
+      "x": 810.0,
+      "browser_triangles": 12588,
+      "browser_area": 95518.87029384822,
+      "coordinate_tolerance_m": 0.001,
+      "references": {
+        "original": {
+          "vtk_triangles": 12588,
+          "triangle_error_percent": 0.0,
+          "vtk_area": 95518.87155835176,
+          "area_error_percent": 1.3238258840336334e-06,
+          "max_displacement_diff_m": 1.0058283805847168e-07,
+          "unmatched_vtk_points": 15,
+          "unmatched_browser_points": 12,
+          "largest_nearest_position_gap_m": 0.004080422393852649,
+          "criteria_passed": true
+        },
+        "transport_precision": {
+          "vtk_triangles": 12588,
+          "triangle_error_percent": 0.0,
+          "vtk_area": 95518.87070332002,
+          "area_error_percent": 4.2868157820382535e-07,
+          "max_displacement_diff_m": 2.3283064365386963e-10,
+          "unmatched_vtk_points": 0,
+          "unmatched_browser_points": 0,
+          "largest_nearest_position_gap_m": 0.000244140625,
+          "criteria_passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "index": 9,
+      "x": 1110.0,
+      "browser_triangles": 5189,
+      "browser_area": 174062.23622142337,
+      "coordinate_tolerance_m": 0.001,
+      "references": {
+        "original": {
+          "vtk_triangles": 5189,
+          "triangle_error_percent": 0.0,
+          "vtk_area": 174062.23288559134,
+          "area_error_percent": 1.9164594069598795e-06,
+          "max_displacement_diff_m": 5.3675203192694865e-09,
+          "unmatched_vtk_points": 7,
+          "unmatched_browser_points": 7,
+          "largest_nearest_position_gap_m": 0.0011966927552180576,
+          "criteria_passed": true
+        },
+        "transport_precision": {
+          "vtk_triangles": 5189,
+          "triangle_error_percent": 0.0,
+          "vtk_area": 174062.23612279072,
+          "area_error_percent": 5.666516229151928e-08,
+          "max_displacement_diff_m": 5.820766091346741e-11,
+          "unmatched_vtk_points": 0,
+          "unmatched_browser_points": 0,
+          "largest_nearest_position_gap_m": 0.0001220703125,
+          "criteria_passed": true
+        }
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

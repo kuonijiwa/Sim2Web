@@ -1,0 +1,4 @@
+[slopemodel] files=152 exact arrays=916 (mismatches 0), interpolated arrays=604, max interpolation nRMSE=1.743e-06, failures=0
+Summary: C:\swv_r6_20261121\site_C\validation\validation_summary.json
+Pairs:   C:\swv_r6_20261121\site_C\validation\validation_pairs.csv
+All checks passed.

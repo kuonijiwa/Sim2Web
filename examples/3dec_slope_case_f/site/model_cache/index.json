@@ -1,0 +1,4638 @@
+{
+  "schema": "sim2web-index/2",
+  "generator": {
+    "name": "sim2web",
+    "version": "0.2.0.dev0"
+  },
+  "title": "Case F: 3DEC Kala slope",
+  "description": "Discontinuous (block) slope with a dense retained surface topology.",
+  "solver": "3DEC",
+  "config_sha256": "0fcf45ddc378bb5ebdf7e800c49b22d41475036b99a69531cf1a67efd8d2e3be",
+  "viewer": {
+    "title": "Case F: 3DEC Kala slope",
+    "subtitle": "Exterior surface and sections",
+    "default_field": "TotalDisplacement",
+    "default_axis": "y",
+    "colormap": "jet",
+    "bands": 8,
+    "background": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "range_mode": "full",
+    "length_unit": "m"
+  },
+  "fields": {
+    "TotalDisplacement": {
+      "label": "Displacement magnitude",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "X_Disp": {
+      "label": "X displacement",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "Y_Disp": {
+      "label": "Y displacement",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "Z_Disp": {
+      "label": "Z displacement",
+      "unit": "m",
+      "association": "point",
+      "kind": "continuous",
+      "source": "Displacement"
+    },
+    "Stress_Max_Principal": {
+      "label": "Maximum principal stress (algebraic)",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "3DEC convention: tension positive, compression negative"
+    },
+    "Stress_Mid_Principal": {
+      "label": "Intermediate principal stress",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "3DEC convention: tension positive, compression negative"
+    },
+    "Stress_Min_Principal": {
+      "label": "Minimum principal stress (algebraic)",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "3DEC convention: tension positive, compression negative"
+    },
+    "Stress_XX": {
+      "label": "Normal stress σxx",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "3DEC convention: tension positive, compression negative"
+    },
+    "Stress_YY": {
+      "label": "Normal stress σyy",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "3DEC convention: tension positive, compression negative"
+    },
+    "Stress_ZZ": {
+      "label": "Normal stress σzz",
+      "unit": "MPa",
+      "association": "cell",
+      "kind": "continuous",
+      "source": "Stress",
+      "component_order": "XX,YY,ZZ,XY,XZ,YZ",
+      "sign_convention": "3DEC convention: tension positive, compression negative"
+    }
+  },
+  "ranges": {
+    "TotalDisplacement": {
+      "min": 0.0,
+      "max": 0.18043206632137299
+    },
+    "X_Disp": {
+      "min": -0.12549039721488953,
+      "max": 0.027996284887194633
+    },
+    "Y_Disp": {
+      "min": -0.10569248348474503,
+      "max": 0.12911799550056458
+    },
+    "Z_Disp": {
+      "min": -0.062332093715667725,
+      "max": 0.031061746180057526
+    },
+    "Stress_Max_Principal": {
+      "min": -155.0701141357422,
+      "max": 36.35472106933594
+    },
+    "Stress_Mid_Principal": {
+      "min": -316.6347961425781,
+      "max": 5.086310863494873
+    },
+    "Stress_Min_Principal": {
+      "min": -451.9624938964844,
+      "max": 0.5196765661239624
+    },
+    "Stress_XX": {
+      "min": -271.0157775878906,
+      "max": 23.112812042236328
+    },
+    "Stress_YY": {
+      "min": -372.7304992675781,
+      "max": 8.35262680053711
+    },
+    "Stress_ZZ": {
+      "min": -279.921142578125,
+      "max": 4.586338996887207
+    }
+  },
+  "stages": [
+    {
+      "id": "kala_final",
+      "label": "kala_final",
+      "source": {
+        "file": "kala_final.vtu",
+        "sha256": "2e02f30a8040c38a522bfd5b57370eb26dd904293c505de4e324ea6977e4bd3f",
+        "bytes": 74976421,
+        "points": 442373,
+        "cells": 393228
+      },
+      "void": {
+        "method": "disabled",
+        "cells": 0
+      },
+      "mesh_regions": 47384,
+      "internal_faces": "drop",
+      "stress_component_order": {
+        "order": "XX,YY,ZZ,XY,XZ,YZ",
+        "source": "file ComponentName attributes"
+      },
+      "layers": [
+        {
+          "id": "exterior",
+          "label": "Exterior surface",
+          "kind": "exterior",
+          "role": "primary",
+          "file": "model_cache/kala_final/exterior_surface.vtp",
+          "bytes": 2352584,
+          "sha256": "2257f00924b0a802c03c45cd64e10f63e74797396bff0ecc467f84526c430351",
+          "points": 30730,
+          "cells": 19394,
+          "point_arrays": [
+            "Source_Point_ID",
+            "Stress_Max_Principal_DisplayOnly",
+            "Stress_Mid_Principal_DisplayOnly",
+            "Stress_Min_Principal_DisplayOnly",
+            "Stress_XX_DisplayOnly",
+            "Stress_YY_DisplayOnly",
+            "Stress_ZZ_DisplayOnly",
+            "TotalDisplacement",
+            "X_Disp",
+            "Y_Disp",
+            "Z_Disp"
+          ],
+          "cell_arrays": [
+            "Source_Cell_ID",
+            "Stress_Max_Principal",
+            "Stress_Mid_Principal",
+            "Stress_Min_Principal",
+            "Stress_XX",
+            "Stress_YY",
+            "Stress_ZZ"
+          ]
+        }
+      ],
+      "sections": {
+        "x": [
+          {
+            "value": 570.0,
+            "file": "model_cache/kala_final/sections/slice_x_570.vtp",
+            "bytes": 247659,
+            "sha256": "c60505b9a382bae1e2205cea9764c340773499632084a93055b1ac7102aa6b88",
+            "points": 3597,
+            "cells": 2574,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 580.0,
+            "file": "model_cache/kala_final/sections/slice_x_580.vtp",
+            "bytes": 262323,
+            "sha256": "579fc8692eb043f16920b6ac26c2e3e105f5e211eec88e4dc81626e669cf0e09",
+            "points": 3769,
+            "cells": 2684,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 590.0,
+            "file": "model_cache/kala_final/sections/slice_x_590.vtp",
+            "bytes": 271227,
+            "sha256": "f67fc343b47fe9ef10a302508e950a0ad25427b8e66bf9080eb2b11357893cc5",
+            "points": 3835,
+            "cells": 2742,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 600.0,
+            "file": "model_cache/kala_final/sections/slice_x_600.vtp",
+            "bytes": 271507,
+            "sha256": "6408eeda4ca3467f9a5507fca0b618affb955e1893c6817f9fc4df96be668a2e",
+            "points": 3883,
+            "cells": 2793,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 610.0,
+            "file": "model_cache/kala_final/sections/slice_x_610.vtp",
+            "bytes": 272331,
+            "sha256": "4c7d24a0b774b7aa7f9f148cd62de5b8115b841aa896f6c161db98918bf83193",
+            "points": 3904,
+            "cells": 2821,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 620.0,
+            "file": "model_cache/kala_final/sections/slice_x_620.vtp",
+            "bytes": 324759,
+            "sha256": "93e9d2abba54c2d51c3451515740e8ac26f1b1d8300d38bf4fb4f8f2b321055a",
+            "points": 4555,
+            "cells": 3404,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 630.0,
+            "file": "model_cache/kala_final/sections/slice_x_630.vtp",
+            "bytes": 360639,
+            "sha256": "247a4be39ec0d3e5b36c1735f3d11f56e4c9e63cd943da9d3ce504dd6ca047e9",
+            "points": 4982,
+            "cells": 3768,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 640.0,
+            "file": "model_cache/kala_final/sections/slice_x_640.vtp",
+            "bytes": 427183,
+            "sha256": "e24f2cd0a1fead51009bd4a92229980eae65284850e7bb7b04e0e9397065ad07",
+            "points": 5818,
+            "cells": 4529,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 650.0,
+            "file": "model_cache/kala_final/sections/slice_x_650.vtp",
+            "bytes": 444931,
+            "sha256": "45d8c6933588f34811d6f559ef9258d8da70a006cce666ad6fa51467f20a6501",
+            "points": 6002,
+            "cells": 4770,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 660.0,
+            "file": "model_cache/kala_final/sections/slice_x_660.vtp",
+            "bytes": 515843,
+            "sha256": "4434e30f92504ffb64110093715dc8db62a3223427ae041629a7c2ddde7511aa",
+            "points": 6915,
+            "cells": 5439,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 670.0,
+            "file": "model_cache/kala_final/sections/slice_x_670.vtp",
+            "bytes": 582723,
+            "sha256": "258e7e202406285d6a689d1809ae2a3c1b5c1a02d58ed62a44c72547c272d726",
+            "points": 7798,
+            "cells": 6155,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 680.0,
+            "file": "model_cache/kala_final/sections/slice_x_680.vtp",
+            "bytes": 635599,
+            "sha256": "152cecb06b35513fc64ba4fe4e523a33cf69b23f2932ccf7791284a9eb5465d0",
+            "points": 8536,
+            "cells": 6618,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 690.0,
+            "file": "model_cache/kala_final/sections/slice_x_690.vtp",
+            "bytes": 698075,
+            "sha256": "c1a85675c232673c09c7cdc6e0feea85186b0ac00bccff2f9dc7ca437080e1f3",
+            "points": 9229,
+            "cells": 7400,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 700.0,
+            "file": "model_cache/kala_final/sections/slice_x_700.vtp",
+            "bytes": 774239,
+            "sha256": "2ef186ed57ebde695bff6b65034ff083a1ece4c09104edf527db0c67e68e2301",
+            "points": 10201,
+            "cells": 8260,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 710.0,
+            "file": "model_cache/kala_final/sections/slice_x_710.vtp",
+            "bytes": 875263,
+            "sha256": "eee991b2d8ef9b400ea6598f4427035e3b58e894d604b5d25aa2f81b18e4a608",
+            "points": 11505,
+            "cells": 9407,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 720.0,
+            "file": "model_cache/kala_final/sections/slice_x_720.vtp",
+            "bytes": 824831,
+            "sha256": "177c5ea564a6b571a795543e5494467eeaf68c81e9355172764a57b29a220c92",
+            "points": 10910,
+            "cells": 8729,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 730.0,
+            "file": "model_cache/kala_final/sections/slice_x_730.vtp",
+            "bytes": 962395,
+            "sha256": "703376efd20fdf8cc010546709a835f9e9d11435df2d346d11312edb757aee61",
+            "points": 12586,
+            "cells": 10430,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 740.0,
+            "file": "model_cache/kala_final/sections/slice_x_740.vtp",
+            "bytes": 944347,
+            "sha256": "fa0956ed5d8e99d02eee2b383a969e7eb50e44ddf5e696804402de43c82a2b62",
+            "points": 12467,
+            "cells": 10117,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 750.0,
+            "file": "model_cache/kala_final/sections/slice_x_750.vtp",
+            "bytes": 883587,
+            "sha256": "18aa73df1177bc51112991cf057d35b11b5f29145310712701155d11e3108260",
+            "points": 11758,
+            "cells": 9374,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 760.0,
+            "file": "model_cache/kala_final/sections/slice_x_760.vtp",
+            "bytes": 857875,
+            "sha256": "bb8ddca33644a2c16b37f72dc143f723d0869c4ca99b0c608de63e14e508a184",
+            "points": 11384,
+            "cells": 9075,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 770.0,
+            "file": "model_cache/kala_final/sections/slice_x_770.vtp",
+            "bytes": 884259,
+            "sha256": "431295e8e74290c438ca40a6d74bc84c73d24b568a4db9cae96663c7e08b2ed6",
+            "points": 11649,
+            "cells": 9430,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 780.0,
+            "file": "model_cache/kala_final/sections/slice_x_780.vtp",
+            "bytes": 941035,
+            "sha256": "2a78c76598881b4be478b464ca5dec323dc883c19032c5ab40e99bb02a1caa34",
+            "points": 12221,
+            "cells": 10189,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 790.0,
+            "file": "model_cache/kala_final/sections/slice_x_790.vtp",
+            "bytes": 983399,
+            "sha256": "cc160c6195cff2fdf4eb9cabbdaa4a9e54f3fbf3a80d8fb69c67a94894c122ec",
+            "points": 12770,
+            "cells": 10634,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 800.0,
+            "file": "model_cache/kala_final/sections/slice_x_800.vtp",
+            "bytes": 995891,
+            "sha256": "097cd2eba5cd687891c0a624684914551bba648f89c651494c29b4e129f3a4b2",
+            "points": 12806,
+            "cells": 10859,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 810.0,
+            "file": "model_cache/kala_final/sections/slice_x_810.vtp",
+            "bytes": 1027779,
+            "sha256": "54d57f873f0de212fab3ecd4f3fedfd0c1ac8170b7114b09a697076733f2c8a9",
+            "points": 13154,
+            "cells": 11331,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 820.0,
+            "file": "model_cache/kala_final/sections/slice_x_820.vtp",
+            "bytes": 1029579,
+            "sha256": "7a92563b0e12e80fa496c796c8dd00c86f3d034db0c01ad5fd4aef1b4fe3b0ce",
+            "points": 13185,
+            "cells": 11272,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 830.0,
+            "file": "model_cache/kala_final/sections/slice_x_830.vtp",
+            "bytes": 961335,
+            "sha256": "99d6c2b5d8b32253f94d01aea875f3ab9750afefb6576038bb4a63948a8937fb",
+            "points": 12420,
+            "cells": 10440,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 840.0,
+            "file": "model_cache/kala_final/sections/slice_x_840.vtp",
+            "bytes": 870847,
+            "sha256": "c5961de51106e09b4a0849af56748fb619f1d837717da665b53d4131fd735fcf",
+            "points": 11364,
+            "cells": 9279,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 850.0,
+            "file": "model_cache/kala_final/sections/slice_x_850.vtp",
+            "bytes": 862795,
+            "sha256": "c915cd0eaeda12f7ba95f0cd0e75c4a701c3de801fb5e05e8c9c61e7b520e39b",
+            "points": 11189,
+            "cells": 9266,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 860.0,
+            "file": "model_cache/kala_final/sections/slice_x_860.vtp",
+            "bytes": 792931,
+            "sha256": "84a5d16a9f40ead975bc832b4225cb26fce040f2c5b9ee06b658e97c42193265",
+            "points": 10462,
+            "cells": 8410,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 870.0,
+            "file": "model_cache/kala_final/sections/slice_x_870.vtp",
+            "bytes": 724399,
+            "sha256": "fb6f6ea1951177b6875b2fba79172b554da1cfb386ad9a75ffb4f5e8946ee156",
+            "points": 9710,
+            "cells": 7590,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 880.0,
+            "file": "model_cache/kala_final/sections/slice_x_880.vtp",
+            "bytes": 706383,
+            "sha256": "d5c857a45c64ad9185382872dfb00f33f44fbe9202354ffd134f4958081ce357",
+            "points": 9496,
+            "cells": 7350,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 890.0,
+            "file": "model_cache/kala_final/sections/slice_x_890.vtp",
+            "bytes": 683995,
+            "sha256": "f133a2457f69ec864b7eeaa8f1ed38791349eaff329aea3d0ae1c6b5dec684f0",
+            "points": 9126,
+            "cells": 7194,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 900.0,
+            "file": "model_cache/kala_final/sections/slice_x_900.vtp",
+            "bytes": 656487,
+            "sha256": "b03caea17465bd7805c8bad994e78290bf1710821a9eb431dfe6c5a0148a7427",
+            "points": 8718,
+            "cells": 6940,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 910.0,
+            "file": "model_cache/kala_final/sections/slice_x_910.vtp",
+            "bytes": 648711,
+            "sha256": "789100bc9be3e98bc2fdd15169614b90a36eee142a08283106c1da99d09893ce",
+            "points": 8636,
+            "cells": 6855,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 920.0,
+            "file": "model_cache/kala_final/sections/slice_x_920.vtp",
+            "bytes": 646615,
+            "sha256": "a5aa085ba54a44588b4a07ef32cdfc42ffd750b9ed84698368777a937ebd1979",
+            "points": 8615,
+            "cells": 6823,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 930.0,
+            "file": "model_cache/kala_final/sections/slice_x_930.vtp",
+            "bytes": 644019,
+            "sha256": "41481cc8a17dd847b773fecdc84a128d13519b886fce3cf077ce4c228eb1a870",
+            "points": 8619,
+            "cells": 6781,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 940.0,
+            "file": "model_cache/kala_final/sections/slice_x_940.vtp",
+            "bytes": 631631,
+            "sha256": "54cb362965d1c30f74e15aead3ae0a35342a9c58b98ef3bacd64e959e3b80a4e",
+            "points": 8446,
+            "cells": 6659,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 950.0,
+            "file": "model_cache/kala_final/sections/slice_x_950.vtp",
+            "bytes": 623671,
+            "sha256": "bccd670c8475eac1e01368013be1becd5f6992d561d78ac143425685c994e6e1",
+            "points": 8371,
+            "cells": 6574,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 960.0,
+            "file": "model_cache/kala_final/sections/slice_x_960.vtp",
+            "bytes": 634551,
+            "sha256": "4908dd3408da583acf5962da818fc62db423f4894ca853b89af7e1feb957ead7",
+            "points": 8533,
+            "cells": 6655,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 970.0,
+            "file": "model_cache/kala_final/sections/slice_x_970.vtp",
+            "bytes": 635755,
+            "sha256": "959779a16e856822d713fd5ea6245156f8f3584855e712678799899a3e105554",
+            "points": 8517,
+            "cells": 6683,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 980.0,
+            "file": "model_cache/kala_final/sections/slice_x_980.vtp",
+            "bytes": 623667,
+            "sha256": "58024f62c4ea4e2b5690fbbd6c017c18db3e3f0e0ee4701b45d0f520747922df",
+            "points": 8345,
+            "cells": 6563,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 990.0,
+            "file": "model_cache/kala_final/sections/slice_x_990.vtp",
+            "bytes": 640539,
+            "sha256": "dfa23be43c52e68f035ee4c4d402d57f119f9a16af434b7c89928b00138eca79",
+            "points": 8567,
+            "cells": 6687,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1000.0,
+            "file": "model_cache/kala_final/sections/slice_x_1000.vtp",
+            "bytes": 627643,
+            "sha256": "f1f6d8ea4858912070bc0d7e705038da460db9a8d50552490cdf44bb95574d79",
+            "points": 8380,
+            "cells": 6580,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1010.0,
+            "file": "model_cache/kala_final/sections/slice_x_1010.vtp",
+            "bytes": 627367,
+            "sha256": "031df4f1566c04519fbdaa5b26fe82e1241336a7b5aabfe9281796a6e800dd7f",
+            "points": 8326,
+            "cells": 6590,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1020.0,
+            "file": "model_cache/kala_final/sections/slice_x_1020.vtp",
+            "bytes": 624703,
+            "sha256": "d1c5fe80aa9c66e1335ba9ce00bb102fa2ca8bcff0b6ca15c34574250a20d28c",
+            "points": 8266,
+            "cells": 6602,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1030.0,
+            "file": "model_cache/kala_final/sections/slice_x_1030.vtp",
+            "bytes": 589679,
+            "sha256": "372f48017786dd56d09365cf5ac297ccd3e0e823b249b3913520f572a2d6fa70",
+            "points": 7836,
+            "cells": 6187,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1040.0,
+            "file": "model_cache/kala_final/sections/slice_x_1040.vtp",
+            "bytes": 557175,
+            "sha256": "af4b3ea3f03d8e53567f7d9b2839734b3f5ca91776b08810e2c20708b117bcc0",
+            "points": 7481,
+            "cells": 5786,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1050.0,
+            "file": "model_cache/kala_final/sections/slice_x_1050.vtp",
+            "bytes": 525475,
+            "sha256": "1144081b7b94c57f4aa965dd29d31fe47b3aec5ac9ca1ccde704f770cacd6575",
+            "points": 7170,
+            "cells": 5397,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1060.0,
+            "file": "model_cache/kala_final/sections/slice_x_1060.vtp",
+            "bytes": 516211,
+            "sha256": "13db6747887e0a19a8551577879e97dbb3c75af3e7ff3e68bd33d0ff0a413920",
+            "points": 7154,
+            "cells": 5268,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1070.0,
+            "file": "model_cache/kala_final/sections/slice_x_1070.vtp",
+            "bytes": 501843,
+            "sha256": "115f87338627c715e4359dba139ca00ca43486024d8397cf564a918314b3bb07",
+            "points": 6967,
+            "cells": 5130,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1080.0,
+            "file": "model_cache/kala_final/sections/slice_x_1080.vtp",
+            "bytes": 522235,
+            "sha256": "cbc00ca6b57a342cbb46dbc6a23c72b42f3bc54679f987c5a6f1b8c288723f5a",
+            "points": 7253,
+            "cells": 5302,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1090.0,
+            "file": "model_cache/kala_final/sections/slice_x_1090.vtp",
+            "bytes": 529707,
+            "sha256": "60408a4d86c4d456776ce5c1731bc2589353d8ec053031c8b7a070c92b54e1b8",
+            "points": 7368,
+            "cells": 5353,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1100.0,
+            "file": "model_cache/kala_final/sections/slice_x_1100.vtp",
+            "bytes": 516383,
+            "sha256": "bdb5bcbbc93365249ecd036a8db81cb378b62326e303e0faf9c9cdfb30e0010d",
+            "points": 7277,
+            "cells": 5332,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1110.0,
+            "file": "model_cache/kala_final/sections/slice_x_1110.vtp",
+            "bytes": 444023,
+            "sha256": "8c29fbd65567d2e949ff4625b48acc759826a351aee4f9a7d7fcc7718e53d55a",
+            "points": 6676,
+            "cells": 4702,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          }
+        ],
+        "y": [
+          {
+            "value": 250.0,
+            "file": "model_cache/kala_final/sections/slice_y_250.vtp",
+            "bytes": 1035963,
+            "sha256": "0af4026d6f26a7ba66161b6cd3c2c870211957ed3ada886cd9471bbb20e46b0a",
+            "points": 14188,
+            "cells": 10727,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 260.0,
+            "file": "model_cache/kala_final/sections/slice_y_260.vtp",
+            "bytes": 1069827,
+            "sha256": "2f61028e888ebc39b25cd94bfeb64226e1938137589bf583e9471d24ea6a5da5",
+            "points": 14638,
+            "cells": 10921,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 270.0,
+            "file": "model_cache/kala_final/sections/slice_y_270.vtp",
+            "bytes": 1121899,
+            "sha256": "fc3f292b06e9881b37dee57076d46377b393099f812c882f2f9661ccd800bfb7",
+            "points": 15163,
+            "cells": 11366,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 280.0,
+            "file": "model_cache/kala_final/sections/slice_y_280.vtp",
+            "bytes": 1145515,
+            "sha256": "570b427253f770288d823a95611741028caa68755c9601108e1292d1bbd9fadc",
+            "points": 15403,
+            "cells": 11686,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 290.0,
+            "file": "model_cache/kala_final/sections/slice_y_290.vtp",
+            "bytes": 1211583,
+            "sha256": "673dfbdbe5e8fd568d71fc3830acc33625f14a5c69e3a09329d8427efc760dd5",
+            "points": 16228,
+            "cells": 12408,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 300.0,
+            "file": "model_cache/kala_final/sections/slice_y_300.vtp",
+            "bytes": 1267943,
+            "sha256": "557974b9d249a9d86fcafe4541c555a425898e0c45fbcff89d61f7ce543d77c1",
+            "points": 16977,
+            "cells": 12962,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 310.0,
+            "file": "model_cache/kala_final/sections/slice_y_310.vtp",
+            "bytes": 1296983,
+            "sha256": "1c011dd4e16d80ab3314dd1a40462b3fad658b113ffb9f3a6ef144f24101297b",
+            "points": 17254,
+            "cells": 13246,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 320.0,
+            "file": "model_cache/kala_final/sections/slice_y_320.vtp",
+            "bytes": 1416271,
+            "sha256": "1fd6784ae181340e82becf789dbe92d37cc16581077d182742aae192180a84c9",
+            "points": 18708,
+            "cells": 14629,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 330.0,
+            "file": "model_cache/kala_final/sections/slice_y_330.vtp",
+            "bytes": 1474279,
+            "sha256": "c966f111e232e4735f08193bacc34ea1825dee08c8b68cc7ac76a725382d3be5",
+            "points": 19473,
+            "cells": 15150,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 340.0,
+            "file": "model_cache/kala_final/sections/slice_y_340.vtp",
+            "bytes": 1603399,
+            "sha256": "30aabe4df6da157800ab75f29d255969a0771426073d5bae1cc97a2361c5c968",
+            "points": 21041,
+            "cells": 16666,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 350.0,
+            "file": "model_cache/kala_final/sections/slice_y_350.vtp",
+            "bytes": 1579879,
+            "sha256": "5c69917ed54591b92f6064a5f362ca7e0db702f4ed6fc02da9dda5c4f914f9bb",
+            "points": 20594,
+            "cells": 16407,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 360.0,
+            "file": "model_cache/kala_final/sections/slice_y_360.vtp",
+            "bytes": 1715319,
+            "sha256": "c9a13730ac900dabb9cd43849f25e9ff1b6782f689bc74a9b521e20f320ec1d8",
+            "points": 22315,
+            "cells": 17900,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 370.0,
+            "file": "model_cache/kala_final/sections/slice_y_370.vtp",
+            "bytes": 1898967,
+            "sha256": "03d174359233db3184d91d670f84c5623ec58847fa1863152398f7c3abdfcdff",
+            "points": 24769,
+            "cells": 19897,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 380.0,
+            "file": "model_cache/kala_final/sections/slice_y_380.vtp",
+            "bytes": 2222307,
+            "sha256": "3ca403395f346247560b85f430b23562cb5ba223bdea625ad43671376757fcf0",
+            "points": 28531,
+            "cells": 23951,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 390.0,
+            "file": "model_cache/kala_final/sections/slice_y_390.vtp",
+            "bytes": 1787323,
+            "sha256": "37902d6c985b975ab1c32df8fa829198c7c52d9b08aeb5a6ab95b4e94399aff6",
+            "points": 23584,
+            "cells": 18667,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 400.0,
+            "file": "model_cache/kala_final/sections/slice_y_400.vtp",
+            "bytes": 1906535,
+            "sha256": "3d56b8f5bebc24d6668f7d3ecf4681af8a923caa76279bb703886a26ab12b63b",
+            "points": 24675,
+            "cells": 20300,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 410.0,
+            "file": "model_cache/kala_final/sections/slice_y_410.vtp",
+            "bytes": 1699207,
+            "sha256": "19024606ae9722a575f41162ee5fb12887d2a691aeaf8e4a2527dfce7b32d1d6",
+            "points": 22357,
+            "cells": 17786,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 420.0,
+            "file": "model_cache/kala_final/sections/slice_y_420.vtp",
+            "bytes": 1658767,
+            "sha256": "ca37f283fae003af2882ef14146e59aa319e8ed9d6e8c2b595a67d4ed60f80ff",
+            "points": 21700,
+            "cells": 17582,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 430.0,
+            "file": "model_cache/kala_final/sections/slice_y_430.vtp",
+            "bytes": 1528611,
+            "sha256": "50c6cdb4fd9d285eb3a25ebaa10a559a79c2695c311aa41d6978aa3ef22070e5",
+            "points": 20172,
+            "cells": 15912,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 440.0,
+            "file": "model_cache/kala_final/sections/slice_y_440.vtp",
+            "bytes": 1455227,
+            "sha256": "db687aed8034ef78e7cbb44645265a927d46158216308ba185b3363ee32fdcd5",
+            "points": 19334,
+            "cells": 15039,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 450.0,
+            "file": "model_cache/kala_final/sections/slice_y_450.vtp",
+            "bytes": 1373931,
+            "sha256": "48280e7745468a1587563b21ae5440948fa1c18c4aee809bad54b80d56c95f66",
+            "points": 18098,
+            "cells": 14359,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 460.0,
+            "file": "model_cache/kala_final/sections/slice_y_460.vtp",
+            "bytes": 1232967,
+            "sha256": "dc75408a8c57f60088669ccb2056406ea0d22852b1376397831e8c92818d4243",
+            "points": 16358,
+            "cells": 12848,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 470.0,
+            "file": "model_cache/kala_final/sections/slice_y_470.vtp",
+            "bytes": 1242323,
+            "sha256": "6cf588649397d5e63b65855d56f815a858c395fd06736298894f1b97b9445a16",
+            "points": 16599,
+            "cells": 12910,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 480.0,
+            "file": "model_cache/kala_final/sections/slice_y_480.vtp",
+            "bytes": 1245819,
+            "sha256": "33882ba9f5f3bd8fd4188acd39c44fc0126aec1b492e72217ee918123525f2b0",
+            "points": 16786,
+            "cells": 12949,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 490.0,
+            "file": "model_cache/kala_final/sections/slice_y_490.vtp",
+            "bytes": 1197767,
+            "sha256": "9f7b76008a4588f9a2dc5b1dc7edaa3b756feccade75e9c825bb7d60378a393d",
+            "points": 16057,
+            "cells": 12681,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          }
+        ],
+        "z": [
+          {
+            "value": 1760.0,
+            "file": "model_cache/kala_final/sections/slice_z_1760.vtp",
+            "bytes": 308471,
+            "sha256": "819c90e20f9b3e093d52426174bf67c6f97307ae58e297efd2c5c3cdb543bfef",
+            "points": 5215,
+            "cells": 3318,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1770.0,
+            "file": "model_cache/kala_final/sections/slice_z_1770.vtp",
+            "bytes": 353911,
+            "sha256": "05fc58d4a63b038f14375d44f812fb533fde7895a69833cf8c786c203c39d3d9",
+            "points": 5534,
+            "cells": 3573,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1780.0,
+            "file": "model_cache/kala_final/sections/slice_z_1780.vtp",
+            "bytes": 372891,
+            "sha256": "971ffa6456b8b20daf38033d162de21647faf4f08a5cce214bc7aaf1cdca633c",
+            "points": 5752,
+            "cells": 3597,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1790.0,
+            "file": "model_cache/kala_final/sections/slice_z_1790.vtp",
+            "bytes": 354027,
+            "sha256": "00c9ed067cbc976e5666593d735a69d1c4767c08fb36eb939cf43bf672c47b47",
+            "points": 5478,
+            "cells": 3442,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1800.0,
+            "file": "model_cache/kala_final/sections/slice_z_1800.vtp",
+            "bytes": 390115,
+            "sha256": "cdb5aa5ccd98c0a52f7cd8dc6a5cbaeb3b377a38d2412cc2210ec89d68630529",
+            "points": 5993,
+            "cells": 3800,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1810.0,
+            "file": "model_cache/kala_final/sections/slice_z_1810.vtp",
+            "bytes": 428847,
+            "sha256": "10f238bef7f124025ba6764cd1f7dad2fa51a00c3ef97c118b11e53944abafc8",
+            "points": 6457,
+            "cells": 4109,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1820.0,
+            "file": "model_cache/kala_final/sections/slice_z_1820.vtp",
+            "bytes": 504335,
+            "sha256": "10a035a08b5ad3147e883f17b95ba6547aaf5cf8e4b71745823b5d87a2794af7",
+            "points": 7327,
+            "cells": 5034,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1830.0,
+            "file": "model_cache/kala_final/sections/slice_z_1830.vtp",
+            "bytes": 550307,
+            "sha256": "86538ef192a5843559413c121759b91b79a4137ddca1cd168f3a6b1ba351cee2",
+            "points": 8017,
+            "cells": 5625,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1840.0,
+            "file": "model_cache/kala_final/sections/slice_z_1840.vtp",
+            "bytes": 608891,
+            "sha256": "1768b5090ba5930939f8d5a1b16d169d1c3badaa6d83bc5445dd6ca2950b0118",
+            "points": 8811,
+            "cells": 6133,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1850.0,
+            "file": "model_cache/kala_final/sections/slice_z_1850.vtp",
+            "bytes": 704643,
+            "sha256": "e7d7448dfa726e53950e21d2351272d3671910c2ff351fa4b061b6c449a36319",
+            "points": 9961,
+            "cells": 7185,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1860.0,
+            "file": "model_cache/kala_final/sections/slice_z_1860.vtp",
+            "bytes": 800591,
+            "sha256": "87b0d47f5751eb0663d5ee37514b5e041d20b33c82cc055daff92792524cb54d",
+            "points": 11244,
+            "cells": 8223,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1870.0,
+            "file": "model_cache/kala_final/sections/slice_z_1870.vtp",
+            "bytes": 900591,
+            "sha256": "fe78403eea36ba0fcba2217ffa8b68c3d0ab292730649a8e7f81c4f3523b4343",
+            "points": 12357,
+            "cells": 9264,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1880.0,
+            "file": "model_cache/kala_final/sections/slice_z_1880.vtp",
+            "bytes": 715379,
+            "sha256": "0acedbd49eea4bc025402ded45b03d29ff8d210c039c1f1eaa9207ca65d3b15f",
+            "points": 9900,
+            "cells": 7411,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1890.0,
+            "file": "model_cache/kala_final/sections/slice_z_1890.vtp",
+            "bytes": 726843,
+            "sha256": "6799b0ca9332a1cb33b01c3bc1d7e3c6e67ef5213ea9357a8593790c0d63e41f",
+            "points": 9980,
+            "cells": 7474,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1900.0,
+            "file": "model_cache/kala_final/sections/slice_z_1900.vtp",
+            "bytes": 723571,
+            "sha256": "88e3c539bbe72e6e98bf3232b872e8748598d2af9ec219fa33698f488a9d2443",
+            "points": 9887,
+            "cells": 7433,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1910.0,
+            "file": "model_cache/kala_final/sections/slice_z_1910.vtp",
+            "bytes": 723311,
+            "sha256": "23440c0fa61176c7ecde173f7170e7aacacd9e4208af1d9690c7b83b89993a0a",
+            "points": 9839,
+            "cells": 7459,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1920.0,
+            "file": "model_cache/kala_final/sections/slice_z_1920.vtp",
+            "bytes": 744163,
+            "sha256": "011f64cea54eda079cd9eceac1a0e1ad9c5e8e43863c55ba86b062805a8bec50",
+            "points": 10150,
+            "cells": 7619,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1930.0,
+            "file": "model_cache/kala_final/sections/slice_z_1930.vtp",
+            "bytes": 770475,
+            "sha256": "1339f0c6bc2e846f646e199745c2cd4c2143d05168431de94b20fb4ed6d1526b",
+            "points": 10412,
+            "cells": 7941,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1940.0,
+            "file": "model_cache/kala_final/sections/slice_z_1940.vtp",
+            "bytes": 789983,
+            "sha256": "8556b1376acae5a0ddceca847a4f161868cee32e724ebbd66c69cfcfb3e14a8d",
+            "points": 10686,
+            "cells": 8190,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1950.0,
+            "file": "model_cache/kala_final/sections/slice_z_1950.vtp",
+            "bytes": 768575,
+            "sha256": "9cf393b9aafb69e322b2b570adbbb3acabb93eb001c10817e13108f501ae49cb",
+            "points": 10363,
+            "cells": 7960,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1960.0,
+            "file": "model_cache/kala_final/sections/slice_z_1960.vtp",
+            "bytes": 778079,
+            "sha256": "d66b10a34b75270426b115417e27985a8f64c98bb7645b808c90d57e7dced60b",
+            "points": 10466,
+            "cells": 8072,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1970.0,
+            "file": "model_cache/kala_final/sections/slice_z_1970.vtp",
+            "bytes": 852463,
+            "sha256": "7055c4610b5d296cd8f01acd948eff4eb90e31efe773aa1c8eee286c848f1c86",
+            "points": 11374,
+            "cells": 8778,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1980.0,
+            "file": "model_cache/kala_final/sections/slice_z_1980.vtp",
+            "bytes": 868503,
+            "sha256": "3c32ee66fce2abecc7ba7be653eac39e5a2f2de710ce56c7e03b39d0b4eeb566",
+            "points": 11642,
+            "cells": 9047,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 1990.0,
+            "file": "model_cache/kala_final/sections/slice_z_1990.vtp",
+            "bytes": 943215,
+            "sha256": "a5c50b5081ccb326a9df6b859c22bc200b97db21388d3810742cbe2fcb6b3406",
+            "points": 12443,
+            "cells": 9975,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2000.0,
+            "file": "model_cache/kala_final/sections/slice_z_2000.vtp",
+            "bytes": 1125555,
+            "sha256": "397cfebdf58cc1bb7bbda6d7e7364f6a1b0b4e6b7ce826a724a9782e7f0dc68c",
+            "points": 14382,
+            "cells": 12471,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2010.0,
+            "file": "model_cache/kala_final/sections/slice_z_2010.vtp",
+            "bytes": 855111,
+            "sha256": "547b84c58041c0aefa4cc6960a14c823357bd7523b9b5d10c8ffaa979901b2ef",
+            "points": 11357,
+            "cells": 8962,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2020.0,
+            "file": "model_cache/kala_final/sections/slice_z_2020.vtp",
+            "bytes": 889607,
+            "sha256": "69fb3ad452fb7ca7029d707da419edd33db50331e38a4c219ccd61874bc86ae0",
+            "points": 11728,
+            "cells": 9337,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2030.0,
+            "file": "model_cache/kala_final/sections/slice_z_2030.vtp",
+            "bytes": 904631,
+            "sha256": "17c73f9d92929866fb89bc81cae38d0df5171dd896360c0ba9076ac3fee0170e",
+            "points": 11883,
+            "cells": 9428,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2040.0,
+            "file": "model_cache/kala_final/sections/slice_z_2040.vtp",
+            "bytes": 801643,
+            "sha256": "33236f7426502fcea1307c1e51d51efae476b8f3c5e653d4003311d41c1b63e1",
+            "points": 10514,
+            "cells": 8420,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2050.0,
+            "file": "model_cache/kala_final/sections/slice_z_2050.vtp",
+            "bytes": 874479,
+            "sha256": "e38c5b8ea3a3ed8b76abc807bc92421519b354c19dac69024d400cf717c38d4d",
+            "points": 11262,
+            "cells": 9406,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2060.0,
+            "file": "model_cache/kala_final/sections/slice_z_2060.vtp",
+            "bytes": 1027835,
+            "sha256": "a2ae64d5fcf9888b6d13feeb3fba453f19fe02daaf65d991b132e4c4aeec825e",
+            "points": 13006,
+            "cells": 11416,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2070.0,
+            "file": "model_cache/kala_final/sections/slice_z_2070.vtp",
+            "bytes": 682127,
+            "sha256": "7f7e3c91dd5d3eefa483a6f5df68fdc6fbce0e10739f4195db8c7bbc1e648219",
+            "points": 8962,
+            "cells": 7213,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2080.0,
+            "file": "model_cache/kala_final/sections/slice_z_2080.vtp",
+            "bytes": 788267,
+            "sha256": "724727354ab58d6e8cdfa4f7f93bdc76de94f4712264abd1b76d54b588f78541",
+            "points": 10169,
+            "cells": 8518,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2090.0,
+            "file": "model_cache/kala_final/sections/slice_z_2090.vtp",
+            "bytes": 1083247,
+            "sha256": "32809f61fb1e980e693b18116bbeeccadadd34a814859d1985d85b12ec6ab90f",
+            "points": 13475,
+            "cells": 12311,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2100.0,
+            "file": "model_cache/kala_final/sections/slice_z_2100.vtp",
+            "bytes": 694631,
+            "sha256": "791da3723a3bc04c44987bf103f4ac381ba649db4a5906f868dc9442fce90ead",
+            "points": 9125,
+            "cells": 7369,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2110.0,
+            "file": "model_cache/kala_final/sections/slice_z_2110.vtp",
+            "bytes": 636067,
+            "sha256": "238c6494b1260cddef4914bf93b7f04ff22723bf0983a25c36469094ff72f0fd",
+            "points": 8398,
+            "cells": 6663,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2120.0,
+            "file": "model_cache/kala_final/sections/slice_z_2120.vtp",
+            "bytes": 589323,
+            "sha256": "a1de5613ace422d27fc8e86a7ec495560224140ccad87f710111f249c59c3e6d",
+            "points": 7741,
+            "cells": 6197,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2130.0,
+            "file": "model_cache/kala_final/sections/slice_z_2130.vtp",
+            "bytes": 549095,
+            "sha256": "7a7d5d7c8e4be1c991d71fc3cce80efcf502ab086f808c8ddf11f81f4fe9fb81",
+            "points": 7264,
+            "cells": 5752,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2140.0,
+            "file": "model_cache/kala_final/sections/slice_z_2140.vtp",
+            "bytes": 517275,
+            "sha256": "5e58e108d845aeec629970ce3a526349a029e3f6fb2577a458913159a601bd9d",
+            "points": 6876,
+            "cells": 5428,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2150.0,
+            "file": "model_cache/kala_final/sections/slice_z_2150.vtp",
+            "bytes": 515003,
+            "sha256": "37608f90aa01a83412c5d450d0730268b2757fa316bf0f11ae3c08d5f14a9eda",
+            "points": 6854,
+            "cells": 5354,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2160.0,
+            "file": "model_cache/kala_final/sections/slice_z_2160.vtp",
+            "bytes": 490919,
+            "sha256": "0d960bb2647da334c8324eec86f541eb35cfe60fc116b8128189a4ae5cbfaec6",
+            "points": 6564,
+            "cells": 5093,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2170.0,
+            "file": "model_cache/kala_final/sections/slice_z_2170.vtp",
+            "bytes": 459287,
+            "sha256": "3f3a4b69030ee754c7fc5a41100d5a9c292fcc4db284e68789411d6fd44d0769",
+            "points": 6118,
+            "cells": 4790,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2180.0,
+            "file": "model_cache/kala_final/sections/slice_z_2180.vtp",
+            "bytes": 435775,
+            "sha256": "fbda1e225a7fbf80bdb57fc234a09d4d123f408fb9b92f0f830a0827d2a808ad",
+            "points": 5810,
+            "cells": 4534,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2190.0,
+            "file": "model_cache/kala_final/sections/slice_z_2190.vtp",
+            "bytes": 407163,
+            "sha256": "2cc6883602bc42ba6dace7049e7d1e806c5009a11fb19ca68e78a9350afd54ea",
+            "points": 5327,
+            "cells": 4300,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2200.0,
+            "file": "model_cache/kala_final/sections/slice_z_2200.vtp",
+            "bytes": 394759,
+            "sha256": "edd6528ffc10004c6b2f0d112fc45d2ce12310fdeb8237bb2372a2b56dc28b2a",
+            "points": 5064,
+            "cells": 4233,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2210.0,
+            "file": "model_cache/kala_final/sections/slice_z_2210.vtp",
+            "bytes": 376931,
+            "sha256": "775372e4fa9ee703f296a0168be870c7c8e82ade9bca6fe382ce9281655f1f8b",
+            "points": 4810,
+            "cells": 4045,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2220.0,
+            "file": "model_cache/kala_final/sections/slice_z_2220.vtp",
+            "bytes": 384595,
+            "sha256": "6b672f52e4eb0f453c51737dd7e5ce58074db53fe18bc2532c82c90a62deb93f",
+            "points": 4859,
+            "cells": 4193,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2230.0,
+            "file": "model_cache/kala_final/sections/slice_z_2230.vtp",
+            "bytes": 374611,
+            "sha256": "3d1243f214d939f493c3a15c4a640de61dc32e38b899258c71d4abaccae7e592",
+            "points": 4735,
+            "cells": 4081,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2240.0,
+            "file": "model_cache/kala_final/sections/slice_z_2240.vtp",
+            "bytes": 377919,
+            "sha256": "8f816297d6aa420d29863c943de14c087f7d17c14515434b957019c67f217558",
+            "points": 4770,
+            "cells": 4151,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2250.0,
+            "file": "model_cache/kala_final/sections/slice_z_2250.vtp",
+            "bytes": 370951,
+            "sha256": "b6f462791e552583fd033151fd723f9f32c13da08b1ea3e3f44ffa20a26c9a35",
+            "points": 4741,
+            "cells": 4046,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2260.0,
+            "file": "model_cache/kala_final/sections/slice_z_2260.vtp",
+            "bytes": 357199,
+            "sha256": "6e8a6609fbfac7a4e2ea9cbb7eee269c2007c1546c4018058264fac0ee2abe3a",
+            "points": 4535,
+            "cells": 3926,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2270.0,
+            "file": "model_cache/kala_final/sections/slice_z_2270.vtp",
+            "bytes": 338667,
+            "sha256": "ec158a1b6fcbe823bec0a958622c65ce542bc08cc2ebc386549f0934e0f37c63",
+            "points": 4288,
+            "cells": 3720,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2280.0,
+            "file": "model_cache/kala_final/sections/slice_z_2280.vtp",
+            "bytes": 329347,
+            "sha256": "4ce806428af13142cd86ae72a18047abe5dce6f167bb319afa03e6b4e20b837b",
+            "points": 4165,
+            "cells": 3601,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2290.0,
+            "file": "model_cache/kala_final/sections/slice_z_2290.vtp",
+            "bytes": 305419,
+            "sha256": "3018dbdea9162180aa5a2c7811feb6d7d20a466f5db330afb9f11944ac16adc8",
+            "points": 3840,
+            "cells": 3341,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2300.0,
+            "file": "model_cache/kala_final/sections/slice_z_2300.vtp",
+            "bytes": 284203,
+            "sha256": "2cd76b7102a1e211a417217dbffe2d43cc0904944ba84322b732a771f91f11b9",
+            "points": 3584,
+            "cells": 3127,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2310.0,
+            "file": "model_cache/kala_final/sections/slice_z_2310.vtp",
+            "bytes": 265979,
+            "sha256": "760048a5fffe1d345bab8144bfee40cfdb0f49425a1ce6073343992e5f09b76a",
+            "points": 3350,
+            "cells": 2920,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2320.0,
+            "file": "model_cache/kala_final/sections/slice_z_2320.vtp",
+            "bytes": 230663,
+            "sha256": "de728bc3aaded52f8857ee99c38fde72fff1af8feb79f3532cfa895d32a50a59",
+            "points": 2865,
+            "cells": 2579,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2330.0,
+            "file": "model_cache/kala_final/sections/slice_z_2330.vtp",
+            "bytes": 206203,
+            "sha256": "622fe57afd2b265dd49afcda28dec45a8e10715ff4a09218545f4a08f1240840",
+            "points": 2535,
+            "cells": 2318,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2340.0,
+            "file": "model_cache/kala_final/sections/slice_z_2340.vtp",
+            "bytes": 185659,
+            "sha256": "76696bd99ccfa4711e6f2a782cd3d6a5bdbc9dcbe5afb93ce3c2951d90f0ce89",
+            "points": 2242,
+            "cells": 2108,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2350.0,
+            "file": "model_cache/kala_final/sections/slice_z_2350.vtp",
+            "bytes": 165815,
+            "sha256": "a28bf3751f0418b9f8348719a2555f21704e48fb6c04a2ed24f34d4ea1aecdcf",
+            "points": 2027,
+            "cells": 1851,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2360.0,
+            "file": "model_cache/kala_final/sections/slice_z_2360.vtp",
+            "bytes": 152495,
+            "sha256": "14efd104d5bcc5d389b5e9c2fa88669a4f5e2d052b3cf23d8f50233917ce87ae",
+            "points": 1864,
+            "cells": 1695,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2370.0,
+            "file": "model_cache/kala_final/sections/slice_z_2370.vtp",
+            "bytes": 135379,
+            "sha256": "e368d3d103c731f2ff49dfcfca8415a0d9105b8158afe6ec183298213e114f1d",
+            "points": 1659,
+            "cells": 1507,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2380.0,
+            "file": "model_cache/kala_final/sections/slice_z_2380.vtp",
+            "bytes": 121523,
+            "sha256": "3d8bf97e7b5076e04346de0754d744d1b61c8bcbe159177e7b8d64727f9a5b21",
+            "points": 1482,
+            "cells": 1369,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2390.0,
+            "file": "model_cache/kala_final/sections/slice_z_2390.vtp",
+            "bytes": 109363,
+            "sha256": "389c687fbe60f55a36b5f8e9f0637109e9cdf7c32f6fb3d84edd1abe923abe43",
+            "points": 1344,
+            "cells": 1228,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2400.0,
+            "file": "model_cache/kala_final/sections/slice_z_2400.vtp",
+            "bytes": 85571,
+            "sha256": "e15824dad2d7a7fdeeec704a2016df914cf682e37556c5811cdbddbb1d07ab60",
+            "points": 1030,
+            "cells": 954,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2410.0,
+            "file": "model_cache/kala_final/sections/slice_z_2410.vtp",
+            "bytes": 61763,
+            "sha256": "adfa08ed734b4fb16f8f3281f15d57cd6f20399ceaa144747d628ef4043cca33",
+            "points": 737,
+            "cells": 657,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2420.0,
+            "file": "model_cache/kala_final/sections/slice_z_2420.vtp",
+            "bytes": 45935,
+            "sha256": "f7b4488b1f997fdc74546832a3a82372dad12ab650849f8761a038da2529f423",
+            "points": 514,
+            "cells": 455,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2430.0,
+            "file": "model_cache/kala_final/sections/slice_z_2430.vtp",
+            "bytes": 28363,
+            "sha256": "8ded854a369aa7f11cfb43161dd31d4697268ed1943476f2282be0787723e431",
+            "points": 272,
+            "cells": 253,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2440.0,
+            "file": "model_cache/kala_final/sections/slice_z_2440.vtp",
+            "bytes": 17399,
+            "sha256": "94522e4156ec844e5ef6e4c145987987831ab25a78b83b966a1fa49a28c17c53",
+            "points": 133,
+            "cells": 120,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          },
+          {
+            "value": 2450.0,
+            "file": "model_cache/kala_final/sections/slice_z_2450.vtp",
+            "bytes": 9307,
+            "sha256": "98a59b16a80a93d6fa78642fd779c07b8cbc4a4472a1bb3328adc5a13959f67c",
+            "points": 38,
+            "cells": 32,
+            "point_arrays": [
+              "Stress_Max_Principal_DisplayOnly",
+              "Stress_Mid_Principal_DisplayOnly",
+              "Stress_Min_Principal_DisplayOnly",
+              "Stress_XX_DisplayOnly",
+              "Stress_YY_DisplayOnly",
+              "Stress_ZZ_DisplayOnly",
+              "TotalDisplacement",
+              "X_Disp",
+              "Y_Disp",
+              "Z_Disp"
+            ],
+            "cell_arrays": [
+              "Source_Cell_ID",
+              "Stress_Max_Principal",
+              "Stress_Mid_Principal",
+              "Stress_Min_Principal",
+              "Stress_XX",
+              "Stress_YY",
+              "Stress_ZZ"
+            ]
+          }
+        ]
+      },
+      "section_rules": {
+        "placement": "interior",
+        "spacing": 10.0,
+        "displacement_magnitude": "vector_norm",
+        "preserve_discontinuities": true,
+        "point_stress_principal": null,
+        "display_averaging": "whole_solid"
+      },
+      "fields": {
+        "TotalDisplacement": {
+          "min": 0.0,
+          "max": 0.18043206632137299,
+          "p5": 0.00012068943033227697,
+          "p95": 0.004404990375041966
+        },
+        "X_Disp": {
+          "min": -0.12549039721488953,
+          "max": 0.027996284887194633,
+          "p5": -0.003662065090611577,
+          "p95": -3.0776282073929906e-05
+        },
+        "Y_Disp": {
+          "min": -0.10569248348474503,
+          "max": 0.12911799550056458,
+          "p5": -0.0005636255373246968,
+          "p95": 0.00016003192286007106
+        },
+        "Z_Disp": {
+          "min": -0.062332093715667725,
+          "max": 0.031061746180057526,
+          "p5": -0.0016056017484515905,
+          "p95": 0.00173351187258959
+        },
+        "Stress_Max_Principal": {
+          "min": -155.0701141357422,
+          "max": 36.35472106933594,
+          "p5": -4.667199611663818,
+          "p95": 0.00932952482253313
+        },
+        "Stress_Mid_Principal": {
+          "min": -316.6347961425781,
+          "max": 5.086310863494873,
+          "p5": -11.054679870605469,
+          "p95": -0.18046900629997253
+        },
+        "Stress_Min_Principal": {
+          "min": -451.9624938964844,
+          "max": 0.5196765661239624,
+          "p5": -12.343734741210938,
+          "p95": -0.5283753871917725
+        },
+        "Stress_XX": {
+          "min": -271.0157775878906,
+          "max": 23.112812042236328,
+          "p5": -5.596410274505615,
+          "p95": -0.05653252452611923
+        },
+        "Stress_YY": {
+          "min": -372.7304992675781,
+          "max": 8.35262680053711,
+          "p5": -12.330740928649902,
+          "p95": -0.25898087024688843
+        },
+        "Stress_ZZ": {
+          "min": -279.921142578125,
+          "max": 4.586338996887207,
+          "p5": -10.199808120727539,
+          "p95": -0.282913452386858
+        }
+      }
+    }
+  ]
+}
