@@ -1,59 +1,104 @@
 {
-  "case": "D · FLAC3D deep excavation pit",
+  "case": "D",
   "version": "0.2.0",
-  "figure_layout": "single full workbench viewport",
-  "viewport_css_px": {
-    "width": 1280,
-    "height": 800
-  },
-  "device_scale_factor": 4,
   "width_cm": 16.5,
+  "height_cm": 9.6,
+  "dpi": 600,
+  "minimum_source_dpi": 720.5673758865247,
+  "layout_cm": {
+    "a": 5.0,
+    "gutter": 0.4,
+    "b": 11.1,
+    "labels_pt": 9
+  },
   "png": {
-    "pixels": [
-      5120,
-      3200
+    "width_px": 3898,
+    "height_px": 2268,
+    "bytes": 1740837,
+    "sha256": "505c3a95d5dc5f565156d07af86c28dec87aec791a1c0e372a23c568c507c266"
+  },
+  "left": {
+    "steps_crop_css": {
+      "x": 0,
+      "y": 58,
+      "width": 230,
+      "height": 267
+    },
+    "diagnostics_crop_css": {
+      "x": 580,
+      "y": 60,
+      "width": 300,
+      "height": 480
+    },
+    "native_step_nominal_pt": 3.3546492081748203,
+    "native_diagnostic_body_nominal_pt": 4.996062992125985,
+    "diagnostics": [
+      {
+        "level": "info",
+        "title": "Model",
+        "detail": "548,417 cells, 332,510 points"
+      },
+      {
+        "level": "ok",
+        "title": "Stress component order",
+        "detail": "Read from the file: XX, YY, ZZ, XY, XZ, YZ"
+      },
+      {
+        "level": "ok",
+        "title": "Stress unit",
+        "detail": "MPa: implied unit weight 14.6 kN/m³"
+      },
+      {
+        "level": "info",
+        "title": "Excavation surface (EXC12_dis)",
+        "detail": "17,004 faces, 6,418 m²"
+      },
+      {
+        "level": "ok",
+        "title": "Mesh interfaces (EXC12_dis)",
+        "detail": "85,215 faces with rock on both sides left out of the excavation surface"
+      },
+      {
+        "level": "ok",
+        "title": "Internal faces (EXC12_dis)",
+        "detail": "89,901 block-contact faces removed from the exterior"
+      },
+      {
+        "level": "ok",
+        "title": "Validation",
+        "detail": "Every published value matches the source model"
+      }
     ],
-    "dpi": 788.1619999999999,
-    "bytes": 1143129,
-    "sha256": "a8ffd3430bcbba8712eb38786a406694b9ec4ae02f37e52ab6296b58b78afaa8"
+    "injected_css": []
   },
-  "browser": "160.0.8157.0",
-  "css_injected": [],
-  "print_font_nominal_pt_by_css_px": {
-    "12.5": 4.567544291338583,
-    "13": 4.750246062992126,
-    "14": 5.115649606299213,
-    "15": 5.481053149606299
-  },
-  "minimum_measured_ink_height_pt": 3.6540354330708658,
-  "logs_collapsed": true,
-  "viewer_camera": {
-    "options": {
+  "right": {
+    "key": "close",
+    "camera": [
+      -159.90779873227737,
+      -189.48274629275707,
+      143.12136104570624,
+      4.52811249628008,
+      -6.858165394979059,
+      -28.951569859607577,
+      0.8090749180801937,
+      -0.21204378537492585,
+      0.5481197040951914,
+      41
+    ],
+    "elevation": 35,
+    "azimuth": 228,
+    "roll": -48,
+    "params": {
       "field": "TotalDisplacement",
       "range": "p5_p95",
       "section": "0",
       "cmap": "viridis",
+      "bands": "8",
+      "layers": "exterior:1:0.35,excavation:1:1",
       "parallel": "1",
-      "cam": "-78.18930277890601,7.236337334202212,262.7777478867205,-0.65,11.3,-27,0,0,1,36",
-      "layers": "exterior:1:0.35,excavation:1:1"
+      "cam": "-159.90779873227737,-189.48274629275707,143.12136104570624,4.52811249628008,-6.858165394979059,-28.951569859607577,0.8090749180801937,-0.21204378537492585,0.5481197040951914,41"
     },
     "actors": {
-      "layer:exterior": {
-        "scalarVisibility": true,
-        "array": "TotalDisplacement",
-        "association": "point",
-        "arrayFound": true,
-        "dataRange": [
-          0,
-          0.010675342753529549
-        ],
-        "lutRange": [
-          4.737524068332277e-05,
-          0.004965157615691021
-        ],
-        "points": 22439,
-        "cells": 20293
-      },
       "layer:excavation": {
         "scalarVisibility": true,
         "array": "TotalDisplacement",
@@ -64,75 +109,131 @@
           0.006506145000457764
         ],
         "lutRange": [
-          4.737524068332277e-05,
-          0.004965157615691021
+          4.8418529149785176e-05,
+          0.005555023806250954
         ],
         "points": 16878,
         "cells": 17004
+      },
+      "layer:exterior": {
+        "scalarVisibility": true,
+        "array": "TotalDisplacement",
+        "association": "point",
+        "arrayFound": true,
+        "dataRange": [
+          0,
+          0.010675342753529549
+        ],
+        "lutRange": [
+          4.8418529149785176e-05,
+          0.005555023806250954
+        ],
+        "points": 22439,
+        "cells": 20293
       }
     },
-    "viewerBounds": {
-      "x": 230,
-      "y": 408.5,
-      "width": 750,
-      "height": 360.5
-    },
-    "collapsed": false,
-    "camera": [
-      -78.18930277890601,
-      7.236337334202212,
-      262.7777478867205,
-      -0.65,
-      11.3,
-      -27,
-      0,
-      0,
-      1,
-      36
+    "labels": [
+      "0.005555",
+      "0.004867",
+      "0.004178",
+      "0.003490",
+      "0.002802",
+      "0.002113",
+      "0.001425",
+      "7.367e-4",
+      "4.842e-5"
     ],
-    "elevation_deg": 75,
-    "azimuth_deg": 183,
-    "preview_job": {
-      "id": "c101a232de64",
-      "seconds": 15.785084962844849
-    }
+    "title": "Displacement magnitude (m)",
+    "sub": "point data · P5–P95",
+    "legend": {
+      "x": 859,
+      "y": 290.625,
+      "width": 205,
+      "height": 356.75
+    },
+    "legendInk": [
+      {
+        "role": "legend",
+        "text": "Displacement",
+        "font": "bold 21px system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+        "inkHeightCssPx": 23
+      },
+      {
+        "role": "legend",
+        "text": "magnitude (m)",
+        "font": "bold 21px system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+        "inkHeightCssPx": 23
+      },
+      {
+        "role": "legend",
+        "text": "point data · P5–P95",
+        "font": "17px system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+        "inkHeightCssPx": 18
+      },
+      {
+        "role": "legend",
+        "text": "0.005555",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "0.004867",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "0.004178",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "0.003490",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "0.002802",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "0.002113",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "0.001425",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "7.367e-4",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      },
+      {
+        "role": "legend",
+        "text": "4.842e-5",
+        "font": "20.5px ui-monospace, Menlo, Consolas, monospace",
+        "inkHeightCssPx": 13
+      }
+    ],
+    "crop_css": {
+      "x": 0,
+      "y": 52,
+      "width": 1080,
+      "height": 886
+    },
+    "nominal_legend_tick_pt": 5.972440944881889,
+    "nominal_legend_title_pt": 6.118110236220472,
+    "injected_css": ".panel { display: none !important; }\n.right { right: 16px !important; top: 50% !important; bottom: auto !important; transform: translateY(-50%); }\n.legend { box-shadow: none !important; width: 205px !important; padding: 12px 11px 18px !important; background: #fff !important; }\n.legend-title { font-size: 21px !important; line-height: 1.12; }\n.legend-sub { font-size: 17px !important; line-height: 1.16; white-space: nowrap; }\n.bands { font-size: 20.5px !important; line-height: 1.1; }\n.band-row { height: 30px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch.tall { height: 30px !important; }\n.band-row.last { height: 8px !important; }"
   },
-  "diagnostics": [
-    {
-      "level": "info",
-      "title": "Model",
-      "detail": "548,417 cells, 332,510 points"
-    },
-    {
-      "level": "ok",
-      "title": "Stress component order",
-      "detail": "Read from the file: XX, YY, ZZ, XY, XZ, YZ"
-    },
-    {
-      "level": "ok",
-      "title": "Stress unit",
-      "detail": "MPa: implied unit weight 14.6 kN/m³"
-    },
-    {
-      "level": "info",
-      "title": "Excavation surface (EXC12_dis)",
-      "detail": "17,004 faces, 6,418 m²"
-    },
-    {
-      "level": "ok",
-      "title": "Mesh interfaces (EXC12_dis)",
-      "detail": "85,215 faces with rock on both sides left out of the excavation surface"
-    },
-    {
-      "level": "ok",
-      "title": "Internal faces (EXC12_dis)",
-      "detail": "89,901 block-contact faces removed from the exterior"
-    },
-    {
-      "level": "ok",
-      "title": "Validation",
-      "detail": "Every published value matches the source model"
-    }
-  ],
   "validation_passed": true
 }

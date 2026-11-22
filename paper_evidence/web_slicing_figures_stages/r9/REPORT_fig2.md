@@ -1,12 +1,12 @@
-# 论文图 2 · 算例 D 的真实工作台
+# 论文图 2 · 算例 D 工作台与发布查看器
 
-2026-11-22 JST。Sim2Web 0.2.0，FLAC3D 深基坑，输入 EXC12_dis.vtu。在独立项目中按算例 D 配置构建并验证，再回到第 3 步生成表面预览。整页采用原版布局和字号，左侧六步、几何设置、中央预览、右侧诊断和折叠后的日志条均在截图中。嵌入查看器的控制栏保持展开。
+2026-11-22 JST。按 Drive 中的 fig2_layout_mock.png 拼版。算例为 FLAC3D 深基坑（examples/flac3d_pit_case4，施工步 EXC12_dis）。左栏的工作台项目和右栏发布查看器读取同一次实际构建的结果，Sim2Web 版本 0.2.0。原构建记录为 60.234 s，112 个剖面，阶段数据产品 61,202,916 字节。独立验证通过，共检查 114 个产品，精确不符 0 个。
 
-## 画面里的全部诊断
+## (a) 工作台原生截图
 
-以下为实际界面原文。
+在 880 × 820 CSS 像素的工作台窗口分别截取左侧六步和右侧完整诊断，第 3 步为当前步。两张截图均保持原生字号和原文，等比放进浅灰外框。为保留全部诊断且控制整图高度，六步栏以较小比例缩放。
 
-| 诊断 | 显示值 |
+| 诊断 | 截图显示原文 |
 |---|---|
 | Model | 548,417 cells, 332,510 points |
 | Stress component order | Read from the file: XX, YY, ZZ, XY, XZ, YZ |
@@ -16,41 +16,45 @@
 | Internal faces (EXC12_dis) | 89,901 block-contact faces removed from the exterior |
 | Validation | Every published value matches the source model |
 
-单位 MPa 的等效重度在界面为 14.6 kN/m³，未舍入值为 14.619231 kN/m³。开挖面面积为 6,418.370 m²。两类排除面分别来自开挖面候选和外表面候选。
+## (b) 同一结果的发布查看器
 
-## 本次构建及验证
+- 着色量为 **位移模量 TotalDisplacement（m）**，点数据。两个可见图层为外表面（不透明度 35%）和开挖面（100%）。使用 viridis、8 档。图 3(d) 使用开挖面上的 Y 向位移。
+- 使用 EXC12_dis 施工步的 P5–P95 色标。两层相同的实测色标下限为 **4.841852915e-05 m**，上限为 **0.005555023806 m**。图中端点显示为 **4.842e-5 m** 和 **0.005555 m**。
+- 正交视图，从水平向下俯视 **35°**，方位角 **228°**，相机滚转 **-48°**。放大到基坑及周边外表面，剖面关闭。查看器顶部取景裁掉了方向标。
 
-| 项目 | 实测值 |
-|---|---:|
-| 外表面 | 20,293 面，2,248,198 字节 |
-| 开挖面 | 17,004 面，1,785,830 字节 |
-| 从开挖面候选排除的内部界面 | 85,215 面 |
-| 从外表面去除的块体接触面 | 89,901 面 |
-| 剖面 | 112 个 |
-| 阶段数据产品 | 61,202,916 字节（61.20 MB） |
-| 完整静态目录，含查看器及验证文件 | 62,992,593 字节（62.99 MB） |
-| 构建总时长 | 60.234 s |
-| 工作台构建任务 | 61.428 s |
-| 工作台完整验证任务 | 20.052 s |
-| 工作台用于截图的预览任务 | 15.785 s |
+## 印刷核验
 
-验证通过。检查 114 个产品、806 个精确数组和 4,638,297 个精确元组，精确不符 0 个。插值数组 448 个，最大插值 nRMSE 为 3.346e-07，失败 0 项。面数和字节数来自两份 model_cache/index.json，耗时来自 build_report.json 与工作台任务响应，验证结果来自 validation_summary.json。
+- PNG 为 3898 × 2268 像素，RGB，**16.50 × 9.60 cm**，**600 dpi**，共 **1,740,837 字节**。
+- 左栏宽 **5.00 cm**，右栏宽 **11.10 cm**。两栏外左上角标签为 **9 pt 粗体**。浏览器截图以 deviceScaleFactor 4 获取，分图最低有效密度 **720.6 dpi**。
+- 诊断正文印刷名义字号 **5.00 pt**，六步标签 **3.35 pt**，右栏色标标题 **6.12 pt**、刻度 **5.97 pt**。
+- PNG SHA-256 为 505c3a95d5dc5f565156d07af86c28dec87aec791a1c0e372a23c568c507c266。
 
-## 取景与印刷
+## 仅在 (b) 注入的 CSS
 
-- 原生 Chrome 160.0.8157.0，视口 1280 × 800 CSS px，deviceScaleFactor 4。
-- 外表面不透明度 35%，开挖面 100%，着色字段为 TotalDisplacement，色标 viridis、P5–P95。正交相机仰角 75°，即从水平向下俯视 75°，方位角 183°。对 489 个坑底面中心做正交射线核对。35° 时，测试的 8 个方位均受坑壁遮挡。为保留清楚可见的坑底，最终取 75°，所选方位有 198 个坑底面中心可直接看到。
-- 未注入 CSS。PNG 保留整窗的 5120 × 3200 像素，宽 16.50 cm，实际 788.16 dpi，共 1,143,129 字节。
-- 主要原生控件的字号按印刷宽度折算为 4.57–5.48 pt。实际墨迹高度因字形而异，最小采样值为 3.65 pt。
-- PNG SHA-256 为 a8ffd3430bcbba8712eb38786a406694b9ec4ae02f37e52ab6296b58b78afaa8。
+左栏没有注入样式。应用源码未修改。
 
-## 命令记录
+```css
+.panel { display: none !important; }
+.right { right: 16px !important; top: 50% !important; bottom: auto !important; transform: translateY(-50%); }
+.legend { box-shadow: none !important; width: 205px !important; padding: 12px 11px 18px !important; background: #fff !important; }
+.legend-title { font-size: 21px !important; line-height: 1.12; }
+.legend-sub { font-size: 17px !important; line-height: 1.16; white-space: nowrap; }
+.bands { font-size: 20.5px !important; line-height: 1.1; }
+.band-row { height: 30px !important; gap: 7px !important; }
+.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }
+.band-row .swatch.tall { height: 30px !important; }
+.band-row.last { height: 8px !important; }
+```
+
+## 截图命令
 
 | 命令 | 退出码 | 耗时（s） |
 |---|---:|---:|
-| Copy Case D configuration and VTU into a clean project; check Sim2Web version | 0 | 3.088 |
-| npm run build | 0 | 9.337 |
-| python -m sim2web gui C:/swv_fig2_native_20261122/project --port 18811 --no-browser | 0 | 1.820 |
-| node C:/swv_fig2_native_20261122/capture_native.mjs 'G:\成果\papers\02\SimWebView' http://127.0.0.1:18811/workbench/ C:/swv_fig2_native_20261122/captures | 0 | 109.724 |
-| python -m sim2web gui C:/swv_fig2_native_20261122/project --port 18811 --no-browser | 0 | 1.600 |
-| node C:/swv_fig2_native_20261122/capture_native.mjs 'G:\成果\papers\02\SimWebView' http://127.0.0.1:18811/workbench/ C:/swv_fig2_native_20261122/captures --floor-views | 0 | 29.571 |
+| Verify the existing Case D 0.2.0 build and passing validation before taking both screenshots from it | 0 | 0.119 |
+| python -m sim2web gui C:/swv_fig2_native_20261122/project --port 18813 --no-browser | 0 | 1.841 |
+| node C:/swv_fig2_mock_20261122/capture_mock.mjs 'G:\成果\papers\02\SimWebView' http://127.0.0.1:18813 C:/swv_fig2_mock_20261122/captures | 0 | 16.243 |
+| python -m sim2web gui C:/swv_fig2_native_20261122/project --port 18813 --no-browser | 0 | 2.143 |
+| node C:/swv_fig2_mock_20261122/capture_mock.mjs 'G:\成果\papers\02\SimWebView' http://127.0.0.1:18813 C:/swv_fig2_mock_20261122/captures | 0 | 14.936 |
+| python -m sim2web gui C:/swv_fig2_native_20261122/project --port 18813 --no-browser | 0 | 1.724 |
+| node C:/swv_fig2_mock_20261122/capture_mock.mjs 'G:\成果\papers\02\SimWebView' http://127.0.0.1:18813 C:/swv_fig2_mock_20261122/captures | 0 | 14.246 |
+| python C:/swv_fig2_mock_20261122/compose_mock.py close | 0 | 1.906 |
