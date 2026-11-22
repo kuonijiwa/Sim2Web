@@ -1,7 +1,0 @@
-{
-  "date": "2026-09-06",
-  "processor": "Intel(R) Core(TM) i9-14900HX",
-  "physical_memory_bytes": 16890322944,
-  "platform": "Windows-10-10.0.26200-SP0",
-  "timing_control": "two sequential runs per case; other workstation activity and filesystem cache not controlled"
-}

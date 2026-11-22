@@ -1,0 +1,34 @@
+{
+  "sim2web": "0.2.0.dev0",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "inputs": [
+    "G:/\u6210\u679c/papers/02/case4/EXC12_dis.vtu"
+  ],
+  "validation_passed": true,
+  "primary_bytes": 2248198,
+  "sections": 112,
+  "steps": {
+    "read_model (inspect)": {
+      "seconds": 10.979403299978003,
+      "ui_latency_median_s": 0.3198012000648305,
+      "ui_latency_worst_s": 0.45445760001894087
+    },
+    "preview (surfaces)": {
+      "seconds": 31.852367599960417,
+      "ui_latency_median_s": 0.3298050999874249,
+      "ui_latency_worst_s": 1.1129634000826627
+    },
+    "build (full)": {
+      "seconds": 114.48949120007455,
+      "ui_latency_median_s": 0.2915849999990314,
+      "ui_latency_worst_s": 1.1192850999068469
+    },
+    "validate (every 5th section)": {
+      "seconds": 26.860700000077486,
+      "ui_latency_median_s": 0.34986199997365475,
+      "ui_latency_worst_s": 0.761850000009872
+    }
+  },
+  "note": "client and server in one process; latency covers job status and project state"
+}

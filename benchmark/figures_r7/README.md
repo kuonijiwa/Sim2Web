@@ -22,7 +22,7 @@ Run these from a second shell with the same `$r7`, `$py` and `SIM2WEB_R7_PDF_LIB
 node benchmark/figures_r7/capture_workbench.mjs http://127.0.0.1:18795/workbench/ "$r7/caseE/input/ogs_slope.vtu" "$r7/out"
 & $py benchmark/figures_r7/prepare_views.py C:/swv_r4_20261121/model_runs $r7
 node benchmark/figures_r7/capture_viewers.mjs "$r7/view_states_local.json" "$r7/out"
-& $py benchmark/figures_r7/compose_print.py "$r7/out" paper_evidence/revision_v5/figures_r7
+& $py benchmark/figures_r7/compose_print.py "$r7/out" paper_evidence/web_slicing_figures_stages/figures_r7
 ```
 
-`prepare_views.py` expects each existing A–F package at `<model_runs>/<case>/site`. Camera and browser scratch files, the input data and the built sites belong in the local working directory. The publication figures and layout checks are in `paper_evidence/revision_v5/figures_r7/`.
+`prepare_views.py` expects each existing A–F package at `<model_runs>/<case>/site`. Camera and browser scratch files, the input data and the built sites belong in the local working directory. The publication figures and layout checks are in `paper_evidence/web_slicing_figures_stages/figures_r7/`.

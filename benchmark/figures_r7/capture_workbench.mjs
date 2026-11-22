@@ -3,7 +3,7 @@ import path from 'node:path';
 import { measureText, openBrowser, paint, writeJson } from './capture_common.mjs';
 
 // The interaction order follows benchmark/workbench_walkthrough.mjs.
-const [url, model, output] = process.argv.slice(2);
+const [url, model, output, expectedVersion] = process.argv.slice(2);
 const deviceScaleFactor = 4;
 const common = `.top, .steps, .log, .nav-buttons { display: none !important; }
 .app { grid-template-rows: auto; height: auto; background: #fff; }
@@ -100,6 +100,10 @@ try {
   await idle();
   const iframe = await page.locator('iframe[title="Package viewer"]').elementHandle();
   const viewer = await iframe.contentFrame();
+  const buildString = await page.getByText(/^Built with Sim2Web /).innerText();
+  if (expectedVersion) {
+    assert(buildString.startsWith(`Built with Sim2Web ${expectedVersion} in `), buildString);
+  }
   await viewer.waitForFunction(() => window.__SIM2WEB__?.summary()?.events.firstRender, null, { timeout: 180000 });
   await viewer.locator('.collapse').click();
   await viewer.addStyleTag({ content: embeddedCss });
@@ -108,6 +112,7 @@ try {
     validation_pass: '.form .notice.ok', package_viewer: '.viewer-label',
   });
   records.b.embeddedCss = embeddedCss;
+  records.b.buildString = buildString;
   await writeJson(path.join(output, 'workbench_capture.json'), records);
   for (const [panel, info] of Object.entries(records)) {
     console.log(`Figure 2 ${panel}: ${JSON.stringify(info.clip)}, smallest measured CSS ink height ${Math.min(...info.text.map(x => x.inkHeightCssPx))}`);

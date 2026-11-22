@@ -54,7 +54,16 @@ def model_width(image, letter, record):
     return width / image.width, [int(columns[0]), int(columns[-1])]
 
 
-def geometry(capture_dir, fig, records):
+def trim_bottom_margin(image, scale):
+    """Crop near-white rows below the scene, keeping a small print margin."""
+    pixels = np.asarray(image)
+    # Ignore the near-white app background visible below the embedded viewer.
+    occupied = np.flatnonzero((pixels.min(axis=2) < 242).any(axis=1))
+    bottom = min(image.height, int(occupied[-1]) + 1 + 4 * scale)
+    return image.crop((0, 0, image.width, bottom))
+
+
+def geometry(capture_dir, fig, records, trim_workbench=False):
     width = FIGURE_WIDTH if fig == 2 else 8.1
     names = "ab" if fig == 2 else "abcdef"
     panels = []
@@ -62,6 +71,9 @@ def geometry(capture_dir, fig, records):
         raw = rgb(capture_dir / f"fig{fig}_{letter}.png")
         info = records[letter] if fig == 2 else records[letter.upper()]
         dsf = info["deviceScaleFactor"]
+        captured_size = raw.size
+        if trim_workbench and fig == 2 and letter == "b":
+            raw = trim_bottom_margin(raw, dsf)
         css_width = (info.get("clip") or info["viewport"])["width"]
         assert raw.width == css_width * dsf, (fig, letter, raw.width)
         dpi = raw.width * 2.54 / width
@@ -73,7 +85,7 @@ def geometry(capture_dir, fig, records):
         assert min_pt >= (5 if fig == 2 else 6), (fig, letter, min_pt)
         metadata = {
             "print_width_cm": width, "print_height_cm": width * raw.height / raw.width,
-            "capture_px": list(raw.size), "css_viewport_width_px": css_width,
+            "capture_px": list(captured_size), "css_viewport_width_px": css_width,
             "device_scale_factor": dsf, "effective_dpi": dpi,
             "smallest_meaningful_glyph_height_pt": min_pt,
             "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
@@ -83,6 +95,9 @@ def geometry(capture_dir, fig, records):
         }
         if fig == 2 and info.get("embeddedCss"):
             metadata["embedded_viewer_css"] = info["embeddedCss"]
+        if trim_workbench and fig == 2 and letter == "b":
+            metadata["cropped_bottom_px"] = captured_size[1] - raw.height
+            metadata["build_string"] = info["buildString"]
         if fig == 4:
             coverage, pixels = model_width(raw, letter, info)
             assert coverage >= 0.70, (letter, coverage)
@@ -200,15 +215,20 @@ def report(out, summary, probe):
 parser = argparse.ArgumentParser()
 parser.add_argument("capture_dir", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--figure-2-only", action="store_true",
+                    help="Compose the workbench figure and trim its lower blank margin")
 args = parser.parse_args()
 out = args.output
 (out/"panels").mkdir(parents=True, exist_ok=True)
 wb = read_json(args.capture_dir/"workbench_capture.json")
-views = read_json(args.capture_dir/"viewer_capture.json")
+figures = [(2, "fig2_workbench", wb)]
+if not args.figure_2_only:
+    views = read_json(args.capture_dir/"viewer_capture.json")
+    figures.append((4, "fig4_cases", views))
 summary = {}
 specs = []
-for num, name, records in ((2, "fig2_workbench", wb), (4, "fig4_cases", views)):
-    panels = geometry(args.capture_dir, num, records)
+for num, name, records in figures:
+    panels = geometry(args.capture_dir, num, records, trim_workbench=args.figure_2_only)
     placed, height = positions(num, panels)
     assert num != 2 or height <= 17, height
     dims = write_composite(out, name, placed, height)
@@ -219,9 +239,10 @@ for num, name, records in ((2, "fig2_workbench", wb), (4, "fig4_cases", views)):
         im.save(out/"panels"/f"fig{num}_{letter}.png", dpi=(info["effective_dpi"],)*2, optimize=True)
     print(f"Figure {num}: {FIGURE_WIDTH:.2f} × {height:.3f} cm, masters {dims[0]} × {dims[1]} px")
     print("Minimum ink height by panel:", ", ".join(f"{a} {i['smallest_meaningful_glyph_height_pt']:.3f} pt" for a,_,i in panels))
-contact_sheets(out, specs)
+if not args.figure_2_only:
+    contact_sheets(out, specs)
+    report(out, summary, views["A"]["probe"])
 (out/"print_check.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
-report(out, summary, views["A"]["probe"])
 
 log_dir = args.capture_dir.parent/"logs"
 rows = [read_json(p) for p in sorted(log_dir.glob("*.json"))]

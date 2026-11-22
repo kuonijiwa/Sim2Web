@@ -2,9 +2,6 @@
 
 **One-click post-processing and verifiable web publishing of geotechnical simulation results.**
 
-(Formerly SimWebView. Old configurations, packages and the `simwebview`
-command keep working.)
-
 Sim2Web turns a three-dimensional simulation result (a VTK unstructured grid
 exported from FLAC3D, 3DEC or any other solver) into a static web package that a
 reviewer can open in a browser: the exterior surface, the excavation boundary,
@@ -20,7 +17,7 @@ case.yaml ─┴─► sim2web build ─► site/index.html + site/model_cache/{
 * **One library, no per-case code.** A YAML configuration declares the input
   arrays (displacement, stress and its component order, categories), how voids
   are identified, which surfaces and sections to produce and how the viewer
-  starts. The three example models are three configuration files.
+  starts. Each of the seven main examples has its own configuration.
 * **One data-driven viewer.** The browser application reads `index.json` and
   builds its controls from it: stages, fields (with units and point/cell
   association), layers, sections, colour scales. It needs no editing for a new
@@ -50,7 +47,8 @@ python -m pip install -e ".[test]"
 npm ci && npm run build                  # writes src/sim2web/viewer_dist and workbench_dist
 ```
 
-The three example models are stored with Git LFS (`git lfs pull`).
+Run `git lfs pull` for six of the seven main examples. Case E has a
+repository-supplied OpenGeoSys project for generating its input.
 
 Keep solvers and their Python packages (OpenGeoSys, FEniCS, MOOSE tools, …)
 in separate environments: Sim2Web needs only the result files they write, and
@@ -80,6 +78,11 @@ The input checklist and every configuration option are described in
 | D | FLAC3D | [`examples/flac3d_pit_case4/sim2web.yaml`](examples/flac3d_pit_case4/sim2web.yaml) | exterior surface | deep pit with the walls and floor in a separate excavation layer |
 | E | OpenGeoSys | [`examples/ogs_slope/sim2web.yaml`](examples/ogs_slope/sim2web.yaml) | exterior surface | open-source FE solver, nodal stress in Voigt order; model generated and solved from the repository |
 | F | 3DEC | [`examples/3dec_slope_case_f/sim2web.yaml`](examples/3dec_slope_case_f/sim2web.yaml) | exterior surface | Kala slope with geometric contact removal and preserved discontinuities |
+| Five-stage cavern | FLAC3D | [`examples/flac3d_cavern_stages/sim2web.yaml`](examples/flac3d_cavern_stages/sim2web.yaml) | excavation surface | five construction stages with common-scale fields and aligned section locations |
+
+Two further manuscript cases use solver sample files. Follow the recipes for
+[G · Abaqus crankshaft](examples/abaqus_samples/README.md) and
+[H · MOOSE elastic patch](examples/moose_elastic_patch/README.md).
 
 ```bash
 sim2web build examples/flac3d_cavern_iv2/sim2web.yaml
@@ -126,13 +129,13 @@ Lower-level building blocks (`sim2web.fields`, `sim2web.regions`,
 
 ## Documentation
 
+* [Manuscript evidence and reproduction scripts](paper_evidence/README.md)
 * [Workbench: processing in the browser](docs/WORKBENCH.md)
 * [Configuration and input checklist](docs/CONFIGURATION.md)
 * [Field semantics: associations, display-only arrays, sections](docs/FIELD_SEMANTICS.md)
 * [Validation: what is checked and how to read the reports](docs/VALIDATION.md)
 * [Viewer: features, links, customisation, embedding](docs/VIEWER.md)
 * [Deployment on IIS and other static servers](docs/IIS_DEPLOYMENT.md)
-* [Changes since v0.1](CHANGELOG.md)
 
 ## Scope
 
@@ -143,6 +146,11 @@ browser does no geometry processing; arbitrary interactive cutting is not
 provided. Packages can contain several stages (for example construction
 stages); the viewer switches between them with a common or per-stage colour
 scale.
+
+## Compatibility
+
+Formerly SimWebView. Existing configurations and packages remain supported,
+and `simwebview` is an alias for `sim2web`. See the [changes since v0.1](CHANGELOG.md).
 
 ## Licence and citation
 

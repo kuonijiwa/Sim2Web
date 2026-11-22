@@ -35,7 +35,7 @@ assert parts and joined.hexdigest()==full
 (target/"SHA256SUMS").write_text(f"{full}  {bundle.name}\n"+
     "".join(f"{digest(part)}  {part.name}\n" for part in parts),encoding="ascii")
 
-paper=Path("paper_evidence/revision_v5")
+paper=Path("paper_evidence/web_slicing_figures_stages")
 figures=paper/"figures_r7"
 for name in ("fig2_workbench.png","fig4_cases.png","contact_sheets_100pct.pdf","print_check.json"):
     original=figures/name

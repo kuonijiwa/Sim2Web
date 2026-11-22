@@ -1,0 +1,1 @@
+{"id":"034_build_E","command":"sim2web build 'C:/swv_r4_20261121/model_runs/E/case.yaml'","cwd":"G:\\成果\\papers\\02\\SimWebView","started_at":"2026-11-21T14:06:50.4600212+09:00","exit_code":0,"duration_seconds":21.547,"log":"logs/034_build_E.log"}

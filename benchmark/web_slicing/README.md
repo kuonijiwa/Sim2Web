@@ -56,5 +56,5 @@ Collect the verified matrix and render the evidence after a complete run.
 & $R6_PY benchmark/web_slicing/collect.py $R6_WORK --complete
 $env:PYTHONPATH = "$R6_WORK/trame_lib"
 $env:MPLBACKEND = 'Agg'
-& $R6_PY paper_evidence/revision_v5/figures/draw_figure1.py
+& $R6_PY paper_evidence/web_slicing_figures_stages/figures/draw_figure1.py
 ```

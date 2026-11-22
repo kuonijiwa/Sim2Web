@@ -1,0 +1,1325 @@
+{
+  "sim2web": "0.2.0.dev0",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "pyvista": "0.46.3",
+  "vtk": "9.5.0",
+  "numpy": "1.26.4",
+  "config_sha256": "3026531ca02a30c3ad77431ec35914cd162b8418a239b7c36292b7c71862bbee",
+  "seconds_total": 97.47114669997245,
+  "stages": [
+    {
+      "stage": "IV-2",
+      "seconds": {
+        "read": 3.4070724000921473,
+        "fields": 2.1024936999892816,
+        "classify": 3.203104800079018,
+        "partition": 4.931062399991788,
+        "excavation": 2.154272299958393,
+        "write": 2.2685273000970483,
+        "sections": 76.68242130009457
+      },
+      "output_bytes": 82913238,
+      "primary_bytes": 5099246,
+      "section_count": 132,
+      "void_diagnostics": {
+        "void_cells": 227947,
+        "retained_cells": 983438,
+        "strategy": "stress",
+        "null_threshold": 1e-08,
+        "contact_tolerance": 1e-05,
+        "max_abs_stress_log10_bins": [
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        "histogram_retained": [
+          0,
+          5,
+          688,
+          970632,
+          12113
+        ],
+        "histogram_void": [
+          227947,
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero_stress_cells": 227947,
+        "retained_min_max_abs_stress": 0.029959207376884334,
+        "void_max_max_abs_stress": 0.0,
+        "near_null_retained_cells": 0,
+        "near_null_limit": 1e-06
+      },
+      "stress_unit_check": {
+        "status": "ok",
+        "gradient_per_m": 0.021681362576355466,
+        "fit_r2": 0.4035749095567005,
+        "bins_used": 20,
+        "compression_increases_with_depth": true,
+        "implied_unit_weight_kN_m3_if_Pa": 2.1681362576355466e-05,
+        "implied_unit_weight_kN_m3_if_kPa": 0.021681362576355466,
+        "implied_unit_weight_kN_m3_if_MPa": 21.681362576355465,
+        "implied_unit_weight_kN_m3_if_GPa": 21681.362576355466,
+        "consistent_units": [
+          "MPa"
+        ],
+        "declared": "MPa",
+        "declared_consistent": true,
+        "association": "cell"
+      },
+      "excavation_boundary": {
+        "faces": 49677,
+        "area": 31376.719497087186,
+        "connected_regions": 1
+      },
+      "triangle_quality": {
+        "excavation_surface.vtp": {
+          "triangles": 98170,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 9.62210038818424e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-112.vtp": {
+          "triangles": 353,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-107.vtp": {
+          "triangles": 353,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-102.vtp": {
+          "triangles": 437,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-97.vtp": {
+          "triangles": 405,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-92.vtp": {
+          "triangles": 462,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-87.vtp": {
+          "triangles": 607,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-82.vtp": {
+          "triangles": 1029,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-77.vtp": {
+          "triangles": 1929,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-72.vtp": {
+          "triangles": 2394,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-67.vtp": {
+          "triangles": 2543,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-62.vtp": {
+          "triangles": 2493,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-57.vtp": {
+          "triangles": 2168,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-52.vtp": {
+          "triangles": 2180,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-47.vtp": {
+          "triangles": 2576,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-42.vtp": {
+          "triangles": 2604,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 1.55475634672905e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_x_-37.vtp": {
+          "triangles": 3075,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-32.vtp": {
+          "triangles": 3392,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-27.vtp": {
+          "triangles": 3994,
+          "degenerate": 5,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 1.3008384293633558e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 5
+        },
+        "sections/slice_x_-22.vtp": {
+          "triangles": 5388,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-17.vtp": {
+          "triangles": 7023,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-12.vtp": {
+          "triangles": 10331,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_-7.vtp": {
+          "triangles": 11590,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 3.0344616089392937e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_x_-2.vtp": {
+          "triangles": 11211,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 9.57282526433403e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_x_0.vtp": {
+          "triangles": 8864,
+          "degenerate": 6,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 7.637744172314862e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 6
+        },
+        "sections/slice_x_3.vtp": {
+          "triangles": 9699,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_8.vtp": {
+          "triangles": 9801,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 7.277308692772499e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_x_13.vtp": {
+          "triangles": 9463,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_18.vtp": {
+          "triangles": 9305,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_23.vtp": {
+          "triangles": 10504,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_28.vtp": {
+          "triangles": 12850,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_33.vtp": {
+          "triangles": 12787,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 4.133603130567385e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_x_38.vtp": {
+          "triangles": 13282,
+          "degenerate": 3,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 2.4270035608626276e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 3
+        },
+        "sections/slice_x_43.vtp": {
+          "triangles": 13706,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_48.vtp": {
+          "triangles": 15077,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_53.vtp": {
+          "triangles": 16566,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_54.vtp": {
+          "triangles": 17355,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 1.3898563270782913e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_x_58.vtp": {
+          "triangles": 17716,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 1.8729599597871858e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_x_63.vtp": {
+          "triangles": 17847,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_68.vtp": {
+          "triangles": 15465,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_73.vtp": {
+          "triangles": 16195,
+          "degenerate": 4,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 3.724272740447014e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 4
+        },
+        "sections/slice_x_78.vtp": {
+          "triangles": 13684,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_83.vtp": {
+          "triangles": 13621,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_88.vtp": {
+          "triangles": 12389,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_93.vtp": {
+          "triangles": 12532,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_98.vtp": {
+          "triangles": 10754,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_103.vtp": {
+          "triangles": 9290,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_108.vtp": {
+          "triangles": 7861,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_113.vtp": {
+          "triangles": 10483,
+          "degenerate": 3,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 1.960201497570222e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 3
+        },
+        "sections/slice_x_118.vtp": {
+          "triangles": 9224,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_123.vtp": {
+          "triangles": 8054,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_128.vtp": {
+          "triangles": 7075,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_133.vtp": {
+          "triangles": 6088,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_138.vtp": {
+          "triangles": 4694,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_143.vtp": {
+          "triangles": 3722,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_148.vtp": {
+          "triangles": 4145,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_153.vtp": {
+          "triangles": 3723,
+          "degenerate": 6,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 7.757090994486105e-14,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 4
+        },
+        "sections/slice_x_158.vtp": {
+          "triangles": 3768,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_162.vtp": {
+          "triangles": 3705,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_163.vtp": {
+          "triangles": 3901,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_168.vtp": {
+          "triangles": 4365,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_173.vtp": {
+          "triangles": 5775,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_178.vtp": {
+          "triangles": 5910,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_183.vtp": {
+          "triangles": 5496,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_188.vtp": {
+          "triangles": 4979,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_189.vtp": {
+          "triangles": 5058,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_193.vtp": {
+          "triangles": 3940,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_198.vtp": {
+          "triangles": 2961,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_203.vtp": {
+          "triangles": 2508,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_208.vtp": {
+          "triangles": 2421,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_213.vtp": {
+          "triangles": 2155,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_218.vtp": {
+          "triangles": 764,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_223.vtp": {
+          "triangles": 460,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_228.vtp": {
+          "triangles": 358,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_233.vtp": {
+          "triangles": 388,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_234.vtp": {
+          "triangles": 374,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_x_238.vtp": {
+          "triangles": 320,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 4.234471373734915e-08,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-69.vtp": {
+          "triangles": 711,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-64.vtp": {
+          "triangles": 811,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-59.vtp": {
+          "triangles": 1338,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-54.vtp": {
+          "triangles": 1694,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-49.vtp": {
+          "triangles": 1960,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 1.1462783314688033e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_y_-44.vtp": {
+          "triangles": 2757,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-39.vtp": {
+          "triangles": 4817,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-34.vtp": {
+          "triangles": 5829,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_-29.vtp": {
+          "triangles": 11350,
+          "degenerate": 10,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 2.1811964044577057e-11,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 9
+        },
+        "sections/slice_y_-24.vtp": {
+          "triangles": 13793,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 5.847194530389084e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_y_-19.vtp": {
+          "triangles": 16234,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 3.41516746806928e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_y_-14.vtp": {
+          "triangles": 18301,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 3.7816646426893197e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_-9.vtp": {
+          "triangles": 21367,
+          "degenerate": 8,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 9.273540047244702e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 7
+        },
+        "sections/slice_y_-4.vtp": {
+          "triangles": 25000,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 5.641175476629727e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_1.vtp": {
+          "triangles": 21407,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 2.47375144855344e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_y_6.vtp": {
+          "triangles": 22635,
+          "degenerate": 3,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 3.210560310429678e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 3
+        },
+        "sections/slice_y_11.vtp": {
+          "triangles": 21849,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 6.5879824880361e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_16.vtp": {
+          "triangles": 23119,
+          "degenerate": 11,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 1.1230836844757091e-11,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 11
+        },
+        "sections/slice_y_21.vtp": {
+          "triangles": 19962,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 4.818645593602985e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_26.vtp": {
+          "triangles": 25783,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 4.078760692556257e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_31.vtp": {
+          "triangles": 26103,
+          "degenerate": 3,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 7.1001275005063825e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 3
+        },
+        "sections/slice_y_36.vtp": {
+          "triangles": 21996,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 5.5402039844898466e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_41.vtp": {
+          "triangles": 22409,
+          "degenerate": 6,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 7.101009877304641e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 6
+        },
+        "sections/slice_y_46.vtp": {
+          "triangles": 20935,
+          "degenerate": 7,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 1.0058015411366486e-11,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 7
+        },
+        "sections/slice_y_51.vtp": {
+          "triangles": 20808,
+          "degenerate": 11,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 1.830563682780315e-11,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 10
+        },
+        "sections/slice_y_56.vtp": {
+          "triangles": 18979,
+          "degenerate": 3,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 8.344885509705762e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 3
+        },
+        "sections/slice_y_61.vtp": {
+          "triangles": 20483,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_66.vtp": {
+          "triangles": 16403,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 5.337727511022003e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_71.vtp": {
+          "triangles": 17451,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 3.296641245396178e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_76.vtp": {
+          "triangles": 11546,
+          "degenerate": 2,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 4.384070155909824e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 2
+        },
+        "sections/slice_y_81.vtp": {
+          "triangles": 4316,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_86.vtp": {
+          "triangles": 2171,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_91.vtp": {
+          "triangles": 1593,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_96.vtp": {
+          "triangles": 1162,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_101.vtp": {
+          "triangles": 790,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_106.vtp": {
+          "triangles": 752,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_y_111.vtp": {
+          "triangles": 670,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.3510375048905812e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_-37.vtp": {
+          "triangles": 1331,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_-32.vtp": {
+          "triangles": 1347,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_-27.vtp": {
+          "triangles": 1535,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_-22.vtp": {
+          "triangles": 1607,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_-17.vtp": {
+          "triangles": 2018,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_-12.vtp": {
+          "triangles": 6906,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_-7.vtp": {
+          "triangles": 28742,
+          "degenerate": 7,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 5.980578347121929e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 6
+        },
+        "sections/slice_z_-2.vtp": {
+          "triangles": 45095,
+          "degenerate": 3,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 4.503229878551527e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 3
+        },
+        "sections/slice_z_3.vtp": {
+          "triangles": 49975,
+          "degenerate": 1,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 1.8482521900771533e-13,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 1
+        },
+        "sections/slice_z_8.vtp": {
+          "triangles": 68501,
+          "degenerate": 10,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 1.1376843942485469e-11,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 9
+        },
+        "sections/slice_z_13.vtp": {
+          "triangles": 72258,
+          "degenerate": 20,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 2.426306026050915e-11,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 19
+        },
+        "sections/slice_z_18.vtp": {
+          "triangles": 59104,
+          "degenerate": 4,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 7.152966205334703e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 4
+        },
+        "sections/slice_z_23.vtp": {
+          "triangles": 61376,
+          "degenerate": 33,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 2.761069931807026e-11,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 30
+        },
+        "sections/slice_z_28.vtp": {
+          "triangles": 43252,
+          "degenerate": 5,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 2.5968245149462607e-12,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0,
+          "degenerate_source_cells": 5
+        },
+        "sections/slice_z_33.vtp": {
+          "triangles": 17345,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_38.vtp": {
+          "triangles": 4718,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_43.vtp": {
+          "triangles": 1751,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_48.vtp": {
+          "triangles": 1475,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        },
+        "sections/slice_z_53.vtp": {
+          "triangles": 1269,
+          "degenerate": 0,
+          "criterion": "area <= 1e-12 * bbox_diagonal^2",
+          "area_limit": 1.5900703675170898e-07,
+          "degenerate_area_fraction": 0.0,
+          "duplicate_triangles": 0,
+          "invalid_indices": 0
+        }
+      }
+    }
+  ]
+}

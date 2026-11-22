@@ -92,7 +92,7 @@ def test_v01_products_are_reproduced(case, tmp_path):
     cfg = load_config(ROOT / "examples" / CASES[case] / "sim2web.yaml",
                       V01[case] + [f"output.dir={tmp_path.as_posix()}", "output.viewer=false"])
     build(cfg, quality=False, log=lambda *_: None)
-    record = json.loads((ROOT / "paper_evidence/revision_v2" / f"hashes_{case}.json").read_text())
+    record = json.loads((ROOT / "tests" / "data" / "v01_hashes" / f"hashes_{case}.json").read_text())
     stage = json.loads((cfg.cache_dir / "index.json").read_text())["stages"][0]
     produced = {f"{stage['id']}/{LEGACY_NAME[l['kind']]}": l["file"] for l in stage["layers"]}
     legacy_sections = [k for k in record if "/slice_" in k]

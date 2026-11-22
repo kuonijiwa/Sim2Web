@@ -1,0 +1,16 @@
+schema: sim2web-config/1
+title: "Case G: Abaqus crankshaft"
+solver: Abaqus 2020
+input:
+  stages: [{file: crankshaft.vtu, name: Step_1}]
+output: {dir: site}
+fields:
+  displacement: {name: U, unit: ''}
+  stress: {name: S, order: from_file, unit: '', unit_check: false}
+  categories: [{name: Instance, label: Instance}]
+geometry:
+  primary: exterior
+  exterior: {enabled: true, split_by_group: false, internal_faces: keep}
+  excavation: {enabled: false}
+sections: {axes: [x, y, z], spacing: 5, placement: interior, min_points: 0}
+viewer: {default_field: Stress_Min_Principal, default_axis: x, length_unit: 'model units'}

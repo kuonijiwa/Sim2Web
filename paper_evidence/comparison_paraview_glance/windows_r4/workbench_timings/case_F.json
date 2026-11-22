@@ -1,0 +1,34 @@
+{
+  "sim2web": "0.2.0.dev0",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "inputs": [
+    "G:/\u6210\u679c/papers/02/wb_case5/input/kala_final.vtu"
+  ],
+  "validation_passed": true,
+  "primary_bytes": 2352584,
+  "sections": 150,
+  "steps": {
+    "read_model (inspect)": {
+      "seconds": 5.1687516999663785,
+      "ui_latency_median_s": 0.22173789993394166,
+      "ui_latency_worst_s": 0.24361850006971508
+    },
+    "preview (surfaces)": {
+      "seconds": 17.97982939996291,
+      "ui_latency_median_s": 0.2661043999250978,
+      "ui_latency_worst_s": 0.4859731000615284
+    },
+    "build (full)": {
+      "seconds": 115.4409584000241,
+      "ui_latency_median_s": 0.2798524999525398,
+      "ui_latency_worst_s": 0.9206768999574706
+    },
+    "validate (every 5th section)": {
+      "seconds": 61.79774680000264,
+      "ui_latency_median_s": 0.3131219999631867,
+      "ui_latency_worst_s": 0.4650783999823034
+    }
+  },
+  "note": "client and server in one process; latency covers job status and project state"
+}

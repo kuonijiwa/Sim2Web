@@ -1,0 +1,58 @@
+{
+  "2": {
+    "width_cm": 16.5,
+    "height_cm": 16.44113492063492,
+    "gap_cm": 0.2,
+    "label_font_pt": 9,
+    "composed_resolution_px": [
+      3898,
+      3884
+    ],
+    "panels": {
+      "a": {
+        "print_width_cm": 16.5,
+        "print_height_cm": 5.848660714285714,
+        "capture_px": [
+          4480,
+          1588
+        ],
+        "css_viewport_width_px": 1120,
+        "device_scale_factor": 4,
+        "effective_dpi": 689.6484848484849,
+        "smallest_meaningful_glyph_height_pt": 7.099268841394826,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "blocked_build": 22,
+          "file_warning": 17,
+          "selector": 17,
+          "step": 22,
+          "unit_weight": 20
+        },
+        "injected_css": ".top, .steps, .log, .nav-buttons { display: none !important; }\n.app { grid-template-rows: auto; height: auto; background: #fff; }\n.form, .diagnostics { overflow: visible; }\n.form { padding: 16px 20px 14px; }\n.form h2, .diagnostics h2 { font-size: 26px; line-height: 1.15; }\n.form h3 { font-size: 22px; margin: 7px 0 5px; }\n.form .notice, .diagnostics .title, .diagnostics .detail { font-size: 21px; line-height: 1.23; }\n.form .notice { margin: 5px 0 0; }\n.app { grid-template-columns: minmax(0, 2.14fr) minmax(0, 1fr); grid-template-areas: 'centre diag'; }\n.centre { display: block; }\n.viewer { display: none; }\n.form .row { grid-template-columns: 155px minmax(0, 1fr); gap: 10px; padding: 4px 0; }\n.form .row > label, .form .row select { font-size: 21px; }\n.form .row select { max-width: 100%; font: 400 23px/1.2 'Arial Narrow', Arial, sans-serif; }\n.form .row:nth-of-type(1), .form .row:nth-of-type(2), .form .row:nth-of-type(3), .form .row:nth-of-type(6),\n.form h3:first-of-type, .form h3:last-of-type, .form > div > .hint, .form table.data, .form > div > p.muted,\n.diagnostics li:not(.error):not(.ok) { display: none; }\n.diagnostics { padding: 16px 14px; }\n.diagnostics li { padding: 9px 10px; }\n"
+      },
+      "b": {
+        "print_width_cm": 16.5,
+        "print_height_cm": 9.53169642857143,
+        "capture_px": [
+          4480,
+          2676
+        ],
+        "css_viewport_width_px": 1120,
+        "device_scale_factor": 4,
+        "effective_dpi": 689.6484848484849,
+        "smallest_meaningful_glyph_height_pt": 6.2640607424071995,
+        "measurement": "Chrome Canvas actualBoundingBoxAscent + actualBoundingBoxDescent, per visible line, scaled to panel print width",
+        "ink_height_css_px_by_role": {
+          "build_result": 15,
+          "package_viewer": 22,
+          "step": 22,
+          "validation_pass": 22
+        },
+        "injected_css": ".top, .steps, .log, .nav-buttons { display: none !important; }\n.app { grid-template-rows: auto; height: auto; background: #fff; }\n.form, .diagnostics { overflow: visible; }\n.form { padding: 16px 20px 14px; }\n.form h2, .diagnostics h2 { font-size: 26px; line-height: 1.15; }\n.form h3 { font-size: 22px; margin: 7px 0 5px; }\n.form .notice, .diagnostics .title, .diagnostics .detail { font-size: 21px; line-height: 1.23; }\n.form .notice { margin: 5px 0 0; }\n.app { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'centre'; }\n.centre { grid-template-rows: auto 268px; }\n.diagnostics, .form > div > p.muted, .form > div > .inline { display: none; }\n.form .hint, .form table.data { font-size: 20px; line-height: 1.12; }\n.form table.data td, .form table.data th { padding: 3px 8px; }\n.form table.data:nth-of-type(2) tbody tr:nth-child(n+4) { display: none; }\n.viewer-label { font-size: 21px; }\n",
+        "embedded_viewer_css": ".panel.collapsed { display: none !important; }\n.right { display: none !important; }\n",
+        "cropped_bottom_px": 88,
+        "build_string": "Built with Sim2Web 0.2.0 in 1.4 s on Windows-11-10.0.26300-SP0."
+      }
+    }
+  }
+}

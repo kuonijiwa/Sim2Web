@@ -111,7 +111,7 @@
   names them; with `--draft-config`, stdout stays valid JSON (message on stderr).
 - The v0.1 regression test reports every mismatching product and accepts a
   product whose only difference is a 1-Float32-ULP change of a principal stress
-  (observed on a second Windows machine; see `paper_evidence/revision_v3`).
+  (observed on a [second Windows machine](https://github.com/kuonijiwa/Sim2Web/blob/26966d011ed26f9d67791f03d49f93721e37bd19/paper_evidence/revision_v3/windows_codex_run.md)).
 
 ### Validation and diagnostics
 - Independent validator: exact checks of all CellData and surface PointData,
@@ -128,8 +128,8 @@
 ### Migration from v0.1
 - `python examples/<case>/processing/process.py` → `simwebview build examples/<case>/simwebview.yaml`.
 - `npm run build:<case>` → the viewer is copied into each package by `simwebview build`.
-- The frozen v0.1 processors are kept in `legacy/v0_1/` for regression only;
-  the published v0.1 products remain in `examples/*/output/model_cache`.
+- The v0.1 regression uses the published VTP products in `examples/*/output/model_cache`
+  and their SHA-256 fixtures in `tests/data/v01_hashes/`.
 
 ## SimWebView display-name alignment — 2026-09-16 (prepared for upload)
 

@@ -13,7 +13,7 @@ p.add_argument("--complete",action="store_true")
 a=p.parse_args()
 w=a.scratch
 root=Path(__file__).resolve().parents[2]
-ev=root/"paper_evidence/revision_v5"
+ev=root/"paper_evidence/web_slicing_figures_stages"
 dest=ev/"web_slicing"
 dest.mkdir(parents=True,exist_ok=True)
 

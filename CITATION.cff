@@ -5,7 +5,8 @@ message: >-
 type: software
 license: MIT
 title: "Sim2Web: one-click post-processing and verifiable web publishing of geotechnical simulation results"
-version: 0.2.0.dev0
+version: 0.2.0
+# doi: 10.5281/zenodo.<version-record-id>
 repository-code: "https://github.com/kuonijiwa/Sim2Web"
 url: "https://github.com/kuonijiwa/Sim2Web"
 authors:
