@@ -1,0 +1,888 @@
+{
+  "figures": {
+    "1": {
+      "width_cm": 16.5,
+      "height_cm": 6.396566666666667,
+      "dpi": 600,
+      "pixels": [
+        3897,
+        1511
+      ],
+      "smallest_nominal_text_pt": 8,
+      "panels": {
+        "diagram": {
+          "effective_dpi": 600,
+          "legend": null
+        }
+      },
+      "file": "fig1_architecture.png",
+      "bytes": 274078,
+      "sha256": "d144a6eb42667fda6022fbdd9ad17a4222cd16bf8619e4561c91b9392a596531",
+      "font": "Liberation Sans",
+      "caption": "Sim2Web workflow and independent validation"
+    },
+    "2": {
+      "width_cm": 16.5,
+      "height_cm": 9.6012,
+      "dpi": 600,
+      "pixels": [
+        3898,
+        2268
+      ],
+      "smallest_nominal_text_pt": 3.3546492081748203,
+      "panels": {
+        "a": {
+          "effective_dpi": 720.5673758865247,
+          "legend": null
+        },
+        "b": {
+          "effective_dpi": 988.5405405405405,
+          "legend": {
+            "range": [
+              4.8418529149785176e-05,
+              0.005555023806250954
+            ],
+            "unit": "m",
+            "title": "Displacement magnitude (m)",
+            "colourmap": "viridis",
+            "bands": 8
+          },
+          "camera": [
+            -159.90779873227737,
+            -189.48274629275707,
+            143.12136104570624,
+            4.52811249628008,
+            -6.858165394979059,
+            -28.951569859607577,
+            0.8090749180801937,
+            -0.21204378537492585,
+            0.5481197040951914,
+            41
+          ]
+        }
+      },
+      "file": "fig2_workbench.png",
+      "bytes": 1740837,
+      "sha256": "505c3a95d5dc5f565156d07af86c28dec87aec791a1c0e372a23c568c507c266",
+      "retained_sha256": "505c3a95d5dc5f565156d07af86c28dec87aec791a1c0e372a23c568c507c266",
+      "diagnostic_body_pt": 4.996062992125985,
+      "legend_tick_pt": 5.972440944881889,
+      "panel_left_css": "",
+      "panel_right_css": ".panel { display: none !important; }\n.right { right: 16px !important; top: 50% !important; bottom: auto !important; transform: translateY(-50%); }\n.legend { box-shadow: none !important; width: 205px !important; padding: 12px 11px 18px !important; background: #fff !important; }\n.legend-title { font-size: 21px !important; line-height: 1.12; }\n.legend-sub { font-size: 17px !important; line-height: 1.16; white-space: nowrap; }\n.bands { font-size: 20.5px !important; line-height: 1.1; }\n.band-row { height: 30px !important; gap: 7px !important; }\n.band-row .tick { transform: translateY(-5px) !important; white-space: nowrap; }\n.band-row .swatch.tall { height: 30px !important; }\n.band-row.last { height: 8px !important; }"
+    },
+    "3": {
+      "width_cm": 16.5,
+      "height_cm": 10.3124,
+      "dpi": 600,
+      "pixels": [
+        3898,
+        2436
+      ],
+      "smallest_nominal_text_pt": 3.4104330708661417,
+      "panels": {
+        "window": {
+          "effective_dpi": 665.0181818181818,
+          "legend": {
+            "title": "σ3 (MPa)",
+            "unit": "MPa",
+            "scale": 1,
+            "range": [
+              -8.665175247192384,
+              -4.004510688781741
+            ],
+            "source_range": [
+              -8.665175247192384,
+              -4.004510688781741
+            ],
+            "source_unit": "MPa",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Stress_Min_Principal",
+          "camera": [
+            -137.9427970196732,
+            -887.6469578682744,
+            410.7874432558501,
+            104.70536432467965,
+            17.928308632021427,
+            32.00457279527021,
+            0.09695532079701454,
+            0.36184218327859785,
+            0.9271838545667874,
+            107.99615361477305
+          ],
+          "settings": {
+            "stage": "IV-2",
+            "field": "Stress_Min_Principal",
+            "axis": "x",
+            "pos": "38",
+            "section": "1",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-137.9427970196732,-887.6469578682744,410.7874432558501,104.70536432467965,17.928308632021427,32.00457279527021,0.09695532079701454,0.36184218327859785,0.9271838545667874,107.99615361477305",
+            "range": "p5_p95",
+            "layers": "excavation:1:0.35"
+          },
+          "angles_deg": null
+        }
+      },
+      "file": "fig3_viewer_interface.png",
+      "bytes": 1324850,
+      "sha256": "6e658bd870b530e8b37cc92f05ea1da45f9beaa9d048775f53c5c2661ce704bf",
+      "native_ui_nominal_pt": [
+        3.4104330708661417,
+        3.572834645669291,
+        3.735236220472441,
+        3.8976377952755907,
+        4.06003937007874
+      ],
+      "callout_pt": 9,
+      "callouts": [
+        "Stage selector (IV-2)",
+        "Field selector (minimum principal stress)",
+        "Layer list (excavation surface)",
+        "Section axis and position slider",
+        "Probe value and Source_Cell_ID",
+        "Colour legend"
+      ],
+      "probe": {
+        "layer": "Section X = 38.0 m",
+        "isSection": true,
+        "position": [
+          37.95660307680018,
+          30.613752185785415,
+          22.38609599661629
+        ],
+        "sourceCell": 1160199,
+        "sourcePoint": null,
+        "rows": [
+          {
+            "name": "TotalDisplacement",
+            "label": "Displacement magnitude",
+            "text": "0.004169 m"
+          },
+          {
+            "name": "X_Disp",
+            "label": "X displacement",
+            "text": "2.139e-4 m"
+          },
+          {
+            "name": "Y_Disp",
+            "label": "Y displacement",
+            "text": "-0.002996 m"
+          },
+          {
+            "name": "Z_Disp",
+            "label": "Z displacement",
+            "text": "-0.002891 m"
+          },
+          {
+            "name": "Stress_Max_Principal",
+            "label": "Maximum principal stress (algebraic)",
+            "text": "-2.095 MPa"
+          },
+          {
+            "name": "Stress_Mid_Principal",
+            "label": "Intermediate principal stress",
+            "text": "-3.035 MPa"
+          },
+          {
+            "name": "Stress_Min_Principal",
+            "label": "Minimum principal stress (algebraic)",
+            "text": "-6.857 MPa"
+          },
+          {
+            "name": "Stress_XX",
+            "label": "Normal stress σxx",
+            "text": "-3.032 MPa"
+          },
+          {
+            "name": "Stress_YY",
+            "label": "Normal stress σyy",
+            "text": "-2.312 MPa"
+          },
+          {
+            "name": "Stress_ZZ",
+            "label": "Normal stress σzz",
+            "text": "-6.643 MPa"
+          },
+          {
+            "name": "Group Slot : Default_ID",
+            "label": "Group (slot Default)",
+            "text": "0"
+          }
+        ]
+      },
+      "injected_css": ""
+    },
+    "4": {
+      "width_cm": 16.5,
+      "height_cm": 14.181666666666667,
+      "dpi": 600,
+      "pixels": [
+        3898,
+        3350
+      ],
+      "smallest_nominal_text_pt": 7,
+      "panels": {
+        "A": {
+          "effective_dpi": 1137.6671850699845,
+          "legend": {
+            "title": "σ3 (MPa)",
+            "unit": "MPa",
+            "scale": 1,
+            "range": [
+              -8.703127908706664,
+              -4.034004282951356
+            ],
+            "source_range": [
+              -8.703127908706664,
+              -4.034004282951356
+            ],
+            "source_unit": "MPa",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Stress_Min_Principal",
+          "camera": [
+            -137.9427970196732,
+            -887.6469578682744,
+            410.7874432558501,
+            104.70536432467965,
+            17.928308632021427,
+            32.00457279527021,
+            0.09695532079701454,
+            0.36184218327859785,
+            0.9271838545667874,
+            107.99615361477305
+          ],
+          "settings": {
+            "field": "Stress_Min_Principal",
+            "section": "1",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-137.9427970196732,-887.6469578682744,410.7874432558501,104.70536432467965,17.928308632021427,32.00457279527021,0.09695532079701454,0.36184218327859785,0.9271838545667874,107.99615361477305",
+            "range": "p5_p95",
+            "layers": "excavation:1:0.35",
+            "axis": "x",
+            "pos": "38"
+          },
+          "angles_deg": [
+            255,
+            22,
+            0
+          ]
+        },
+        "B": {
+          "effective_dpi": 1137.6671850699845,
+          "legend": {
+            "title": "σ1 (MPa)",
+            "unit": "MPa",
+            "scale": 1e-06,
+            "range": [
+              -1.9909118749999999,
+              0.020460052734374998
+            ],
+            "source_range": [
+              -1990911.875,
+              20460.052734375
+            ],
+            "source_unit": "Pa",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Stress_Max_Principal",
+          "camera": [
+            -1131.332486126063,
+            -1962.4070288287594,
+            2006.8631259386243,
+            541.1181254007312,
+            -289.9564173019659,
+            528.9206743453061,
+            0.4349120391416471,
+            0.3116552057092083,
+            0.8448210171178304,
+            370.9358391575051
+          ],
+          "settings": {
+            "field": "Stress_Max_Principal",
+            "section": "1",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-1131.332486126063,-1962.4070288287594,2006.8631259386243,541.1181254007312,-289.9564173019659,528.9206743453061,0.4349120391416471,0.3116552057092083,0.8448210171178304,370.9358391575051",
+            "range": "p5_p95",
+            "layers": "exterior:1:0.35,excavation:1:0.6",
+            "axis": "y",
+            "pos": "-185"
+          },
+          "angles_deg": [
+            225,
+            32,
+            -5
+          ]
+        },
+        "C": {
+          "effective_dpi": 1137.6671850699845,
+          "legend": {
+            "title": "|u| (m)",
+            "unit": "m",
+            "scale": 1,
+            "range": [
+              0,
+              0.014239802025258541
+            ],
+            "source_range": [
+              0,
+              0.014239802025258541
+            ],
+            "source_unit": "m",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "TotalDisplacement",
+          "camera": [
+            201.79645704921347,
+            -967.6747931535526,
+            4504.304387431894,
+            948.5859078322993,
+            325.80247815920825,
+            2114.078499408346,
+            0.10225413628884267,
+            0.8611496459876846,
+            0.4979612222122407,
+            304.0415099151068
+          ],
+          "settings": {
+            "field": "TotalDisplacement",
+            "section": "1",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "201.79645704921347,-967.6747931535526,4504.304387431894,948.5859078322993,325.80247815920825,2114.078499408346,0.10225413628884267,0.8611496459876846,0.4979612222122407,304.0415099151068",
+            "range": "full",
+            "layers": "exterior:1:0.35",
+            "axis": "x",
+            "pos": "830"
+          },
+          "angles_deg": [
+            240,
+            58,
+            20
+          ]
+        },
+        "D": {
+          "effective_dpi": 1137.6671850699845,
+          "legend": {
+            "title": "u_y (m)",
+            "unit": "m",
+            "scale": 1,
+            "range": [
+              -0.0016443954198621213,
+              0.0015030356880743009
+            ],
+            "source_range": [
+              -0.0016443954198621213,
+              0.0015030356880743009
+            ],
+            "source_unit": "m",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Y_Disp",
+          "camera": [
+            -80.8989343821727,
+            -87.57978281876579,
+            180.90138233951188,
+            0.11152671692618465,
+            -6.569321719666935,
+            -25.781320171265126,
+            0.9215971986346241,
+            -0.3031476727569651,
+            0.24240481012316864,
+            21.329989341443543
+          ],
+          "settings": {
+            "field": "Y_Disp",
+            "section": "0",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-80.8989343821727,-87.57978281876579,180.90138233951188,0.11152671692618465,-6.569321719666935,-25.781320171265126,0.9215971986346241,-0.3031476727569651,0.24240481012316864,21.329989341443543",
+            "range": "p5_p95",
+            "layers": "exterior:0:1,excavation:1:1"
+          },
+          "angles_deg": [
+            225,
+            61,
+            -60
+          ]
+        },
+        "E": {
+          "effective_dpi": 1137.6671850699845,
+          "legend": {
+            "title": "σ3 (MPa)",
+            "unit": "MPa",
+            "scale": 1e-06,
+            "range": [
+              -2.0687700249999996,
+              -0.2796225656250001
+            ],
+            "source_range": [
+              -2068770.025,
+              -279622.5656250001
+            ],
+            "source_unit": "Pa",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Stress_Min_Principal",
+          "camera": [
+            -57.22735568441399,
+            -265.7044049397067,
+            514.4200164359721,
+            101.36841473415001,
+            8.991527290775108,
+            6.807441314582043,
+            0.3469314212537423,
+            0.7752143338488782,
+            0.5279027614457976,
+            73.41337607600965
+          ],
+          "settings": {
+            "field": "Stress_Min_Principal",
+            "section": "1",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-57.22735568441399,-265.7044049397067,514.4200164359721,101.36841473415001,8.991527290775108,6.807441314582043,0.3469314212537423,0.7752143338488782,0.5279027614457976,73.41337607600965",
+            "range": "p5_p95",
+            "layers": "exterior:1:0.35",
+            "axis": "y",
+            "pos": "30"
+          },
+          "angles_deg": [
+            240,
+            58,
+            5
+          ]
+        },
+        "F": {
+          "effective_dpi": 1137.6671850699845,
+          "legend": {
+            "title": "|u| (m)",
+            "unit": "m",
+            "scale": 1,
+            "range": [
+              0.00012068943033227697,
+              0.004404990375041966
+            ],
+            "source_range": [
+              0.00012068943033227697,
+              0.004404990375041966
+            ],
+            "source_unit": "m",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "TotalDisplacement",
+          "camera": [
+            202.07867116453508,
+            -967.1859839672028,
+            4503.401113445229,
+            948.6305159194708,
+            325.87974163261754,
+            2113.935723683996,
+            0.10225413628884267,
+            0.8611496459876846,
+            0.4979612222122407,
+            304.0415099151068
+          ],
+          "settings": {
+            "field": "TotalDisplacement",
+            "section": "1",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "202.07867116453508,-967.1859839672028,4503.401113445229,948.6305159194708,325.87974163261754,2113.935723683996,0.10225413628884267,0.8611496459876846,0.4979612222122407,304.0415099151068",
+            "range": "p5_p95",
+            "layers": "exterior:1:0.28",
+            "axis": "y",
+            "pos": "370"
+          },
+          "angles_deg": [
+            240,
+            58,
+            20
+          ]
+        }
+      },
+      "file": "fig4_published_cases.png",
+      "bytes": 2215974,
+      "sha256": "513d5ff6aa6bc0e106a399a6d65e34960f3664222d466b5528ddc902a9eb8295",
+      "injected_css": ".panel, .right { display: none !important; }"
+    },
+    "5": {
+      "width_cm": 16.5,
+      "height_cm": 6.8495333333333335,
+      "dpi": 600,
+      "pixels": [
+        3897,
+        1618
+      ],
+      "smallest_nominal_text_pt": 7,
+      "panels": {
+        "a": {
+          "effective_dpi": 600,
+          "label": "σ1 maximum",
+          "maximum_error_MPa": 7.215170289877238,
+          "pct_range": 56.540240539170625,
+          "tensile_only_generic": 14711,
+          "stress_range_MPa": [
+            -12.632434284286916,
+            2.1111135414784408
+          ],
+          "legend": {
+            "range": [
+              1,
+              291332
+            ],
+            "unit": "cells/bin"
+          }
+        },
+        "b": {
+          "effective_dpi": 600,
+          "label": "σ2 intermediate",
+          "maximum_error_MPa": 10.577921681377509,
+          "pct_range": 76.12982556070645,
+          "tensile_only_generic": 7,
+          "stress_range_MPa": [
+            -24.343814659532452,
+            0.1286898656512618
+          ],
+          "legend": {
+            "range": [
+              1,
+              291332
+            ],
+            "unit": "cells/bin"
+          }
+        },
+        "c": {
+          "effective_dpi": 600,
+          "label": "σ3 minimum",
+          "maximum_error_MPa": 3.837639372515108,
+          "pct_range": 8.49995086397409,
+          "tensile_only_generic": 0,
+          "stress_range_MPa": [
+            -45.14997431865718,
+            -0.0010148254860926124
+          ],
+          "legend": {
+            "range": [
+              1,
+              291332
+            ],
+            "unit": "cells/bin"
+          }
+        }
+      },
+      "file": "fig5_principal_stress.png",
+      "bytes": 331873,
+      "sha256": "0478e2f58af383acec1aadd152dff9c30f7196db57898f3d6d83c2e9f417d9d7",
+      "comparison": {
+        "width_cm": 16.5,
+        "height_cm": 6.85,
+        "min_font_pt": 7,
+        "case": "A",
+        "kept_cells": 983438,
+        "order": [
+          "XX",
+          "YY",
+          "ZZ",
+          "XY",
+          "XZ",
+          "YZ"
+        ],
+        "panels": [
+          {
+            "label": "σ1 maximum",
+            "maximum_error_MPa": 7.215170289877238,
+            "pct_range": 56.540240539170625,
+            "tensile_only_generic": 14711,
+            "stress_range_MPa": [
+              -12.632434284286916,
+              2.1111135414784408
+            ]
+          },
+          {
+            "label": "σ2 intermediate",
+            "maximum_error_MPa": 10.577921681377509,
+            "pct_range": 76.12982556070645,
+            "tensile_only_generic": 7,
+            "stress_range_MPa": [
+              -24.343814659532452,
+              0.1286898656512618
+            ]
+          },
+          {
+            "label": "σ3 minimum",
+            "maximum_error_MPa": 3.837639372515108,
+            "pct_range": 8.49995086397409,
+            "tensile_only_generic": 0,
+            "stress_range_MPa": [
+              -45.14997431865718,
+              -0.0010148254860926124
+            ]
+          }
+        ],
+        "bin_colour_range": [
+          1,
+          291332
+        ]
+      }
+    },
+    "6": {
+      "width_cm": 16.5,
+      "height_cm": 8.233833333333333,
+      "dpi": 600,
+      "pixels": [
+        3898,
+        1945
+      ],
+      "smallest_nominal_text_pt": 7,
+      "panels": {
+        "a": {
+          "faces": 917062,
+          "bytes": 187591097,
+          "field_array": "Displacement_Magnitude",
+          "file": "contacts_a.png",
+          "cut_cells": 521677,
+          "effective_dpi": 618.9646464646464,
+          "legend": {
+            "title": "|u| (m)",
+            "unit": "m",
+            "range": [
+              1.4384772475750664e-05,
+              0.0014421552186831832
+            ],
+            "colourmap": "jet",
+            "bands": 8
+          }
+        },
+        "b": {
+          "faces": 21293,
+          "bytes": 2620417,
+          "field_array": "TotalDisplacement",
+          "file": "contacts_b.png",
+          "cut_cells": 10921,
+          "effective_dpi": 618.9646464646464,
+          "legend": {
+            "title": "|u| (m)",
+            "unit": "m",
+            "range": [
+              1.4384772475750664e-05,
+              0.0014421552186831832
+            ],
+            "colourmap": "jet",
+            "bands": 8
+          }
+        }
+      },
+      "file": "fig6_internal_faces.png",
+      "bytes": 3046829,
+      "sha256": "23a14f186a4841b31c17420298e4c0711535e8ed729350bed433d3e1fbab8c93",
+      "render": {
+        "renderer": "PyVista 0.46.3",
+        "camera": [
+          [
+            1450.0,
+            -720.0,
+            2740.0
+          ],
+          [
+            840.0,
+            423.0,
+            2070.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "parallel_scale": 411,
+        "cut": {
+          "axis": "y",
+          "position_m": 375.0,
+          "keep": "y >= 375 m"
+        },
+        "opacity": 0.62,
+        "range_mode": "p5_p95"
+      },
+      "crop_px": [
+        280,
+        311,
+        2210,
+        1737
+      ]
+    },
+    "7": {
+      "width_cm": 16.5,
+      "height_cm": 5.1816,
+      "dpi": 600,
+      "pixels": [
+        3898,
+        1224
+      ],
+      "smallest_nominal_text_pt": 7,
+      "panels": {
+        "I-1": {
+          "effective_dpi": 1090.6214689265537,
+          "legend": {
+            "title": "σ3 (MPa)",
+            "unit": "MPa",
+            "scale": 1,
+            "range": [
+              -12.247395277023315,
+              -1.1023685634136207
+            ],
+            "source_range": [
+              -12.247395277023315,
+              -1.1023685634136207
+            ],
+            "source_unit": "MPa",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Stress_Min_Principal",
+          "camera": [
+            -367.2911243592357,
+            -700.2945345498879,
+            430.4391039732712,
+            61.39882819905073,
+            14.18871971392285,
+            16.03881650026101,
+            0.2291108506922656,
+            0.38185141782044274,
+            0.8953757383375899,
+            74.8626326541114
+          ],
+          "settings": {
+            "stage": "I-1",
+            "field": "Stress_Min_Principal",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-367.2911243592357,-700.2945345498879,430.4391039732712,61.39882819905073,14.18871971392285,16.03881650026101,0.2291108506922656,0.38185141782044274,0.8953757383375899,74.8626326541114",
+            "range": "custom",
+            "rmin": -12.247395277023315,
+            "rmax": -1.1023685634136207,
+            "section": "0",
+            "layers": "excavation:1:1"
+          },
+          "angles_deg": null
+        },
+        "II-2": {
+          "effective_dpi": 1090.6214689265537,
+          "legend": {
+            "title": "σ3 (MPa)",
+            "unit": "MPa",
+            "scale": 1,
+            "range": [
+              -12.247395277023315,
+              -1.1023685634136207
+            ],
+            "source_range": [
+              -12.247395277023315,
+              -1.1023685634136207
+            ],
+            "source_unit": "MPa",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Stress_Min_Principal",
+          "camera": [
+            -367.2911243592357,
+            -700.2945345498879,
+            430.4391039732712,
+            61.39882819905073,
+            14.18871971392285,
+            16.03881650026101,
+            0.2291108506922656,
+            0.38185141782044274,
+            0.8953757383375899,
+            74.8626326541114
+          ],
+          "settings": {
+            "stage": "II-2",
+            "field": "Stress_Min_Principal",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-367.2911243592357,-700.2945345498879,430.4391039732712,61.39882819905073,14.18871971392285,16.03881650026101,0.2291108506922656,0.38185141782044274,0.8953757383375899,74.8626326541114",
+            "range": "custom",
+            "rmin": -12.247395277023315,
+            "rmax": -1.1023685634136207,
+            "section": "0",
+            "layers": "excavation:1:1"
+          },
+          "angles_deg": null
+        },
+        "IV-2": {
+          "effective_dpi": 1090.6214689265537,
+          "legend": {
+            "title": "σ3 (MPa)",
+            "unit": "MPa",
+            "scale": 1,
+            "range": [
+              -12.247395277023315,
+              -1.1023685634136207
+            ],
+            "source_range": [
+              -12.247395277023315,
+              -1.1023685634136207
+            ],
+            "source_unit": "MPa",
+            "colourmap": "jet",
+            "bands": 8
+          },
+          "field": "Stress_Min_Principal",
+          "camera": [
+            -367.2911243592357,
+            -700.2945345498879,
+            430.4391039732712,
+            61.39882819905073,
+            14.18871971392285,
+            16.03881650026101,
+            0.2291108506922656,
+            0.38185141782044274,
+            0.8953757383375899,
+            74.8626326541114
+          ],
+          "settings": {
+            "stage": "IV-2",
+            "field": "Stress_Min_Principal",
+            "parallel": "1",
+            "cmap": "jet",
+            "bands": "8",
+            "cam": "-367.2911243592357,-700.2945345498879,430.4391039732712,61.39882819905073,14.18871971392285,16.03881650026101,0.2291108506922656,0.38185141782044274,0.8953757383375899,74.8626326541114",
+            "range": "custom",
+            "rmin": -12.247395277023315,
+            "rmax": -1.1023685634136207,
+            "section": "0",
+            "layers": "excavation:1:1"
+          },
+          "angles_deg": null
+        }
+      },
+      "file": "fig7_construction_stages.png",
+      "bytes": 669045,
+      "sha256": "448943cea66ad6177860f13109cb56f2037e4326f0df73d0d14cb667da8013f0",
+      "common_range_method": "P5–P95 of excavation face values pooled over all five construction stages",
+      "injected_css": ".panel, .right { display: none !important; }"
+    }
+  }
+}
